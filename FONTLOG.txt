@@ -1,0 +1,45 @@
+FONTLOG for Buena Mono
+======================
+
+This file provides detailed information on the Buena Mono font software. This
+information should be distributed along with the Buena Mono fonts and any
+derivative works.
+
+
+Basic Font Information
+----------------------
+
+Buena Mono is a writer-first monospace typeface — tuned for extended prose in
+markdown and code editors while keeping code legible. It is a two-axis variable
+font: weight 100–800 and slant 0 to −10°, from 8 masters, covering 4,857 glyphs
+(Latin incl. Extended A–D, Greek, Cyrillic, IPA, math, arrows, box-drawing,
+block/shade elements and currency), with code ligatures and 12 stylistic sets.
+
+Buena Mono is built on Fragment Mono (SIL Open Font License 1.1) by Wei Huang,
+and extended into a variable family.
+
+
+ChangeLog
+---------
+
+3 Jul 2026 (Buena) Buena Mono Version 1.218
+- Initial public release.
+- Two-axis variable font (weight 100–800, slant 0 to −10°), 8 masters.
+- 4,857 glyphs; code ligatures; 12 stylistic sets (ss01–ss12).
+- OpenType: ccmp, mark, mkmk, aalt, calt, liga, smcp, ss01–ss12.
+
+
+Acknowledgements
+----------------
+
+(Here is where contributors can be acknowledged. If you make modifications be
+sure to add your name (N), email (E), web address (W) and description (D).)
+
+N: Buena
+E: buena@buenalabs.io
+W: https://buenalabs.io
+D: Design and development of Buena Mono
+
+N: Wei Huang
+W: https://github.com/weiweihuanghuang/fragment-mono
+D: Fragment Mono — the design foundation for Buena Mono (SIL OFL 1.1)

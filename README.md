@@ -1,7 +1,5 @@
 # Buena Mono
 
-![Buena Mono](docs/image1.png)
-
 Writer-first monospace typeface — tuned for extended prose in markdown and code
 editors while keeping code perfectly legible. A two-axis variable font: **weight
 100–800** and **slant 0 to −10°**, 8 masters, 4,857 glyphs.
@@ -12,15 +10,26 @@ Buena Mono is built on [Fragment Mono](https://github.com/weiweihuanghuang/fragm
 by Wei Huang and extended into a variable family. Released under the
 [SIL Open Font License 1.1](OFL.txt).
 
-## Download
+## Install
 
-Variable fonts live in [`fonts/variable/`](fonts/variable):
+Grab the fonts from [`fonts/variable/`](fonts/variable) — `BuenaMono-VF.ttf`
+(variable TrueType), `.otf` (variable CFF2), `.woff2` (webfont):
 
-| File | Format |
-|------|--------|
-| `BuenaMono-VF.ttf` | Variable TrueType (`wght`, `slnt`) |
-| `BuenaMono-VF.otf` | Variable CFF2 |
-| `BuenaMono-VF.woff2` | Variable webfont |
+- **macOS** — open `BuenaMono-VF.ttf` and click *Install Font* (or drop it into Font Book).
+- **Windows** — right-click `BuenaMono-VF.ttf` → *Install*.
+- **Linux** — copy to `~/.local/share/fonts/` and run `fc-cache -f`.
+
+**Web** — self-host the variable webfont:
+
+```css
+@font-face {
+  font-family: "Buena Mono";
+  src: url("BuenaMono-VF.woff2") format("woff2");
+  font-weight: 100 800;
+}
+/* slant is on the `slnt` axis (0 to -10): */
+.slanted { font-variation-settings: "slnt" -10; }
+```
 
 ## Features
 
@@ -31,7 +40,18 @@ Variable fonts live in [`fonts/variable/`](fonts/variable):
 - **12 stylistic sets** — single-story `a`, tailed `l`, dotted/plain zero, and more
 - OpenType: `ccmp`, `mark`, `mkmk`, `aalt`, `calt`, `liga`, `smcp`, `ss01`–`ss12`
 
-![Buena Mono character set](docs/image2.png)
+## Stylistic sets
+
+Twelve stylistic sets (`ss01`–`ss12`) provide alternate letterforms:
+
+![Buena Mono stylistic sets](docs/stylistic-sets.png)
+
+Enable one with `font-feature-settings: "ss01" 1;` (CSS) or your editor's
+OpenType settings.
+
+## Character set
+
+![Buena Mono character set](docs/character-set.png)
 
 ## In use
 
@@ -53,6 +73,17 @@ Variable fonts live in [`fonts/variable/`](fonts/variable):
 </tr>
 </table>
 
+## Enabling ligatures in your editor
+
+Buena Mono's code ligatures use `calt`/`liga`, which are on by default in most
+engines. Where they aren't:
+
+- **VS Code** — `"editor.fontFamily": "Buena Mono"`, `"editor.fontLigatures": true`
+- **JetBrains IDEs** — Settings → Editor → Font → *Buena Mono*, check *Enable ligatures*
+- **Sublime Text** — set `"font_face": "Buena Mono"`; ligatures are on unless `no_calt` is listed in `"font_options"`
+- **Neovim/Vim** — use a GUI (Neovide, MacVim) with `guifont=Buena\ Mono`
+- **Terminals** — iTerm2: *Use ligatures* in the profile; Kitty: on by default
+
 ## Build from source
 
 Requires Python 3.9+.
@@ -64,7 +95,14 @@ make proof    # HTML proofs with diffenator2
 ```
 
 Design source: [`sources/BuenaMono.glyphs`](sources/) (Glyphs 3), with UFO
-masters and a `.designspace`.
+masters and a `.designspace`. See [CONTRIBUTING.md](CONTRIBUTING.md) and the
+[CHANGELOG](CHANGELOG.md).
+
+## Credits
+
+Made by [Buena](https://buenalabs.io). Built on
+[Fragment Mono](https://github.com/weiweihuanghuang/fragment-mono) by Wei Huang
+(SIL OFL 1.1), itself based on Nimbus Sans.
 
 ## License
 
