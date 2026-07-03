@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="t" format="2">
+  <advance width="618"/>
+  <unicode hex="0074"/>
+  <anchor x="263" y="0" name="bottom"/>
+  <anchor x="391" y="729" name="top"/>
+  <anchor x="614" y="524" name="topright"/>
+  <outline>
+    <contour>
+      <point x="310" y="508" type="line"/>
+      <point x="336" y="652" type="line"/>
+      <point x="285" y="652" type="line"/>
+      <point x="259" y="508" type="line"/>
+      <point x="108" y="508" type="line"/>
+      <point x="102" y="472" type="line"/>
+      <point x="253" y="472" type="line"/>
+      <point x="196" y="149" type="line"/>
+      <point x="176" y="35"/>
+      <point x="222" y="2"/>
+      <point x="349" y="2" type="curve"/>
+      <point x="377" y="2"/>
+      <point x="405" y="3"/>
+      <point x="429" y="10" type="curve"/>
+      <point x="436" y="50" type="line"/>
+      <point x="410" y="45"/>
+      <point x="396" y="45"/>
+      <point x="362" y="45" type="curve"/>
+      <point x="286" y="45"/>
+      <point x="236" y="87"/>
+      <point x="250" y="164" type="curve"/>
+      <point x="304" y="472" type="line"/>
+      <point x="510" y="472" type="line"/>
+      <point x="516" y="508" type="line"/>
+    </contour>
+  </outline>
+</glyph>

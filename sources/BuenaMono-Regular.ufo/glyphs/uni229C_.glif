@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni229C" format="2">
+  <advance width="618"/>
+  <unicode hex="229C"/>
+  <outline>
+    <contour>
+      <point x="507" y="241"/>
+      <point x="507" y="350" type="curve"/>
+      <point x="507" y="459"/>
+      <point x="418" y="548"/>
+      <point x="309" y="548" type="curve"/>
+      <point x="200" y="548"/>
+      <point x="111" y="459"/>
+      <point x="111" y="350" type="curve"/>
+      <point x="111" y="241"/>
+      <point x="200" y="152"/>
+      <point x="309" y="152" type="curve"/>
+      <point x="418" y="152"/>
+    </contour>
+    <contour>
+      <point x="425" y="414"/>
+      <point x="425" y="350" type="curve"/>
+      <point x="425" y="286"/>
+      <point x="373" y="234"/>
+      <point x="309" y="234" type="curve"/>
+      <point x="245" y="234"/>
+      <point x="193" y="286"/>
+      <point x="193" y="350" type="curve"/>
+      <point x="193" y="414"/>
+      <point x="245" y="466"/>
+      <point x="309" y="466" type="curve"/>
+      <point x="373" y="466"/>
+    </contour>
+    <contour>
+      <point x="200" y="489" type="line"/>
+      <point x="200" y="407" type="line"/>
+      <point x="418" y="407" type="line"/>
+      <point x="418" y="489" type="line"/>
+    </contour>
+    <contour>
+      <point x="200" y="293" type="line"/>
+      <point x="200" y="211" type="line"/>
+      <point x="418" y="211" type="line"/>
+      <point x="418" y="293" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Symbol</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Math</string>
+    </dict>
+  </lib>
+</glyph>

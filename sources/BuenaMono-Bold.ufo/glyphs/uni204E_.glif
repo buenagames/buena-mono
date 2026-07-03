@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni204E" format="2">
+  <advance width="618"/>
+  <unicode hex="204E"/>
+  <outline>
+    <contour>
+      <point x="249" y="227" type="line"/>
+      <point x="249" y="35" type="line"/>
+      <point x="369" y="35" type="line"/>
+      <point x="369" y="227" type="line"/>
+    </contour>
+    <contour>
+      <point x="209" y="78" type="line"/>
+      <point x="305" y="244" type="line"/>
+      <point x="409" y="184" type="line"/>
+      <point x="313" y="18" type="line"/>
+    </contour>
+    <contour>
+      <point x="313" y="244" type="line"/>
+      <point x="409" y="78" type="line"/>
+      <point x="305" y="18" type="line"/>
+      <point x="209" y="184" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Punctuation</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Other</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="5.0">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="100" maximum="800" default="400"/>
+    <axis tag="slnt" name="Slant" minimum="-10" maximum="0" default="0"/>
+  </axes>
+  <sources>
+    <source filename="BuenaMono-Thin.ufo" name="Buena Mono Thin" familyname="Buena Mono" stylename="Thin">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="BuenaMono-Regular.ufo" name="Buena Mono Regular" familyname="Buena Mono" stylename="Regular">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="BuenaMono-Bold.ufo" name="Buena Mono Bold" familyname="Buena Mono" stylename="Bold">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="BuenaMono-ExtraBold.ufo" name="Buena Mono ExtraBold" familyname="Buena Mono" stylename="ExtraBold">
+      <location>
+        <dimension name="Weight" xvalue="800"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="BuenaMono-Thin-Italic.ufo" name="Buena Mono Thin Italic" familyname="Buena Mono" stylename="Thin Italic">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+        <dimension name="Slant" xvalue="-10"/>
+      </location>
+    </source>
+    <source filename="BuenaMono-Regular-Italic.ufo" name="Buena Mono Regular Italic" familyname="Buena Mono" stylename="Regular Italic">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+        <dimension name="Slant" xvalue="-10"/>
+      </location>
+    </source>
+    <source filename="BuenaMono-Bold-Italic.ufo" name="Buena Mono Bold Italic" familyname="Buena Mono" stylename="Bold Italic">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+        <dimension name="Slant" xvalue="-10"/>
+      </location>
+    </source>
+    <source filename="BuenaMono-ExtraBold-Italic.ufo" name="Buena Mono ExtraBold Italic" familyname="Buena Mono" stylename="ExtraBold Italic">
+      <location>
+        <dimension name="Weight" xvalue="800"/>
+        <dimension name="Slant" xvalue="-10"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance name="Buena Mono Thin" familyname="Buena Mono" stylename="Thin">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </instance>
+    <instance name="Buena Mono Thin Italic" familyname="Buena Mono" stylename="Thin Italic">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+        <dimension name="Slant" xvalue="-10"/>
+      </location>
+    </instance>
+    <instance name="Buena Mono ExtraLight" familyname="Buena Mono" stylename="ExtraLight">
+      <location>
+        <dimension name="Weight" xvalue="200"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </instance>
+    <instance name="Buena Mono ExtraLight Italic" familyname="Buena Mono" stylename="ExtraLight Italic">
+      <location>
+        <dimension name="Weight" xvalue="200"/>
+        <dimension name="Slant" xvalue="-10"/>
+      </location>
+    </instance>
+    <instance name="Buena Mono Light" familyname="Buena Mono" stylename="Light">
+      <location>
+        <dimension name="Weight" xvalue="300"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </instance>
+    <instance name="Buena Mono Light Italic" familyname="Buena Mono" stylename="Light Italic">
+      <location>
+        <dimension name="Weight" xvalue="300"/>
+        <dimension name="Slant" xvalue="-10"/>
+      </location>
+    </instance>
+    <instance name="Buena Mono Regular" familyname="Buena Mono" stylename="Regular">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </instance>
+    <instance name="Buena Mono Italic" familyname="Buena Mono" stylename="Italic">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+        <dimension name="Slant" xvalue="-10"/>
+      </location>
+    </instance>
+    <instance name="Buena Mono Medium" familyname="Buena Mono" stylename="Medium">
+      <location>
+        <dimension name="Weight" xvalue="500"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </instance>
+    <instance name="Buena Mono Medium Italic" familyname="Buena Mono" stylename="Medium Italic">
+      <location>
+        <dimension name="Weight" xvalue="500"/>
+        <dimension name="Slant" xvalue="-10"/>
+      </location>
+    </instance>
+    <instance name="Buena Mono SemiBold" familyname="Buena Mono" stylename="SemiBold">
+      <location>
+        <dimension name="Weight" xvalue="600"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </instance>
+    <instance name="Buena Mono SemiBold Italic" familyname="Buena Mono" stylename="SemiBold Italic">
+      <location>
+        <dimension name="Weight" xvalue="600"/>
+        <dimension name="Slant" xvalue="-10"/>
+      </location>
+    </instance>
+    <instance name="Buena Mono Bold" familyname="Buena Mono" stylename="Bold">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </instance>
+    <instance name="Buena Mono Bold Italic" familyname="Buena Mono" stylename="Bold Italic">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+        <dimension name="Slant" xvalue="-10"/>
+      </location>
+    </instance>
+    <instance name="Buena Mono ExtraBold" familyname="Buena Mono" stylename="ExtraBold">
+      <location>
+        <dimension name="Weight" xvalue="800"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </instance>
+    <instance name="Buena Mono ExtraBold Italic" familyname="Buena Mono" stylename="ExtraBold Italic">
+      <location>
+        <dimension name="Weight" xvalue="800"/>
+        <dimension name="Slant" xvalue="-10"/>
+      </location>
+    </instance>
+  </instances>
+</designspace>

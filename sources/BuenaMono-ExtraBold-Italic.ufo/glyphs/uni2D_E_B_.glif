@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni2DEB" format="2">
+  <unicode hex="2DEB"/>
+  <anchor x="309" y="574" name="_top"/>
+  <anchor x="309" y="847" name="top"/>
+  <outline>
+    <contour>
+      <point x="156" y="574" type="line"/>
+      <point x="260" y="574" type="line"/>
+      <point x="292" y="756" type="line"/>
+      <point x="342" y="756" type="line"/>
+      <point x="310" y="574" type="line"/>
+      <point x="414" y="574" type="line"/>
+      <point x="462" y="847" type="line"/>
+      <point x="204" y="847" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Mark</string>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>618</integer>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Nonspacing</string>
+    </dict>
+  </lib>
+</glyph>

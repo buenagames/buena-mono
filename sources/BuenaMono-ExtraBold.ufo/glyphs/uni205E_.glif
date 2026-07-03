@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni205E" format="2">
+  <advance width="618"/>
+  <unicode hex="205E"/>
+  <outline>
+    <contour>
+      <point x="375" y="558"/>
+      <point x="375" y="594" type="curve"/>
+      <point x="375" y="630"/>
+      <point x="345" y="660"/>
+      <point x="309" y="660" type="curve"/>
+      <point x="273" y="660"/>
+      <point x="243" y="630"/>
+      <point x="243" y="594" type="curve"/>
+      <point x="243" y="558"/>
+      <point x="273" y="528"/>
+      <point x="309" y="528" type="curve"/>
+      <point x="345" y="528"/>
+    </contour>
+    <contour>
+      <point x="375" y="383"/>
+      <point x="375" y="419" type="curve"/>
+      <point x="375" y="455"/>
+      <point x="345" y="485"/>
+      <point x="309" y="485" type="curve"/>
+      <point x="273" y="485"/>
+      <point x="243" y="455"/>
+      <point x="243" y="419" type="curve"/>
+      <point x="243" y="383"/>
+      <point x="273" y="353"/>
+      <point x="309" y="353" type="curve"/>
+      <point x="345" y="353"/>
+    </contour>
+    <contour>
+      <point x="375" y="209"/>
+      <point x="375" y="245" type="curve"/>
+      <point x="375" y="281"/>
+      <point x="345" y="311"/>
+      <point x="309" y="311" type="curve"/>
+      <point x="273" y="311"/>
+      <point x="243" y="281"/>
+      <point x="243" y="245" type="curve"/>
+      <point x="243" y="209"/>
+      <point x="273" y="179"/>
+      <point x="309" y="179" type="curve"/>
+      <point x="345" y="179"/>
+    </contour>
+    <contour>
+      <point x="375" y="34"/>
+      <point x="375" y="70" type="curve"/>
+      <point x="375" y="106"/>
+      <point x="345" y="136"/>
+      <point x="309" y="136" type="curve"/>
+      <point x="273" y="136"/>
+      <point x="243" y="106"/>
+      <point x="243" y="70" type="curve"/>
+      <point x="243" y="34"/>
+      <point x="273" y="4"/>
+      <point x="309" y="4" type="curve"/>
+      <point x="345" y="4"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Punctuation</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Other</string>
+    </dict>
+  </lib>
+</glyph>

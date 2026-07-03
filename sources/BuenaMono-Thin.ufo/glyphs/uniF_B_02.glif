@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uniFB02" format="2">
+  <advance width="618"/>
+  <unicode hex="FB02"/>
+  <anchor x="309" y="0" name="bottom"/>
+  <anchor x="309" y="524" name="top"/>
+  <anchor x="568" y="524" name="topright"/>
+  <outline>
+    <contour>
+      <point x="131" y="-16" type="line"/>
+      <point x="131" y="432" type="line"/>
+      <point x="61" y="432" type="line"/>
+      <point x="61" y="532" type="line"/>
+      <point x="131" y="532" type="line"/>
+      <point x="131" y="622" type="line"/>
+      <point x="131" y="691"/>
+      <point x="182" y="756"/>
+      <point x="261" y="756" type="curve"/>
+      <point x="400" y="756" type="line"/>
+      <point x="400" y="656" type="line"/>
+      <point x="243" y="656" type="line"/>
+      <point x="243" y="532" type="line"/>
+      <point x="400" y="532" type="line"/>
+      <point x="400" y="432" type="line"/>
+      <point x="243" y="432" type="line"/>
+      <point x="243" y="-16" type="line"/>
+    </contour>
+    <contour>
+      <point x="445" y="-16" type="line"/>
+      <point x="445" y="756" type="line"/>
+      <point x="557" y="756" type="line"/>
+      <point x="557" y="-16" type="line"/>
+    </contour>
+  </outline>
+</glyph>

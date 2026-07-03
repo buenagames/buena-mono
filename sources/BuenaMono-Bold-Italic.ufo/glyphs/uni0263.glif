@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni0263" format="2">
+  <advance width="618"/>
+  <unicode hex="0263"/>
+  <anchor x="263" y="0" name="bottom"/>
+  <anchor x="355" y="524" name="top"/>
+  <anchor x="614" y="524" name="topright"/>
+  <outline>
+    <contour>
+      <point x="166" y="-252" type="line"/>
+      <point x="252" y="-252" type="line"/>
+      <point x="325" y="-188" type="line"/>
+      <point x="339" y="-109" type="line"/>
+      <point x="350" y="-43" type="line"/>
+      <point x="331" y="21" type="line"/>
+      <point x="301" y="79" type="line"/>
+      <point x="622" y="543" type="line"/>
+      <point x="482" y="543" type="line"/>
+      <point x="321" y="301" type="line"/>
+      <point x="294" y="260" type="line"/>
+      <point x="243" y="183" type="line"/>
+      <point x="229" y="159" type="line"/>
+      <point x="251" y="159" type="line"/>
+      <point x="248" y="184" type="line"/>
+      <point x="226" y="260" type="line"/>
+      <point x="212" y="302" type="line"/>
+      <point x="136" y="543" type="line"/>
+      <point x="-4" y="543" type="line"/>
+      <point x="151" y="79" type="line"/>
+      <point x="109" y="28" type="line"/>
+      <point x="59" y="-35" type="line"/>
+      <point x="46" y="-109" type="line"/>
+      <point x="32" y="-188" type="line"/>
+      <point x="83" y="-252" type="line"/>
+    </contour>
+    <contour>
+      <point x="186" y="-142" type="line"/>
+      <point x="167" y="-142" type="line"/>
+      <point x="162" y="-135" type="line"/>
+      <point x="167" y="-105" type="line"/>
+      <point x="172" y="-76" type="line"/>
+      <point x="191" y="-39" type="line"/>
+      <point x="208" y="-21" type="line"/>
+      <point x="220" y="-39" type="line"/>
+      <point x="223" y="-77" type="line"/>
+      <point x="218" y="-106" type="line"/>
+      <point x="213" y="-136" type="line"/>
+      <point x="207" y="-142" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Letter</string>
+    </dict>
+  </lib>
+</glyph>

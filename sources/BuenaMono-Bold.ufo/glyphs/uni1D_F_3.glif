@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni1DF3" format="2">
+  <unicode hex="1DF3"/>
+  <anchor x="10" y="583" name="_top"/>
+  <anchor x="10" y="876" name="top"/>
+  <outline>
+    <contour>
+      <point x="10" y="583" type="line"/>
+      <point x="79" y="583" type="line"/>
+      <point x="136" y="628" type="line"/>
+      <point x="136" y="711" type="line"/>
+      <point x="136" y="795" type="line"/>
+      <point x="77" y="838" type="line"/>
+      <point x="9" y="838" type="line"/>
+      <point x="-61" y="838" type="line"/>
+      <point x="-117" y="793" type="line"/>
+      <point x="-117" y="712" type="line"/>
+      <point x="-117" y="672" type="line"/>
+      <point x="-103" y="637" type="line"/>
+      <point x="-80" y="616" type="line"/>
+      <point x="-58" y="594" type="line"/>
+      <point x="-24" y="583" type="line"/>
+    </contour>
+    <contour>
+      <point x="10" y="650" type="line"/>
+      <point x="-26" y="650" type="line"/>
+      <point x="-40" y="668" type="line"/>
+      <point x="-40" y="712" type="line"/>
+      <point x="-40" y="756" type="line"/>
+      <point x="-28" y="772" type="line"/>
+      <point x="10" y="772" type="line"/>
+      <point x="45" y="772" type="line"/>
+      <point x="58" y="755" type="line"/>
+      <point x="58" y="712" type="line"/>
+      <point x="58" y="667" type="line"/>
+      <point x="45" y="650" type="line"/>
+    </contour>
+    <contour>
+      <point x="72" y="869"/>
+      <point x="60" y="869" type="curve"/>
+      <point x="48" y="869"/>
+      <point x="55" y="856"/>
+      <point x="55" y="872" type="curve"/>
+      <point x="55" y="889"/>
+      <point x="48" y="876"/>
+      <point x="60" y="876" type="curve"/>
+      <point x="72" y="876"/>
+      <point x="65" y="889"/>
+      <point x="65" y="872" type="curve"/>
+      <point x="65" y="856"/>
+    </contour>
+    <contour>
+      <point x="-28" y="869"/>
+      <point x="-41" y="869" type="curve"/>
+      <point x="-54" y="869"/>
+      <point x="-46" y="856"/>
+      <point x="-46" y="872" type="curve"/>
+      <point x="-46" y="889"/>
+      <point x="-54" y="876"/>
+      <point x="-41" y="876" type="curve"/>
+      <point x="-28" y="876"/>
+      <point x="-36" y="889"/>
+      <point x="-36" y="872" type="curve"/>
+      <point x="-36" y="856"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Mark</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Nonspacing</string>
+    </dict>
+  </lib>
+</glyph>

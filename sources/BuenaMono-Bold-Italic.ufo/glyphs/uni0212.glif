@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni0212" format="2">
+  <advance width="618"/>
+  <unicode hex="0212"/>
+  <anchor x="263" y="0" name="bottom"/>
+  <anchor x="386" y="699" name="top"/>
+  <anchor x="645" y="699" name="topright"/>
+  <outline>
+    <contour>
+      <point x="21" y="-24" type="line"/>
+      <point x="157" y="-24" type="line"/>
+      <point x="207" y="262" type="line"/>
+      <point x="279" y="262" type="line"/>
+      <point x="397" y="-24" type="line"/>
+      <point x="552" y="-24" type="line"/>
+      <point x="414" y="299" type="line"/>
+      <point x="469" y="319" type="line"/>
+      <point x="550" y="384" type="line"/>
+      <point x="570" y="503" type="line"/>
+      <point x="596" y="645" type="line"/>
+      <point x="513" y="723" type="line"/>
+      <point x="339" y="723" type="line"/>
+      <point x="152" y="723" type="line"/>
+    </contour>
+    <contour>
+      <point x="278" y="386" type="line"/>
+      <point x="229" y="386" type="line"/>
+      <point x="266" y="599" type="line"/>
+      <point x="313" y="599" type="line"/>
+      <point x="417" y="599" type="line"/>
+      <point x="444" y="576" type="line"/>
+      <point x="430" y="495" type="line"/>
+      <point x="417" y="418" type="line"/>
+      <point x="382" y="386" type="line"/>
+    </contour>
+    <contour>
+      <point x="311" y="900"/>
+      <point x="404" y="900" type="curve"/>
+      <point x="502" y="900"/>
+      <point x="529" y="870"/>
+      <point x="521" y="817" type="curve"/>
+      <point x="507" y="817" type="line"/>
+      <point x="507" y="856"/>
+      <point x="445" y="886"/>
+      <point x="405" y="886" type="curve"/>
+      <point x="368" y="886"/>
+      <point x="294" y="857"/>
+      <point x="279" y="817" type="curve"/>
+      <point x="266" y="817" type="line"/>
+      <point x="277" y="869"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Letter</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni2024" format="2">
+  <advance width="618"/>
+  <unicode hex="2024"/>
+  <outline>
+    <contour>
+      <point x="337" y="13"/>
+      <point x="337" y="28" type="curve"/>
+      <point x="337" y="43"/>
+      <point x="324" y="56"/>
+      <point x="309" y="56" type="curve"/>
+      <point x="294" y="56"/>
+      <point x="281" y="43"/>
+      <point x="281" y="28" type="curve"/>
+      <point x="281" y="13"/>
+      <point x="294" y="0"/>
+      <point x="309" y="0" type="curve"/>
+      <point x="324" y="0"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Punctuation</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Other</string>
+    </dict>
+  </lib>
+</glyph>

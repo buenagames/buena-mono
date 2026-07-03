@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni2263" format="2">
+  <advance width="618"/>
+  <unicode hex="2263"/>
+  <outline>
+    <contour>
+      <point x="65" y="231" type="line"/>
+      <point x="65" y="149" type="line"/>
+      <point x="553" y="149" type="line"/>
+      <point x="553" y="231" type="line"/>
+    </contour>
+    <contour>
+      <point x="65" y="337" type="line"/>
+      <point x="65" y="255" type="line"/>
+      <point x="553" y="255" type="line"/>
+      <point x="553" y="337" type="line"/>
+    </contour>
+    <contour>
+      <point x="65" y="445" type="line"/>
+      <point x="65" y="363" type="line"/>
+      <point x="553" y="363" type="line"/>
+      <point x="553" y="445" type="line"/>
+    </contour>
+    <contour>
+      <point x="65" y="551" type="line"/>
+      <point x="65" y="469" type="line"/>
+      <point x="553" y="469" type="line"/>
+      <point x="553" y="551" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Symbol</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Math</string>
+    </dict>
+  </lib>
+</glyph>

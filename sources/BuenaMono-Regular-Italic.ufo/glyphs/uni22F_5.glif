@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni22F5" format="2">
+  <advance width="618"/>
+  <unicode hex="22F5"/>
+  <outline>
+    <contour>
+      <point x="343" y="540"/>
+      <point x="347" y="560" type="curve"/>
+      <point x="350" y="580"/>
+      <point x="336" y="597"/>
+      <point x="316" y="597" type="curve"/>
+      <point x="296" y="597"/>
+      <point x="276" y="580"/>
+      <point x="273" y="560" type="curve"/>
+      <point x="269" y="540"/>
+      <point x="283" y="523"/>
+      <point x="303" y="523" type="curve"/>
+      <point x="323" y="523"/>
+    </contour>
+    <component base="uni2208"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Symbol</string>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PC</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Math</string>
+    </dict>
+  </lib>
+</glyph>

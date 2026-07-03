@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni1DDC" format="2">
+  <unicode hex="1DDC"/>
+  <anchor x="38" y="587" name="_top"/>
+  <anchor x="38" y="922" name="top"/>
+  <outline>
+    <contour>
+      <point x="-95" y="587" type="line"/>
+      <point x="-17" y="587" type="line"/>
+      <point x="-17" y="663" type="line"/>
+      <point x="0" y="678" type="line"/>
+      <point x="74" y="587" type="line"/>
+      <point x="170" y="587" type="line"/>
+      <point x="54" y="724" type="line"/>
+      <point x="169" y="834" type="line"/>
+      <point x="67" y="834" type="line"/>
+      <point x="-20" y="749" type="line"/>
+      <point x="-32" y="737" type="line"/>
+      <point x="-41" y="726" type="line"/>
+      <point x="-47" y="720" type="line"/>
+      <point x="-20" y="720" type="line"/>
+      <point x="-20" y="719" type="line"/>
+      <point x="-17" y="742" type="line"/>
+      <point x="-17" y="761" type="line"/>
+      <point x="-17" y="922" type="line"/>
+      <point x="-95" y="922" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Mark</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Nonspacing</string>
+    </dict>
+  </lib>
+</glyph>

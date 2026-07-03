@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni0327" format="2">
+  <unicode hex="0327"/>
+  <anchor x="328" y="20" name="_bottom"/>
+  <anchor x="328" y="-207" name="bottom"/>
+  <outline>
+    <contour>
+      <point x="381" y="-207"/>
+      <point x="322" y="-207" type="curve"/>
+      <point x="267" y="-207"/>
+      <point x="238" y="-185"/>
+      <point x="223" y="-166" type="curve"/>
+      <point x="261" y="-125" type="line"/>
+      <point x="273" y="-140"/>
+      <point x="293" y="-153"/>
+      <point x="322" y="-153" type="curve"/>
+      <point x="347" y="-153"/>
+      <point x="366" y="-143"/>
+      <point x="366" y="-122" type="curve"/>
+      <point x="366" y="-103"/>
+      <point x="354" y="-89"/>
+      <point x="298" y="-81" type="curve"/>
+      <point x="270" y="-77" type="line"/>
+      <point x="289" y="20" type="line"/>
+      <point x="339" y="20" type="line"/>
+      <point x="323" y="-61" type="line"/>
+      <point x="326" y="-64" type="line"/>
+      <point x="339" y="-60"/>
+      <point x="352" y="-58"/>
+      <point x="365" y="-58" type="curve"/>
+      <point x="404" y="-58"/>
+      <point x="433" y="-81"/>
+      <point x="433" y="-124" type="curve"/>
+      <point x="433" y="-180"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>618</integer>
+    </dict>
+  </lib>
+</glyph>

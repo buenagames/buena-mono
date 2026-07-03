@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni034D" format="2">
+  <unicode hex="034D"/>
+  <anchor x="249" y="-76" name="_bottom"/>
+  <anchor x="241" y="-124" name="bottom"/>
+  <outline>
+    <contour>
+      <point x="243" y="-76" type="line"/>
+      <point x="235" y="-124" type="line"/>
+      <point x="375" y="-124" type="line"/>
+      <point x="383" y="-76" type="line"/>
+    </contour>
+    <contour>
+      <point x="256" y="-120" type="line"/>
+      <point x="239" y="-100" type="line"/>
+      <point x="263" y="-80" type="line"/>
+    </contour>
+    <contour>
+      <point x="356" y="-120" type="line"/>
+      <point x="379" y="-100" type="line"/>
+      <point x="363" y="-80" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>618</integer>
+    </dict>
+  </lib>
+</glyph>

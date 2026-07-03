@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni219E" format="2">
+  <advance width="618"/>
+  <unicode hex="219E"/>
+  <outline>
+    <contour>
+      <point x="293" y="423" type="line"/>
+      <point x="268" y="277" type="line"/>
+      <point x="347" y="277" type="line"/>
+      <point x="372" y="423" type="line"/>
+    </contour>
+    <contour>
+      <point x="337" y="671" type="line"/>
+      <point x="-128" y="350" type="line"/>
+      <point x="224" y="29" type="line"/>
+    </contour>
+    <contour>
+      <point x="746" y="671" type="line"/>
+      <point x="281" y="350" type="line"/>
+      <point x="633" y="29" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Symbol</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Arrow</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,26 @@
+# Buena Mono — upstream configuration for Google Fonts
+# https://github.com/googlefonts/gf-docs/tree/main/METADATA
+
+name: Buena Mono
+
+repository_url: https://github.com/buenagames/buena-mono.git
+
+branch: main
+
+category:
+  - MONOSPACE
+
+classifications:
+  - MONOSPACE
+
+stroke: SANS_SERIF
+
+designer: Buena
+
+build: make build
+
+files:
+  out/fonts/BuenaMono-VF.ttf: BuenaMono[slnt,wght].ttf
+  OFL.txt: OFL.txt
+  docs/DESCRIPTION.en_us.html: DESCRIPTION.en_us.html
+  docs/ARTICLE.en_us.html: article/ARTICLE.en_us.html

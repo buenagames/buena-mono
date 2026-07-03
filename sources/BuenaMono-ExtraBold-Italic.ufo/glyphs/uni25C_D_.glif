@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni25CD" format="2">
+  <advance width="618"/>
+  <unicode hex="25CD"/>
+  <outline>
+    <contour>
+      <point x="462" y="256"/>
+      <point x="479" y="350" type="curve"/>
+      <point x="495" y="444"/>
+      <point x="432" y="520"/>
+      <point x="338" y="520" type="curve"/>
+      <point x="244" y="520"/>
+      <point x="155" y="444"/>
+      <point x="139" y="350" type="curve"/>
+      <point x="122" y="256"/>
+      <point x="185" y="180"/>
+      <point x="279" y="180" type="curve"/>
+      <point x="373" y="180"/>
+    </contour>
+    <contour>
+      <point x="335" y="363"/>
+      <point x="333" y="350" type="curve"/>
+      <point x="330" y="337"/>
+      <point x="317" y="326"/>
+      <point x="304" y="326" type="curve"/>
+      <point x="291" y="326"/>
+      <point x="282" y="337"/>
+      <point x="285" y="350" type="curve"/>
+      <point x="287" y="363"/>
+      <point x="300" y="374"/>
+      <point x="313" y="374" type="curve"/>
+      <point x="326" y="374"/>
+    </contour>
+    <contour>
+      <point x="182" y="477" type="line"/>
+      <point x="137" y="223" type="line"/>
+      <point x="210" y="223" type="line"/>
+      <point x="255" y="477" type="line"/>
+    </contour>
+    <contour>
+      <point x="244" y="510" type="line"/>
+      <point x="187" y="190" type="line"/>
+      <point x="260" y="190" type="line"/>
+      <point x="317" y="510" type="line"/>
+    </contour>
+    <contour>
+      <point x="301" y="520" type="line"/>
+      <point x="242" y="180" type="line"/>
+      <point x="315" y="180" type="line"/>
+      <point x="374" y="520" type="line"/>
+    </contour>
+    <contour>
+      <point x="358" y="510" type="line"/>
+      <point x="301" y="190" type="line"/>
+      <point x="374" y="190" type="line"/>
+      <point x="431" y="510" type="line"/>
+    </contour>
+    <contour>
+      <point x="408" y="477" type="line"/>
+      <point x="363" y="223" type="line"/>
+      <point x="436" y="223" type="line"/>
+      <point x="481" y="477" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Symbol</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Geometry</string>
+    </dict>
+  </lib>
+</glyph>

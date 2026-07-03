@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni205A" format="2">
+  <advance width="618"/>
+  <unicode hex="205A"/>
+  <outline>
+    <contour>
+      <point x="334" y="353"/>
+      <point x="334" y="367" type="curve"/>
+      <point x="334" y="381"/>
+      <point x="323" y="392"/>
+      <point x="309" y="392" type="curve"/>
+      <point x="295" y="392"/>
+      <point x="284" y="381"/>
+      <point x="284" y="367" type="curve"/>
+      <point x="284" y="353"/>
+      <point x="295" y="342"/>
+      <point x="309" y="342" type="curve"/>
+      <point x="323" y="342"/>
+    </contour>
+    <contour>
+      <point x="334" y="143"/>
+      <point x="334" y="157" type="curve"/>
+      <point x="334" y="171"/>
+      <point x="323" y="182"/>
+      <point x="309" y="182" type="curve"/>
+      <point x="295" y="182"/>
+      <point x="284" y="171"/>
+      <point x="284" y="157" type="curve"/>
+      <point x="284" y="143"/>
+      <point x="295" y="132"/>
+      <point x="309" y="132" type="curve"/>
+      <point x="323" y="132"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Punctuation</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Other</string>
+    </dict>
+  </lib>
+</glyph>

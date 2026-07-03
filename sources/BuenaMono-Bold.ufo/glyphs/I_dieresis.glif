@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Idieresis" format="2">
+  <advance width="618"/>
+  <unicode hex="00CF"/>
+  <anchor x="309" y="0" name="bottom"/>
+  <anchor x="309" y="699" name="top"/>
+  <anchor x="568" y="699" name="topright"/>
+  <outline>
+    <contour>
+      <point x="90" y="-24" type="line"/>
+      <point x="529" y="-24" type="line"/>
+      <point x="529" y="102" type="line"/>
+      <point x="380" y="102" type="line"/>
+      <point x="380" y="597" type="line"/>
+      <point x="529" y="597" type="line"/>
+      <point x="529" y="723" type="line"/>
+      <point x="90" y="723" type="line"/>
+      <point x="90" y="597" type="line"/>
+      <point x="238" y="597" type="line"/>
+      <point x="238" y="102" type="line"/>
+      <point x="90" y="102" type="line"/>
+    </contour>
+    <contour>
+      <point x="152" y="914" type="line"/>
+      <point x="152" y="763" type="line"/>
+      <point x="304" y="763" type="line"/>
+      <point x="304" y="914" type="line"/>
+    </contour>
+    <contour>
+      <point x="314" y="914" type="line"/>
+      <point x="314" y="763" type="line"/>
+      <point x="466" y="763" type="line"/>
+      <point x="466" y="914" type="line"/>
+    </contour>
+  </outline>
+</glyph>

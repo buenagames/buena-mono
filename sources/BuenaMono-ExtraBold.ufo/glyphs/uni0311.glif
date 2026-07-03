@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni0311" format="2">
+  <unicode hex="0311"/>
+  <anchor x="309" y="608" name="_top"/>
+  <anchor x="309" y="752" name="top"/>
+  <outline>
+    <contour>
+      <point x="416" y="752"/>
+      <point x="309" y="752" type="curve"/>
+      <point x="202" y="752"/>
+      <point x="179" y="671"/>
+      <point x="164" y="621" type="curve"/>
+      <point x="194" y="608" type="line"/>
+      <point x="209" y="633" type="line"/>
+      <point x="241" y="684"/>
+      <point x="264" y="713"/>
+      <point x="309" y="713" type="curve"/>
+      <point x="330" y="713"/>
+      <point x="355" y="703"/>
+      <point x="367" y="691" type="curve"/>
+      <point x="380" y="680"/>
+      <point x="393" y="658"/>
+      <point x="409" y="633" type="curve"/>
+      <point x="424" y="608" type="line"/>
+      <point x="454" y="621" type="line"/>
+      <point x="439" y="671"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>618</integer>
+    </dict>
+  </lib>
+</glyph>

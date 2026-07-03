@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="bar_braceright.liga" format="2">
+  <advance width="1236"/>
+  <outline>
+    <contour>
+      <point x="263" y="-110" type="line"/>
+      <point x="378" y="-110" type="line"/>
+      <point x="496" y="-110"/>
+      <point x="569" y="-49"/>
+      <point x="563" y="56" type="curve"/>
+      <point x="553" y="220" type="line"/>
+      <point x="549" y="291"/>
+      <point x="567" y="320"/>
+      <point x="653" y="320" type="curve"/>
+      <point x="763" y="320" type="line"/>
+      <point x="763" y="400" type="line"/>
+      <point x="653" y="400" type="line"/>
+      <point x="566" y="400"/>
+      <point x="549" y="429"/>
+      <point x="553" y="500" type="curve"/>
+      <point x="563" y="664" type="line"/>
+      <point x="569" y="769"/>
+      <point x="496" y="830"/>
+      <point x="378" y="830" type="curve"/>
+      <point x="263" y="830" type="line"/>
+      <point x="263" y="750" type="line"/>
+      <point x="378" y="750" type="line"/>
+      <point x="441" y="750"/>
+      <point x="476" y="721"/>
+      <point x="473" y="664" type="curve"/>
+      <point x="463" y="500" type="line"/>
+      <point x="458" y="413"/>
+      <point x="508" y="358"/>
+      <point x="593" y="358" type="curve"/>
+      <point x="593" y="363" type="line"/>
+      <point x="509" y="363"/>
+      <point x="458" y="306"/>
+      <point x="463" y="220" type="curve"/>
+      <point x="473" y="56" type="line"/>
+      <point x="476" y="-1"/>
+      <point x="441" y="-30"/>
+      <point x="378" y="-30" type="curve"/>
+      <point x="263" y="-30" type="line"/>
+    </contour>
+    <contour>
+      <point x="-7" y="-110" type="line"/>
+      <point x="83" y="-110" type="line"/>
+      <point x="83" y="830" type="line"/>
+      <point x="-7" y="830" type="line"/>
+    </contour>
+  </outline>
+</glyph>

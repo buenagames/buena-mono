@@ -1,0 +1,94 @@
+{
+  "generated_at": "2026-07-03T04:23:55.409857+00:00",
+  "glyphs_source": {
+    "file": "sources/BuenaMono.glyphs",
+    "glyph_count": 4857,
+    "feature_count": 48,
+    "feature_prefix_count": 2,
+    "master_count": 8,
+    "features": [
+      "liga",
+      "calt",
+      "dlig",
+      "smcp",
+      "c2sc",
+      "aalt",
+      "locl",
+      "ccmp",
+      "subs",
+      "sups",
+      "numr",
+      "dnom",
+      "frac",
+      "ordn",
+      "case",
+      "zero",
+      "onum",
+      "ss01",
+      "ss02",
+      "ss03",
+      "ss04",
+      "ss05",
+      "ss06",
+      "ss07",
+      "ss08",
+      "ss09",
+      "ss10",
+      "ss11",
+      "ss12",
+      "cv01",
+      "cv02",
+      "cv03",
+      "cv04",
+      "cv05",
+      "cv06",
+      "cv07",
+      "cv08",
+      "cv09",
+      "cv10",
+      "cv11",
+      "cv12",
+      "cv13",
+      "sinf",
+      "tnum",
+      "salt",
+      "lnum",
+      "nalt",
+      "dtls"
+    ]
+  },
+  "ufos": {
+    "BuenaMono-Thin.ufo": {
+      "glyph_count": 4857,
+      "features_fea_sha256": "383e31ef5342e6ef97350f11edc807d367b6e964597acc94eac36f064cc8982b"
+    },
+    "BuenaMono-Regular.ufo": {
+      "glyph_count": 4857,
+      "features_fea_sha256": "383e31ef5342e6ef97350f11edc807d367b6e964597acc94eac36f064cc8982b"
+    },
+    "BuenaMono-Bold.ufo": {
+      "glyph_count": 4857,
+      "features_fea_sha256": "383e31ef5342e6ef97350f11edc807d367b6e964597acc94eac36f064cc8982b"
+    },
+    "BuenaMono-ExtraBold.ufo": {
+      "glyph_count": 4857,
+      "features_fea_sha256": "383e31ef5342e6ef97350f11edc807d367b6e964597acc94eac36f064cc8982b"
+    }
+  },
+  "designspace": {
+    "file": "sources/BuenaMono.designspace",
+    "axis_count": 2,
+    "source_count": 8,
+    "instance_count": 16,
+    "axes": [
+      {
+        "name": "Weight",
+        "tag": "wght"
+      },
+      {
+        "name": "Slant",
+        "tag": "slnt"
+      }
+    ]
+  }
+}

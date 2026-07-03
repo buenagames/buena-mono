@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni030B" format="2">
+  <unicode hex="030B"/>
+  <anchor x="309" y="566" name="_top"/>
+  <anchor x="309" y="799" name="top"/>
+  <outline>
+    <contour>
+      <point x="329" y="751" type="line"/>
+      <point x="205" y="566" type="line"/>
+      <point x="129" y="600" type="line"/>
+      <point x="229" y="799" type="line"/>
+    </contour>
+    <contour>
+      <point x="489" y="751" type="line"/>
+      <point x="365" y="566" type="line"/>
+      <point x="289" y="600" type="line"/>
+      <point x="389" y="799" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>618</integer>
+    </dict>
+  </lib>
+</glyph>

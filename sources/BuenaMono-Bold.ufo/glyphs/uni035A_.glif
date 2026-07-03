@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni035A" format="2">
+  <unicode hex="035A"/>
+  <anchor x="309" y="-82" name="_bottom"/>
+  <anchor x="309" y="-118" name="bottom"/>
+  <outline>
+    <contour>
+      <point x="328" y="-110"/>
+      <point x="328" y="-100" type="curve"/>
+      <point x="328" y="-90"/>
+      <point x="301" y="-63"/>
+      <point x="291" y="-63" type="curve"/>
+      <point x="281" y="-63"/>
+      <point x="254" y="-90"/>
+      <point x="254" y="-100" type="curve"/>
+      <point x="254" y="-110"/>
+      <point x="281" y="-137"/>
+      <point x="291" y="-137" type="curve"/>
+      <point x="301" y="-137"/>
+    </contour>
+    <contour>
+      <point x="364" y="-110"/>
+      <point x="364" y="-100" type="curve"/>
+      <point x="364" y="-90"/>
+      <point x="337" y="-63"/>
+      <point x="327" y="-63" type="curve"/>
+      <point x="317" y="-63"/>
+      <point x="290" y="-90"/>
+      <point x="290" y="-100" type="curve"/>
+      <point x="290" y="-110"/>
+      <point x="317" y="-137"/>
+      <point x="327" y="-137" type="curve"/>
+      <point x="337" y="-137"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>618</integer>
+    </dict>
+  </lib>
+</glyph>

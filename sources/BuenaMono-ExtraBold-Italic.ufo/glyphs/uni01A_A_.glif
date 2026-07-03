@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni01AA" format="2">
+  <advance width="618"/>
+  <unicode hex="01AA"/>
+  <anchor x="263" y="0" name="bottom"/>
+  <anchor x="391" y="729" name="top"/>
+  <anchor x="650" y="729" name="topright"/>
+  <outline>
+    <contour>
+      <point x="348" y="-267" type="line"/>
+      <point x="391" y="-267" type="line"/>
+      <point x="443" y="-255" type="line"/>
+      <point x="491" y="-231" type="line"/>
+      <point x="515" y="-96" type="line"/>
+      <point x="444" y="-125" type="line"/>
+      <point x="416" y="-132" type="line"/>
+      <point x="384" y="-132" type="line"/>
+      <point x="334" y="-132" type="line"/>
+      <point x="327" y="-115" type="line"/>
+      <point x="336" y="-61" type="line"/>
+      <point x="453" y="600" type="line"/>
+      <point x="473" y="716" type="line"/>
+      <point x="413" y="780" type="line"/>
+      <point x="309" y="780" type="line"/>
+      <point x="195" y="780" type="line"/>
+      <point x="128" y="701" type="line"/>
+      <point x="117" y="636" type="line"/>
+      <point x="103" y="559" type="line"/>
+      <point x="145" y="489" type="line"/>
+      <point x="259" y="489" type="line"/>
+      <point x="284" y="489" type="line"/>
+      <point x="187" y="-62" type="line"/>
+      <point x="162" y="-205" type="line"/>
+      <point x="237" y="-267" type="line"/>
+    </contour>
+    <contour>
+      <point x="287" y="621" type="line"/>
+      <point x="256" y="621" type="line"/>
+      <point x="257" y="621" type="line"/>
+      <point x="259" y="634" type="line"/>
+      <point x="261" y="649" type="line"/>
+      <point x="259" y="647" type="line"/>
+      <point x="283" y="647" type="line"/>
+      <point x="310" y="647" type="line"/>
+      <point x="311" y="642" type="line"/>
+      <point x="305" y="607" type="line"/>
+      <point x="307" y="621" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Letter</string>
+    </dict>
+  </lib>
+</glyph>

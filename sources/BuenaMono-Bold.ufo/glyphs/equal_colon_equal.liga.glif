@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="equal_colon_equal.liga" format="2">
+  <advance width="1854"/>
+  <outline>
+    <contour>
+      <point x="577" y="385" type="line"/>
+      <point x="1147" y="385" type="line"/>
+      <point x="1147" y="525" type="line"/>
+      <point x="577" y="525" type="line"/>
+    </contour>
+    <contour>
+      <point x="-493" y="135" type="line"/>
+      <point x="77" y="135" type="line"/>
+      <point x="77" y="275" type="line"/>
+      <point x="-493" y="275" type="line"/>
+    </contour>
+    <contour>
+      <point x="-493" y="385" type="line"/>
+      <point x="77" y="385" type="line"/>
+      <point x="77" y="525" type="line"/>
+      <point x="-493" y="525" type="line"/>
+    </contour>
+    <contour>
+      <point x="327" y="85" type="curve"/>
+      <point x="387" y="85"/>
+      <point x="427" y="123"/>
+      <point x="427" y="180" type="curve"/>
+      <point x="427" y="241"/>
+      <point x="387" y="281"/>
+      <point x="327" y="281" type="curve"/>
+      <point x="267" y="281"/>
+      <point x="227" y="241"/>
+      <point x="227" y="180" type="curve"/>
+      <point x="227" y="123"/>
+      <point x="267" y="85"/>
+    </contour>
+    <contour>
+      <point x="327" y="379" type="curve"/>
+      <point x="387" y="379"/>
+      <point x="427" y="417"/>
+      <point x="427" y="474" type="curve"/>
+      <point x="427" y="535"/>
+      <point x="387" y="575"/>
+      <point x="327" y="575" type="curve"/>
+      <point x="267" y="575"/>
+      <point x="227" y="535"/>
+      <point x="227" y="474" type="curve"/>
+      <point x="227" y="417"/>
+      <point x="267" y="379"/>
+    </contour>
+    <contour>
+      <point x="577" y="135" type="line"/>
+      <point x="1147" y="135" type="line"/>
+      <point x="1147" y="275" type="line"/>
+      <point x="577" y="275" type="line"/>
+    </contour>
+  </outline>
+</glyph>

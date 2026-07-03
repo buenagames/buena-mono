@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni2046" format="2">
+  <advance width="618"/>
+  <unicode hex="2046"/>
+  <outline>
+    <contour>
+      <point x="361" y="699" type="line"/>
+      <point x="238" y="0" type="line"/>
+      <point x="320" y="0" type="line"/>
+      <point x="443" y="699" type="line"/>
+    </contour>
+    <contour>
+      <point x="298" y="699" type="line"/>
+      <point x="284" y="617" type="line"/>
+      <point x="429" y="617" type="line"/>
+      <point x="443" y="699" type="line"/>
+    </contour>
+    <contour>
+      <point x="189" y="82" type="line"/>
+      <point x="175" y="0" type="line"/>
+      <point x="320" y="0" type="line"/>
+      <point x="334" y="82" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Punctuation</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Other</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni228C" format="2">
+  <advance width="618"/>
+  <unicode hex="228C"/>
+  <outline>
+    <contour>
+      <point x="487" y="405" type="line"/>
+      <point x="508" y="525" type="line"/>
+      <point x="333" y="525" type="line"/>
+      <point x="236" y="525"/>
+      <point x="145" y="447"/>
+      <point x="128" y="350" type="curve"/>
+      <point x="110" y="253"/>
+      <point x="175" y="175"/>
+      <point x="272" y="175" type="curve"/>
+      <point x="447" y="175" type="line"/>
+      <point x="468" y="295" type="line"/>
+      <point x="293" y="295" type="line"/>
+      <point x="263" y="295"/>
+      <point x="242" y="320"/>
+      <point x="248" y="350" type="curve"/>
+      <point x="253" y="380"/>
+      <point x="282" y="405"/>
+      <point x="312" y="405" type="curve"/>
+    </contour>
+    <contour>
+      <point x="138" y="410" type="line"/>
+      <point x="117" y="290" type="line"/>
+      <point x="467" y="290" type="line"/>
+      <point x="488" y="410" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Symbol</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Math</string>
+    </dict>
+  </lib>
+</glyph>

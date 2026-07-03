@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni2037" format="2">
+  <advance width="618"/>
+  <unicode hex="2037"/>
+  <outline>
+    <contour>
+      <point x="180" y="524" type="line"/>
+      <point x="225" y="699" type="line"/>
+      <point x="299" y="699" type="line"/>
+      <point x="252" y="524" type="line"/>
+    </contour>
+    <contour>
+      <point x="250" y="524" type="line"/>
+      <point x="295" y="699" type="line"/>
+      <point x="369" y="699" type="line"/>
+      <point x="322" y="524" type="line"/>
+    </contour>
+    <contour>
+      <point x="320" y="524" type="line"/>
+      <point x="365" y="699" type="line"/>
+      <point x="439" y="699" type="line"/>
+      <point x="392" y="524" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Punctuation</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Other</string>
+    </dict>
+  </lib>
+</glyph>

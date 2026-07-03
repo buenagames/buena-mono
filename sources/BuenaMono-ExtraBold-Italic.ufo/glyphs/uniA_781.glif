@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uniA781" format="2">
+  <advance width="618"/>
+  <unicode hex="A781"/>
+  <anchor x="263" y="0" name="bottom"/>
+  <anchor x="355" y="524" name="top"/>
+  <anchor x="614" y="524" name="topright"/>
+  <outline>
+    <contour>
+      <point x="576" y="556" type="line"/>
+      <point x="63" y="556" type="line"/>
+      <point x="42" y="436" type="line"/>
+      <point x="209" y="422" type="line"/>
+      <point x="91" y="-251" type="line"/>
+      <point x="428" y="-251" type="line"/>
+      <point x="449" y="-128" type="line"/>
+      <point x="266" y="-116" type="line"/>
+      <point x="361" y="421" type="line"/>
+      <point x="555" y="435" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Letter</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,4 @@
+fontmake>=3.9.0
+gftools>=0.9.54
+bumpfontversion>=0.4.1
+munkres  # required for fontTools.varLib.interpolatable full checker (else it silently under-reports ~100x)

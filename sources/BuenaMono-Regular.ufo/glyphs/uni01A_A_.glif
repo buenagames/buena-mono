@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni01AA" format="2">
+  <advance width="618"/>
+  <unicode hex="01AA"/>
+  <anchor x="309" y="0" name="bottom"/>
+  <anchor x="309" y="729" name="top"/>
+  <anchor x="568" y="729" name="topright"/>
+  <outline>
+    <contour>
+      <point x="435" y="-235" type="line"/>
+      <point x="474" y="-235" type="line"/>
+      <point x="516" y="-225" type="line"/>
+      <point x="540" y="-212" type="line"/>
+      <point x="540" y="-145" type="line"/>
+      <point x="517" y="-155" type="line"/>
+      <point x="483" y="-164" type="line"/>
+      <point x="447" y="-164" type="line"/>
+      <point x="378" y="-164" type="line"/>
+      <point x="355" y="-124" type="line"/>
+      <point x="355" y="-61" type="line"/>
+      <point x="355" y="600" type="line"/>
+      <point x="355" y="702" type="line"/>
+      <point x="304" y="748" type="line"/>
+      <point x="212" y="748" type="line"/>
+      <point x="115" y="748" type="line"/>
+      <point x="77" y="691" type="line"/>
+      <point x="77" y="636" type="line"/>
+      <point x="77" y="570" type="line"/>
+      <point x="115" y="521" type="line"/>
+      <point x="213" y="521" type="line"/>
+      <point x="270" y="521" type="line"/>
+      <point x="270" y="-62" type="line"/>
+      <point x="270" y="-189" type="line"/>
+      <point x="334" y="-235" type="line"/>
+    </contour>
+    <contour>
+      <point x="218" y="589" type="line"/>
+      <point x="176" y="589" type="line"/>
+      <point x="155" y="606" type="line"/>
+      <point x="155" y="634" type="line"/>
+      <point x="155" y="663" type="line"/>
+      <point x="172" y="679" type="line"/>
+      <point x="209" y="679" type="line"/>
+      <point x="255" y="679" type="line"/>
+      <point x="270" y="650" type="line"/>
+      <point x="270" y="607" type="line"/>
+      <point x="270" y="589" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Letter</string>
+    </dict>
+  </lib>
+</glyph>

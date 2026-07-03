@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni203F" format="2">
+  <advance width="618"/>
+  <unicode hex="203F"/>
+  <outline>
+    <contour>
+      <point x="182" y="79" type="curve"/>
+      <point x="100" y="79" type="line"/>
+      <point x="83" y="-14"/>
+      <point x="174" y="-50"/>
+      <point x="294" y="-50" type="curve"/>
+      <point x="414" y="-50"/>
+      <point x="517" y="-14"/>
+      <point x="534" y="79" type="curve"/>
+      <point x="452" y="79" type="line"/>
+      <point x="440" y="11"/>
+      <point x="392" y="32"/>
+      <point x="308" y="32" type="curve"/>
+      <point x="224" y="32"/>
+      <point x="170" y="11"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Punctuation</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Other</string>
+    </dict>
+  </lib>
+</glyph>

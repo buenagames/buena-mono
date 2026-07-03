@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uniA772" format="2">
+  <advance width="618"/>
+  <unicode hex="A772"/>
+  <anchor x="309" y="0" name="bottom"/>
+  <anchor x="309" y="729" name="top"/>
+  <anchor x="568" y="729" name="topright"/>
+  <outline>
+    <contour>
+      <point x="374" y="-169" type="line"/>
+      <point x="272" y="-169" type="line"/>
+      <point x="447" y="239" type="line"/>
+      <point x="549" y="239" type="line"/>
+    </contour>
+    <contour>
+      <point x="555" y="-16" type="line"/>
+      <point x="283" y="-16" type="line"/>
+      <point x="283" y="86" type="line"/>
+      <point x="555" y="86" type="line"/>
+    </contour>
+    <contour>
+      <point x="62" y="16" type="line"/>
+      <point x="479" y="16" type="line"/>
+      <point x="479" y="44" type="line"/>
+      <point x="309" y="58" type="line"/>
+      <point x="309" y="727" type="line"/>
+      <point x="68" y="727" type="line"/>
+      <point x="68" y="697" type="line"/>
+      <point x="253" y="685" type="line"/>
+      <point x="253" y="58" type="line"/>
+      <point x="62" y="44" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Letter</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni222F" format="2">
+  <advance width="618"/>
+  <unicode hex="222F"/>
+  <outline>
+    <contour>
+      <point x="374" y="314"/>
+      <point x="374" y="350" type="curve"/>
+      <point x="374" y="386"/>
+      <point x="345" y="415"/>
+      <point x="309" y="415" type="curve"/>
+      <point x="273" y="415"/>
+      <point x="244" y="386"/>
+      <point x="244" y="350" type="curve"/>
+      <point x="244" y="314"/>
+      <point x="273" y="285"/>
+      <point x="309" y="285" type="curve"/>
+      <point x="345" y="285"/>
+    </contour>
+    <contour>
+      <point x="349" y="372"/>
+      <point x="349" y="350" type="curve"/>
+      <point x="349" y="328"/>
+      <point x="331" y="310"/>
+      <point x="309" y="310" type="curve"/>
+      <point x="287" y="310"/>
+      <point x="269" y="328"/>
+      <point x="269" y="350" type="curve"/>
+      <point x="269" y="372"/>
+      <point x="287" y="390"/>
+      <point x="309" y="390" type="curve"/>
+      <point x="331" y="390"/>
+    </contour>
+    <component base="uni222B" xOffset="-74"/>
+    <component base="uni222B" xOffset="74"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Symbol</string>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PPCC</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Math</string>
+    </dict>
+  </lib>
+</glyph>

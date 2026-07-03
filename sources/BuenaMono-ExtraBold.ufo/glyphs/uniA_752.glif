@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uniA752" format="2">
+  <advance width="618"/>
+  <unicode hex="A752"/>
+  <anchor x="309" y="0" name="bottom"/>
+  <anchor x="309" y="699" name="top"/>
+  <anchor x="568" y="699" name="topright"/>
+  <outline>
+    <contour>
+      <point x="48" y="184" type="curve"/>
+      <point x="34" y="184" type="line"/>
+      <point x="39" y="169"/>
+      <point x="45" y="179"/>
+      <point x="45" y="204" type="curve"/>
+      <point x="45" y="282"/>
+      <point x="47" y="309"/>
+      <point x="157" y="309" type="curve"/>
+      <point x="255" y="309" type="line"/>
+      <point x="255" y="306" type="line"/>
+      <point x="156" y="306" type="line"/>
+      <point x="100" y="306"/>
+      <point x="45" y="246"/>
+      <point x="45" y="204" type="curve"/>
+      <point x="45" y="179"/>
+      <point x="62" y="149"/>
+    </contour>
+    <contour>
+      <point x="128" y="-37" type="line"/>
+      <point x="290" y="-37" type="line"/>
+      <point x="290" y="232" type="line"/>
+      <point x="313" y="232" type="line"/>
+      <point x="374" y="232" type="line"/>
+      <point x="428" y="245" type="line"/>
+      <point x="470" y="271" type="line"/>
+      <point x="548" y="319" type="line"/>
+      <point x="584" y="410" type="line"/>
+      <point x="584" y="494" type="line"/>
+      <point x="584" y="640" type="line"/>
+      <point x="488" y="736" type="line"/>
+      <point x="325" y="736" type="line"/>
+      <point x="128" y="736" type="line"/>
+    </contour>
+    <contour>
+      <point x="303" y="383" type="line"/>
+      <point x="290" y="383" type="line"/>
+      <point x="290" y="586" type="line"/>
+      <point x="317" y="586" type="line"/>
+      <point x="394" y="586" type="line"/>
+      <point x="419" y="568" type="line"/>
+      <point x="419" y="489" type="line"/>
+      <point x="419" y="407" type="line"/>
+      <point x="386" y="383" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Letter</string>
+    </dict>
+  </lib>
+</glyph>

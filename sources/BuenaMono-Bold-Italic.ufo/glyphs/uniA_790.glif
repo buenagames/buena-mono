@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uniA790" format="2">
+  <advance width="618"/>
+  <unicode hex="A790"/>
+  <anchor x="263" y="0" name="bottom"/>
+  <anchor x="386" y="699" name="top"/>
+  <anchor x="645" y="699" name="topright"/>
+  <outline>
+    <contour>
+      <point x="417" y="-173" type="line"/>
+      <point x="383" y="-173" type="line"/>
+      <point x="413" y="-3" type="line"/>
+      <point x="434" y="49" type="line"/>
+      <point x="456" y="49" type="line"/>
+    </contour>
+    <contour>
+      <point x="-6" y="-24" type="line"/>
+      <point x="127" y="-24" type="line"/>
+      <point x="200" y="390" type="line"/>
+      <point x="213" y="464" type="line"/>
+      <point x="218" y="538" type="line"/>
+      <point x="224" y="595" type="line"/>
+      <point x="183" y="595" type="line"/>
+      <point x="346" y="-24" type="line"/>
+      <point x="492" y="-24" type="line"/>
+      <point x="623" y="723" type="line"/>
+      <point x="490" y="723" type="line"/>
+      <point x="421" y="329" type="line"/>
+      <point x="407" y="251" type="line"/>
+      <point x="397" y="191" type="line"/>
+      <point x="394" y="130" type="line"/>
+      <point x="436" y="130" type="line"/>
+      <point x="280" y="723" type="line"/>
+      <point x="125" y="723" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Letter</string>
+    </dict>
+  </lib>
+</glyph>

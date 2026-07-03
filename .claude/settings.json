@@ -1,0 +1,21 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "(Edit|Write)",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "file=\"$CLAUDE_FILE_PATH\"; if [[ \"$file\" == */scripts/*.py ]]; then python3 -c \"import py_compile; py_compile.compile('$file', doraise=True)\" 2>&1 || echo 'SYNTAX ERROR in $file'; fi",
+            "timeout": 3000
+          },
+          {
+            "type": "command",
+            "command": "file=\"$CLAUDE_FILE_PATH\"; if [[ \"$file\" == *.designspace ]]; then echo 'WARNING: .designspace file was modified directly. Verify this was intentional — export-ufo.py regenerates these.'; fi",
+            "timeout": 1000
+          }
+        ]
+      }
+    ]
+  }
+}

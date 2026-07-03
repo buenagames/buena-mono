@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni0365" format="2">
+  <unicode hex="0365"/>
+  <anchor x="308" y="540" name="_top"/>
+  <anchor x="308" y="820" name="top"/>
+  <outline>
+    <contour>
+      <point x="329" y="750" type="line"/>
+      <point x="224" y="750" type="line"/>
+      <point x="224" y="722" type="line"/>
+      <point x="296" y="722" type="line"/>
+      <point x="296" y="568" type="line"/>
+      <point x="224" y="568" type="line"/>
+      <point x="224" y="540" type="line"/>
+      <point x="393" y="540" type="line"/>
+      <point x="393" y="568" type="line"/>
+      <point x="329" y="568" type="line"/>
+    </contour>
+    <contour>
+      <point x="292" y="780" type="line"/>
+      <point x="332" y="780" type="line"/>
+      <point x="332" y="820" type="line"/>
+      <point x="292" y="820" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>618</integer>
+    </dict>
+  </lib>
+</glyph>

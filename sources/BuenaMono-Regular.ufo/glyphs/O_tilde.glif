@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Otilde" format="2">
+  <advance width="618"/>
+  <unicode hex="00D5"/>
+  <anchor x="309" y="0" name="bottom"/>
+  <anchor x="309" y="699" name="top"/>
+  <anchor x="568" y="699" name="topright"/>
+  <outline>
+    <contour>
+      <point x="309" y="720" type="curve"/>
+      <point x="137" y="720"/>
+      <point x="32" y="580"/>
+      <point x="32" y="348" type="curve"/>
+      <point x="32" y="116"/>
+      <point x="137" y="-23"/>
+      <point x="309" y="-23" type="curve"/>
+      <point x="481" y="-23"/>
+      <point x="586" y="116"/>
+      <point x="586" y="348" type="curve"/>
+      <point x="586" y="580"/>
+      <point x="481" y="720"/>
+    </contour>
+    <contour>
+      <point x="309" y="628" type="curve"/>
+      <point x="419" y="628"/>
+      <point x="479" y="527"/>
+      <point x="479" y="348" type="curve"/>
+      <point x="479" y="170"/>
+      <point x="419" y="69"/>
+      <point x="309" y="69" type="curve"/>
+      <point x="199" y="69"/>
+      <point x="139" y="170"/>
+      <point x="139" y="348" type="curve"/>
+      <point x="139" y="527"/>
+      <point x="199" y="628"/>
+    </contour>
+    <contour>
+      <point x="404" y="897" type="line"/>
+      <point x="396" y="866"/>
+      <point x="388" y="858"/>
+      <point x="371" y="858" type="curve"/>
+      <point x="336" y="858"/>
+      <point x="276" y="897"/>
+      <point x="238" y="897" type="curve"/>
+      <point x="194" y="897"/>
+      <point x="158" y="857"/>
+      <point x="146" y="784" type="curve"/>
+      <point x="214" y="784" type="line"/>
+      <point x="222" y="816"/>
+      <point x="228" y="824"/>
+      <point x="243" y="824" type="curve"/>
+      <point x="274" y="824"/>
+      <point x="342" y="783"/>
+      <point x="376" y="783" type="curve"/>
+      <point x="426" y="783"/>
+      <point x="461" y="822"/>
+      <point x="472" y="897" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

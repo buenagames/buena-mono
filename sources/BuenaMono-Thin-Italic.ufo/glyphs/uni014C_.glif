@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni014C" format="2">
+  <advance width="618"/>
+  <unicode hex="014C"/>
+  <anchor x="263" y="0" name="bottom"/>
+  <anchor x="386" y="699" name="top"/>
+  <anchor x="645" y="699" name="topright"/>
+  <outline>
+    <contour>
+      <point x="372" y="704" type="curve"/>
+      <point x="200" y="704"/>
+      <point x="89" y="580"/>
+      <point x="48" y="348" type="curve"/>
+      <point x="7" y="116"/>
+      <point x="75" y="-7"/>
+      <point x="247" y="-7" type="curve"/>
+      <point x="419" y="-7"/>
+      <point x="529" y="116"/>
+      <point x="570" y="348" type="curve"/>
+      <point x="611" y="580"/>
+      <point x="544" y="704"/>
+    </contour>
+    <contour>
+      <point x="361" y="644" type="curve"/>
+      <point x="471" y="644"/>
+      <point x="527" y="527"/>
+      <point x="495" y="348" type="curve"/>
+      <point x="464" y="170"/>
+      <point x="367" y="53"/>
+      <point x="257" y="53" type="curve"/>
+      <point x="147" y="53"/>
+      <point x="92" y="170"/>
+      <point x="123" y="348" type="curve"/>
+      <point x="155" y="527"/>
+      <point x="251" y="644"/>
+    </contour>
+    <contour>
+      <point x="274" y="865" type="line"/>
+      <point x="266" y="817" type="line"/>
+      <point x="518" y="817" type="line"/>
+      <point x="526" y="865" type="line"/>
+    </contour>
+  </outline>
+</glyph>

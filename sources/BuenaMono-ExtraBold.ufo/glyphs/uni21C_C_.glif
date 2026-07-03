@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni21CC" format="2">
+  <advance width="618"/>
+  <unicode hex="21CC"/>
+  <outline>
+    <contour>
+      <point x="65" y="569" type="line"/>
+      <point x="65" y="423" type="line"/>
+      <point x="144" y="423" type="line"/>
+      <point x="144" y="569" type="line"/>
+    </contour>
+    <contour>
+      <point x="144" y="496" type="line"/>
+      <point x="553" y="496" type="line"/>
+      <point x="144" y="817" type="line"/>
+    </contour>
+    <contour>
+      <point x="474" y="277" type="line"/>
+      <point x="474" y="131" type="line"/>
+      <point x="553" y="131" type="line"/>
+      <point x="553" y="277" type="line"/>
+    </contour>
+    <contour>
+      <point x="474" y="204" type="line"/>
+      <point x="65" y="204" type="line"/>
+      <point x="474" y="-117" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Symbol</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Arrow</string>
+    </dict>
+  </lib>
+</glyph>

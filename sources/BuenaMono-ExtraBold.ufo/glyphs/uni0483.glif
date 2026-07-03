@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni0483" format="2">
+  <unicode hex="0483"/>
+  <anchor x="309" y="525" name="_top"/>
+  <anchor x="309" y="730" name="top"/>
+  <outline>
+    <contour>
+      <point x="177" y="525" type="line"/>
+      <point x="224" y="525" type="line"/>
+      <point x="250" y="562" type="line"/>
+      <point x="251" y="570" type="line"/>
+      <point x="439" y="570" type="line"/>
+      <point x="487" y="570" type="line"/>
+      <point x="518" y="601" type="line"/>
+      <point x="518" y="649" type="line"/>
+      <point x="518" y="696" type="line"/>
+      <point x="486" y="730" type="line"/>
+      <point x="440" y="730" type="line"/>
+      <point x="395" y="730" type="line"/>
+      <point x="367" y="697" type="line"/>
+      <point x="365" y="685" type="line"/>
+      <point x="178" y="685" type="line"/>
+      <point x="131" y="685" type="line"/>
+      <point x="100" y="654" type="line"/>
+      <point x="100" y="607" type="line"/>
+      <point x="100" y="565" type="line"/>
+      <point x="129" y="525" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Mark</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Nonspacing</string>
+    </dict>
+  </lib>
+</glyph>

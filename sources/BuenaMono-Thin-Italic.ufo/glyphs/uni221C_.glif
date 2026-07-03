@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni221C" format="2">
+  <advance width="618"/>
+  <unicode hex="221C"/>
+  <outline>
+    <contour>
+      <point x="283" y="584" type="line"/>
+      <point x="279" y="564" type="line"/>
+      <point x="335" y="564" type="line"/>
+      <point x="339" y="584" type="line"/>
+    </contour>
+    <contour>
+      <point x="304" y="602" type="line"/>
+      <point x="294" y="546" type="line"/>
+      <point x="314" y="546" type="line"/>
+      <point x="324" y="602" type="line"/>
+    </contour>
+    <component base="uni221A"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Symbol</string>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PPC</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Math</string>
+    </dict>
+  </lib>
+</glyph>

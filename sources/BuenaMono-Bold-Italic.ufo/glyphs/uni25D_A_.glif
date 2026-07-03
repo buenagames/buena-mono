@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni25DA" format="2">
+  <advance width="618"/>
+  <unicode hex="25DA"/>
+  <outline>
+    <contour>
+      <point x="139" y="539" type="line"/>
+      <point x="102" y="331" type="line"/>
+      <point x="480" y="331" type="line"/>
+      <point x="517" y="539" type="line"/>
+    </contour>
+    <contour>
+      <point x="102" y="331" type="curve"/>
+      <point x="480" y="331" type="line"/>
+      <point x="500" y="444"/>
+      <point x="422" y="539"/>
+      <point x="328" y="539" type="curve"/>
+      <point x="234" y="539"/>
+      <point x="122" y="444"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Symbol</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Geometry</string>
+    </dict>
+  </lib>
+</glyph>

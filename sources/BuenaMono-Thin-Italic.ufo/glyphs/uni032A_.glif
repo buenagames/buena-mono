@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni032A" format="2">
+  <unicode hex="032A"/>
+  <anchor x="258" y="-30" name="_bottom"/>
+  <anchor x="246" y="-98" name="bottom"/>
+  <outline>
+    <contour>
+      <point x="231" y="-48" type="line"/>
+      <point x="223" y="-98" type="line"/>
+      <point x="258" y="-98" type="line"/>
+      <point x="266" y="-48" type="line"/>
+    </contour>
+    <contour>
+      <point x="356" y="-48" type="line"/>
+      <point x="348" y="-98" type="line"/>
+      <point x="383" y="-98" type="line"/>
+      <point x="391" y="-48" type="line"/>
+    </contour>
+    <contour>
+      <point x="235" y="-30" type="line"/>
+      <point x="228" y="-65" type="line"/>
+      <point x="388" y="-65" type="line"/>
+      <point x="395" y="-30" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>618</integer>
+    </dict>
+  </lib>
+</glyph>

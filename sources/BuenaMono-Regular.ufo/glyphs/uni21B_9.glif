@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni21B9" format="2">
+  <advance width="618"/>
+  <unicode hex="21B9"/>
+  <outline>
+    <contour>
+      <point x="270" y="555" type="line"/>
+      <point x="270" y="473" type="line"/>
+      <point x="243" y="473" type="line"/>
+      <point x="243" y="555" type="line"/>
+    </contour>
+    <contour>
+      <point x="295" y="694" type="line"/>
+      <point x="65" y="514" type="line"/>
+      <point x="295" y="334" type="line"/>
+    </contour>
+    <contour>
+      <point x="202" y="657" type="line"/>
+      <point x="202" y="370" type="line"/>
+      <point x="284" y="370" type="line"/>
+      <point x="284" y="657" type="line"/>
+    </contour>
+    <contour>
+      <point x="375" y="227" type="line"/>
+      <point x="375" y="145" type="line"/>
+      <point x="348" y="145" type="line"/>
+      <point x="348" y="227" type="line"/>
+    </contour>
+    <contour>
+      <point x="323" y="6" type="line"/>
+      <point x="553" y="186" type="line"/>
+      <point x="323" y="366" type="line"/>
+    </contour>
+    <contour>
+      <point x="334" y="329" type="line"/>
+      <point x="334" y="42" type="line"/>
+      <point x="416" y="42" type="line"/>
+      <point x="416" y="329" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Symbol</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Arrow</string>
+    </dict>
+  </lib>
+</glyph>

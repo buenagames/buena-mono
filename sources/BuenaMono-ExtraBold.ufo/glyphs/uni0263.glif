@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni0263" format="2">
+  <advance width="618"/>
+  <unicode hex="0263"/>
+  <anchor x="309" y="0" name="bottom"/>
+  <anchor x="309" y="524" name="top"/>
+  <anchor x="568" y="524" name="topright"/>
+  <outline>
+    <contour>
+      <point x="307" y="-265" type="line"/>
+      <point x="399" y="-265" type="line"/>
+      <point x="467" y="-193" type="line"/>
+      <point x="467" y="-109" type="line"/>
+      <point x="467" y="-40" type="line"/>
+      <point x="435" y="27" type="line"/>
+      <point x="398" y="80" type="line"/>
+      <point x="644" y="556" type="line"/>
+      <point x="474" y="556" type="line"/>
+      <point x="352" y="307" type="line"/>
+      <point x="332" y="266" type="line"/>
+      <point x="295" y="188" type="line"/>
+      <point x="288" y="172" type="line"/>
+      <point x="329" y="172" type="line"/>
+      <point x="324" y="188" type="line"/>
+      <point x="288" y="266" type="line"/>
+      <point x="267" y="307" type="line"/>
+      <point x="144" y="556" type="line"/>
+      <point x="-25" y="556" type="line"/>
+      <point x="218" y="80" type="line"/>
+      <point x="189" y="35" type="line"/>
+      <point x="148" y="-31" type="line"/>
+      <point x="148" y="-109" type="line"/>
+      <point x="148" y="-193" type="line"/>
+      <point x="219" y="-265" type="line"/>
+    </contour>
+    <contour>
+      <point x="307" y="-129" type="line"/>
+      <point x="294" y="-129" type="line"/>
+      <point x="295" y="-130" type="line"/>
+      <point x="295" y="-105" type="line"/>
+      <point x="295" y="-78" type="line"/>
+      <point x="306" y="-45" type="line"/>
+      <point x="308" y="-42" type="line"/>
+      <point x="311" y="-45" type="line"/>
+      <point x="320" y="-78" type="line"/>
+      <point x="320" y="-106" type="line"/>
+      <point x="320" y="-131" type="line"/>
+      <point x="322" y="-129" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Letter</string>
+    </dict>
+  </lib>
+</glyph>

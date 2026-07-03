@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uniA676" format="2">
+  <unicode hex="A676"/>
+  <anchor x="307" y="615" name="_top"/>
+  <anchor x="307" y="918" name="top"/>
+  <outline>
+    <contour>
+      <point x="198" y="622" type="line"/>
+      <point x="368" y="622" type="line"/>
+      <point x="367" y="615" type="line"/>
+      <point x="289" y="620" type="line"/>
+      <point x="321" y="799" type="line"/>
+      <point x="237" y="799" type="line"/>
+      <point x="238" y="807" type="line"/>
+      <point x="314" y="801" type="line"/>
+      <point x="282" y="620" type="line"/>
+      <point x="197" y="615" type="line"/>
+    </contour>
+    <contour>
+      <point x="281" y="838"/>
+      <point x="266" y="838" type="curve"/>
+      <point x="251" y="838"/>
+      <point x="228" y="862"/>
+      <point x="231" y="878" type="curve"/>
+      <point x="234" y="895"/>
+      <point x="265" y="918"/>
+      <point x="280" y="918" type="curve"/>
+      <point x="295" y="918"/>
+      <point x="319" y="895"/>
+      <point x="316" y="878" type="curve"/>
+      <point x="313" y="862"/>
+    </contour>
+    <contour>
+      <point x="382" y="838"/>
+      <point x="367" y="838" type="curve"/>
+      <point x="352" y="838"/>
+      <point x="328" y="862"/>
+      <point x="331" y="878" type="curve"/>
+      <point x="334" y="895"/>
+      <point x="366" y="918"/>
+      <point x="381" y="918" type="curve"/>
+      <point x="396" y="918"/>
+      <point x="420" y="895"/>
+      <point x="417" y="878" type="curve"/>
+      <point x="414" y="862"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Mark</string>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>618</integer>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Nonspacing</string>
+    </dict>
+  </lib>
+</glyph>

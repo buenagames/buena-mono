@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni2236" format="2">
+  <advance width="618"/>
+  <unicode hex="2236"/>
+  <outline>
+    <contour>
+      <point x="382" y="602"/>
+      <point x="382" y="642" type="curve"/>
+      <point x="382" y="682"/>
+      <point x="349" y="715"/>
+      <point x="309" y="715" type="curve"/>
+      <point x="269" y="715"/>
+      <point x="236" y="682"/>
+      <point x="236" y="642" type="curve"/>
+      <point x="236" y="602"/>
+      <point x="269" y="569"/>
+      <point x="309" y="569" type="curve"/>
+      <point x="349" y="569"/>
+    </contour>
+    <contour>
+      <point x="382" y="18"/>
+      <point x="382" y="58" type="curve"/>
+      <point x="382" y="98"/>
+      <point x="349" y="131"/>
+      <point x="309" y="131" type="curve"/>
+      <point x="269" y="131"/>
+      <point x="236" y="98"/>
+      <point x="236" y="58" type="curve"/>
+      <point x="236" y="18"/>
+      <point x="269" y="-15"/>
+      <point x="309" y="-15" type="curve"/>
+      <point x="349" y="-15"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Symbol</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Math</string>
+    </dict>
+  </lib>
+</glyph>

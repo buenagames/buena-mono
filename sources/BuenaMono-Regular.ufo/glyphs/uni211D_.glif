@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni211D" format="2">
+  <advance width="618"/>
+  <unicode hex="211D"/>
+  <anchor x="309" y="0" name="bottom"/>
+  <anchor x="309" y="699" name="top"/>
+  <anchor x="568" y="699" name="topright"/>
+  <outline>
+    <contour>
+      <point x="42" y="-5" type="line"/>
+      <point x="221" y="-5" type="line"/>
+      <point x="221" y="309" type="line"/>
+      <point x="236" y="309" type="line"/>
+      <point x="374" y="-5" type="line"/>
+      <point x="576" y="-5" type="line"/>
+      <point x="405" y="332" type="line"/>
+      <point x="480" y="361" type="line"/>
+      <point x="529" y="425" type="line"/>
+      <point x="529" y="513" type="line"/>
+      <point x="529" y="633" type="line"/>
+      <point x="449" y="704" type="line"/>
+      <point x="310" y="704" type="line"/>
+      <point x="42" y="704" type="line"/>
+    </contour>
+    <contour>
+      <point x="104" y="57" type="line"/>
+      <point x="104" y="642" type="line"/>
+      <point x="159" y="642" type="line"/>
+      <point x="159" y="57" type="line"/>
+    </contour>
+    <contour>
+      <point x="412" y="56" type="line"/>
+      <point x="300" y="311" type="line"/>
+      <point x="312" y="312" type="line"/>
+      <point x="331" y="313" type="line"/>
+      <point x="350" y="316" type="line"/>
+      <point x="473" y="56" type="line"/>
+    </contour>
+    <contour>
+      <point x="221" y="370" type="line"/>
+      <point x="221" y="642" type="line"/>
+      <point x="328" y="642" type="line"/>
+      <point x="328" y="370" type="line"/>
+    </contour>
+    <contour>
+      <point x="390" y="387" type="line"/>
+      <point x="390" y="628" type="line"/>
+      <point x="436" y="615" type="line"/>
+      <point x="462" y="582" type="line"/>
+      <point x="462" y="513" type="line"/>
+      <point x="462" y="437" type="line"/>
+      <point x="429" y="405" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Letter</string>
+    </dict>
+  </lib>
+</glyph>

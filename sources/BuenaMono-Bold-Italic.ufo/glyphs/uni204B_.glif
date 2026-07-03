@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni204B" format="2">
+  <advance width="618"/>
+  <unicode hex="204B"/>
+  <outline>
+    <contour>
+      <point x="110" y="699" type="line"/>
+      <point x="-31" y="-100" type="line"/>
+      <point x="89" y="-100" type="line"/>
+      <point x="230" y="699" type="line"/>
+    </contour>
+    <contour>
+      <point x="290" y="699" type="line"/>
+      <point x="149" y="-100" type="line"/>
+      <point x="269" y="-100" type="line"/>
+      <point x="410" y="699" type="line"/>
+    </contour>
+    <contour>
+      <point x="316" y="166" type="curve"/>
+      <point x="408" y="690" type="line"/>
+      <point x="553" y="690"/>
+      <point x="650" y="573"/>
+      <point x="624" y="428" type="curve"/>
+      <point x="599" y="283"/>
+      <point x="461" y="166"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Punctuation</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Other</string>
+    </dict>
+  </lib>
+</glyph>

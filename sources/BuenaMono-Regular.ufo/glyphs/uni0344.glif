@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni0344" format="2">
+  <unicode hex="0344"/>
+  <anchor x="310" y="618" name="_top"/>
+  <anchor x="310" y="859" name="top"/>
+  <outline>
+    <contour>
+      <point x="258" y="618"/>
+      <point x="217" y="618" type="curve"/>
+      <point x="176" y="618"/>
+      <point x="160" y="637"/>
+      <point x="160" y="664" type="curve"/>
+      <point x="160" y="678" type="line"/>
+      <point x="160" y="705"/>
+      <point x="176" y="724"/>
+      <point x="217" y="724" type="curve"/>
+      <point x="258" y="724"/>
+      <point x="274" y="705"/>
+      <point x="274" y="678" type="curve"/>
+      <point x="274" y="664" type="line"/>
+      <point x="274" y="637"/>
+    </contour>
+    <contour>
+      <point x="444" y="618"/>
+      <point x="403" y="618" type="curve"/>
+      <point x="362" y="618"/>
+      <point x="346" y="637"/>
+      <point x="346" y="664" type="curve"/>
+      <point x="346" y="678" type="line"/>
+      <point x="346" y="705"/>
+      <point x="362" y="724"/>
+      <point x="403" y="724" type="curve"/>
+      <point x="444" y="724"/>
+      <point x="460" y="705"/>
+      <point x="460" y="678" type="curve"/>
+      <point x="460" y="664" type="line"/>
+      <point x="460" y="637"/>
+    </contour>
+    <contour>
+      <point x="423" y="824" type="line"/>
+      <point x="317" y="665" type="line"/>
+      <point x="265" y="689" type="line"/>
+      <point x="350" y="859" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>618</integer>
+    </dict>
+  </lib>
+</glyph>

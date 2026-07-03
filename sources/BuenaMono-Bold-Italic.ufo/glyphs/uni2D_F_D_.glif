@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni2DFD" format="2">
+  <unicode hex="2DFD"/>
+  <anchor x="308" y="587" name="_top"/>
+  <anchor x="308" y="834" name="top"/>
+  <outline>
+    <contour>
+      <point x="155" y="587" type="line"/>
+      <point x="237" y="587" type="line"/>
+      <point x="296" y="679" type="line"/>
+      <point x="289" y="679" type="line"/>
+      <point x="272" y="587" type="line"/>
+      <point x="345" y="587" type="line"/>
+      <point x="362" y="679" type="line"/>
+      <point x="354" y="679" type="line"/>
+      <point x="381" y="587" type="line"/>
+      <point x="462" y="587" type="line"/>
+      <point x="388" y="834" type="line"/>
+      <point x="316" y="834" type="line"/>
+    </contour>
+    <contour>
+      <point x="337" y="745" type="line"/>
+      <point x="339" y="748" type="line"/>
+      <point x="345" y="761" type="line"/>
+      <point x="353" y="772" type="line"/>
+      <point x="354" y="774" type="line"/>
+      <point x="330" y="774" type="line"/>
+      <point x="329" y="777" type="line"/>
+      <point x="331" y="762" type="line"/>
+      <point x="336" y="747" type="line"/>
+      <point x="336" y="745" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Mark</string>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>618</integer>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Nonspacing</string>
+    </dict>
+  </lib>
+</glyph>

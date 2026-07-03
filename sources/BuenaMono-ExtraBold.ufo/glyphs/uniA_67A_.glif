@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uniA67A" format="2">
+  <unicode hex="A67A"/>
+  <anchor x="16" y="574" name="_top"/>
+  <anchor x="16" y="847" name="top"/>
+  <outline>
+    <contour>
+      <point x="-110" y="574" type="line"/>
+      <point x="14" y="574" type="line"/>
+      <point x="87" y="574" type="line"/>
+      <point x="143" y="615" type="line"/>
+      <point x="143" y="674" type="line"/>
+      <point x="143" y="735" type="line"/>
+      <point x="86" y="770" type="line"/>
+      <point x="14" y="770" type="line"/>
+      <point x="-6" y="770" type="line"/>
+      <point x="-6" y="847" type="line"/>
+      <point x="-110" y="847" type="line"/>
+    </contour>
+    <contour>
+      <point x="-6" y="666" type="line"/>
+      <point x="-6" y="678" type="line"/>
+      <point x="14" y="678" type="line"/>
+      <point x="44" y="678" type="line"/>
+      <point x="39" y="681" type="line"/>
+      <point x="39" y="673" type="line"/>
+      <point x="39" y="664" type="line"/>
+      <point x="42" y="666" type="line"/>
+      <point x="14" y="666" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Mark</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Nonspacing</string>
+    </dict>
+  </lib>
+</glyph>

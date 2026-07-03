@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni0276" format="2">
+  <advance width="618"/>
+  <unicode hex="0276"/>
+  <anchor x="309" y="0" name="bottom"/>
+  <anchor x="309" y="524" name="top"/>
+  <anchor x="568" y="524" name="topright"/>
+  <outline>
+    <contour>
+      <point x="222" y="-10" type="line"/>
+      <point x="271" y="-10" type="line"/>
+      <point x="306" y="11" type="line"/>
+      <point x="331" y="58" type="line"/>
+      <point x="331" y="0" type="line"/>
+      <point x="563" y="0" type="line"/>
+      <point x="563" y="66" type="line"/>
+      <point x="394" y="66" type="line"/>
+      <point x="394" y="241" type="line"/>
+      <point x="551" y="241" type="line"/>
+      <point x="551" y="308" type="line"/>
+      <point x="394" y="308" type="line"/>
+      <point x="394" y="459" type="line"/>
+      <point x="563" y="459" type="line"/>
+      <point x="563" y="525" type="line"/>
+      <point x="331" y="525" type="line"/>
+      <point x="331" y="470" type="line"/>
+      <point x="303" y="520" type="line"/>
+      <point x="266" y="535" type="line"/>
+      <point x="222" y="535" type="line"/>
+      <point x="109" y="535" type="line"/>
+      <point x="56" y="433" type="line"/>
+      <point x="56" y="267" type="line"/>
+      <point x="56" y="99" type="line"/>
+      <point x="113" y="-10" type="line"/>
+    </contour>
+    <contour>
+      <point x="231" y="60" type="line"/>
+      <point x="165" y="60" type="line"/>
+      <point x="137" y="131" type="line"/>
+      <point x="137" y="264" type="line"/>
+      <point x="137" y="394" type="line"/>
+      <point x="164" y="465" type="line"/>
+      <point x="230" y="465" type="line"/>
+      <point x="294" y="465" type="line"/>
+      <point x="322" y="401" type="line"/>
+      <point x="322" y="263" type="line"/>
+      <point x="322" y="124" type="line"/>
+      <point x="294" y="60" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Letter</string>
+    </dict>
+  </lib>
+</glyph>

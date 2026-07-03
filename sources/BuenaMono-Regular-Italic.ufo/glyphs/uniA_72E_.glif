@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uniA72E" format="2">
+  <advance width="618"/>
+  <unicode hex="A72E"/>
+  <anchor x="263" y="0" name="bottom"/>
+  <anchor x="386" y="699" name="top"/>
+  <anchor x="645" y="699" name="topright"/>
+  <outline>
+    <contour>
+      <point x="250" y="-15" type="line"/>
+      <point x="345" y="-15" type="line"/>
+      <point x="409" y="44" type="line"/>
+      <point x="429" y="160" type="line"/>
+      <point x="435" y="192" type="line"/>
+      <point x="571" y="192" type="line"/>
+      <point x="585" y="275" type="line"/>
+      <point x="449" y="275" type="line"/>
+      <point x="525" y="706" type="line"/>
+      <point x="424" y="706" type="line"/>
+      <point x="44" y="259" type="line"/>
+      <point x="33" y="192" type="line"/>
+      <point x="339" y="192" type="line"/>
+      <point x="331" y="151" type="line"/>
+      <point x="321" y="93" type="line"/>
+      <point x="293" y="71" type="line"/>
+      <point x="252" y="71" type="line"/>
+      <point x="235" y="71" type="line"/>
+      <point x="217" y="75" type="line"/>
+      <point x="193" y="81" type="line"/>
+      <point x="179" y="-1" type="line"/>
+      <point x="197" y="-10" type="line"/>
+      <point x="223" y="-15" type="line"/>
+    </contour>
+    <contour>
+      <point x="427" y="1" type="line"/>
+      <point x="428" y="5" type="line"/>
+      <point x="447" y="39"/>
+      <point x="479" y="112"/>
+      <point x="490" y="152" type="curve"/>
+      <point x="566" y="152" type="line"/>
+      <point x="564" y="143" type="line"/>
+      <point x="562" y="138"/>
+      <point x="556" y="127"/>
+      <point x="543" y="110" type="curve"/>
+      <point x="521" y="73"/>
+      <point x="491" y="29"/>
+      <point x="467" y="1" type="curve"/>
+    </contour>
+    <contour>
+      <point x="153" y="275" type="line"/>
+      <point x="356" y="518" type="line"/>
+      <point x="392" y="561" type="line"/>
+      <point x="415" y="592" type="line"/>
+      <point x="424" y="609" type="line"/>
+      <point x="419" y="609" type="line"/>
+      <point x="410" y="567" type="line"/>
+      <point x="393" y="494" type="line"/>
+      <point x="380" y="418" type="line"/>
+      <point x="354" y="275" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Letter</string>
+    </dict>
+  </lib>
+</glyph>

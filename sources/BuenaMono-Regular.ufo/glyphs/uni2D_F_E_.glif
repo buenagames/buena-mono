@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni2DFE" format="2">
+  <unicode hex="2DFE"/>
+  <anchor x="10" y="606" name="_top"/>
+  <anchor x="10" y="815" name="top"/>
+  <outline>
+    <contour>
+      <point x="-96" y="671" type="line"/>
+      <point x="-122" y="606" type="line"/>
+      <point x="-85" y="606" type="line"/>
+      <point x="-59" y="670" type="line"/>
+      <point x="-47" y="695" type="line"/>
+      <point x="-41" y="704" type="line"/>
+      <point x="-8" y="704" type="line"/>
+      <point x="-8" y="606" type="line"/>
+      <point x="27" y="606" type="line"/>
+      <point x="27" y="704" type="line"/>
+      <point x="59" y="704" type="line"/>
+      <point x="67" y="695" type="line"/>
+      <point x="77" y="670" type="line"/>
+      <point x="104" y="606" type="line"/>
+      <point x="141" y="606" type="line"/>
+      <point x="114" y="671" type="line"/>
+      <point x="101" y="702" type="line"/>
+      <point x="93" y="724" type="line"/>
+      <point x="46" y="728" type="line"/>
+      <point x="114" y="796" type="line"/>
+      <point x="114" y="815" type="line"/>
+      <point x="-95" y="815" type="line"/>
+      <point x="-95" y="796" type="line"/>
+      <point x="-26" y="728" type="line"/>
+      <point x="-73" y="724" type="line"/>
+      <point x="-82" y="702" type="line"/>
+    </contour>
+    <contour>
+      <point x="10" y="728" type="line"/>
+      <point x="-48" y="788" type="line"/>
+      <point x="67" y="788" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Mark</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Nonspacing</string>
+    </dict>
+  </lib>
+</glyph>

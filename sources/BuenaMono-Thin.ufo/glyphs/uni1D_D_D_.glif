@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni1DDD" format="2">
+  <unicode hex="1DDD"/>
+  <anchor x="14" y="615" name="_top"/>
+  <anchor x="14" y="894" name="top"/>
+  <outline>
+    <contour>
+      <point x="-71" y="622" type="line"/>
+      <point x="99" y="622" type="line"/>
+      <point x="99" y="615" type="line"/>
+      <point x="23" y="620" type="line"/>
+      <point x="23" y="887" type="line"/>
+      <point x="-68" y="887" type="line"/>
+      <point x="-68" y="894" type="line"/>
+      <point x="15" y="889" type="line"/>
+      <point x="15" y="620" type="line"/>
+      <point x="-71" y="615" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Mark</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Nonspacing</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni03DC" format="2">
+  <advance width="618"/>
+  <unicode hex="03DC"/>
+  <anchor x="263" y="0" name="bottom"/>
+  <anchor x="386" y="699" name="top"/>
+  <anchor x="645" y="699" name="topright"/>
+  <outline>
+    <contour>
+      <point x="-1" y="-37" type="line"/>
+      <point x="161" y="-37" type="line"/>
+      <point x="214" y="260" type="line"/>
+      <point x="353" y="260" type="line"/>
+      <point x="330" y="134" type="line"/>
+      <point x="488" y="134" type="line"/>
+      <point x="537" y="411" type="line"/>
+      <point x="240" y="411" type="line"/>
+      <point x="271" y="585" type="line"/>
+      <point x="592" y="585" type="line"/>
+      <point x="619" y="736" type="line"/>
+      <point x="136" y="736" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Letter</string>
+    </dict>
+  </lib>
+</glyph>

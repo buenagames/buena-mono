@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="plus_greater.liga" format="2">
+  <advance width="1236"/>
+  <outline>
+    <contour>
+      <point x="325" y="61" type="line"/>
+      <point x="381" y="61" type="line"/>
+      <point x="381" y="306" type="line"/>
+      <point x="622" y="306" type="line"/>
+      <point x="622" y="354" type="line"/>
+      <point x="381" y="354" type="line"/>
+      <point x="381" y="599" type="line"/>
+      <point x="325" y="599" type="line"/>
+      <point x="325" y="354" type="line"/>
+      <point x="84" y="354" type="line"/>
+      <point x="84" y="306" type="line"/>
+      <point x="325" y="306" type="line"/>
+    </contour>
+    <contour>
+      <point x="734" y="91" type="line"/>
+      <point x="1132" y="290" type="line"/>
+      <point x="1132" y="370" type="line"/>
+      <point x="734" y="569" type="line"/>
+      <point x="734" y="515" type="line"/>
+      <point x="1035" y="366" type="line"/>
+      <point x="1058" y="355"/>
+      <point x="1139" y="332"/>
+      <point x="1151" y="329" type="curve"/>
+      <point x="1140" y="326"/>
+      <point x="1060" y="302"/>
+      <point x="1035" y="290" type="curve"/>
+      <point x="734" y="142" type="line"/>
+    </contour>
+  </outline>
+</glyph>

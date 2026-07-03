@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni25FB" format="2">
+  <advance width="618"/>
+  <unicode hex="25FB"/>
+  <outline>
+    <contour>
+      <point x="218" y="461" type="line"/>
+      <point x="179" y="240" type="line"/>
+      <point x="400" y="240" type="line"/>
+      <point x="439" y="461" type="line"/>
+    </contour>
+    <contour>
+      <point x="317" y="341" type="line"/>
+      <point x="320" y="360" type="line"/>
+      <point x="301" y="360" type="line"/>
+      <point x="298" y="341" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Symbol</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Geometry</string>
+    </dict>
+  </lib>
+</glyph>

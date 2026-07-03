@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni2DE6" format="2">
+  <unicode hex="2DE6"/>
+  <anchor x="309" y="587" name="_top"/>
+  <anchor x="309" y="834" name="top"/>
+  <outline>
+    <contour>
+      <point x="305" y="587" type="line"/>
+      <point x="397" y="587" type="line"/>
+      <point x="272" y="790" type="line"/>
+      <point x="260" y="657" type="line"/>
+      <point x="437" y="834" type="line"/>
+      <point x="347" y="834" type="line"/>
+      <point x="234" y="722" type="line"/>
+      <point x="231" y="705" type="line"/>
+    </contour>
+    <contour>
+      <point x="182" y="625" type="line"/>
+      <point x="181" y="625" type="line"/>
+      <point x="211" y="796" type="line"/>
+      <point x="212" y="796" type="line"/>
+    </contour>
+    <contour>
+      <point x="247" y="718" type="line"/>
+      <point x="235" y="718" type="line"/>
+      <point x="234" y="708" type="line"/>
+      <point x="246" y="708" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Mark</string>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>618</integer>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Nonspacing</string>
+    </dict>
+  </lib>
+</glyph>

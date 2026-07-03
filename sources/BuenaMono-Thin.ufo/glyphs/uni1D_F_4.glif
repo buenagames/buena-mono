@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni1DF4" format="2">
+  <unicode hex="1DF4"/>
+  <anchor x="10" y="615" name="_top"/>
+  <anchor x="10" y="911" name="top"/>
+  <outline>
+    <contour>
+      <point x="-8" y="618" type="line"/>
+      <point x="22" y="618" type="line"/>
+      <point x="40" y="624" type="line"/>
+      <point x="59" y="650" type="line"/>
+      <point x="82" y="650" type="line"/>
+      <point x="88" y="622" type="line"/>
+      <point x="91" y="622" type="line"/>
+      <point x="91" y="799" type="line"/>
+      <point x="83" y="799" type="line"/>
+      <point x="83" y="708" type="line"/>
+      <point x="83" y="655" type="line"/>
+      <point x="60" y="615" type="line"/>
+      <point x="2" y="615" type="line"/>
+      <point x="-44" y="615" type="line"/>
+      <point x="-66" y="644" type="line"/>
+      <point x="-66" y="681" type="line"/>
+      <point x="-66" y="799" type="line"/>
+      <point x="-73" y="799" type="line"/>
+      <point x="-73" y="677" type="line"/>
+      <point x="-73" y="634" type="line"/>
+      <point x="-57" y="618" type="line"/>
+    </contour>
+    <contour>
+      <point x="72" y="834"/>
+      <point x="60" y="834" type="curve"/>
+      <point x="48" y="834"/>
+      <point x="20" y="856"/>
+      <point x="20" y="872" type="curve"/>
+      <point x="20" y="889"/>
+      <point x="48" y="911"/>
+      <point x="60" y="911" type="curve"/>
+      <point x="72" y="911"/>
+      <point x="100" y="889"/>
+      <point x="100" y="872" type="curve"/>
+      <point x="100" y="856"/>
+    </contour>
+    <contour>
+      <point x="-28" y="834"/>
+      <point x="-41" y="834" type="curve"/>
+      <point x="-54" y="834"/>
+      <point x="-81" y="856"/>
+      <point x="-81" y="872" type="curve"/>
+      <point x="-81" y="889"/>
+      <point x="-54" y="911"/>
+      <point x="-41" y="911" type="curve"/>
+      <point x="-28" y="911"/>
+      <point x="-1" y="889"/>
+      <point x="-1" y="872" type="curve"/>
+      <point x="-1" y="856"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Mark</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Nonspacing</string>
+    </dict>
+  </lib>
+</glyph>

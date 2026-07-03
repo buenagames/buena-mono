@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni22ED" format="2">
+  <advance width="618"/>
+  <unicode hex="22ED"/>
+  <outline>
+    <contour>
+      <point x="180" y="175" type="line"/>
+      <point x="357" y="525" type="line"/>
+      <point x="437" y="525" type="line"/>
+      <point x="260" y="175" type="line"/>
+    </contour>
+    <component base="uni22B5"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Symbol</string>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PC</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Math</string>
+    </dict>
+  </lib>
+</glyph>

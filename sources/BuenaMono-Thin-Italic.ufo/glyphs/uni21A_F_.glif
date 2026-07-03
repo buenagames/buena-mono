@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni21AF" format="2">
+  <advance width="618"/>
+  <unicode hex="21AF"/>
+  <outline>
+    <contour>
+      <point x="444" y="534" type="line"/>
+      <point x="314" y="649" type="line"/>
+      <point x="364" y="649" type="line"/>
+      <point x="494" y="534" type="line"/>
+    </contour>
+    <contour>
+      <point x="124" y="419" type="line"/>
+      <point x="444" y="534" type="line"/>
+      <point x="494" y="534" type="line"/>
+      <point x="174" y="419" type="line"/>
+    </contour>
+    <contour>
+      <point x="403" y="304" type="line"/>
+      <point x="124" y="419" type="line"/>
+      <point x="174" y="419" type="line"/>
+      <point x="453" y="304" type="line"/>
+    </contour>
+    <contour>
+      <point x="233" y="190" type="line"/>
+      <point x="403" y="304" type="line"/>
+      <point x="453" y="304" type="line"/>
+      <point x="283" y="190" type="line"/>
+    </contour>
+    <contour>
+      <point x="368" y="190" type="line"/>
+      <point x="234" y="50" type="line"/>
+      <point x="148" y="190" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Symbol</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Arrow</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Eth" format="2">
+  <advance width="618"/>
+  <unicode hex="00D0"/>
+  <anchor x="263" y="0" name="bottom"/>
+  <anchor x="386" y="699" name="top"/>
+  <anchor x="645" y="699" name="topright"/>
+  <outline>
+    <contour>
+      <point x="15" y="404" type="line"/>
+      <point x="-1" y="312" type="line"/>
+      <point x="310" y="312" type="line"/>
+      <point x="326" y="404" type="line"/>
+    </contour>
+    <contour>
+      <point x="251" y="-5" type="line"/>
+      <point x="428" y="-5"/>
+      <point x="549" y="146"/>
+      <point x="585" y="350" type="curve"/>
+      <point x="620" y="553"/>
+      <point x="553" y="704"/>
+      <point x="376" y="704" type="curve"/>
+      <point x="145" y="704" type="line"/>
+      <point x="20" y="-5" type="line"/>
+    </contour>
+    <contour>
+      <point x="232" y="612" type="line"/>
+      <point x="344" y="612" type="line"/>
+      <point x="475" y="612"/>
+      <point x="507" y="516"/>
+      <point x="477" y="349" type="curve"/>
+      <point x="448" y="183"/>
+      <point x="382" y="87"/>
+      <point x="251" y="87" type="curve"/>
+      <point x="139" y="87" type="line"/>
+    </contour>
+  </outline>
+</glyph>

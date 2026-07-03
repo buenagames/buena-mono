@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni20B6" format="2">
+  <advance width="618"/>
+  <unicode hex="20B6"/>
+  <outline>
+    <contour>
+      <point x="359" y="699" type="line"/>
+      <point x="236" y="0" type="line"/>
+      <point x="318" y="0" type="line"/>
+      <point x="441" y="699" type="line"/>
+    </contour>
+    <contour>
+      <point x="191" y="82" type="line"/>
+      <point x="177" y="0" type="line"/>
+      <point x="377" y="0" type="line"/>
+      <point x="391" y="82" type="line"/>
+    </contour>
+    <contour>
+      <point x="257" y="344" type="line"/>
+      <point x="243" y="262" type="line"/>
+      <point x="403" y="262" type="line"/>
+      <point x="417" y="344" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Symbol</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Currency</string>
+    </dict>
+  </lib>
+</glyph>

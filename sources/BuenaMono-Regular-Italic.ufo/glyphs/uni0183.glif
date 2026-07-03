@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni0183" format="2">
+  <advance width="618"/>
+  <unicode hex="0183"/>
+  <anchor x="263" y="0" name="bottom"/>
+  <anchor x="391" y="729" name="top"/>
+  <anchor x="650" y="729" name="topright"/>
+  <outline>
+    <contour>
+      <point x="558" y="671" type="line"/>
+      <point x="203" y="671" type="line"/>
+      <point x="216" y="743" type="line"/>
+      <point x="571" y="743" type="line"/>
+    </contour>
+    <contour>
+      <point x="285" y="-10" type="line"/>
+      <point x="410" y="-10" type="line"/>
+      <point x="512" y="83" type="line"/>
+      <point x="544" y="263" type="line"/>
+      <point x="575" y="440" type="line"/>
+      <point x="506" y="534" type="line"/>
+      <point x="381" y="534" type="line"/>
+      <point x="301" y="534" type="line"/>
+      <point x="244" y="498" type="line"/>
+      <point x="208" y="456" type="line"/>
+      <point x="204" y="456" type="line"/>
+      <point x="215" y="492" type="line"/>
+      <point x="221" y="527" type="line"/>
+      <point x="227" y="563" type="line"/>
+      <point x="259" y="743" type="line"/>
+      <point x="174" y="743" type="line"/>
+      <point x="43" y="0" type="line"/>
+      <point x="114" y="0" type="line"/>
+      <point x="132" y="66" type="line"/>
+      <point x="138" y="66" type="line"/>
+      <point x="162" y="26" type="line"/>
+      <point x="207" y="-10" type="line"/>
+    </contour>
+    <contour>
+      <point x="281" y="62" type="line"/>
+      <point x="184" y="62" type="line"/>
+      <point x="151" y="133" type="line"/>
+      <point x="175" y="265" type="line"/>
+      <point x="197" y="391" type="line"/>
+      <point x="260" y="462" type="line"/>
+      <point x="350" y="462" type="line"/>
+      <point x="447" y="462" type="line"/>
+      <point x="477" y="391" type="line"/>
+      <point x="454" y="263" type="line"/>
+      <point x="431" y="133" type="line"/>
+      <point x="376" y="62" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Letter</string>
+    </dict>
+  </lib>
+</glyph>
