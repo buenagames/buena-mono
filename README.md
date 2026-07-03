@@ -4,6 +4,8 @@ Writer-first monospace typeface — tuned for extended prose in markdown and cod
 editors while keeping code perfectly legible. A two-axis variable font: **weight
 100–800** and **slant 0 to −10°**, 8 masters, 4,857 glyphs.
 
+![Buena Mono specimen](docs/specimen.png)
+
 Buena Mono is built on [Fragment Mono](https://github.com/weiweihuanghuang/fragment-mono)
 by Wei Huang and extended into a variable family. Released under the
 [SIL Open Font License 1.1](OFL.txt).
