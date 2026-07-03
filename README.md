@@ -60,6 +60,8 @@ OpenType settings.
 
 ![Buena Mono character set](docs/image2.png)
 
+![Buena Mono Italic character set](docs/image3.png)
+
 ## In use
 
 <table>
