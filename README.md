@@ -1,5 +1,7 @@
 # Buena Mono
 
+![Buena Mono](docs/image1.png)
+
 Writer-first monospace typeface — tuned for extended prose in markdown and code
 editors while keeping code perfectly legible. A two-axis variable font: **weight
 100–800** and **slant 0 to −10°**, 8 masters, 4,857 glyphs.
@@ -28,6 +30,8 @@ Variable fonts live in [`fonts/variable/`](fonts/variable):
 - **Code ligatures** — multi-cell and column-alignment preserving
 - **12 stylistic sets** — single-story `a`, tailed `l`, dotted/plain zero, and more
 - OpenType: `ccmp`, `mark`, `mkmk`, `aalt`, `calt`, `liga`, `smcp`, `ss01`–`ss12`
+
+![Buena Mono character set](docs/image2.png)
 
 ## In use
 

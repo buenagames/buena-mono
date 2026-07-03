@@ -40,7 +40,7 @@ test: build.stamp
 	. venv/bin/activate; TOCHECK=$$(find out/fonts -type f 2>/dev/null); mkdir -p out/fontspector; fontspector --profile googlefonts -l warn --full-lists --succinct --html out/fontspector/fontspector-report.html --ghmarkdown out/fontspector/fontspector-report.md --badges out/badges $$TOCHECK  || echo '::warning file=sources/config.yaml,title=fontspector failures::The fontspector QA check reported errors in your font. Please check the generated report.'
 
 proof: venv build.stamp
-	TOCHECK=$$(find out/fonts -type f 2>/dev/null); . venv/bin/activate; mkdir -p out/proof; diffenator2 proof $$TOCHECK -o out/proof
+	TOCHECK=$$(find out/fonts -type f 2>/dev/null); . venv/bin/activate; mkdir -p out/proof; if command -v diff3proof >/dev/null 2>&1; then diff3proof $$TOCHECK --output out/proof; else diffenator2 proof $$TOCHECK -o out/proof; fi
 
 export-ufo: venv  ## Export UFO + designspace from .glyphs (GPOS from anchors)
 	. venv/bin/activate; python3 scripts/export-ufo.py
@@ -78,6 +78,11 @@ generate-manifest: venv  ## Generate source manifest
 	. venv/bin/activate; python3 scripts/generate-manifest.py
 
 build-all: export-ufo build-otf inject-stat build-woff2  ## Build TTF + WOFF2 + OTF variable fonts
+
+images: venv  ## Generate README images (docs/image1.png, docs/image2.png) from fonts/variable/
+	. venv/bin/activate; python3 -c "import drawbot_skia" 2>/dev/null || pip install drawbot-skia
+	. venv/bin/activate; python3 docs/image1.py --output docs/image1.png
+	. venv/bin/activate; python3 docs/image2.py --output docs/image2.png
 
 font-summary: venv build.stamp  ## Print font development summary
 	. venv/bin/activate; python3 scripts/font-summary.py
