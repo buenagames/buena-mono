@@ -11,7 +11,7 @@ fonts {
   filename: "BuenaMono[slnt,wght].ttf"
   post_script_name: "BuenaMono-Regular"
   full_name: "Buena Mono Regular"
-  copyright: "Copyright 2026 The Buena Mono Project Authors (https://github.com/buenagames/buena-mono), with Reserved Font Name \"Buena Mono\"."
+  copyright: "Copyright 2026 The Buena Mono Project Authors (https://github.com/buenagames/buena-mono)."
 }
 
 fonts {
@@ -21,7 +21,7 @@ fonts {
   filename: "BuenaMono[slnt,wght].ttf"
   post_script_name: "BuenaMono-Italic"
   full_name: "Buena Mono Italic"
-  copyright: "Copyright 2026 The Buena Mono Project Authors (https://github.com/buenagames/buena-mono), with Reserved Font Name \"Buena Mono\"."
+  copyright: "Copyright 2026 The Buena Mono Project Authors (https://github.com/buenagames/buena-mono)."
 }
 
 subsets: "cyrillic"
