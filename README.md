@@ -29,6 +29,26 @@ Variable fonts live in [`fonts/variable/`](fonts/variable):
 - **12 stylistic sets** — single-story `a`, tailed `l`, dotted/plain zero, and more
 - OpenType: `ccmp`, `mark`, `mkmk`, `aalt`, `calt`, `liga`, `smcp`, `ss01`–`ss12`
 
+## In use
+
+<table>
+<tr><th align="left">Regular</th><th align="left">Regular · dark</th></tr>
+<tr>
+<td width="50%"><img src="docs/use-regular-light.png" alt="Buena Mono Regular, light"></td>
+<td width="50%"><img src="docs/use-regular-dark.png" alt="Buena Mono Regular, dark"></td>
+</tr>
+<tr><th align="left">Regular + Bold</th><th align="left">Regular + Bold · dark</th></tr>
+<tr>
+<td><img src="docs/use-bold-light.png" alt="Buena Mono Regular and Bold, light"></td>
+<td><img src="docs/use-bold-dark.png" alt="Buena Mono Regular and Bold, dark"></td>
+</tr>
+<tr><th align="left">Regular + Italic</th><th align="left">Regular + Italic · dark</th></tr>
+<tr>
+<td><img src="docs/use-italic-light.png" alt="Buena Mono Regular and Italic, light"></td>
+<td><img src="docs/use-italic-dark.png" alt="Buena Mono Regular and Italic, dark"></td>
+</tr>
+</table>
+
 ## Build from source
 
 Requires Python 3.9+.
