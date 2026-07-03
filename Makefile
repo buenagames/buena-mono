@@ -40,7 +40,7 @@ test: build.stamp
 	. venv/bin/activate; TOCHECK=$$(find out/fonts -type f 2>/dev/null); mkdir -p out/fontspector; fontspector --profile googlefonts -l warn --full-lists --succinct --html out/fontspector/fontspector-report.html --ghmarkdown out/fontspector/fontspector-report.md --badges out/badges $$TOCHECK  || echo '::warning file=sources/config.yaml,title=fontspector failures::The fontspector QA check reported errors in your font. Please check the generated report.'
 
 proof: venv build.stamp
-	TOCHECK=$$(find out/fonts -type f 2>/dev/null); . venv/bin/activate; mkdir -p out/proof; diffenator2 proof $$TOCHECK -o out/proof
+	. venv/bin/activate; mkdir -p out/proof; if command -v diff3proof >/dev/null 2>&1; then diff3proof out/fonts/BuenaMono-VF.ttf --output out/proof; else TOCHECK=$$(find out/fonts -type f 2>/dev/null); diffenator2 proof $$TOCHECK -o out/proof; fi
 
 export-ufo: venv  ## Export UFO + designspace from .glyphs (GPOS from anchors)
 	. venv/bin/activate; python3 scripts/export-ufo.py
