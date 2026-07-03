@@ -4,7 +4,7 @@ Writer-first monospace typeface — tuned for extended prose in markdown and cod
 editors while keeping code perfectly legible. A two-axis variable font: **weight
 100–800** and **slant 0 to −10°**, 8 masters, 4,857 glyphs.
 
-![Buena Mono specimen](docs/specimen.png)
+![Buena Mono](docs/image1.png)
 
 Buena Mono is built on [Fragment Mono](https://github.com/weiweihuanghuang/fragment-mono)
 by Wei Huang and extended into a variable family. Released under the
@@ -40,6 +40,13 @@ Grab the fonts from [`fonts/variable/`](fonts/variable) — `BuenaMono-VF.ttf`
 - **12 stylistic sets** — single-story `a`, tailed `l`, dotted/plain zero, and more
 - OpenType: `ccmp`, `mark`, `mkmk`, `aalt`, `calt`, `liga`, `smcp`, `ss01`–`ss12`
 
+## Specimen
+
+Weight from hairline thin to solid extrabold, code ligatures, and multi-script
+coverage:
+
+![Buena Mono specimen](docs/specimen.png)
+
 ## Stylistic sets
 
 Twelve stylistic sets (`ss01`–`ss12`) provide alternate letterforms:
@@ -51,7 +58,7 @@ OpenType settings.
 
 ## Character set
 
-![Buena Mono character set](docs/character-set.png)
+![Buena Mono character set](docs/image2.png)
 
 ## In use
 
@@ -103,6 +110,8 @@ masters and a `.designspace`. See [CONTRIBUTING.md](CONTRIBUTING.md) and the
 Made by [Buena](https://buenalabs.io). Built on
 [Fragment Mono](https://github.com/weiweihuanghuang/fragment-mono) by Wei Huang
 (SIL OFL 1.1), itself based on Nimbus Sans.
+
+Specimen images are licensed [CC BY-SA 4.0](docs/images-license.txt).
 
 ## License
 
