@@ -20,7 +20,7 @@ build.ninja
 .playwright-mcp/
 proof-*.png
 i-dot-comparison.png
-.claude/
+.claude/settings.local.json
 
 # OS generated files #
 ######################
@@ -48,3 +48,5 @@ Thumbs.db
 *(Otomatik Kaydedildi).*
 *（自动存储）.*
 *（已自動儲存）.*
+
+.claude/
