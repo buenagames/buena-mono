@@ -26,9 +26,7 @@ legible. A two-axis variable font: **weight 100–800** and **slant 0 to −10°
 
 ![Buena Mono](docs/hero.png)
 
-Buena Mono is built on [Fragment Mono](https://github.com/weiweihuanghuang/fragment-mono)
-by Wei Huang and extended into a variable family. Released under the
-[SIL Open Font License 1.1](OFL.txt).
+Released under the [SIL Open Font License 1.1](OFL.txt).
 
 ## Install
 
@@ -117,16 +115,12 @@ configuration, or watch the verbs cycle on the
 
 ## Credits
 
-Made by [Buena](https://buenalabs.io). Built on
-[Fragment Mono](https://github.com/weiweihuanghuang/fragment-mono) by Wei Huang
-(SIL OFL 1.1), itself based on Nimbus Sans.
+Made by [Buena](https://buenalabs.io).
 
 Specimen images are licensed [CC BY-SA 4.0](docs/images-license.txt).
 
 ## License
 
 Buena Mono is licensed under the [SIL Open Font License, Version 1.1](OFL.txt).
-Portions copyright the [Fragment Mono](https://github.com/weiweihuanghuang/fragment-mono)
-Project Authors.
 
 Copyright 2026 The Buena Mono Project Authors · [buenalabs.io](https://buenalabs.io)

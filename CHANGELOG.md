@@ -13,5 +13,3 @@ Initial public release.
 - **12 stylistic sets** (`ss01`–`ss12`).
 - OpenType features: `ccmp`, `mark`, `mkmk`, `aalt`, `calt`, `liga`, `smcp`,
   `ss01`–`ss12`.
-- Built on [Fragment Mono](https://github.com/weiweihuanghuang/fragment-mono)
-  (OFL 1.1) by Wei Huang.
