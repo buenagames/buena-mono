@@ -108,7 +108,7 @@ masters and a `.designspace`. See [CONTRIBUTING.md](CONTRIBUTING.md) and the
 ## Bonus — spinner verbs
 
 Buena Mono is a writer-first dev font, so it ships a matching spinner.
-[`extras/spinner-verbs.json`](extras/spinner-verbs.json) is a 200-verb set for
+[`extras/spinner-verbs.json`](extras/spinner-verbs.json) is a 235-verb set for
 your AI coding agent's thinking spinner — merge it into your agent's
 configuration, or watch the verbs cycle on the
 [specimen](https://buena-mono.buenalabs.io/#spinner).
