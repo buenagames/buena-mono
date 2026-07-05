@@ -124,6 +124,25 @@ Design source: [`sources/BuenaMono.glyphs`](sources/) (Glyphs 3), with UFO
 masters and a `.designspace`. See [CONTRIBUTING.md](CONTRIBUTING.md) and the
 [CHANGELOG](CHANGELOG.md).
 
+## Bonus — Claude Code spinner verbs
+
+Buena Mono is a writer-first dev font, so it ships a matching spinner.
+[`extras/spinner-verbs.json`](extras/spinner-verbs.json) is a 200-verb set for
+[Claude Code](https://claude.com/claude-code)'s thinking spinner. Merge it into your
+`~/.claude/settings.json` (or a project `.claude/settings.json`):
+
+```jsonc
+{
+  "spinnerVerbs": {
+    "mode": "replace",
+    "verbs": ["Krahing", "Hill-climbing", "Naming the wind", "Kwisatz-haderaching", "…and 196 more"]
+  }
+}
+```
+
+Grab the full set from [`extras/spinner-verbs.json`](extras/spinner-verbs.json), or
+watch them cycle on the [specimen](https://buena-mono.buenalabs.io/#spinner).
+
 ## Credits
 
 Made by [Buena](https://buenalabs.io). Built on
