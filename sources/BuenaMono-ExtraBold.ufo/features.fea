@@ -2397,7 +2397,7 @@ sub a by a.ss01;
 feature cv02 {
 cvParameters {
   FeatUILabelNameID { name "Alternate f"; };
-  FeatUITooltipTextNameID { name "Replace f with IBM Plex Mono style variant"; };
+  FeatUITooltipTextNameID { name "Replace f with descending variant"; };
 };
 sub f by f.ss02;
 
@@ -2406,7 +2406,7 @@ sub f by f.ss02;
 feature cv03 {
 cvParameters {
   FeatUILabelNameID { name "Alternate l"; };
-  FeatUITooltipTextNameID { name "Replace l with JetBrains Mono style variant"; };
+  FeatUITooltipTextNameID { name "Replace l with tailed variant"; };
 };
 sub l by l.ss03;
 

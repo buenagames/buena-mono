@@ -2,7 +2,7 @@ name: "Buena Mono"
 designer: "Buena"
 license: "OFL"
 category: "MONOSPACE"
-date_added: "2026-02-05"
+date_added: "2026-07-05"
 
 fonts {
   name: "Buena Mono"

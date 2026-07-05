@@ -86,9 +86,9 @@ generate-manifest: venv  ## Generate source manifest
 
 build-all: export-ufo build-otf inject-stat build-woff2  ## Build TTF + WOFF2 + OTF variable fonts
 
-images: venv  ## Generate README images (docs/image*.png) from fonts/variable/
+images: venv  ## Generate README images (docs/hero.png, docs/character-set-*.png) from fonts/variable/
 	. venv/bin/activate; python3 -c "import drawbot_skia" 2>/dev/null || pip install drawbot-skia
-	. venv/bin/activate; for py in docs/image*.py; do python3 $$py --output $${py%.py}.png; done
+	. venv/bin/activate; for py in docs/hero.py docs/character-set-*.py; do python3 $$py --output $${py%.py}.png; done
 
 font-summary: venv build.stamp  ## Print font development summary
 	. venv/bin/activate; python3 scripts/font-summary.py
