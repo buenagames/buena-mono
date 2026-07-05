@@ -20,7 +20,7 @@
 A free, open-source, writer-first monospace programming font — tuned for
 extended prose in markdown and code editors while keeping code perfectly
 legible. A two-axis variable font: **weight 100–800** and **slant 0 to −10°**,
-8 masters, 4,857 glyphs.
+8 masters, 4,886 glyphs.
 
 **[Specimen & docs →](https://buena-mono.buenalabs.io)** · Coming soon to **Google Fonts**
 
@@ -52,7 +52,7 @@ Grab the fonts from [`fonts/variable/`](fonts/variable) — `BuenaMono-VF.ttf`
 ## Features
 
 - **Axes:** weight 100–800, slant 0 to −10°
-- **4,857 glyphs:** Latin (incl. Extended A–D), Greek, Cyrillic, IPA, math
+- **4,886 glyphs:** Latin (incl. Extended A–D), Greek, Cyrillic, IPA, math
   operators, arrows, box-drawing, block/shade elements, currency
 - **Code ligatures** — multi-cell and column-alignment preserving
 - **12 stylistic sets** — single-story `a`, tailed `l`, dotted/plain zero, and more
