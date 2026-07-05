@@ -1,9 +1,9 @@
 # Generates the italic character-set image for the README.
 # Run from the root level of the repository, after `make build`
 # (or with the committed fonts in fonts/variable/):
-# $ python3 docs/image3.py --output docs/image3.png
+# $ python3 docs/character-set-italic.py --output docs/character-set-italic.png
 #
-# Same layout as image2.py, but rendered at the Italic instance
+# Same layout as character-set-roman.py, but rendered at the Italic instance
 # (wght=400, slnt=-10) of the variable font.
 
 from drawbot_skia.drawbot import *

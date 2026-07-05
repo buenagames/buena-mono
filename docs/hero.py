@@ -1,10 +1,10 @@
 # Generates the "AaBb" hero image for the README.
 # Run from the root level of the repository, after `make build`
 # (or with the committed fonts in fonts/variable/):
-# $ python3 docs/image1.py --output docs/image1.png
+# $ python3 docs/hero.py --output docs/hero.png
 #
 # Adapted from googlefonts/googlefonts-project-template
-# documentation/image1.py for a monospace variable font:
+# documentation/hero.py for a monospace variable font:
 # the display size is derived from the fixed advance width so the
 # text always fills the frame exactly.
 

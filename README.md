@@ -17,11 +17,14 @@
 [Glyphset]: https://img.shields.io/endpoint?url=https%3A%2F%2Fbuenagames.github.io%2Fbuena-mono%2Fbadges%2FGlyphsetChecks.json
 -->
 
-Writer-first monospace typeface — tuned for extended prose in markdown and code
-editors while keeping code perfectly legible. A two-axis variable font: **weight
-100–800** and **slant 0 to −10°**, 8 masters, 4,857 glyphs.
+A free, open-source, writer-first monospace programming font — tuned for
+extended prose in markdown and code editors while keeping code perfectly
+legible. A two-axis variable font: **weight 100–800** and **slant 0 to −10°**,
+8 masters, 4,857 glyphs.
 
-![Buena Mono](docs/image1.png)
+**[Specimen & docs →](https://buena-mono.buenalabs.io)** · Coming soon to **Google Fonts**
+
+![Buena Mono](docs/hero.png)
 
 Buena Mono is built on [Fragment Mono](https://github.com/weiweihuanghuang/fragment-mono)
 by Wei Huang and extended into a variable family. Released under the
@@ -75,9 +78,9 @@ OpenType settings.
 
 ## Character set
 
-![Buena Mono character set](docs/image2.png)
+![Buena Mono character set](docs/character-set-roman.png)
 
-![Buena Mono Italic character set](docs/image3.png)
+![Buena Mono Italic character set](docs/character-set-italic.png)
 
 ## In use
 

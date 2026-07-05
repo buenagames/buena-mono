@@ -1,10 +1,10 @@
 # Generates the character-set image for the README.
 # Run from the root level of the repository, after `make build`
 # (or with the committed fonts in fonts/variable/):
-# $ python3 docs/image2.py --output docs/image2.png
+# $ python3 docs/character-set-roman.py --output docs/character-set-roman.png
 #
 # Adapted from googlefonts/googlefonts-project-template
-# documentation/image2.py for a monospace variable font:
+# documentation/character-set-roman.py for a monospace variable font:
 # the display size is derived from the fixed advance width and the
 # longest line, so the block always fills the frame exactly.
 
