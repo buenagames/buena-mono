@@ -141,7 +141,7 @@ jobs:
       - name: Copy OFL.txt to release directory
         run: cp OFL.txt ${{ env.ZIP_NAME }}/OFL.txt
       - name: Remove proof/test outputs from release
-        run: rm -rf ${{ env.ZIP_NAME }}/proof ${{ env.ZIP_NAME }}/fontspector ${{ env.ZIP_NAME }}/badges ${{ env.ZIP_NAME }}/index.html
+        run: rm -rf ${{ env.ZIP_NAME }}/proof ${{ env.ZIP_NAME }}/fontspector ${{ env.ZIP_NAME }}/badges ${{ env.ZIP_NAME }}/index.html ${{ env.ZIP_NAME }}/qa ${{ env.ZIP_NAME }}/docs
       - name: Set release file name
         shell: bash
         run: echo "RELEASE_ZIP_NAME=$(echo '${{ github.repository }}' | awk -F '/' '{print $2}')-${{github.ref_name}}" >> $GITHUB_ENV
