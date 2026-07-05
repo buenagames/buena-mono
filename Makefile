@@ -27,6 +27,7 @@ build.stamp: venv sources/BuenaMono.designspace
 	. venv/bin/activate; python3 scripts/inject-stat.py
 	. venv/bin/activate; python3 scripts/add-gasp-table.py
 	. venv/bin/activate; python3 scripts/post-process.py
+	. venv/bin/activate; python3 scripts/build-gf-pair.py
 	. venv/bin/activate; python3 -c "from fontTools.ttLib import TTFont; f=TTFont('out/fonts/BuenaMono-VF.ttf'); f.flavor='woff2'; f.save('out/fonts/BuenaMono-VF.woff2')"
 	touch build.stamp
 
@@ -35,9 +36,15 @@ venv/touchfile: requirements.txt
 	. venv/bin/activate; pip install -Ur requirements.txt
 	touch venv/touchfile
 
+# QA the GF submission pair in isolation, exactly as Google's CI sees
+# it. Mixing in the 2-axis -VF files trips family-level checks
+# (canonical_filename, consistent_axes) that don't apply to the
+# submission.
 test: build.stamp
 	. venv/bin/activate; command -v fontspector >/dev/null 2>&1 || bash scripts/install-fontspector.sh
-	. venv/bin/activate; TOCHECK=$$(find out/fonts -type f 2>/dev/null); mkdir -p out/fontspector; fontspector --profile googlefonts -l warn --full-lists --succinct --html out/fontspector/fontspector-report.html --ghmarkdown out/fontspector/fontspector-report.md --badges out/badges $$TOCHECK  || echo '::warning file=sources/config.yaml,title=fontspector failures::The fontspector QA check reported errors in your font. Please check the generated report.'
+	rm -rf out/qa; mkdir -p out/qa out/fontspector
+	cp "out/fonts/BuenaMono[wght].ttf" "out/fonts/BuenaMono-Italic[wght].ttf" out/qa/
+	. venv/bin/activate; fontspector --profile googlefonts -l warn --full-lists --succinct --html out/fontspector/fontspector-report.html --ghmarkdown out/fontspector/fontspector-report.md --badges out/badges out/qa/*.ttf  || echo '::warning file=sources/config.yaml,title=fontspector failures::The fontspector QA check reported errors in your font. Please check the generated report.'
 
 proof: venv build.stamp
 	. venv/bin/activate; mkdir -p out/proof; if command -v diff3proof >/dev/null 2>&1; then diff3proof out/fonts/BuenaMono-VF.ttf --output out/proof; else TOCHECK=$$(find out/fonts -type f 2>/dev/null); diffenator2 proof $$TOCHECK -o out/proof; fi
@@ -100,7 +107,8 @@ qa-all: qa-source build.stamp qa  ## Full validation (source + built fonts)
 package: build.stamp  ## Assemble Google Fonts submission directory
 	rm -rf out/googlefonts
 	mkdir -p out/googlefonts/ofl/buenamono/article
-	cp out/fonts/BuenaMono-VF.ttf "out/googlefonts/ofl/buenamono/BuenaMono[slnt,wght].ttf"
+	cp "out/fonts/BuenaMono[wght].ttf" out/googlefonts/ofl/buenamono/
+	cp "out/fonts/BuenaMono-Italic[wght].ttf" out/googlefonts/ofl/buenamono/
 	cp OFL.txt out/googlefonts/ofl/buenamono/OFL.txt
 	cp docs/metadata.pb out/googlefonts/ofl/buenamono/METADATA.pb
 	cp docs/ARTICLE.en_us.html out/googlefonts/ofl/buenamono/article/ARTICLE.en_us.html
@@ -108,4 +116,4 @@ package: build.stamp  ## Assemble Google Fonts submission directory
 	@ls -la out/googlefonts/ofl/buenamono/
 	@echo "\nVerifying submission with fontspector (from the family dir, as GF CI does)..."
 	. venv/bin/activate; command -v fontspector >/dev/null 2>&1 || bash scripts/install-fontspector.sh
-	. venv/bin/activate; cd out/googlefonts/ofl/buenamono && fontspector --profile googlefonts -l warn --succinct "BuenaMono[slnt,wght].ttf" || true
+	. venv/bin/activate; cd out/googlefonts/ofl/buenamono && fontspector --profile googlefonts -l warn --succinct "BuenaMono[wght].ttf" "BuenaMono-Italic[wght].ttf" || true

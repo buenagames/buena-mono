@@ -1,5 +1,22 @@
 # Buena Mono
 
+<!-- QA badges — uncomment when the repo is public and the DEPLOY_PAGES
+     repository variable is set to "true" (Settings > Pages must be on
+     "GitHub Actions"). The JSON endpoints are published by CI to Pages.
+
+[![][Fontspector]](https://buenagames.github.io/buena-mono/fontspector/fontspector-report.html)
+[![][OpenType]](https://buenagames.github.io/buena-mono/fontspector/fontspector-report.html)
+[![][Universal]](https://buenagames.github.io/buena-mono/fontspector/fontspector-report.html)
+[![][Google Fonts]](https://buenagames.github.io/buena-mono/fontspector/fontspector-report.html)
+[![][Glyphset]](https://buenagames.github.io/buena-mono/fontspector/fontspector-report.html)
+
+[Fontspector]: https://img.shields.io/endpoint?url=https%3A%2F%2Fbuenagames.github.io%2Fbuena-mono%2Fbadges%2FFontspectorQA.json
+[OpenType]: https://img.shields.io/endpoint?url=https%3A%2F%2Fbuenagames.github.io%2Fbuena-mono%2Fbadges%2FOpentypeSpecificationChecks.json
+[Universal]: https://img.shields.io/endpoint?url=https%3A%2F%2Fbuenagames.github.io%2Fbuena-mono%2Fbadges%2FUniversalProfileChecks.json
+[Google Fonts]: https://img.shields.io/endpoint?url=https%3A%2F%2Fbuenagames.github.io%2Fbuena-mono%2Fbadges%2FFontFileChecks.json
+[Glyphset]: https://img.shields.io/endpoint?url=https%3A%2F%2Fbuenagames.github.io%2Fbuena-mono%2Fbadges%2FGlyphsetChecks.json
+-->
+
 Writer-first monospace typeface — tuned for extended prose in markdown and code
 editors while keeping code perfectly legible. A two-axis variable font: **weight
 100–800** and **slant 0 to −10°**, 8 masters, 4,857 glyphs.
