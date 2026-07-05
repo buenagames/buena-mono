@@ -82,26 +82,6 @@ OpenType settings.
 
 ![Buena Mono Italic character set](docs/character-set-italic.png)
 
-## In use
-
-<table>
-<tr><th align="left">Regular</th><th align="left">Regular · dark</th></tr>
-<tr>
-<td width="50%"><img src="docs/use-regular-light.png" alt="Buena Mono Regular, light"></td>
-<td width="50%"><img src="docs/use-regular-dark.png" alt="Buena Mono Regular, dark"></td>
-</tr>
-<tr><th align="left">Regular + Bold</th><th align="left">Regular + Bold · dark</th></tr>
-<tr>
-<td><img src="docs/use-bold-light.png" alt="Buena Mono Regular and Bold, light"></td>
-<td><img src="docs/use-bold-dark.png" alt="Buena Mono Regular and Bold, dark"></td>
-</tr>
-<tr><th align="left">Regular + Italic</th><th align="left">Regular + Italic · dark</th></tr>
-<tr>
-<td><img src="docs/use-italic-light.png" alt="Buena Mono Regular and Italic, light"></td>
-<td><img src="docs/use-italic-dark.png" alt="Buena Mono Regular and Italic, dark"></td>
-</tr>
-</table>
-
 ## Enabling ligatures in your editor
 
 Buena Mono's code ligatures use `calt`/`liga`, which are on by default in most
@@ -127,24 +107,13 @@ Design source: [`sources/BuenaMono.glyphs`](sources/) (Glyphs 3), with UFO
 masters and a `.designspace`. See [CONTRIBUTING.md](CONTRIBUTING.md) and the
 [CHANGELOG](CHANGELOG.md).
 
-## Bonus — Claude Code spinner verbs
+## Bonus — spinner verbs
 
 Buena Mono is a writer-first dev font, so it ships a matching spinner.
 [`extras/spinner-verbs.json`](extras/spinner-verbs.json) is a 200-verb set for
-[Claude Code](https://claude.com/claude-code)'s thinking spinner. Merge it into your
-`~/.claude/settings.json` (or a project `.claude/settings.json`):
-
-```jsonc
-{
-  "spinnerVerbs": {
-    "mode": "replace",
-    "verbs": ["Krahing", "Hill-climbing", "Naming the wind", "Kwisatz-haderaching", "…and 196 more"]
-  }
-}
-```
-
-Grab the full set from [`extras/spinner-verbs.json`](extras/spinner-verbs.json), or
-watch them cycle on the [specimen](https://buena-mono.buenalabs.io/#spinner).
+your AI coding agent's thinking spinner — merge it into your agent's
+configuration, or watch the verbs cycle on the
+[specimen](https://buena-mono.buenalabs.io/#spinner).
 
 ## Credits
 
