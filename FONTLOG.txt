@@ -11,12 +11,17 @@ Basic Font Information
 
 Buena Mono is a writer-first monospace typeface — tuned for extended prose in
 markdown and code editors while keeping code legible. It is a two-axis variable
-font: weight 100–800 and slant 0 to −10°, from 8 masters, covering 4,886 glyphs
+font: weight 100–800 and slant 0 to −10°, from 8 masters, covering 4,966 glyphs
 (Latin incl. Extended A–D, Greek, Cyrillic, IPA, math, arrows, box-drawing,
 block/shade elements and currency), with code ligatures and 12 stylistic sets.
 
 ChangeLog
 ---------
+
+5 Jul 2026 (Buena) Buena Mono Version 1.220
+- Lineage-gap set: CP437 remainder, keyboard/control pictures, multi-line
+  bracket pieces, ceiling/floor, prompt ornaments, music accidentals,
+  IPA dotted/left-stem tone bars. 4,966 glyphs.
 
 5 Jul 2026 (Buena) Buena Mono Version 1.219
 - Game-symbol set: 12 chess pieces, outlined card suits, dice, stars;

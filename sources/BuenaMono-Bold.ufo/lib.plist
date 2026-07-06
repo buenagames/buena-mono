@@ -4987,6 +4987,86 @@
       <string>uni2685</string>
       <string>uni2605</string>
       <string>uni2606</string>
+      <string>uni263A</string>
+      <string>uni263B</string>
+      <string>uni2639</string>
+      <string>uni2640</string>
+      <string>uni2642</string>
+      <string>uni266A</string>
+      <string>uni266B</string>
+      <string>uni2310</string>
+      <string>uni2320</string>
+      <string>uni2321</string>
+      <string>uniFEFF</string>
+      <string>uni23CE</string>
+      <string>uni2423</string>
+      <string>uni232B</string>
+      <string>uni2326</string>
+      <string>uni2327</string>
+      <string>uni2303</string>
+      <string>uni2304</string>
+      <string>uni238B</string>
+      <string>uni2400</string>
+      <string>uni2409</string>
+      <string>uni240A</string>
+      <string>uni240B</string>
+      <string>uni240C</string>
+      <string>uni240D</string>
+      <string>uni2424</string>
+      <string>uni2308</string>
+      <string>uni2309</string>
+      <string>uni230A</string>
+      <string>uni230B</string>
+      <string>uni2305</string>
+      <string>uni2374</string>
+      <string>uni239B</string>
+      <string>uni239C</string>
+      <string>uni239D</string>
+      <string>uni239E</string>
+      <string>uni239F</string>
+      <string>uni23A0</string>
+      <string>uni23A1</string>
+      <string>uni23A2</string>
+      <string>uni23A3</string>
+      <string>uni23A4</string>
+      <string>uni23A5</string>
+      <string>uni23A6</string>
+      <string>uni23A7</string>
+      <string>uni23A8</string>
+      <string>uni23A9</string>
+      <string>uni23AA</string>
+      <string>uni23AB</string>
+      <string>uni23AC</string>
+      <string>uni23AD</string>
+      <string>uni276E</string>
+      <string>uni276F</string>
+      <string>uni2770</string>
+      <string>uni2771</string>
+      <string>uni2715</string>
+      <string>uni266F</string>
+      <string>uni266D</string>
+      <string>uni266E</string>
+      <string>uni2B16</string>
+      <string>uni2B17</string>
+      <string>uni2B18</string>
+      <string>uni2B19</string>
+      <string>uni2B1A</string>
+      <string>uni2E18</string>
+      <string>uniA708</string>
+      <string>uniA709</string>
+      <string>uniA70A</string>
+      <string>uniA70B</string>
+      <string>uniA70C</string>
+      <string>uniA70D</string>
+      <string>uniA70E</string>
+      <string>uniA70F</string>
+      <string>uniA710</string>
+      <string>uniA711</string>
+      <string>uniA712</string>
+      <string>uniA713</string>
+      <string>uniA714</string>
+      <string>uniA715</string>
+      <string>uniA716</string>
     </array>
     <key>public.openTypeCategories</key>
     <dict>
@@ -10104,6 +10184,22 @@
       <string>base</string>
       <key>uni2184</key>
       <string>base</string>
+      <key>uni2374</key>
+      <string>base</string>
+      <key>uni2400</key>
+      <string>base</string>
+      <key>uni2409</key>
+      <string>base</string>
+      <key>uni240A</key>
+      <string>base</string>
+      <key>uni240B</key>
+      <string>base</string>
+      <key>uni240C</key>
+      <string>base</string>
+      <key>uni240D</key>
+      <string>base</string>
+      <key>uni2424</key>
+      <string>base</string>
       <key>uni25CC</key>
       <string>base</string>
       <key>uni2C60</key>
@@ -10851,6 +10947,8 @@
       <string>circleplus</string>
       <key>uni2297</key>
       <string>circlemultiply</string>
+      <key>uni2310</key>
+      <string>revlogicalnot</string>
       <key>uni2329</key>
       <string>angleleft</string>
       <key>uni232A</key>
@@ -10891,8 +10989,16 @@
       <string>invcircle</string>
       <key>uni25E6</key>
       <string>openbullet</string>
+      <key>uni263A</key>
+      <string>smileface</string>
+      <key>uni263B</key>
+      <string>invsmileface</string>
       <key>uni263C</key>
       <string>sun</string>
+      <key>uni2640</key>
+      <string>female</string>
+      <key>uni2642</key>
+      <string>male</string>
       <key>uni2660</key>
       <string>spade</string>
       <key>uni2663</key>
@@ -10901,6 +11007,10 @@
       <string>heart</string>
       <key>uni2666</key>
       <string>diamond</string>
+      <key>uni266A</key>
+      <string>musicalnote</string>
+      <key>uni266B</key>
+      <string>musicalnotedbl</string>
     </dict>
   </dict>
 </plist>

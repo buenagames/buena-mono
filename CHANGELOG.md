@@ -2,6 +2,25 @@
 
 All notable changes to Buena Mono are documented here.
 
+## 1.220 — 2026-07-05
+
+Lineage-gap expansion: 80 glyphs closing every consensus coverage gap vs the
+18 obtainable monospace families from the lineage analysis.
+
+- **CP437 / terminal completeness**: ☺ ☻ ☹ ♀ ♂ ♪ ♫ ⌐ ⌠ ⌡ — the full classic
+  terminal graphics set now renders.
+- **Keyboard & editor symbols**: ⏎ ␣ ⌫ ⌦ ⌧ ⌃ ⌄ ⎋ and control pictures
+  ␀ ␉ ␊ ␋ ␌ ␍ ␤ (drawn as scaled letter components — they track weight).
+- **Math**: ceiling/floor ⌈ ⌉ ⌊ ⌋, projective ⌅, APL ⍴, and all 19
+  multi-line bracket pieces U+239B–23AD (tall parens/brackets/braces
+  assemble seamlessly across lines, matched to the box-drawing line box).
+- **Prompt & misc**: ❮ ❯ ❰ ❱, ✕, music accidentals ♯ ♭ ♮, half-black
+  diamonds ⬖ ⬗ ⬘ ⬙, dotted square ⬚, inverted interrobang ⸘.
+- **IPA**: dotted and left-stem tone bars U+A708–A716 (15), completing the
+  tone-letter set.
+- U+FEFF zero-width no-break space.
+- **4,966 glyphs / 3,950 codepoints** (was 4,886 / 3,870).
+
 ## 1.219 — 2026-07-05
 
 Game-symbol expansion.
