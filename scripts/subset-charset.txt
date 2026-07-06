@@ -1,0 +1,34 @@
+# Buena Mono — display subset charset  (source of truth for BuenaMono-VF.subset.woff2)
+#
+# The specimen site renders text via a trimmed copy of the full variable font.
+# This file lists exactly which Unicode codepoints that display subset covers.
+# Format: hex codepoints or RANGES (XXXX-YYYY), whitespace/comma separated; '#' = comment.
+# To add glyphs to the site's display font: add codepoints here, then `make build-subset`.
+#
+# 2251 codepoints in 25 ranges. Regenerate/extend, don't hand-sort.
+
+0020-007E
+00A0-024F
+0300-0377
+037A-037F
+0384-038A
+038C
+038E-03A1
+03A3-052F
+1E00-1EFF
+2000-2064
+2066-2071
+2074-208E
+2090-209C
+20A0-20C0
+2100-214F
+2190-22FF
+2500-25FF
+2654-2667  # chess pieces (Chess / More Games)
+2713
+2717
+2722  # spinner asterisk (Claude Code demo)
+2733  # spinner asterisk (Claude Code demo)
+2736  # spinner asterisk (Claude Code demo)
+273B  # spinner asterisk (Claude Code demo)
+273D  # spinner asterisk (Claude Code demo)

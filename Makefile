@@ -6,6 +6,7 @@ help:
 	@echo "###"
 	@echo
 	@echo "  make build:  Builds the fonts and places them in the out/fonts/ directory"
+	@echo "  make build-subset: Builds the site's display subset webfont"
 	@echo "  make test:   Tests the fonts with fontspector"
 	@echo "  make proof:  Creates HTML proof documents in the proof/ directory"
 	@echo "  make images: Creates PNG specimen images in the docs/ directory"
@@ -71,6 +72,9 @@ update: venv
 
 build-woff2: venv  ## Build WOFF2 variable font from existing TTF
 	. venv/bin/activate; python3 -c "from fontTools.ttLib import TTFont; f=TTFont('out/fonts/BuenaMono-VF.ttf'); f.flavor='woff2'; f.save('out/fonts/BuenaMono-VF.woff2')"
+
+build-subset: venv  ## Build the specimen site's display subset (out/fonts/BuenaMono-VF.subset.woff2)
+	. venv/bin/activate; python3 scripts/build-subset.py
 
 build-otf: venv  ## Build CFF2 variable font from designspace (with charstring normalization)
 	mkdir -p out/fonts; . venv/bin/activate; python3 scripts/build-cff2.py
