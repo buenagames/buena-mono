@@ -1,5 +1,6 @@
 SOURCES=$(shell python3 scripts/read-config.py --sources )
 FAMILY=$(shell python3 scripts/read-config.py --family )
+SITE_REPO ?= ../buena-mono.buenalabs.io
 help:
 	@echo "###"
 	@echo "# Build targets for $(FAMILY)"
@@ -7,6 +8,7 @@ help:
 	@echo
 	@echo "  make build:  Builds the fonts and places them in the out/fonts/ directory"
 	@echo "  make build-subset: Builds the site's display subset webfont"
+	@echo "  make deploy-site:  Copies the webfonts into the specimen site repo"
 	@echo "  make test:   Tests the fonts with fontspector"
 	@echo "  make proof:  Creates HTML proof documents in the proof/ directory"
 	@echo "  make images: Creates PNG specimen images in the docs/ directory"
@@ -75,6 +77,14 @@ build-woff2: venv  ## Build WOFF2 variable font from existing TTF
 
 build-subset: venv  ## Build the specimen site's display subset (out/fonts/BuenaMono-VF.subset.woff2)
 	. venv/bin/activate; python3 scripts/build-subset.py
+
+deploy-site: build-subset  ## Copy full + subset webfonts into the site's public/fonts/ (override path with SITE_REPO=...)
+	@test -d "$(SITE_REPO)/public/fonts" || { echo "error: no site repo at $(SITE_REPO)/public/fonts — pass SITE_REPO=/path/to/buena-mono.buenalabs.io"; exit 1; }
+	@for f in BuenaMono-VF.woff2 BuenaMono-VF.ttf BuenaMono-VF.subset.woff2; do \
+		test -f "out/fonts/$$f" || { echo "error: out/fonts/$$f missing — run 'make build' first"; exit 1; }; \
+	done
+	cp out/fonts/BuenaMono-VF.woff2 out/fonts/BuenaMono-VF.ttf out/fonts/BuenaMono-VF.subset.woff2 "$(SITE_REPO)/public/fonts/"
+	@echo "→ deployed BuenaMono-VF.{woff2,ttf,subset.woff2} to $(SITE_REPO)/public/fonts/ — commit them in the site repo"
 
 build-otf: venv  ## Build CFF2 variable font from designspace (with charstring normalization)
 	mkdir -p out/fonts; . venv/bin/activate; python3 scripts/build-cff2.py
