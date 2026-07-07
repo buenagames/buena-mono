@@ -566,6 +566,8 @@
     <string>hyphen_less_less.liga.glif</string>
     <key>i</key>
     <string>i.glif</string>
+    <key>i.loclTRK</key>
+    <string>i.loclT_R_K_.glif</string>
     <key>i.ss04</key>
     <string>i.ss04.glif</string>
     <key>i.ss07</key>
@@ -1436,6 +1438,8 @@
     <string>uni0180.smcp.glif</string>
     <key>uni0181</key>
     <string>uni0181.glif</string>
+    <key>uni0181.smcp</key>
+    <string>uni0181.smcp.glif</string>
     <key>uni0182</key>
     <string>uni0182.glif</string>
     <key>uni0183</key>
@@ -1446,14 +1450,20 @@
     <string>uni0185.glif</string>
     <key>uni0186</key>
     <string>uni0186.glif</string>
+    <key>uni0186.smcp</key>
+    <string>uni0186.smcp.glif</string>
     <key>uni0187</key>
     <string>uni0187.glif</string>
     <key>uni0188</key>
     <string>uni0188.glif</string>
     <key>uni0189</key>
     <string>uni0189.glif</string>
+    <key>uni0189.smcp</key>
+    <string>uni0189.smcp.glif</string>
     <key>uni018A</key>
     <string>uni018A_.glif</string>
+    <key>uni018A.smcp</key>
+    <string>uni018A_.smcp.glif</string>
     <key>uni018B</key>
     <string>uni018B_.glif</string>
     <key>uni018C</key>
@@ -1470,6 +1480,8 @@
     <string>uni018F_.smcp.glif</string>
     <key>uni0190</key>
     <string>uni0190.glif</string>
+    <key>uni0190.smcp</key>
+    <string>uni0190.smcp.glif</string>
     <key>uni0191</key>
     <string>uni0191.glif</string>
     <key>uni0191.smcp</key>
@@ -1480,16 +1492,26 @@
     <string>uni0192.smcp.glif</string>
     <key>uni0193</key>
     <string>uni0193.glif</string>
+    <key>uni0193.smcp</key>
+    <string>uni0193.smcp.glif</string>
     <key>uni0194</key>
     <string>uni0194.glif</string>
+    <key>uni0194.smcp</key>
+    <string>uni0194.smcp.glif</string>
     <key>uni0195</key>
     <string>uni0195.glif</string>
     <key>uni0196</key>
     <string>uni0196.glif</string>
+    <key>uni0196.smcp</key>
+    <string>uni0196.smcp.glif</string>
     <key>uni0197</key>
     <string>uni0197.glif</string>
+    <key>uni0197.smcp</key>
+    <string>uni0197.smcp.glif</string>
     <key>uni0198</key>
     <string>uni0198.glif</string>
+    <key>uni0198.smcp</key>
+    <string>uni0198.smcp.glif</string>
     <key>uni0199</key>
     <string>uni0199.glif</string>
     <key>uni019A</key>
@@ -1502,6 +1524,8 @@
     <string>uni019C_.glif</string>
     <key>uni019D</key>
     <string>uni019D_.glif</string>
+    <key>uni019D.smcp</key>
+    <string>uni019D_.smcp.glif</string>
     <key>uni019E</key>
     <string>uni019E_.glif</string>
     <key>uni019F</key>
@@ -1524,6 +1548,8 @@
     <string>uni01A_5.glif</string>
     <key>uni01A6</key>
     <string>uni01A_6.glif</string>
+    <key>uni01A6.smcp</key>
+    <string>uni01A_6.smcp.glif</string>
     <key>uni01A7</key>
     <string>uni01A_7.glif</string>
     <key>uni01A8</key>
@@ -1540,6 +1566,8 @@
     <string>uni01A_D_.glif</string>
     <key>uni01AE</key>
     <string>uni01A_E_.glif</string>
+    <key>uni01AE.smcp</key>
+    <string>uni01A_E_.smcp.glif</string>
     <key>uni01AF</key>
     <string>uni01A_F_.glif</string>
     <key>uni01AF.smcp</key>
@@ -1550,10 +1578,16 @@
     <string>uni01B_0.smcp.glif</string>
     <key>uni01B1</key>
     <string>uni01B_1.glif</string>
+    <key>uni01B1.smcp</key>
+    <string>uni01B_1.smcp.glif</string>
     <key>uni01B2</key>
     <string>uni01B_2.glif</string>
+    <key>uni01B2.smcp</key>
+    <string>uni01B_2.smcp.glif</string>
     <key>uni01B3</key>
     <string>uni01B_3.glif</string>
+    <key>uni01B3.smcp</key>
+    <string>uni01B_3.smcp.glif</string>
     <key>uni01B4</key>
     <string>uni01B_4.glif</string>
     <key>uni01B5</key>
@@ -1562,6 +1596,8 @@
     <string>uni01B_6.glif</string>
     <key>uni01B7</key>
     <string>uni01B_7.glif</string>
+    <key>uni01B7.smcp</key>
+    <string>uni01B_7.smcp.glif</string>
     <key>uni01B8</key>
     <string>uni01B_8.glif</string>
     <key>uni01B9</key>
@@ -1722,6 +1758,8 @@
     <string>uni01E_D_.glif</string>
     <key>uni01EE</key>
     <string>uni01E_E_.glif</string>
+    <key>uni01EE.smcp</key>
+    <string>uni01E_E_.smcp.glif</string>
     <key>uni01EF</key>
     <string>uni01E_F_.glif</string>
     <key>uni01F0</key>
@@ -1848,10 +1886,14 @@
     <string>uni021F_.smcp.glif</string>
     <key>uni0220</key>
     <string>uni0220.glif</string>
+    <key>uni0220.smcp</key>
+    <string>uni0220.smcp.glif</string>
     <key>uni0221</key>
     <string>uni0221.glif</string>
     <key>uni0222</key>
     <string>uni0222.glif</string>
+    <key>uni0222.smcp</key>
+    <string>uni0222.smcp.glif</string>
     <key>uni0223</key>
     <string>uni0223.glif</string>
     <key>uni0224</key>
@@ -1906,6 +1948,8 @@
     <string>uni0239.glif</string>
     <key>uni023A</key>
     <string>uni023A_.glif</string>
+    <key>uni023A.smcp</key>
+    <string>uni023A_.smcp.glif</string>
     <key>uni023B</key>
     <string>uni023B_.glif</string>
     <key>uni023B.smcp</key>
@@ -1926,6 +1970,8 @@
     <string>uni0240.glif</string>
     <key>uni0241</key>
     <string>uni0241.glif</string>
+    <key>uni0241.smcp</key>
+    <string>uni0241.smcp.glif</string>
     <key>uni0242</key>
     <string>uni0242.glif</string>
     <key>uni0243</key>
@@ -1934,10 +1980,16 @@
     <string>uni0243.smcp.glif</string>
     <key>uni0244</key>
     <string>uni0244.glif</string>
+    <key>uni0244.smcp</key>
+    <string>uni0244.smcp.glif</string>
     <key>uni0245</key>
     <string>uni0245.glif</string>
+    <key>uni0245.smcp</key>
+    <string>uni0245.smcp.glif</string>
     <key>uni0246</key>
     <string>uni0246.glif</string>
+    <key>uni0246.smcp</key>
+    <string>uni0246.smcp.glif</string>
     <key>uni0247</key>
     <string>uni0247.glif</string>
     <key>uni0248</key>
@@ -1946,10 +1998,14 @@
     <string>uni0249.glif</string>
     <key>uni024A</key>
     <string>uni024A_.glif</string>
+    <key>uni024A.smcp</key>
+    <string>uni024A_.smcp.glif</string>
     <key>uni024B</key>
     <string>uni024B_.glif</string>
     <key>uni024C</key>
     <string>uni024C_.glif</string>
+    <key>uni024C.smcp</key>
+    <string>uni024C_.smcp.glif</string>
     <key>uni024D</key>
     <string>uni024D_.glif</string>
     <key>uni024E</key>
@@ -9014,14 +9070,20 @@
     <string>uni2B_1A_.glif</string>
     <key>uni2C60</key>
     <string>uni2C_60.glif</string>
+    <key>uni2C60.smcp</key>
+    <string>uni2C_60.smcp.glif</string>
     <key>uni2C61</key>
     <string>uni2C_61.glif</string>
     <key>uni2C62</key>
     <string>uni2C_62.glif</string>
     <key>uni2C63</key>
     <string>uni2C_63.glif</string>
+    <key>uni2C63.smcp</key>
+    <string>uni2C_63.smcp.glif</string>
     <key>uni2C64</key>
     <string>uni2C_64.glif</string>
+    <key>uni2C64.smcp</key>
+    <string>uni2C_64.smcp.glif</string>
     <key>uni2C65</key>
     <string>uni2C_65.glif</string>
     <key>uni2C66</key>
@@ -9040,6 +9102,8 @@
     <string>uni2C_6C_.glif</string>
     <key>uni2C6D</key>
     <string>uni2C_6D_.glif</string>
+    <key>uni2C6D.smcp</key>
+    <string>uni2C_6D_.smcp.glif</string>
     <key>uni2C6E</key>
     <string>uni2C_6E_.glif</string>
     <key>uni2C6F</key>
@@ -9584,10 +9648,14 @@
     <string>uniA_78A_.glif</string>
     <key>uniA78B</key>
     <string>uniA_78B_.glif</string>
+    <key>uniA78B.smcp</key>
+    <string>uniA_78B_.smcp.glif</string>
     <key>uniA78C</key>
     <string>uniA_78C_.glif</string>
     <key>uniA78D</key>
     <string>uniA_78D_.glif</string>
+    <key>uniA78D.smcp</key>
+    <string>uniA_78D_.smcp.glif</string>
     <key>uniA78E</key>
     <string>uniA_78E_.glif</string>
     <key>uniA78F</key>
@@ -9646,6 +9714,8 @@
     <string>uniA_7A_9.glif</string>
     <key>uniA7AA</key>
     <string>uniA_7A_A_.glif</string>
+    <key>uniA7AA.smcp</key>
+    <string>uniA_7A_A_.smcp.glif</string>
     <key>uniA7AB</key>
     <string>uniA_7A_B_.glif</string>
     <key>uniA7AC</key>
@@ -9662,14 +9732,22 @@
     <string>uniA_7B_1.glif</string>
     <key>uniA7B2</key>
     <string>uniA_7B_2.glif</string>
+    <key>uniA7B2.smcp</key>
+    <string>uniA_7B_2.smcp.glif</string>
     <key>uniA7B3</key>
     <string>uniA_7B_3.glif</string>
+    <key>uniA7B3.smcp</key>
+    <string>uniA_7B_3.smcp.glif</string>
     <key>uniA7B4</key>
     <string>uniA_7B_4.glif</string>
+    <key>uniA7B4.smcp</key>
+    <string>uniA_7B_4.smcp.glif</string>
     <key>uniA7B5</key>
     <string>uniA_7B_5.glif</string>
     <key>uniA7B6</key>
     <string>uniA_7B_6.glif</string>
+    <key>uniA7B6.smcp</key>
+    <string>uniA_7B_6.smcp.glif</string>
     <key>uniA7B7</key>
     <string>uniA_7B_7.glif</string>
     <key>uniA7B8</key>
