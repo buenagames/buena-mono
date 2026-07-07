@@ -130,6 +130,10 @@ def export_multiaxis(font):
             else:
                 del source.font.lib[FILTER_KEY]
 
+        # PostScript name per master (AFDKO proof tools require one)
+        source.font.info.postscriptFontName = (
+            "BuenaMono-" + master_style(master).replace(" ", ""))
+
         ufo_path = os.path.join(SOURCES_DIR, ufo_filename)
         source.font.save(ufo_path, overwrite=True)
         written_ufos[master.id] = ufo_filename
