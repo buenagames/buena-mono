@@ -21,6 +21,12 @@
       <point x="135" y="736" type="line"/>
     </contour>
     <contour>
+      <point x="406" y="899" type="curve"/>
+      <point x="368" y="899"/>
+      <point x="281" y="860"/>
+      <point x="265" y="820" type="curve"/>
+      <point x="278" y="820" type="line"/>
+      <point x="289" y="869"/>
       <point x="308" y="887"/>
       <point x="401" y="887" type="curve"/>
       <point x="499" y="887"/>
@@ -29,12 +35,6 @@
       <point x="519" y="820" type="line"/>
       <point x="518" y="858"/>
       <point x="446" y="899"/>
-      <point x="406" y="899" type="curve"/>
-      <point x="368" y="899"/>
-      <point x="281" y="860"/>
-      <point x="265" y="820" type="curve"/>
-      <point x="278" y="820" type="line"/>
-      <point x="289" y="869"/>
     </contour>
   </outline>
   <lib>

@@ -7,18 +7,18 @@
   <anchor x="568" y="524" name="topright"/>
   <outline>
     <contour>
-      <point x="108" y="-16" type="line"/>
       <point x="108" y="532" type="line"/>
-      <point x="510" y="532" type="line"/>
-      <point x="510" y="432" type="line"/>
-      <point x="220" y="432" type="line"/>
+      <point x="108" y="-16" type="line"/>
       <point x="220" y="-16" type="line"/>
+      <point x="220" y="432" type="line"/>
+      <point x="510" y="432" type="line"/>
+      <point x="510" y="532" type="line"/>
     </contour>
     <contour>
-      <point x="446" y="750" type="line"/>
       <point x="322" y="565" type="line"/>
-      <point x="242" y="601" type="line"/>
+      <point x="446" y="750" type="line"/>
       <point x="342" y="800" type="line"/>
+      <point x="242" y="601" type="line"/>
     </contour>
   </outline>
 </glyph>

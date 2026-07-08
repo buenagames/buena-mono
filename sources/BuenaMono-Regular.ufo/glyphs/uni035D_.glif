@@ -5,13 +5,13 @@
   <anchor x="309" y="650" name="top"/>
   <outline>
     <contour>
-      <point x="369" y="590" type="curve"/>
-      <point x="249" y="590" type="line"/>
-      <point x="249" y="623"/>
-      <point x="276" y="650"/>
-      <point x="309" y="650" type="curve"/>
-      <point x="342" y="650"/>
+      <point x="249" y="590" type="curve"/>
+      <point x="369" y="590" type="line"/>
       <point x="369" y="623"/>
+      <point x="342" y="650"/>
+      <point x="309" y="650" type="curve"/>
+      <point x="276" y="650"/>
+      <point x="249" y="623"/>
     </contour>
   </outline>
   <lib>

@@ -5,16 +5,16 @@
   <anchor x="309" y="685" name="top"/>
   <outline>
     <contour>
-      <point x="374" y="625" type="line"/>
       <point x="304" y="555" type="line"/>
-      <point x="244" y="615" type="line"/>
+      <point x="374" y="625" type="line"/>
       <point x="314" y="685" type="line"/>
+      <point x="244" y="615" type="line"/>
     </contour>
     <contour>
-      <point x="314" y="555" type="line"/>
       <point x="244" y="625" type="line"/>
-      <point x="304" y="685" type="line"/>
+      <point x="314" y="555" type="line"/>
       <point x="374" y="615" type="line"/>
+      <point x="304" y="685" type="line"/>
     </contour>
   </outline>
   <lib>

@@ -7,28 +7,28 @@
   <anchor x="645" y="699" name="topright"/>
   <outline>
     <contour>
-      <point x="-207" y="37" type="line"/>
       <point x="-217" y="37" type="line"/>
-      <point x="97" y="665" type="line"/>
-      <point x="136" y="665" type="line"/>
-      <point x="229" y="37" type="line"/>
-      <point x="218" y="37" type="line"/>
-      <point x="154" y="511" type="line"/>
-      <point x="153" y="526"/>
-      <point x="150" y="549"/>
-      <point x="148" y="577" type="curve"/>
-      <point x="146" y="592"/>
-      <point x="144" y="604"/>
-      <point x="130" y="757" type="curve"/>
-      <point x="57" y="577"/>
+      <point x="-207" y="37" type="line"/>
+      <point x="25" y="513" type="line"/>
       <point x="37" y="535"/>
-      <point x="25" y="513" type="curve"/>
+      <point x="57" y="577"/>
+      <point x="130" y="757" type="curve"/>
+      <point x="144" y="604"/>
+      <point x="146" y="592"/>
+      <point x="148" y="577" type="curve"/>
+      <point x="150" y="549"/>
+      <point x="153" y="526"/>
+      <point x="154" y="511" type="curve"/>
+      <point x="218" y="37" type="line"/>
+      <point x="229" y="37" type="line"/>
+      <point x="136" y="665" type="line"/>
+      <point x="97" y="665" type="line"/>
     </contour>
     <contour>
-      <point x="127" y="251" type="line"/>
       <point x="-46" y="251" type="line"/>
-      <point x="-43" y="256" type="line"/>
+      <point x="127" y="251" type="line"/>
       <point x="127" y="256" type="line"/>
+      <point x="-43" y="256" type="line"/>
     </contour>
     <contour>
       <point x="184" y="-37" type="line"/>
@@ -49,10 +49,10 @@
       <point x="572" y="739" type="line"/>
     </contour>
     <contour>
-      <point x="643" y="251" type="line"/>
       <point x="470" y="251" type="line"/>
-      <point x="473" y="256" type="line"/>
+      <point x="643" y="251" type="line"/>
       <point x="643" y="256" type="line"/>
+      <point x="473" y="256" type="line"/>
     </contour>
   </outline>
   <lib>

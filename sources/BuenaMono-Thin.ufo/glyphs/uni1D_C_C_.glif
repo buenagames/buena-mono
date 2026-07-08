@@ -5,20 +5,20 @@
   <anchor x="16" y="765" name="top"/>
   <outline>
     <contour>
-      <point x="212" y="602"/>
       <point x="119" y="602" type="curve"/>
-      <point x="22" y="602"/>
-      <point x="-49" y="673"/>
-      <point x="-53" y="765" type="curve"/>
-      <point x="35" y="765" type="line"/>
-      <point x="49" y="694"/>
-      <point x="76" y="695"/>
-      <point x="116" y="695" type="curve"/>
-      <point x="153" y="695"/>
-      <point x="183" y="693"/>
-      <point x="198" y="765" type="curve"/>
-      <point x="285" y="765" type="line"/>
+      <point x="212" y="602"/>
       <point x="281" y="673"/>
+      <point x="285" y="765" type="curve"/>
+      <point x="198" y="765" type="line"/>
+      <point x="183" y="693"/>
+      <point x="153" y="695"/>
+      <point x="116" y="695" type="curve"/>
+      <point x="76" y="695"/>
+      <point x="49" y="694"/>
+      <point x="35" y="765" type="curve"/>
+      <point x="-53" y="765" type="line"/>
+      <point x="-49" y="673"/>
+      <point x="22" y="602"/>
     </contour>
     <contour>
       <point x="6" y="695" type="line"/>

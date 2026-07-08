@@ -7,20 +7,20 @@
   <anchor x="568" y="699" name="topright"/>
   <outline>
     <contour>
-      <point x="29" y="-11" type="line"/>
       <point x="29" y="709" type="line"/>
-      <point x="135" y="709" type="line"/>
-      <point x="135" y="401" type="line"/>
-      <point x="295" y="401" type="line"/>
-      <point x="295" y="709" type="line"/>
-      <point x="588" y="709" type="line"/>
-      <point x="588" y="614" type="line"/>
-      <point x="401" y="614" type="line"/>
-      <point x="401" y="-11" type="line"/>
-      <point x="295" y="-11" type="line"/>
-      <point x="295" y="306" type="line"/>
-      <point x="135" y="306" type="line"/>
+      <point x="29" y="-11" type="line"/>
       <point x="135" y="-11" type="line"/>
+      <point x="135" y="306" type="line"/>
+      <point x="295" y="306" type="line"/>
+      <point x="295" y="-11" type="line"/>
+      <point x="401" y="-11" type="line"/>
+      <point x="401" y="614" type="line"/>
+      <point x="588" y="614" type="line"/>
+      <point x="588" y="709" type="line"/>
+      <point x="295" y="709" type="line"/>
+      <point x="295" y="401" type="line"/>
+      <point x="135" y="401" type="line"/>
+      <point x="135" y="709" type="line"/>
     </contour>
   </outline>
 </glyph>

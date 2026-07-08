@@ -7,14 +7,14 @@
   <anchor x="568" y="524" name="topright"/>
   <outline>
     <contour>
-      <point x="-94" y="32" type="line"/>
       <point x="-113" y="32" type="line"/>
-      <point x="-113" y="493" type="line"/>
-      <point x="-94" y="493" type="line"/>
-      <point x="-94" y="275" type="line"/>
-      <point x="263" y="275" type="line"/>
-      <point x="263" y="273" type="line"/>
+      <point x="-94" y="32" type="line"/>
       <point x="-94" y="273" type="line"/>
+      <point x="263" y="273" type="line"/>
+      <point x="263" y="275" type="line"/>
+      <point x="-94" y="275" type="line"/>
+      <point x="-94" y="493" type="line"/>
+      <point x="-113" y="493" type="line"/>
     </contour>
     <contour>
       <point x="85" y="-32" type="line"/>
@@ -27,10 +27,10 @@
       <point x="334" y="556" type="line"/>
     </contour>
     <contour>
-      <point x="608" y="32" type="line"/>
       <point x="229" y="32" type="line"/>
-      <point x="229" y="38" type="line"/>
+      <point x="608" y="32" type="line"/>
       <point x="608" y="38" type="line"/>
+      <point x="229" y="38" type="line"/>
     </contour>
     <contour>
       <point x="381" y="313" type="line"/>

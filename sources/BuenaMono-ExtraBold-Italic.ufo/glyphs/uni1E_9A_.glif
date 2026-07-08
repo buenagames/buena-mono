@@ -7,18 +7,18 @@
   <anchor x="650" y="729" name="topright"/>
   <outline>
     <contour>
-      <point x="300" y="874"/>
       <point x="251" y="962" type="curve"/>
-      <point x="364" y="962"/>
-      <point x="439" y="871"/>
-      <point x="419" y="758" type="curve"/>
-      <point x="400" y="645"/>
-      <point x="292" y="554"/>
-      <point x="179" y="554" type="curve"/>
-      <point x="259" y="642"/>
-      <point x="320" y="694"/>
-      <point x="331" y="758" type="curve"/>
+      <point x="300" y="874"/>
       <point x="343" y="822"/>
+      <point x="331" y="758" type="curve"/>
+      <point x="320" y="694"/>
+      <point x="259" y="642"/>
+      <point x="179" y="554" type="curve"/>
+      <point x="292" y="554"/>
+      <point x="400" y="645"/>
+      <point x="419" y="758" type="curve"/>
+      <point x="439" y="871"/>
+      <point x="364" y="962"/>
     </contour>
     <component base="a"/>
   </outline>

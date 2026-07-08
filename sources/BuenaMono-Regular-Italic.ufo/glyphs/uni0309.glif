@@ -5,18 +5,18 @@
   <anchor x="403" y="765" name="top"/>
   <outline>
     <contour>
-      <point x="217" y="704" type="line"/>
       <point x="228" y="765" type="line"/>
-      <point x="337" y="765" type="line"/>
-      <point x="388" y="765"/>
-      <point x="402" y="741"/>
-      <point x="397" y="710" type="curve"/>
-      <point x="392" y="681"/>
-      <point x="368" y="646"/>
-      <point x="330" y="607" type="curve"/>
-      <point x="301" y="577" type="line"/>
-      <point x="259" y="600" type="line"/>
+      <point x="217" y="704" type="line"/>
       <point x="335" y="704" type="line"/>
+      <point x="259" y="600" type="line"/>
+      <point x="301" y="577" type="line"/>
+      <point x="330" y="607" type="line"/>
+      <point x="368" y="646"/>
+      <point x="392" y="681"/>
+      <point x="397" y="710" type="curve"/>
+      <point x="402" y="741"/>
+      <point x="388" y="765"/>
+      <point x="337" y="765" type="curve"/>
     </contour>
   </outline>
   <lib>

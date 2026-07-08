@@ -7,19 +7,19 @@
   <anchor x="650" y="729" name="topright"/>
   <outline>
     <contour>
+      <point x="267" y="274" type="curve"/>
       <point x="512" y="274" type="line"/>
-      <point x="267" y="274" type="line"/>
-      <point x="187" y="274"/>
-      <point x="148" y="334"/>
-      <point x="158" y="393" type="curve"/>
-      <point x="167" y="444"/>
-      <point x="225" y="511"/>
-      <point x="295" y="511" type="curve"/>
-      <point x="320" y="511"/>
-      <point x="346" y="501"/>
-      <point x="358" y="488" type="curve"/>
-      <point x="420" y="377" type="line"/>
       <point x="530" y="377" type="line"/>
+      <point x="420" y="377" type="line"/>
+      <point x="358" y="488" type="line"/>
+      <point x="346" y="501"/>
+      <point x="320" y="511"/>
+      <point x="295" y="511" type="curve"/>
+      <point x="225" y="511"/>
+      <point x="167" y="444"/>
+      <point x="158" y="393" type="curve"/>
+      <point x="148" y="334"/>
+      <point x="187" y="274"/>
     </contour>
     <contour>
       <point x="287" y="345" type="line"/>

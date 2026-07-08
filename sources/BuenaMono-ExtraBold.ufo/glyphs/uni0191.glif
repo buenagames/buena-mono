@@ -7,36 +7,36 @@
   <anchor x="568" y="699" name="topright"/>
   <outline>
     <contour>
-      <point x="66" y="-211" type="curve"/>
       <point x="46" y="-213" type="line"/>
-      <point x="42" y="-150" type="line"/>
-      <point x="61" y="-147" type="line"/>
-      <point x="111" y="-139"/>
-      <point x="152" y="-94"/>
-      <point x="152" y="-39" type="curve"/>
-      <point x="152" y="72" type="line"/>
-      <point x="217" y="72" type="line"/>
-      <point x="217" y="-47" type="line"/>
-      <point x="217" y="-155"/>
+      <point x="66" y="-211" type="line"/>
       <point x="172" y="-200"/>
+      <point x="217" y="-155"/>
+      <point x="217" y="-47" type="curve"/>
+      <point x="217" y="72" type="line"/>
+      <point x="152" y="72" type="line"/>
+      <point x="152" y="-39" type="line"/>
+      <point x="152" y="-94"/>
+      <point x="111" y="-139"/>
+      <point x="61" y="-147" type="curve"/>
+      <point x="42" y="-150" type="line"/>
     </contour>
     <contour>
-      <point x="217" y="18" type="line"/>
       <point x="152" y="18" type="line"/>
-      <point x="152" y="675" type="line"/>
+      <point x="217" y="18" type="line"/>
       <point x="217" y="675" type="line"/>
-    </contour>
-    <contour>
-      <point x="487" y="289" type="line"/>
-      <point x="152" y="289" type="line"/>
-      <point x="152" y="346" type="line"/>
-      <point x="487" y="346" type="line"/>
-    </contour>
-    <contour>
-      <point x="575" y="619" type="line"/>
-      <point x="152" y="619" type="line"/>
       <point x="152" y="675" type="line"/>
+    </contour>
+    <contour>
+      <point x="152" y="289" type="line"/>
+      <point x="487" y="289" type="line"/>
+      <point x="487" y="346" type="line"/>
+      <point x="152" y="346" type="line"/>
+    </contour>
+    <contour>
+      <point x="152" y="619" type="line"/>
+      <point x="575" y="619" type="line"/>
       <point x="575" y="675" type="line"/>
+      <point x="152" y="675" type="line"/>
     </contour>
   </outline>
 </glyph>

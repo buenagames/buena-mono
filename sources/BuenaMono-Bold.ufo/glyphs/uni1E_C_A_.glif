@@ -7,34 +7,34 @@
   <anchor x="568" y="699" name="topright"/>
   <outline>
     <contour>
-      <point x="501" y="24" type="line"/>
       <point x="117" y="24" type="line"/>
-      <point x="117" y="43" type="line"/>
-      <point x="291" y="43" type="line"/>
-      <point x="291" y="655" type="line"/>
-      <point x="117" y="655" type="line"/>
-      <point x="117" y="674" type="line"/>
-      <point x="501" y="674" type="line"/>
-      <point x="501" y="655" type="line"/>
-      <point x="327" y="655" type="line"/>
-      <point x="327" y="43" type="line"/>
+      <point x="501" y="24" type="line"/>
       <point x="501" y="43" type="line"/>
+      <point x="327" y="43" type="line"/>
+      <point x="327" y="655" type="line"/>
+      <point x="501" y="655" type="line"/>
+      <point x="501" y="674" type="line"/>
+      <point x="117" y="674" type="line"/>
+      <point x="117" y="655" type="line"/>
+      <point x="291" y="655" type="line"/>
+      <point x="291" y="43" type="line"/>
+      <point x="117" y="43" type="line"/>
     </contour>
     <contour>
-      <point x="350" y="-148"/>
       <point x="309" y="-148" type="curve"/>
-      <point x="268" y="-148"/>
-      <point x="276" y="-153"/>
-      <point x="276" y="-126" type="curve"/>
-      <point x="276" y="-112" type="line"/>
-      <point x="276" y="-85"/>
-      <point x="268" y="-90"/>
-      <point x="309" y="-90" type="curve"/>
-      <point x="350" y="-90"/>
-      <point x="342" y="-85"/>
-      <point x="342" y="-112" type="curve"/>
-      <point x="342" y="-126" type="line"/>
+      <point x="350" y="-148"/>
       <point x="342" y="-153"/>
+      <point x="342" y="-126" type="curve"/>
+      <point x="342" y="-112" type="line"/>
+      <point x="342" y="-85"/>
+      <point x="350" y="-90"/>
+      <point x="309" y="-90" type="curve"/>
+      <point x="268" y="-90"/>
+      <point x="276" y="-85"/>
+      <point x="276" y="-112" type="curve"/>
+      <point x="276" y="-126" type="line"/>
+      <point x="276" y="-153"/>
+      <point x="268" y="-148"/>
     </contour>
   </outline>
 </glyph>

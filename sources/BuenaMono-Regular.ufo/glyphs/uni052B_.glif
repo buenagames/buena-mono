@@ -7,10 +7,10 @@
   <anchor x="568" y="524" name="topright"/>
   <outline>
     <contour>
-      <point x="464" y="236" type="line"/>
       <point x="169" y="236" type="line"/>
-      <point x="169" y="299" type="line"/>
+      <point x="464" y="236" type="line"/>
       <point x="464" y="299" type="line"/>
+      <point x="169" y="299" type="line"/>
     </contour>
     <contour>
       <point x="-241" y="-137" type="line"/>
@@ -46,26 +46,26 @@
       <point x="-139" y="70" type="line"/>
     </contour>
     <contour>
-      <point x="859" y="0" type="line"/>
       <point x="760" y="0" type="line"/>
-      <point x="572" y="263" type="line"/>
-      <point x="571" y="271" type="line"/>
-      <point x="756" y="524" type="line"/>
-      <point x="848" y="524" type="line"/>
-      <point x="646" y="246" type="line"/>
+      <point x="859" y="0" type="line"/>
       <point x="640" y="307" type="line"/>
+      <point x="646" y="246" type="line"/>
+      <point x="848" y="524" type="line"/>
+      <point x="756" y="524" type="line"/>
+      <point x="571" y="271" type="line"/>
+      <point x="572" y="263" type="line"/>
     </contour>
     <contour>
-      <point x="494" y="0" type="line"/>
       <point x="406" y="0" type="line"/>
-      <point x="406" y="524" type="line"/>
+      <point x="494" y="0" type="line"/>
       <point x="494" y="524" type="line"/>
+      <point x="406" y="524" type="line"/>
     </contour>
     <contour>
-      <point x="602" y="233" type="line"/>
       <point x="491" y="233" type="line"/>
-      <point x="491" y="303" type="line"/>
+      <point x="602" y="233" type="line"/>
       <point x="602" y="303" type="line"/>
+      <point x="491" y="303" type="line"/>
     </contour>
   </outline>
   <lib>

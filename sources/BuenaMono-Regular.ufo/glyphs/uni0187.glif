@@ -7,22 +7,22 @@
   <anchor x="568" y="699" name="topright"/>
   <outline>
     <contour>
+      <point x="433" y="709" type="curve"/>
       <point x="433" y="673" type="line"/>
-      <point x="433" y="709" type="line"/>
-      <point x="433" y="793"/>
-      <point x="460" y="835"/>
-      <point x="541" y="835" type="curve"/>
-      <point x="565" y="835"/>
-      <point x="584" y="830"/>
-      <point x="594" y="824" type="curve"/>
-      <point x="594" y="765" type="line"/>
-      <point x="593" y="765"/>
-      <point x="571" y="772"/>
-      <point x="548" y="772" type="curve"/>
-      <point x="520" y="772"/>
-      <point x="497" y="751"/>
-      <point x="497" y="720" type="curve"/>
       <point x="497" y="673" type="line"/>
+      <point x="497" y="720" type="line"/>
+      <point x="497" y="751"/>
+      <point x="520" y="772"/>
+      <point x="548" y="772" type="curve"/>
+      <point x="571" y="772"/>
+      <point x="593" y="765"/>
+      <point x="594" y="765" type="curve"/>
+      <point x="594" y="824" type="line"/>
+      <point x="584" y="830"/>
+      <point x="565" y="835"/>
+      <point x="541" y="835" type="curve"/>
+      <point x="460" y="835"/>
+      <point x="433" y="793"/>
     </contour>
     <contour>
       <point x="321" y="-15" type="line"/>
