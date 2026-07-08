@@ -2,6 +2,36 @@
 
 All notable changes to Buena Mono are documented here.
 
+## 1.222 — 2026-07-08
+
+Language-coverage completion + source hygiene (BUENA-335 round 2).
+
+- **971 languages shaped correctly** (shaperglot; was 835 in 1.221, 480 in
+  1.220) — every nearly-supported language closed except Yi and Korean.
+- **61 new small caps** (accented ǹ ḿ ṍ ḍ … and all stragglers ẓ ʃ ƭ ⱳ ɐ ẋ
+  ȓ ƹ ƈ ƥ ẉ ḫ ɫ ɤ ɉ), caseless ƛ ʕ ʘ, ẖ composite.
+- **New codepoints**: Ᲊ ᲊ (U+1C89/1C8A, Khanty Tje), Ꟍ ꟍ (U+A7CC/A7CD,
+  Luiseño), ꜛ ꜜ tone letters, ꭥ, Ꟛ ꟛ (Latin lambda) — 19 Google Fonts
+  glyphsets now at 100%.
+- **Winding normalization**: 21,228 contours across 1,534 glyphs aligned to
+  a single convention; restores filled counters on Ꙭ Ꚙ Ꝏ and fixes overlay
+  artifacts. Interpolation start points aligned (problems 655 → 256).
+- **5,078 glyphs / 3,959 codepoints** (was 5,005 / 3,950).
+
+## 1.221 — 2026-07-07
+
+Small caps for IPA/African Latin; PostScript-hinted CFF2.
+
+- **835 languages shaped correctly** (was 480): 38 scaled small caps for
+  IPA/African letters (ɔ ɛ ɓ ɗ ɨ ɩ ɲ ʋ ʉ ꞌ ƴ ɣ ɖ ƙ ʊ ʒ …) with smcp/c2sc
+  rules; Turkish dotted-i locl fix (i no longer renders as dotless ı in
+  Turkish text; dotted small-cap İ under smcp; fi ligature suppressed).
+- Winding fixed on the 38 source capitals (Ⱥ Ɇ Ɍ Ᵽ Ⱡ Ꭓ … no longer render
+  with XOR artifacts).
+- The variable CFF2 OTF now ships **PostScript-hinted** (otfautohint +
+  cffsubr at build time; alignment zones + standard stems seeded per master).
+- **5,005 glyphs / 3,950 codepoints** (was 4,966 / 3,950).
+
 ## 1.220 — 2026-07-05
 
 Lineage-gap expansion: 80 glyphs closing every consensus coverage gap vs the
