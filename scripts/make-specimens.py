@@ -28,7 +28,7 @@ def hb(font, text, size, variations, fg, bg, out, features=None):
 
 
 def hero(font, tmp, outpath):
-    FG, W, PAD = "111111", 1680, 72
+    FG, W, PAD = "EDEDED", 1680, 72
     lines = [
         ("Buena Mono", 620, 132, 0),
         ("Writer-first monospace · weight 100–800 · slant 0 to −10°", 400, 34, 34),
@@ -40,11 +40,11 @@ def hero(font, tmp, outpath):
         ("const inc = (x) => x >= 0 ? x + 1 : x;  a != b", 460, 44, 44),
         ("AÀÇ gβ Дж 0123 @#$€ →≠≈∑ ░▒▓█ (){}[]", 460, 46, 30),
     ]
-    imgs = [(hb(font, t, s, f"wght={w}", FG, "ffffff", f"{tmp}/hero_{i}.png"), g)
+    imgs = [(hb(font, t, s, f"wght={w}", FG, "000000", f"{tmp}/hero_{i}.png"), g)
             for i, (t, w, s, g) in enumerate(lines)]
     width = max(W, max(im.width for im, _ in imgs) + 2 * PAD)
     height = PAD * 2 + sum(im.height + g for im, g in imgs)
-    canvas = Image.new("RGB", (width, height), "#ffffff")
+    canvas = Image.new("RGB", (width, height), "#000000")
     y = PAD
     for im, g in imgs:
         y += g
@@ -60,20 +60,21 @@ SS = [
     ("ss07", "Serifed i", "i"), ("ss08", "Straight-tail y", "y"),
     ("ss09", "Curved-tail y", "y"), ("ss10", "Plain zero", "0"),
     ("ss11", "Dotted zero", "0"), ("ss12", "Alternate r", "r"),
+    ("ss13", "Machine-readable", "=>"),
 ]
 
 
 def stylistic_sets(font, tmp, outpath):
-    FG, PAD, gsize, lsize, rowH, labelW = "111111", 64, 60, 30, 92, 460
+    FG, PAD, gsize, lsize, rowH, labelW = "EDEDED", 64, 60, 30, 92, 460
     rows = []
     for tag, label, ch in SS:
         rows.append((
-            hb(font, f"{tag}   {label}", lsize, "wght=400", "555555", "ffffff", f"{tmp}/ss_{tag}_l.png"),
-            hb(font, ch, gsize, "wght=400", FG, "ffffff", f"{tmp}/ss_{tag}_d.png"),
-            hb(font, "→", round(gsize * 0.6), "wght=400", "aaaaaa", "ffffff", f"{tmp}/ss_{tag}_r.png"),
-            hb(font, ch, gsize, "wght=400", FG, "ffffff", f"{tmp}/ss_{tag}_a.png", features=tag),
+            hb(font, f"{tag}   {label}", lsize, "wght=400", "A0A0A0", "000000", f"{tmp}/ss_{tag}_l.png"),
+            hb(font, ch, gsize, "wght=400", FG, "000000", f"{tmp}/ss_{tag}_d.png"),
+            hb(font, "→", round(gsize * 0.6), "wght=400", "6E6E6E", "000000", f"{tmp}/ss_{tag}_r.png"),
+            hb(font, ch, gsize, "wght=400", FG, "000000", f"{tmp}/ss_{tag}_a.png", features=tag),
         ))
-    canvas = Image.new("RGB", (1120, PAD * 2 + len(rows) * rowH), "#ffffff")
+    canvas = Image.new("RGB", (1120, PAD * 2 + len(rows) * rowH), "#000000")
     y = PAD
     for lab, deflt, arr, alt in rows:
         cy = y + rowH // 2
@@ -87,7 +88,7 @@ def stylistic_sets(font, tmp, outpath):
 
 
 def charset(font, tmp, outpath):
-    FG, PAD, size = "111111", 64, 34
+    FG, PAD, size = "EDEDED", 64, 34
     NOLIG = "-calt,-liga,-dlig,-clig"  # show raw punctuation, not code ligatures
     lines = [
         ("ABCDEFGHIJKLMNOPQRSTUVWXYZ", None),
@@ -102,10 +103,10 @@ def charset(font, tmp, outpath):
         ("== === != >= <= => -> <- |> <| ++ -- .= ...", None),
     ]
     line_h = round(size * 1.7)
-    imgs = [hb(font, t, size, "wght=400", FG, "ffffff", f"{tmp}/cs_{i}.png", features=feat)
+    imgs = [hb(font, t, size, "wght=400", FG, "000000", f"{tmp}/cs_{i}.png", features=feat)
             for i, (t, feat) in enumerate(lines)]
     width = max(1200, max(im.width for im in imgs) + 2 * PAD)
-    canvas = Image.new("RGB", (width, PAD * 2 + len(imgs) * line_h), "#ffffff")
+    canvas = Image.new("RGB", (width, PAD * 2 + len(imgs) * line_h), "#000000")
     y = PAD
     for im in imgs:
         canvas.paste(im, (PAD, y), im)
@@ -119,7 +120,7 @@ def main():
     with tempfile.TemporaryDirectory() as tmp:
         hero(font, tmp, os.path.join(docs, "specimen.png"))
         stylistic_sets(font, tmp, os.path.join(docs, "stylistic-sets.png"))
-        charset(font, tmp, os.path.join(docs, "character-set.png"))
+        # charset() superseded by docs/character-set-roman.py / -italic.py
     print(f"specimens written to {docs}")
 
 

@@ -115,7 +115,7 @@ def draw_auxiliary_text():
     URL_AND_HASH = MY_URL + " at commit " + MY_HASH
     URL_AND_HASH = URL_AND_HASH.replace("\n", " ").strip()
     text(FONT_NAME, POS_TOP_LEFT, align="left")
-    text(FONT_VERSION, POS_TOP_RIGHT, align="right")
+    # version stamp removed — went stale between releases (BUENA-334 review)
     text(URL_AND_HASH, POS_BOTTOM_LEFT, align="left")
     text(FONT_LICENSE, POS_BOTTOM_RIGHT, align="right")
 
