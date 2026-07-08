@@ -2,6 +2,15 @@
 
 All notable changes to Buena Mono are documented here.
 
+## 1.223 — 2026-07-08
+
+- **ss13 “Machine readable”**: decomposes all 164 ligatures back to their
+  components for OCR/verbatim contexts (`font-feature-settings: "ss13" 1`).
+- Small caps for ᲊ (Tje) and ꭥ — clears the remaining fontspector
+  small-cap FAILs (back to the single intentional filename check).
+- fontspector WARNs 1,072 → 347 after the winding normalization.
+- **5,080 glyphs / 51 OpenType features.**
+
 ## 1.222 — 2026-07-08
 
 Language-coverage completion + source hygiene (BUENA-335 round 2).

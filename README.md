@@ -20,7 +20,7 @@
 A free, open-source, writer-first monospace programming font — tuned for
 extended prose in markdown and code editors while keeping code perfectly
 legible. A two-axis variable font: **weight 100–800** and **slant 0 to −10°**,
-8 masters, 5,078 glyphs, 971 languages.
+8 masters, 5,080 glyphs, 971 languages.
 
 **[Specimen & docs →](https://buena-mono.buenalabs.io)** · Coming soon to **Google Fonts**
 
@@ -52,12 +52,13 @@ Grab the fonts from [`fonts/variable/`](fonts/variable) — `BuenaMono-VF.ttf`
 ## Features
 
 - **Axes:** weight 100–800, slant 0 to −10°
-- **5,078 glyphs / 971 languages:** Latin (incl. Extended A–D), Greek,
+- **5,080 glyphs / 971 languages:** Latin (incl. Extended A–D), Greek,
   Cyrillic, IPA, math
   operators, arrows, box-drawing, block/shade elements, currency
 - **Code ligatures** — multi-cell and column-alignment preserving
-- **12 stylistic sets** — single-story `a`, tailed `l`, dotted/plain zero, and more
-- OpenType: `ccmp`, `mark`, `mkmk`, `aalt`, `calt`, `liga`, `smcp`, `ss01`–`ss12`
+- **13 stylistic sets** — single-story `a`, tailed `l`, dotted/plain zero, and
+  `ss13` machine-readable mode (decomposes every ligature for OCR/verbatim)
+- OpenType: `ccmp`, `mark`, `mkmk`, `aalt`, `calt`, `liga`, `smcp`, `ss01`–`ss13`
 
 ## Specimen
 
@@ -68,7 +69,7 @@ coverage:
 
 ## Stylistic sets
 
-Twelve stylistic sets (`ss01`–`ss12`) provide alternate letterforms:
+Twelve stylistic sets (`ss01`–`ss13`) provide alternate letterforms:
 
 ![Buena Mono stylistic sets](docs/stylistic-sets.png)
 
