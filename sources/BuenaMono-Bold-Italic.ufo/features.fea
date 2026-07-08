@@ -41,7 +41,8 @@ lookup remove_dot {
 lookup decompose_soft_dotted {
   # Precomposed i-based: decompose to dotlessi + combining mark(s)
   sub uni012F by uni0131 uni0328;  # į → dotlessi + ogonek
-  sub uni1ECB by uni0131 uni0323;  # ị → dotlessi + dot below
+  sub uni1ECB by uni0131 uni0323;
+  sub uni1E2D by uni0131 uni0330;  # ḭ → dotlessi + tilde below  # ị → dotlessi + dot below
   sub uni0129 by uni0131 uni0303;  # ĩ → dotlessi + tilde
   sub uni012B by uni0131 uni0304;  # ī → dotlessi + macron
   sub uni012D by uni0131 uni0306;  # ĭ → dotlessi + breve

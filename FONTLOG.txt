@@ -18,6 +18,10 @@ block/shade elements and currency), with code ligatures and 12 stylistic sets.
 ChangeLog
 ---------
 
+8 Jul 2026 (Buena) Buena Mono Version 1.224
+- Mark-anchor normalization (zero collisions at all corners); overlay bars
+  on stroked letters restored at Bold/ExtraBold.
+
 8 Jul 2026 (Buena) Buena Mono Version 1.223
 - ss13 machine-readable mode (ligatures decompose); Tje/omega small caps.
   5,080 glyphs.

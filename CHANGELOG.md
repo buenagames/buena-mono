@@ -2,6 +2,21 @@
 
 All notable changes to Buena Mono are documented here.
 
+## 1.224 — 2026-07-08
+
+Mark positioning + overlay-bar repair.
+
+- **Zero mark collisions** at every designspace corner (was 18 stress-string
+  failures): anchor heights now track each master's measured flat letter
+  tops (heavy masters reach past the nominal metrics), anchors lift above
+  baked accents/descender tails for correct stacking, and combining marks
+  carry 20u built-in clearance. Soft-dotted ḭ decomposes before above-marks.
+- **Stroke-overlay bars restored at heavy weights**: the bars on
+  Ɇ ɇ Ɍ ɍ Ᵽ ᵽ Ⱡ ⱡ Ⱥ ⱥ Ꭓ ꭓ shrank as weight grew (a relic of the
+  pre-normalization winding: the weight offset contracted reversed
+  contours — down to 2u at ExtraBold). Rebuilt to the Ø-slash growth
+  convention; Thin keeps its authored bars.
+
 ## 1.223 — 2026-07-08
 
 - **ss13 “Machine readable”**: decomposes all 164 ligatures back to their
