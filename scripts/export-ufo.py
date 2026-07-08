@@ -67,6 +67,49 @@ def master_location(master):
     return loc
 
 
+# Dominant stem widths per weight, measured with otfstemhist
+# (see the site's /reports/psstemhist.html; re-verify per release)
+_STD_STEMS = {"Thin": 50, "Regular": 82, "Bold": 120, "ExtraBold": 146}
+
+
+def _seed_ps_hint_params(ufo, style):
+    """Write PostScript hinting parameters (alignment zones + stems) into the
+    UFO fontinfo so otfautohint can hint the masters. Zones are measured from
+    the round/flat control glyphs of this master; stems come from otfstemhist
+    measurements."""
+    from fontTools.pens.boundsPen import BoundsPen
+
+    def bounds(name):
+        pen = BoundsPen(None)
+        ufo[name].draw(pen)
+        return pen.bounds  # (xMin, yMin, xMax, yMax)
+
+    try:
+        o_b = bounds("o")
+        cap_o = bounds("O")
+        h_top = bounds("H")[3]
+        x_top = bounds("x")[3]
+        asc_top = bounds("b")[3]
+        desc_bot = bounds("p")[1]
+    except (KeyError, TypeError):
+        return  # control glyphs missing; skip silently
+
+    base_under = min(o_b[1], cap_o[1], 0)
+    blues = sorted({(base_under, 0), (x_top, max(x_top, o_b[3])),
+                    (h_top, max(h_top, cap_o[3])),
+                    (asc_top, asc_top)})
+    blue_values = [v for pair in blues for v in pair]
+    weight = style.replace(" Italic", "") or "Regular"
+    std = _STD_STEMS.get(weight, _STD_STEMS["Regular"])
+
+    info = ufo.info
+    info.postscriptBlueValues = blue_values
+    info.postscriptOtherBlues = [desc_bot, desc_bot]
+    # UFO has no StdVW/StdHW fields; first StemSnap value serves as standard
+    info.postscriptStemSnapV = [std]
+    info.postscriptStemSnapH = [std]
+
+
 def needs_manual_designspace(font):
     """Check if we need to manually construct the designspace."""
     # If there are more than 1 declared axis or more than 2 masters
@@ -133,6 +176,7 @@ def export_multiaxis(font):
         # PostScript name per master (AFDKO proof tools require one)
         source.font.info.postscriptFontName = (
             "BuenaMono-" + master_style(master).replace(" ", ""))
+        _seed_ps_hint_params(source.font, master_style(master))
 
         ufo_path = os.path.join(SOURCES_DIR, ufo_filename)
         source.font.save(ufo_path, overwrite=True)

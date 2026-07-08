@@ -61,10 +61,34 @@
     <integer>1480</integer>
     <key>openTypeOS2WinDescent</key>
     <integer>356</integer>
+    <key>postscriptBlueValues</key>
+    <array>
+      <integer>-37</integer>
+      <integer>0</integer>
+      <integer>543</integer>
+      <integer>559</integer>
+      <integer>724</integer>
+      <integer>732</integer>
+      <integer>748</integer>
+      <integer>748</integer>
+    </array>
     <key>postscriptFontName</key>
     <string>BuenaMono-BoldItalic</string>
     <key>postscriptIsFixedPitch</key>
     <true/>
+    <key>postscriptOtherBlues</key>
+    <array>
+      <integer>-237</integer>
+      <integer>-237</integer>
+    </array>
+    <key>postscriptStemSnapH</key>
+    <array>
+      <integer>120</integer>
+    </array>
+    <key>postscriptStemSnapV</key>
+    <array>
+      <integer>120</integer>
+    </array>
     <key>postscriptUnderlinePosition</key>
     <integer>-100</integer>
     <key>postscriptUnderlineThickness</key>

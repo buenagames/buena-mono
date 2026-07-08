@@ -2,3 +2,5 @@ fontmake>=3.9.0
 gftools>=0.9.54
 bumpfontversion>=0.4.1
 munkres  # required for fontTools.varLib.interpolatable full checker (else it silently under-reports ~100x)
+afdko>=4.0.0  # otfautohint hints the CFF2 at build time (build-cff2.py)
+cffsubr>=0.3.0  # re-subroutinize after otfautohint (else OTF ~2.2x larger)
