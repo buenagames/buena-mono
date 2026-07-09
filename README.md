@@ -69,7 +69,7 @@ coverage:
 
 ## Stylistic sets
 
-Twelve stylistic sets (`ss01`–`ss13`) provide alternate letterforms:
+Thirteen stylistic sets (`ss01`–`ss13`) provide alternate letterforms:
 
 ![Buena Mono stylistic sets](docs/stylistic-sets.png)
 
