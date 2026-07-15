@@ -13,7 +13,36 @@ Buena Mono is a writer-first monospace typeface — tuned for extended prose in
 markdown and code editors while keeping code legible. It is a two-axis variable
 font: weight 100–800 and slant 0 to −10°, from 8 masters, covering 5,080 glyphs
 (Latin incl. Extended A–D, Greek, Cyrillic, IPA, math, arrows, box-drawing,
-block/shade elements and currency), with code ligatures and 12 stylistic sets.
+block/shade elements and currency), with code ligatures and 13 stylistic sets.
+
+
+Derivation
+----------
+
+Buena Mono is a derivative work, not an original design. Its core Latin
+outlines were imported from Fragment Mono (Wei Huang, OFL 1.1), which itself
+derives from Nimbus Sans (URW Design Studio).
+
+Those outlines were then substantially transformed for this project:
+
+- Respaced to a 618-unit cell (Fragment uses a narrower cell matched to
+  SF Mono for terminal compatibility).
+- Cap height set to 699; Fragment reduces its cap height below standard for
+  line-fitting, which costs markdown headings their prominence.
+- A weight axis (wght 100–800) derived across 8 masters; Fragment ships a
+  single weight.
+- A slant axis (slnt 0 to −10°) added.
+- Character set extended well beyond Fragment's Latin coverage to 5,080
+  glyphs spanning Latin Extended A–D, Greek, Cyrillic, IPA, math, arrows,
+  box-drawing and symbols, plus code ligatures, small caps and 13 stylistic
+  sets.
+
+Additional glyphs and reference outlines are drawn from IBM Plex Mono, Noto
+(Latin/Greek/Cyrillic), Cascadia Code and JetBrains Mono. The complete
+copyright chain for all inherited material is recorded in OFL.txt, and the
+Reserved Font Names of the upstream projects are respected: this font is
+named Buena Mono and carries no upstream RFN.
+
 
 ChangeLog
 ---------
