@@ -3,7 +3,7 @@
   <advance width="618"/>
   <unicode hex="0209"/>
   <anchor x="309" y="-16" name="bottom"/>
-  <anchor x="309" y="742" name="top"/>
+  <anchor x="309" y="791" name="top"/>
   <anchor x="568" y="729" name="topright"/>
   <outline>
     <contour>
@@ -19,34 +19,34 @@
       <point x="52" y="89" type="line"/>
     </contour>
     <contour>
-      <point x="413" y="624" type="line"/>
+      <point x="439" y="624" type="line"/>
       <point x="408" y="624" type="line"/>
-      <point x="395" y="635"/>
-      <point x="372" y="658"/>
-      <point x="347" y="687" type="curve"/>
-      <point x="320" y="716"/>
+      <point x="394" y="635"/>
+      <point x="372" y="657"/>
+      <point x="347" y="688" type="curve"/>
+      <point x="321" y="716"/>
       <point x="304" y="739"/>
-      <point x="298" y="748" type="curve"/>
-      <point x="298" y="717" type="line"/>
+      <point x="272" y="791" type="curve"/>
+      <point x="272" y="717" type="line"/>
       <point x="341" y="717" type="line"/>
       <point x="353" y="692"/>
       <point x="392" y="622"/>
-      <point x="413" y="594" type="curve"/>
+      <point x="439" y="558" type="curve"/>
     </contour>
     <contour>
-      <point x="241" y="624" type="line"/>
+      <point x="267" y="624" type="line"/>
       <point x="236" y="624" type="line"/>
-      <point x="223" y="635"/>
-      <point x="200" y="658"/>
-      <point x="175" y="687" type="curve"/>
-      <point x="148" y="716"/>
+      <point x="222" y="635"/>
+      <point x="200" y="657"/>
+      <point x="175" y="688" type="curve"/>
+      <point x="149" y="716"/>
       <point x="132" y="739"/>
-      <point x="126" y="748" type="curve"/>
-      <point x="126" y="717" type="line"/>
+      <point x="100" y="791" type="curve"/>
+      <point x="100" y="717" type="line"/>
       <point x="169" y="717" type="line"/>
       <point x="181" y="692"/>
       <point x="220" y="622"/>
-      <point x="241" y="594" type="curve"/>
+      <point x="267" y="558" type="curve"/>
     </contour>
   </outline>
   <lib>
