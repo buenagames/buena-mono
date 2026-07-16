@@ -47,6 +47,11 @@ named Buena Mono and carries no upstream RFN.
 ChangeLog
 ---------
 
+16 Jul 2026 (Buena) Buena Mono Version 1.225
+- ExtraBold masters rebuilt from Bold (were mistakenly derived from Regular,
+  leaving wght=800 ~12u lighter than wght=700). The weight axis is now
+  monotonic across 100-800. Anchors re-normalized. 5,080 glyphs.
+
 8 Jul 2026 (Buena) Buena Mono Version 1.224
 - Mark-anchor normalization (zero collisions at all corners); overlay bars
   on stroked letters restored at Bold/ExtraBold.

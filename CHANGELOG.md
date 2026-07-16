@@ -2,6 +2,18 @@
 
 All notable changes to Buena Mono are documented here.
 
+## 1.225 — 2026-07-16
+
+Weight-axis fix.
+
+- **ExtraBold rebuilt from Bold, not Regular.** The ExtraBold masters
+  (wght=800) had been derived from the Regular master by mistake, leaving
+  them ~12 units lighter than Bold — so text got *lighter* from wght 700 to
+  800, in every release since v1.218. The masters are now re-derived from
+  Bold with the same offset used for every other weight; stems run monotonic
+  across the whole 100–800 axis (H stem 118 → 144 at the top). Anchors
+  re-normalized to the new letter heights. 5,080 glyphs (unchanged).
+
 ## 1.224 — 2026-07-08
 
 Mark positioning + overlay-bar repair.
