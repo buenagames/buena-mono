@@ -95,6 +95,34 @@ engines. Where they aren't:
 - **Neovim/Vim** — use a GUI (Neovide, MacVim) with `guifont=Buena\ Mono`
 - **Terminals** — iTerm2: *Use ligatures* in the profile; Kitty: on by default
 
+### Ghostty
+
+Buena Mono is a variable font (`wght` 100–800), so tune weight on the axis
+instead of pixel-thickening — it stays crisper:
+
+```ini
+# ~/.config/ghostty/config
+font-family         = "Buena Mono"
+font-size           = 13
+font-variation      = wght=440   # Regular 400 → 440 for terminal crispness
+font-variation-bold = wght=700   # true Bold master (800 = ExtraBold)
+adjust-cell-height  = 6%         # a touch of leading
+
+# Coding ligatures (calt/liga) are on by default. To turn them off:
+# font-feature = -calt
+# font-feature = -liga
+
+# Legibility opt-ins:
+# font-feature = ss11   # dotted zero
+# font-feature = zero   # …or slashed zero
+# font-feature = ss04   # serifed i & j — disambiguates  i l 1 |
+```
+
+- `font-variation` needs the variable `BuenaMono-VF.ttf`; with the static
+  family (Thin–ExtraBold) use `font-thicken = true` instead.
+- For native italics, install the Roman + Italic pair, or add
+  `font-variation-italic = slnt=-10`.
+
 ## Build from source
 
 Requires Python 3.9+.
