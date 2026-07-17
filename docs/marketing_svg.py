@@ -11,7 +11,14 @@ ADV = 0.618  # Buena Mono advance / UPM (monospace)
 PAL = dict(bg="#000000", pane="#0d0d0d", border="#262626", fg="#ededed",
            muted="#8a8a8a", ln="#4a4a4a", com="#6e6e6e", terra="#d97757",
            green="#10a37f", blue="#4285f4", num="#4fa8ff",
-           red="#ff5f57", yellow="#febc2e", tgreen="#28c840")
+           red="#ff5f57", yellow="#febc2e", tgreen="#28c840",
+           # Show Syntax — parts-of-speech (iA Writer palette) from
+           # buena-mono.buenalabs.io; dark = on black, light = on white.
+           syn_adj="#c99a5b", syn_noun="#e0603f", syn_adv="#b189d6",
+           syn_verb="#6aa3dd", syn_conj="#79b06f",
+           syn_adj_light="#8a6a3a", syn_noun_light="#c0392b", syn_adv_light="#7e57b0",
+           syn_verb_light="#2f6fb0", syn_conj_light="#4d8248",
+           caret="#00c4ff")
 
 
 def esc(s):

@@ -26,6 +26,14 @@ BG, PANE, BORDER = hx("000000"), hx("0d0d0d"), hx("262626")
 FG, MUTED, LN = hx("ededed"), hx("8a8a8a"), hx("4a4a4a")
 TERRA, GREEN, BLUE, NUMc, COM = hx("d97757"), hx("10a37f"), hx("4285f4"), hx("4fa8ff"), hx("6e6e6e")
 
+# Show Syntax — parts-of-speech (iA Writer) palette from buena-mono.buenalabs.io.
+# Dark variants (on black); *_L are the darker light-theme variants (on white).
+SYN_ADJ, SYN_NOUN, SYN_ADV, SYN_VERB, SYN_CONJ = (
+    hx("c99a5b"), hx("e0603f"), hx("b189d6"), hx("6aa3dd"), hx("79b06f"))
+SYN_ADJ_L, SYN_NOUN_L, SYN_ADV_L, SYN_VERB_L, SYN_CONJ_L = (
+    hx("8a6a3a"), hx("c0392b"), hx("7e57b0"), hx("2f6fb0"), hx("4d8248"))
+CARET = hx("00c4ff")
+
 
 def charw(size):
     return size * ADV / UPM
