@@ -57,6 +57,8 @@ Grab the fonts from [`fonts/variable/`](fonts/variable) — `BuenaMono-VF.ttf`
 - **5,080 glyphs / 971 languages:** Latin (incl. Extended A–D), Greek,
   Cyrillic, IPA, math
   operators, arrows, box-drawing, block/shade elements, currency
+- **Terminal-ready** — complete Powerline (`E0A0`–`E0B3`), box-drawing,
+  block/shade, and Braille-pattern coverage
 - **Code ligatures** — multi-cell and column-alignment preserving
 - **13 stylistic sets** — single-story `a`, tailed `l`, dotted/plain zero, and
   `ss13` machine-readable mode (decomposes every ligature for OCR/verbatim)
@@ -102,20 +104,28 @@ instead of pixel-thickening — it stays crisper:
 
 ```ini
 # ~/.config/ghostty/config
-font-family         = "Buena Mono"
-font-size           = 13
-font-variation      = wght=440   # Regular 400 → 440 for terminal crispness
-font-variation-bold = wght=700   # true Bold master (800 = ExtraBold)
-adjust-cell-height  = 6%         # a touch of leading
+# NOTE: Ghostty has no inline comments — a "#" after a value becomes part of
+# the value. Keep every comment on its own line, as below.
 
-# Coding ligatures (calt/liga) are on by default. To turn them off:
+font-family = "Buena Mono"
+font-size   = 13
+
+# Buena Mono is variable; nudge Regular 400 → 440 for terminal crispness.
+font-variation      = wght=440
+# Keep Bold at the true Bold master (800 = ExtraBold).
+font-variation-bold = wght=700
+
+# A touch of leading.
+adjust-cell-height  = 6%
+
+# Coding ligatures (calt/liga) are on by default. To turn them off, uncomment:
 # font-feature = -calt
 # font-feature = -liga
 
-# Legibility opt-ins:
-# font-feature = ss11   # dotted zero
-# font-feature = zero   # …or slashed zero
-# font-feature = ss04   # serifed i & j — disambiguates  i l 1 |
+# Legibility opt-ins — dotted zero (ss11), slashed zero (zero), serifed i/j (ss04):
+# font-feature = ss11
+# font-feature = zero
+# font-feature = ss04
 ```
 
 - `font-variation` needs the variable `BuenaMono-VF.ttf`; with the static
