@@ -18,10 +18,16 @@ def esc(s):
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-def t(x, y, s, size, fill, anchor="start", weight=400):
+def t(x, y, s, size, fill, anchor="start", weight=400, italic=False, feat=None):
+    sty = ""
+    if italic:
+        sty += "font-style:italic;"
+    if feat:
+        sty += f"font-feature-settings:'{feat}';"
+    sa = f' style="{sty}"' if sty else ""
     return (f'<text x="{x}" y="{y}" font-family="{FONT}" font-size="{size}" '
             f'font-weight="{weight}" fill="{fill}" text-anchor="{anchor}" '
-            f'xml:space="preserve">{esc(s)}</text>')
+            f'xml:space="preserve"{sa}>{esc(s)}</text>')
 
 
 def rect(x, y, w, h, fill, r=0):
@@ -124,13 +130,203 @@ def cli():
     return W, H, body
 
 
+def code_window_svg(x, y, w, h, size=30):
+    K, F, ST, FN, C = PAL["terra"], PAL["fg"], PAL["green"], PAL["blue"], PAL["com"]
+    els = [rect(x, y, w, h, PAL["pane"], 24),
+           f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="24" fill="none" '
+           f'stroke="{PAL["border"]}" stroke-width="2"/>']
+    for i, c in enumerate((PAL["red"], PAL["yellow"], PAL["tgreen"])):
+        els.append(circle(x + 42 + i * 34, y + 46, 8, c))
+    rows = [
+        [("const", K), (" g ", F), ("= ", F), ("shape", FN), ("(", F), ('"a"', ST), (");", F)],
+        [("x >= 0 ? x : -x", F)],
+        [("// ", C), ("=> != >= -> ===", K)],
+    ]
+    cy = y + 108
+    for row in rows:
+        els.append(code_line(x + 40, cy, size, row)); cy += int(size * 1.5)
+    return els
+
+
+# ---- core images ----
+def social_preview():
+    W, H = 1280, 640
+    return W, H, [
+        t(W/2, 250, "buena mono", 128, PAL["fg"], "middle"),
+        t(W/2, 340, "a writer-first monospace typeface", 34, PAL["muted"], "middle"),
+        t(W/2, 462, "0O 1lI  => != >= ->  ß ə ħ", 52, PAL["fg"], "middle"),
+        t(W/2, 572, "5,080 glyphs · 971 languages · wght 100-800 · slnt 0 to -10°", 28, PAL["muted"], "middle"),
+    ]
+
+
+def specimen():
+    W, H = 1680, 917
+    x = 72
+    b = [t(x, 190, "buena mono", 132, PAL["fg"]),
+         t(x, 268, "Writer-first monospace · weight 100-800 · slant 0 to -10°", 34, PAL["muted"])]
+    y = 360
+    for wght in (100, 300, 500, 700, 800):
+        b.append(t(x, y, "Sphinx of black quartz, judge my vow", 44, PAL["fg"], weight=wght)); y += 58
+    y += 22
+    K, F, N = PAL["terra"], PAL["fg"], PAL["num"]
+    b.append(code_line(x, y, 44, [("const", K), (" inc ", F), ("= (x) ", F), ("=>", K), (" x ", F),
+             (">=", K), (" 0 ", F), ("?", K), (" x + ", F), ("1", N), (" : x;  a ", F), ("!=", K), (" b", F)]))
+    y += 80
+    b.append(t(x, y, "AÀÇ gβ Дж 0123 @#$€ →≠≈∑ ░▒▓█ (){}[]", 46, PAL["fg"]))
+    return W, H, b
+
+
+def stylistic_sets():
+    W, H = 1120, 1324
+    SS = [("ss01", "Single-story a", "a"), ("ss02", "Descending f", "f"), ("ss03", "Tailed l", "l"),
+          ("ss04", "Serifed i and j", "ij"), ("ss05", "Alternate g", "g"), ("ss06", "Alternate g (2)", "g"),
+          ("ss07", "Serifed i", "i"), ("ss08", "Straight-tail y", "y"), ("ss09", "Curved-tail y", "y"),
+          ("ss10", "Plain zero", "0"), ("ss11", "Dotted zero", "0"), ("ss12", "Alternate r", "r"),
+          ("ss13", "Machine-readable", "=>")]
+    b = []; y = 130
+    for tag, label, ch in SS:
+        b += [t(64, y, f"{tag}   {label}", 30, PAL["muted"]),
+              t(524, y, ch, 60, PAL["fg"]),
+              t(636, y, "→", 36, PAL["ln"]),
+              t(724, y, ch, 60, PAL["fg"], feat=tag)]
+        y += 92
+    return W, H, b
+
+
+def charset(label, italic=False):
+    W, H = 2048, 1024
+    lines = ["ABCDEFGHIJKLMNOPQRS", "TUVWXYZ0123456789",
+             "abcdefghijklmnopqrs", "tuvwxyz,.;:!@#$%&*(){}[]"]
+    b = [t(128, 150, label, 40, PAL["fg"], italic=italic), rect(128, 168, 1792, 3, PAL["fg"])]
+    y = 400
+    for ln in lines:
+        b.append(t(128, y, ln, 118, PAL["fg"], italic=italic)); y += 135
+    b += [rect(128, 852, 1792, 3, PAL["fg"]),
+          t(1920, 916, "OFL v1.1", 40, PAL["fg"], "end", italic=italic)]
+    return W, H, b
+
+
+# ---- marketing ----
+def ig_portrait():
+    W, H = 1080, 1350
+    return W, H, ([t(W/2, 300, "buena mono", 104, PAL["fg"], "middle"),
+                   t(W/2, 400, "writer-first monospace", 30, PAL["muted"], "middle")]
+                  + code_window_svg(90, 520, 900, 470)
+                  + [t(W/2, 1150, "free · open source · OFL", 30, PAL["terra"], "middle"),
+                     t(W/2, 1240, "5,080 glyphs · 971 languages", 26, PAL["muted"], "middle")])
+
+
+def story():
+    W, H = 1080, 1920
+    return W, H, ([t(W/2, 340, "buena", 150, PAL["fg"], "middle"),
+                   t(W/2, 500, "mono", 150, PAL["fg"], "middle"),
+                   t(W/2, 620, "writer-first monospace", 32, PAL["muted"], "middle")]
+                  + code_window_svg(90, 760, 900, 470)
+                  + [t(W/2, 1560, "free · open source", 34, PAL["terra"], "middle"),
+                     t(W/2, 1660, "5,080 glyphs · 971 languages", 28, PAL["muted"], "middle"),
+                     t(W/2, 1780, "buena-mono.buenalabs.io", 30, PAL["fg"], "middle")])
+
+
+def x_card():
+    W, H = 1600, 900
+    return W, H, [
+        t(W/2, 320, "buena mono", 120, PAL["fg"], "middle"),
+        t(W/2, 430, "a writer-first monospace typeface", 34, PAL["muted"], "middle"),
+        t(W/2, 580, "0O 1lI  => != >= ->  ∑ √ ≈  ß ə ħ", 46, PAL["fg"], "middle"),
+        t(W/2, 760, "5,080 glyphs · 971 languages · wght 100-800 · slnt 0 to -10°", 26, PAL["muted"], "middle"),
+    ]
+
+
+def linkedin():
+    W, H = 1200, 628
+    return W, H, [
+        t(W/2, 240, "buena mono", 92, PAL["fg"], "middle"),
+        t(W/2, 330, "a writer-first monospace typeface", 28, PAL["muted"], "middle"),
+        rect(W/2-60, 400, 120, 5, PAL["terra"]),
+        t(W/2, 470, "5,080 glyphs · 971 languages · wght 100-800 · OFL", 24, PAL["muted"], "middle"),
+    ]
+
+
+def youtube_thumb():
+    W, H = 1280, 720
+    return W, H, ([t(80, 250, "buena", 108, PAL["fg"]), t(80, 372, "mono", 108, PAL["fg"]),
+                   t(80, 468, "the monospace for", 34, PAL["muted"]),
+                   t(80, 520, "writers who code", 34, PAL["fg"]),
+                   rect(80, 560, 90, 6, PAL["terra"])]
+                  + code_window_svg(720, 150, 480, 420))
+
+
+def youtube_banner():
+    W, H = 2560, 1440
+    return W, H, [
+        t(W/2, 700, "buena mono", 128, PAL["fg"], "middle"),
+        t(W/2, 790, "a writer-first monospace typeface · free · open source", 30, PAL["muted"], "middle"),
+    ]
+
+
+def app_icon():
+    W = H = 1024
+    tx, ty, ts = 120, 120, 784
+    GRAY = "#3a3a3a"
+    b = [rect(tx, ty, ts, ts, PAL["pane"], 150),
+         f'<rect x="{tx}" y="{ty}" width="{ts}" height="{ts}" rx="150" fill="none" '
+         f'stroke="{PAL["border"]}" stroke-width="6"/>']
+    for i, c in enumerate((PAL["red"], PAL["yellow"], PAL["tgreen"])):
+        b.append(circle(tx + 104 + i * 70, ty + 90, 26, c))
+    b += [rect(tx+90, ty+210, 200, 40, PAL["terra"], 20), rect(tx+320, ty+210, 230, 40, GRAY, 20),
+          rect(tx+170, ty+300, 190, 40, GRAY, 20), rect(tx+170, ty+390, 150, 40, GRAY, 20),
+          rect(tx+350, ty+382, 46, 66, PAL["terra"])]
+    return W, H, b
+
+
+def iphone_screenshot():
+    W, H = 1290, 2796
+    return W, H, ([t(100, 360, "the monospace", 92, PAL["fg"]),
+                   t(100, 480, "for writers", 92, PAL["muted"]),
+                   t(100, 600, "who code.", 92, PAL["terra"])]
+                  + code_window_svg(95, 760, 1100, 700, size=34)
+                  + [t(W/2, 2180, "5,080 glyphs · 971 languages", 32, PAL["fg"], "middle"),
+                     t(W/2, 2280, "free · open source · OFL", 32, PAL["terra"], "middle"),
+                     t(W/2, 2480, "buena-mono.buenalabs.io", 34, PAL["muted"], "middle")])
+
+
+def marketplace():
+    W, H = 1600, 1000
+    return W, H, [
+        t(W/2, 300, "buena mono", 128, PAL["fg"], "middle"),
+        t(W/2, 470, "AaBbCc 0123 => != >=", 72, PAL["fg"], "middle"),
+        t(W/2, 620, "a writer-first monospace typeface", 32, PAL["muted"], "middle"),
+        t(W/2, 780, "5,080 glyphs · 971 languages · wght 100-800 · slnt 0 to -10°", 26, PAL["muted"], "middle"),
+    ]
+
+
+def web_hero():
+    W, H = 1920, 1080
+    return W, H, ([t(130, 380, "buena", 150, PAL["fg"]), t(130, 540, "mono", 150, PAL["fg"]),
+                   t(130, 650, "the monospace for writers who code", 34, PAL["muted"]),
+                   rect(130, 730, 360, 90, PAL["terra"], 45),
+                   t(178, 788, "Get it — free", 34, "#000000")]
+                  + code_window_svg(1080, 250, 700, 580, size=32))
+
+
 def main():
     outdir = "docs/marketing/svg"
     os.makedirs(outdir, exist_ok=True)
-    for name, fn in [("social-square", social_square), ("hero", hero), ("cli", cli)]:
+    items = [
+        ("hero", hero), ("cli", cli), ("social-preview", social_preview),
+        ("specimen", specimen), ("stylistic-sets", stylistic_sets),
+        ("character-set-roman", lambda: charset("buena mono regular")),
+        ("character-set-italic", lambda: charset("buena mono italic", italic=True)),
+        ("social-square", social_square), ("ig-portrait", ig_portrait),
+        ("story-reel-short", story), ("x-card", x_card), ("linkedin", linkedin),
+        ("youtube-thumbnail", youtube_thumb), ("youtube-banner", youtube_banner),
+        ("aso-app-icon", app_icon), ("aso-iphone-screenshot", iphone_screenshot),
+        ("aso-marketplace-feature", marketplace), ("aso-web-hero", web_hero),
+    ]
+    for name, fn in items:
         w, h, body = fn()
         open(f"{outdir}/{name}.svg", "w").write(svg(w, h, body))
-    print(f"SVGs written to {outdir}")
+    print(f"{len(items)} SVGs written to {outdir}")
 
 
 if __name__ == "__main__":
