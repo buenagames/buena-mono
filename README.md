@@ -60,6 +60,13 @@ Grab the fonts from [`fonts/variable/`](fonts/variable) — `BuenaMono-VF.ttf`
   `ss13` machine-readable mode (decomposes every ligature for OCR/verbatim)
 - OpenType: `ccmp`, `mark`, `mkmk`, `aalt`, `calt`, `liga`, `smcp`, `ss01`–`ss13`
 
+## In your editor
+
+Code ligatures, syntax-friendly letterforms, and a terminal-ready statusline —
+Buena Mono tuned for real editing:
+
+![Buena Mono in a code editor](docs/cli.png)
+
 ## Specimen
 
 Weight from hairline thin to solid extrabold, code ligatures, and multi-script

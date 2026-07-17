@@ -30,7 +30,7 @@ def hb(font, text, size, variations, fg, bg, out, features=None):
 def hero(font, tmp, outpath):
     FG, W, PAD = "EDEDED", 1680, 72
     lines = [
-        ("Buena Mono", 620, 132, 0),
+        ("buena mono", 620, 132, 0),
         ("Writer-first monospace · weight 100–800 · slant 0 to −10°", 400, 34, 34),
         ("Sphinx of black quartz, judge my vow", 100, 44, 42),
         ("Sphinx of black quartz, judge my vow", 300, 44, 10),
