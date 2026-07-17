@@ -24,6 +24,8 @@ legible. A two-axis variable font: **weight 100–800** and **slant 0 to −10°
 
 **[Specimen & docs →](https://buena-mono.buenalabs.io)** · Coming soon to **Google Fonts**
 
+![Buena Mono in a code editor](docs/cli.png)
+
 ![Buena Mono](docs/hero.png)
 
 Released under the [SIL Open Font License 1.1](OFL.txt).
@@ -59,13 +61,6 @@ Grab the fonts from [`fonts/variable/`](fonts/variable) — `BuenaMono-VF.ttf`
 - **13 stylistic sets** — single-story `a`, tailed `l`, dotted/plain zero, and
   `ss13` machine-readable mode (decomposes every ligature for OCR/verbatim)
 - OpenType: `ccmp`, `mark`, `mkmk`, `aalt`, `calt`, `liga`, `smcp`, `ss01`–`ss13`
-
-## In your editor
-
-Code ligatures, syntax-friendly letterforms, and a terminal-ready statusline —
-Buena Mono tuned for real editing:
-
-![Buena Mono in a code editor](docs/cli.png)
 
 ## Specimen
 
