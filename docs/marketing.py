@@ -152,14 +152,22 @@ def youtube_banner(out):
 
 
 def app_icon(out):
-    # 1024x1024 — "b" + terracotta block cursor (terminal motif). iOS masks corners.
+    # 1024x1024 — mini code-window mark (echoes the CLI motif). iOS masks corners.
     W = H = 1024
     newDrawing(); newPage(W, H); fill(*BG); rect(-2, -2, W + 2, H + 2)
-    font(FONT); fontVariations(wght=500); fontSize(620); fill(*FG)
-    bw = charw(620)
-    bx = (W - (bw + 110)) / 2
-    text("b", (bx, 300))
-    fill(*TERRA); rect(bx + bw + 30, 320, 80, 430)
+    tx, ty, ts = 120, 120, 784
+    top = ty + ts                              # tile top edge (y-up)
+    fill(*PANE); stroke(*BORDER); strokeWidth(6); drawPath(rrect(tx, ty, ts, ts, 150)); stroke(None)
+    for i, c in enumerate((hx("ff5f57"), hx("febc2e"), hx("28c840"))):
+        fill(*c); oval(tx + 78 + i * 70, top - 116, 52, 52)
+    GRAY = hx("3a3a3a")
+    def bar(x, t, w, h, col):                  # t = distance below tile top
+        fill(*col); drawPath(rrect(x, top - t - h, w, h, h / 2))
+    bar(tx + 90, 210, 200, 40, TERRA)          # keyword
+    bar(tx + 90 + 230, 210, 230, 40, GRAY)     # identifier
+    bar(tx + 170, 300, 190, 40, GRAY)          # indented line
+    bar(tx + 170, 390, 150, 40, GRAY)
+    fill(*TERRA); rect(tx + 170 + 180, top - 390 - 58, 46, 66)  # block cursor
     saveImage(out)
 
 
