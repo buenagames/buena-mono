@@ -282,7 +282,7 @@ def app_icon():
         b.append(circle(tx + 104 + i * 70, ty + 90, 26, c))
     b += [rect(tx+90, ty+210, 200, 40, PAL["terra"], 20), rect(tx+320, ty+210, 230, 40, GRAY, 20),
           rect(tx+170, ty+300, 190, 40, GRAY, 20), rect(tx+170, ty+390, 150, 40, GRAY, 20),
-          rect(tx+350, ty+382, 46, 66, PAL["terra"])]
+          rect(tx+350, ty+382, 46, 66, PAL["caret"])]  # block cursor (caret #00c4ff)
     return W, H, b
 
 

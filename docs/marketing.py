@@ -175,7 +175,7 @@ def app_icon(out):
     bar(tx + 90 + 230, 210, 230, 40, GRAY)     # identifier
     bar(tx + 170, 300, 190, 40, GRAY)          # indented line
     bar(tx + 170, 390, 150, 40, GRAY)
-    fill(*TERRA); rect(tx + 170 + 180, top - 390 - 58, 46, 66)  # block cursor
+    fill(*CARET); rect(tx + 170 + 180, top - 390 - 58, 46, 66)  # block cursor (caret #00c4ff)
     saveImage(out)
 
 
