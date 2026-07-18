@@ -33,6 +33,7 @@ FN      = hx("4285f4")   # functions / types (blue)
 NUM     = hx("4fa8ff")   # numbers (light blue)
 TERRA   = hx("d97757")
 GREEN   = hx("10a37f")
+CARET   = hx("00c4ff")   # live caret / block cursor
 RED     = hx("ff5f57")   # traffic lights
 YEL     = hx("febc2e")
 GRN_DOT = hx("28c840")
@@ -145,7 +146,7 @@ def main():
         top += lineH
 
     # --- terminal band: pinned above the statusline, divider above it ---
-    term_h = len(TERM) * lineH + 24
+    term_h = (len(TERM) + 1) * lineH + 24   # +1 line for the live prompt
     term_bottom = win_bot - BAR_H - 30     # keep clear of the statusline
     term_top = term_bottom - term_h
     stroke(*HAIR); strokeWidth(2)
@@ -155,6 +156,10 @@ def main():
     for row in TERM:
         run(row, t, wx + PAD)
         t += lineH
+    # live prompt with a caret-cyan block cursor
+    run([("$ ", KW)], t, wx + PAD)
+    fill(*CARET)
+    rect(wx + PAD + 2 * charW, HEIGHT - t - 4, charW, SIZE * 1.1)
 
     # --- statusline: terracotta NORMAL block + file, right-aligned meta ---
     bar_y = wy + 2                         # just inside the bottom border

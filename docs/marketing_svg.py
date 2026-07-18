@@ -118,16 +118,20 @@ def cli():
             body.append(code_line(gx, y, S, row))
         ln += 1; y += int(S*1.4)
     # terminal
-    body.append(rect(wx, wy+700, ww, 2, "#1e1e1e"))
+    body.append(rect(wx, wy+686, ww, 2, "#1e1e1e"))
     term = [
         [("$", K), (" npm run build", F)],
         [("> ", K), ("building buena-mono ...", PAL["muted"])],
         [("+ ", ST), ("5,080 glyphs · 971 languages", F)],
         [("  wght 100-800 · slnt 0 to -10°", PAL["muted"])],
     ]
-    ty = wy + 764
+    ty = wy + 726
     for row in term:
         body.append(code_line(wx+56, ty, S, row)); ty += int(S*1.4)
+    # live prompt with a caret-cyan block cursor
+    body.append(code_line(wx+56, ty, S, [("$ ", K)]))
+    cwv = S * ADV
+    body.append(rect(wx+56 + int(2*cwv), ty - 26, int(cwv), int(S*1.1), PAL["caret"]))
     # statusline
     body.append(f'<rect x="{wx+2}" y="{wy+928}" width="{ww-4}" height="54" rx="0" fill="#111111"/>')
     body.append(rect(wx+2, wy+928, 150, 54, PAL["terra"]))
