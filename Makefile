@@ -105,10 +105,6 @@ images: venv  ## Generate all README/docs PNGs (hero, cli, character-set, social
 	. venv/bin/activate; for py in docs/hero.py docs/character-set-*.py docs/cli.py docs/social-preview.py; do python3 $$py --output $${py%.py}.png; done
 	. venv/bin/activate; python3 scripts/make-specimens.py fonts/variable/BuenaMono-VF.ttf docs  # specimen.png + stylistic-sets.png (needs hb-view)
 
-marketing: venv  ## Generate marketing assets (social, video, ASO) into docs/marketing/ from fonts/variable/
-	. venv/bin/activate; python3 -c "import drawbot_skia" 2>/dev/null || pip install drawbot-skia
-	. venv/bin/activate; python3 docs/marketing.py
-
 font-summary: venv build.stamp  ## Print font development summary
 	. venv/bin/activate; python3 scripts/font-summary.py
 
