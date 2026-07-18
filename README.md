@@ -58,7 +58,9 @@ Grab the fonts from [`fonts/variable/`](fonts/variable) — `BuenaMono-VF.ttf`
   Cyrillic, IPA, math
   operators, arrows, box-drawing, block/shade elements, currency
 - **Terminal-ready** — complete Powerline (`E0A0`–`E0B3`), box-drawing,
-  block/shade, and Braille-pattern coverage
+  block/shade, and the full **Braille Patterns** block (`U+2800`–`28FF`) —
+  uncommon in monospace fonts, and the basis for high-res terminal graphics
+  (btop, plots, sparklines) that render cleanly instead of font-falling-back
 - **Code ligatures** — multi-cell and column-alignment preserving
 - **13 stylistic sets** — single-story `a`, tailed `l`, dotted/plain zero, and
   `ss13` machine-readable mode (decomposes every ligature for OCR/verbatim)
