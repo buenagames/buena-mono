@@ -20,7 +20,7 @@
 A free, open-source, writer-first monospace programming font — tuned for
 extended prose in markdown and code editors while keeping code perfectly
 legible. A two-axis variable font: **weight 100–800** and **slant 0 to −10°**,
-8 masters, 5,080 glyphs, 971 languages.
+8 masters, 5,370 glyphs, 971 languages.
 
 **[Specimen & docs →](https://buena-mono.buenalabs.io)** · Coming soon to **Google Fonts**
 
@@ -54,13 +54,16 @@ Grab the fonts from [`fonts/variable/`](fonts/variable) — `BuenaMono-VF.ttf`
 ## Features
 
 - **Axes:** weight 100–800, slant 0 to −10°
-- **5,080 glyphs / 971 languages:** Latin (incl. Extended A–D), Greek,
+- **5,370 glyphs / 971 languages:** Latin (incl. Extended A–D), Greek,
   Cyrillic, IPA, math
-  operators, arrows, box-drawing, block/shade elements, currency
+  operators, arrows, box-drawing, block/shade elements, sextant + octant
+  block graphics, currency
 - **Terminal-ready** — complete Powerline (`E0A0`–`E0B3`), box-drawing,
-  block/shade, and the full **Braille Patterns** block (`U+2800`–`28FF`) —
-  uncommon in monospace fonts, and the basis for high-res terminal graphics
-  (btop, plots, sparklines) that render cleanly instead of font-falling-back
+  block/shade, the full **Braille Patterns** block (`U+2800`–`28FF`), and the
+  Legacy Computing **sextants** (`U+1FB00`–`1FB3B`) and **block octants**
+  (`U+1CD00`–`1CDE5`) — uncommon in monospace fonts, and the basis for high-res
+  terminal graphics (btop, plots, sparklines) that render cleanly instead of
+  font-falling-back
 - **Code ligatures** — multi-cell and column-alignment preserving
 - **13 stylistic sets** — single-story `a`, tailed `l`, dotted/plain zero, and
   `ss13` machine-readable mode (decomposes every ligature for OCR/verbatim)

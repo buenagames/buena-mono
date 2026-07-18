@@ -2,6 +2,21 @@
 
 All notable changes to Buena Mono are documented here.
 
+## 1.226 — 2026-07-18
+
+Legacy Computing block graphics.
+
+- **290 sextant + block-octant glyphs added.** The full Symbols for Legacy
+  Computing sextant range (`U+1FB00`–`1FB3B`, 60) and the Symbols for Legacy
+  Computing Supplement block octants (`U+1CD00`–`1CDE5`, 230). Each is drawn
+  as solid sub-cell rectangles on Buena's exact full-block cell (x 9–609,
+  split at 309; y −300..900), so they tile seamlessly with the existing
+  `█ ▌ ▐` block set and the Braille layer for high-resolution terminal
+  graphics. Geometry is identical across all 8 masters (block graphics are
+  weight-invariant) and every glyph sits on the 618 monospace cell.
+- **5,370 glyphs / 4,249 codepoints** (was 5,080 / 3,959). 971 languages
+  (unchanged — the additions are symbol graphics, not new orthographies).
+
 ## 1.225 — 2026-07-16
 
 Weight-axis fix.

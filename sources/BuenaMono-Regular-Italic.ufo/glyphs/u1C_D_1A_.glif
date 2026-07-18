@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="u1CD1A" format="2">
+  <advance width="618"/>
+  <unicode hex="1CD1A"/>
+  <outline>
+    <contour>
+      <point x="309" y="900" type="line"/>
+      <point x="309" y="600" type="line"/>
+      <point x="609" y="600" type="line"/>
+      <point x="609" y="900" type="line"/>
+    </contour>
+    <contour>
+      <point x="309" y="300" type="line"/>
+      <point x="309" y="0" type="line"/>
+      <point x="609" y="0" type="line"/>
+      <point x="609" y="300" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Symbol</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Geometry</string>
+    </dict>
+  </lib>
+</glyph>

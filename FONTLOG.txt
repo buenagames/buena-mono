@@ -11,9 +11,10 @@ Basic Font Information
 
 Buena Mono is a writer-first monospace typeface — tuned for extended prose in
 markdown and code editors while keeping code legible. It is a two-axis variable
-font: weight 100–800 and slant 0 to −10°, from 8 masters, covering 5,080 glyphs
+font: weight 100–800 and slant 0 to −10°, from 8 masters, covering 5,370 glyphs
 (Latin incl. Extended A–D, Greek, Cyrillic, IPA, math, arrows, box-drawing,
-block/shade elements and currency), with code ligatures and 13 stylistic sets.
+block/shade elements, Legacy Computing sextant + octant graphics and currency),
+with code ligatures and 13 stylistic sets.
 
 
 Derivation
@@ -32,10 +33,10 @@ Those outlines were then substantially transformed for this project:
 - A weight axis (wght 100–800) derived across 8 masters; Fragment ships a
   single weight.
 - A slant axis (slnt 0 to −10°) added.
-- Character set extended well beyond Fragment's Latin coverage to 5,080
+- Character set extended well beyond Fragment's Latin coverage to 5,370
   glyphs spanning Latin Extended A–D, Greek, Cyrillic, IPA, math, arrows,
-  box-drawing and symbols, plus code ligatures, small caps and 13 stylistic
-  sets.
+  box-drawing, Legacy Computing block graphics and symbols, plus code
+  ligatures, small caps and 13 stylistic sets.
 
 Additional glyphs and reference outlines are drawn from IBM Plex Mono, Noto
 (Latin/Greek/Cyrillic), Cascadia Code and JetBrains Mono. The complete
@@ -46,6 +47,11 @@ named Buena Mono and carries no upstream RFN.
 
 ChangeLog
 ---------
+
+18 Jul 2026 (Buena) Buena Mono Version 1.226
+- Legacy Computing block graphics: 60 sextants (U+1FB00-1FB3B) and 230 block
+  octants (U+1CD00-1CDE5), drawn on Buena's full-block cell so they tile with
+  the existing block/shade and Braille layers. 5,370 glyphs / 4,249 codepoints.
 
 16 Jul 2026 (Buena) Buena Mono Version 1.225
 - ExtraBold masters rebuilt from Bold (were mistakenly derived from Regular,
