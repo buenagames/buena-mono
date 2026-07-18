@@ -45,6 +45,24 @@ def circle(cx, cy, r, fill):
     return f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="{fill}"/>'
 
 
+def sline(x1, y1, x2, y2, stroke, w=2, dash=None):
+    d = f' stroke-dasharray="{dash}"' if dash else ""
+    return f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{stroke}" stroke-width="{w}"{d}/>'
+
+
+def srect(x, y, w, h, stroke, sw=2, dash=None, fill="none", fillop=None):
+    d = f' stroke-dasharray="{dash}"' if dash else ""
+    fo = f' fill-opacity="{fillop}"' if fillop is not None else ""
+    return (f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="{fill}"{fo} '
+            f'stroke="{stroke}" stroke-width="{sw}"{d}/>')
+
+
+def tls(x, y, s, size, fill, ls, anchor="start"):
+    """letter-spaced text (for spec labels)."""
+    return (f'<text x="{x}" y="{y}" font-family="{FONT}" font-size="{size}" fill="{fill}" '
+            f'text-anchor="{anchor}" letter-spacing="{ls}" xml:space="preserve">{esc(s)}</text>')
+
+
 def svg(w, h, body):
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" '
             f'viewBox="0 0 {w} {h}">\n{rect(0,0,w,h,PAL["bg"])}\n' + "\n".join(body) + "\n</svg>")
@@ -320,6 +338,97 @@ def web_hero():
                   + code_window_svg(1080, 250, 700, 580, size=32))
 
 
+# ---- brand guidelines ----
+def logo_exclusion_zone():
+    W, H = 1920, 1200
+    GUIDE = PAL["green"]
+    size = 150
+    cwid = size * ADV
+    mark = "buena mono"
+    mw = len(mark) * cwid
+    mx = (W - mw) / 2
+    baseline = 650
+    cap = size * 0.729
+    Xu = round(cap)                       # exclusion unit = cap height
+    bx, by = round(mx - Xu), round(baseline - cap - Xu)
+    bw, bh = round(mw + 2 * Xu), round(cap + 2 * Xu)
+    return W, H, [
+        sline(bx, 0, bx, H, GUIDE, 1.5, "6 9"),
+        sline(bx + bw, 0, bx + bw, H, GUIDE, 1.5, "6 9"),
+        sline(0, by, W, by, GUIDE, 1.5, "6 9"),
+        sline(0, by + bh, W, by + bh, GUIDE, 1.5, "6 9"),
+        srect(bx, by, bw, bh, GUIDE, 2),
+        srect(bx + bw - Xu, by, Xu, Xu, GUIDE, 1.5, fill=GUIDE, fillop=0.14),
+        t(bx + bw - Xu/2, by + Xu/2 + 18, "×", 54, GUIDE, "middle"),
+        t(W/2, baseline, mark, size, PAL["fg"], "middle"),
+        sline(bx, by + bh + 96, W/2 - 190, by + bh + 96, PAL["muted"], 1),
+        sline(W/2 + 190, by + bh + 96, bx + bw, by + bh + 96, PAL["muted"], 1),
+        tls(W/2, by + bh + 106, "EXCLUSION ZONE", 26, PAL["fg"], 8, "middle"),
+    ]
+
+
+def stats_board():
+    W, H = 2000, 1200
+    cards = [
+        ("Glyphs", "5,080", PAL["syn_adj"]),
+        ("Languages", "971", PAL["syn_noun"]),
+        ("Masters", "8", PAL["syn_adv"]),
+        ("OpenType features", "51", PAL["syn_verb"]),
+        ("Stylistic sets", "13", PAL["syn_conj"]),
+        ("Weight range", "100-800", PAL["green"]),
+    ]
+    mx, my, gap = 60, 60, 40
+    cw = (W - 2 * mx - 2 * gap) / 3
+    ch = (H - 2 * my - gap) / 2
+    ink = "#0a0a0a"
+    b = []
+    for i, (label, num, col) in enumerate(cards):
+        r, c = divmod(i, 3)
+        x = mx + c * (cw + gap); y = my + r * (ch + gap)
+        b += [rect(x, y, cw, ch, col, 20),
+              t(x + 42, y + 74, label, 32, ink),
+              t(x + 42, y + ch - 56, num, 118, ink, weight=500)]
+    return W, H, b
+
+
+def type_system():
+    W, H = 2000, 1400
+    b = [t(100, 90, "buenalabs.io", 26, PAL["muted"]),
+         t(W - 100, 90, "buena mono · v1.225", 26, PAL["muted"], "end"),
+         t(100, 390, "type", 200, PAL["fg"]),
+         t(100, 570, "system", 200, PAL["fg"]),
+         t(100, 668, "start small", 34, PAL["muted"]),
+         sline(100, 724, W - 100, 724, PAL["border"], 2)]
+    cols = ["Headings", "Body", "Elements", "Links"]
+    cx = [100, 575, 1050, 1525]
+    for i, name in enumerate(cols):
+        b.append(t(cx[i], 802, name, 28, PAL["muted"]))
+        if i < 3:
+            b.append(sline(cx[i + 1] - 38, 764, cx[i + 1] - 38, H - 80, PAL["border"], 1))
+
+    def spec(x, y, txt, size, px, fill=None, ls=None):
+        node = tls(x, y, txt, size, fill or PAL["fg"], ls) if ls else t(x, y, txt, size, fill or PAL["fg"])
+        return [node, t(x, y + 44, px, 22, PAL["muted"])]
+
+    b += spec(cx[0], 960, "Display", 60, "128 px")
+    b += spec(cx[0], 1080, "Heading", 46, "72 px")
+    b += spec(cx[0], 1190, "Title", 36, "48 px")
+    b += [t(cx[1], 950, "Writer-first monospace,", 24, PAL["fg"]),
+          t(cx[1], 986, "tuned for prose and", 24, PAL["fg"]),
+          t(cx[1], 1022, "code alike.", 24, PAL["fg"]),
+          t(cx[1], 1068, "20 px", 22, PAL["muted"]),
+          t(cx[1], 1156, "Body copy sets clean", 18, PAL["fg"]),
+          t(cx[1], 1184, "at small sizes.", 18, PAL["fg"]),
+          t(cx[1], 1226, "16 px", 22, PAL["muted"])]
+    b += spec(cx[2], 952, "Subtitle", 24, "16 px")
+    b += spec(cx[2], 1062, "Caption", 20, "12 px")
+    b += spec(cx[2], 1172, "OVERLINE", 16, "10 px", ls=3)
+    b += spec(cx[3], 952, "BUTTON", 22, "14 px", fill=PAL["terra"], ls=2)
+    b += spec(cx[3], 1062, "Button", 18, "12 px")
+    b += spec(cx[3], 1172, "Link", 16, "10 px", fill=PAL["blue"])
+    return W, H, b
+
+
 def main():
     outdir = "docs/marketing/svg"
     os.makedirs(outdir, exist_ok=True)
@@ -333,6 +442,9 @@ def main():
         ("youtube-thumbnail", youtube_thumb), ("youtube-banner", youtube_banner),
         ("aso-app-icon", app_icon), ("aso-iphone-screenshot", iphone_screenshot),
         ("aso-marketplace-feature", marketplace), ("aso-web-hero", web_hero),
+        ("brand-logo-exclusion-zone", logo_exclusion_zone),
+        ("brand-stats", stats_board),
+        ("brand-type-system", type_system),
     ]
     for name, fn in items:
         w, h, body = fn()
