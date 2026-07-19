@@ -2,6 +2,19 @@
 
 All notable changes to Buena Mono are documented here.
 
+## 1.227 — 2026-07-18
+
+Music glyphs, curated notation symbols, and chess refinements.
+
+- **Music BMP complete (7/7).** Added the quarter note `♩` (U+2669) and beamed
+  sixteenths `♬` (U+266C), derived from the existing `♪`/`♫`.
+- **Curated notation symbols.** Common time `𝄴` (U+1D134, from the `C`), plus
+  treble `𝄞` (U+1D11E) and bass `𝄢` (U+1D122) clefs adapted from Bravura
+  (Steinberg Media Technologies, OFL 1.1) — credited in FONTLOG and OFL.
+- **Chess quality pass.** Rebuilt the white knight `♘` as a clean outline of the
+  black knight `♞`, and rebalanced the white King/Queen stroke weight.
+- 5,370 → 5,375 glyphs.
+
 ## 1.226 — 2026-07-18
 
 Legacy Computing block graphics.
