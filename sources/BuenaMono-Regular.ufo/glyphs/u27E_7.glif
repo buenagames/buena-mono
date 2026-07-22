@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="u27E7" format="2">
+  <advance width="618"/>
+  <unicode hex="27E7"/>
+  <outline>
+    <contour>
+      <point x="300" y="779" type="line"/>
+      <point x="300" y="-80" type="line"/>
+      <point x="372" y="-80" type="line"/>
+      <point x="372" y="779" type="line"/>
+    </contour>
+    <contour>
+      <point x="156" y="779" type="line"/>
+      <point x="156" y="713" type="line"/>
+      <point x="372" y="713" type="line"/>
+      <point x="372" y="779" type="line"/>
+    </contour>
+    <contour>
+      <point x="156" y="-14" type="line"/>
+      <point x="156" y="-80" type="line"/>
+      <point x="372" y="-80" type="line"/>
+      <point x="372" y="-14" type="line"/>
+    </contour>
+    <contour>
+      <point x="192" y="713" type="line"/>
+      <point x="192" y="-14" type="line"/>
+      <point x="264" y="-14" type="line"/>
+      <point x="264" y="713" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Punctuation</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Parenthesis</string>
+    </dict>
+  </lib>
+</glyph>

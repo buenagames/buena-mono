@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="u2E25" format="2">
+  <advance width="618"/>
+  <unicode hex="2E25"/>
+  <outline>
+    <contour>
+      <point x="174" y="18" type="line"/>
+      <point x="174" y="-112" type="line"/>
+      <point x="444" y="-112" type="line"/>
+      <point x="444" y="18" type="line"/>
+    </contour>
+    <contour>
+      <point x="308" y="350" type="line"/>
+      <point x="308" y="-112" type="line"/>
+      <point x="444" y="-112" type="line"/>
+      <point x="444" y="350" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Punctuation</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Quote</string>
+    </dict>
+  </lib>
+</glyph>

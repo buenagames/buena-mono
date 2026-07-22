@@ -2,6 +2,21 @@
 
 All notable changes to Buena Mono are documented here.
 
+## 1.228 — 2026-07-22
+
+Brace recentering, shade-cell alignment, and quick-win brackets + arrows.
+
+- **Braces recentered (BUENA-342).** `{` `}` sat ~39u low; shifted up +39 in all
+  masters so they co-center with `()[]` on the cap midpoint (~350).
+- **Shade blocks aligned (BUENA-343).** `░▒▓` (U+2591–2593) lived on a different
+  cell than `█`; affine-refit each master's stipple onto the full-block cell
+  (x 9–609, y −300..900) so they tile with the block/sextant/octant set.
+- **Corner half-brackets + double brackets + heavy arrows (BUENA-346).** Added
+  `⸢⸣⸤⸥` (U+2E22–2E25) and `⟦⟧` (U+27E6–27E7), derived per-master from the real
+  bracket geometry so they track weight, plus the black cardinal arrows
+  `➡⬅⬆⬇` (U+27A1, U+2B05–2B07) drawn on the cell.
+- 5,375 → 5,385 glyphs / 4,254 → 4,264 codepoints.
+
 ## 1.227 — 2026-07-18
 
 Music glyphs, curated notation symbols, and chess refinements.

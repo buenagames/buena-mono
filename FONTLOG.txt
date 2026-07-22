@@ -11,7 +11,7 @@ Basic Font Information
 
 Buena Mono is a writer-first monospace typeface — tuned for extended prose in
 markdown and code editors while keeping code legible. It is a two-axis variable
-font: weight 100–800 and slant 0 to −10°, from 8 masters, covering 5,375 glyphs
+font: weight 100–800 and slant 0 to −10°, from 8 masters, covering 5,385 glyphs
 (Latin incl. Extended A–D, Greek, Cyrillic, IPA, math, arrows, box-drawing,
 block/shade elements, Legacy Computing sextant + octant graphics and currency),
 with code ligatures and 13 stylistic sets.
@@ -33,7 +33,7 @@ Those outlines were then substantially transformed for this project:
 - A weight axis (wght 100–800) derived across 8 masters; Fragment ships a
   single weight.
 - A slant axis (slnt 0 to −10°) added.
-- Character set extended well beyond Fragment's Latin coverage to 5,375
+- Character set extended well beyond Fragment's Latin coverage to 5,385
   glyphs spanning Latin Extended A–D, Greek, Cyrillic, IPA, math, arrows,
   box-drawing, Legacy Computing block graphics and symbols, plus code
   ligatures, small caps and 13 stylistic sets.
@@ -49,6 +49,15 @@ named Buena Mono and carries no upstream RFN.
 
 ChangeLog
 ---------
+
+22 Jul 2026 (Buena) Buena Mono Version 1.228
+- Braces (U+007B/007D) recentered +39 in all masters to co-center with ()[] on
+  the cap midpoint (BUENA-342). Shade blocks (U+2591–2593) affine-refit onto the
+  full-block cell so they tile with the block/sextant/octant set (BUENA-343).
+  Added corner half-brackets (U+2E22–2E25), double square brackets
+  (U+27E6–27E7), and black cardinal arrows (U+27A1, U+2B05–2B07), derived per
+  master from the bracket geometry / drawn on the cell (BUENA-346). 5,385 glyphs
+  / 4,264 codepoints.
 
 18 Jul 2026 (Buena) Buena Mono Version 1.227
 - Music BMP complete (7/7): added quarter note (U+2669) and beamed sixteenths
