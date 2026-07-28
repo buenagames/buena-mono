@@ -20,8 +20,7 @@ designer: Buena
 build: make build
 
 files:
-  out/fonts/BuenaMono[wght].ttf: BuenaMono[wght].ttf
-  out/fonts/BuenaMono-Italic[wght].ttf: BuenaMono-Italic[wght].ttf
+  out/fonts/BuenaMono-VF.ttf: BuenaMono[slnt,wght].ttf
   OFL.txt: OFL.txt
   docs/DESCRIPTION.en_us.html: DESCRIPTION.en_us.html
   docs/ARTICLE.en_us.html: article/ARTICLE.en_us.html

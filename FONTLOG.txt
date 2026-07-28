@@ -11,97 +11,24 @@ Basic Font Information
 
 Buena Mono is a writer-first monospace typeface — tuned for extended prose in
 markdown and code editors while keeping code legible. It is a two-axis variable
-font: weight 100–800 and slant 0 to −10°, from 8 masters, covering 5,385 glyphs
+font: weight 100–800 and slant 0 to −10°, from 8 masters, covering 5,406 glyphs
 (Latin incl. Extended A–D, Greek, Cyrillic, IPA, math, arrows, box-drawing,
-block/shade elements, Legacy Computing sextant + octant graphics and currency),
-with code ligatures and 13 stylistic sets.
+block/shade elements and currency), with code ligatures and 12 stylistic sets.
 
-
-Derivation
-----------
-
-Buena Mono is a derivative work, not an original design. Its core Latin
-outlines were imported from Fragment Mono (Wei Huang, OFL 1.1), which itself
-derives from Nimbus Sans (URW Design Studio).
-
-Those outlines were then substantially transformed for this project:
-
-- Respaced to a 618-unit cell (Fragment uses a narrower cell matched to
-  SF Mono for terminal compatibility).
-- Cap height set to 699; Fragment reduces its cap height below standard for
-  line-fitting, which costs markdown headings their prominence.
-- A weight axis (wght 100–800) derived across 8 masters; Fragment ships a
-  single weight.
-- A slant axis (slnt 0 to −10°) added.
-- Character set extended well beyond Fragment's Latin coverage to 5,385
-  glyphs spanning Latin Extended A–D, Greek, Cyrillic, IPA, math, arrows,
-  box-drawing, Legacy Computing block graphics and symbols, plus code
-  ligatures, small caps and 13 stylistic sets.
-
-Additional glyphs and reference outlines are drawn from IBM Plex Mono, Noto
-(Latin/Greek/Cyrillic), Cascadia Code and JetBrains Mono. The treble and bass
-clef glyphs (U+1D11E, U+1D122) are adapted from Bravura (Steinberg Media
-Technologies, OFL 1.1). The complete
-copyright chain for all inherited material is recorded in OFL.txt, and the
-Reserved Font Names of the upstream projects are respected: this font is
-named Buena Mono and carries no upstream RFN.
+Buena Mono is built on Fragment Mono (SIL Open Font License 1.1) by Wei Huang,
+and extended into a variable family.
 
 
 ChangeLog
 ---------
 
-22 Jul 2026 (Buena) Buena Mono Version 1.228
-- Braces (U+007B/007D) recentered +39 in all masters to co-center with ()[] on
-  the cap midpoint (BUENA-342). Shade blocks (U+2591–2593) affine-refit onto the
-  full-block cell so they tile with the block/sextant/octant set (BUENA-343).
-  Added corner half-brackets (U+2E22–2E25), double square brackets
-  (U+27E6–27E7), and black cardinal arrows (U+27A1, U+2B05–2B07), derived per
-  master from the bracket geometry / drawn on the cell (BUENA-346). 5,385 glyphs
-  / 4,264 codepoints.
-
-18 Jul 2026 (Buena) Buena Mono Version 1.227
-- Music BMP complete (7/7): added quarter note (U+2669) and beamed sixteenths
-  (U+266C), derived from the existing eighth/beamed-eighth notes. Curated
-  notation symbols: common time (U+1D134, from the C) and treble/bass clefs
-  (U+1D11E, U+1D122; adapted from Bravura, Steinberg, OFL 1.1). Chess: white
-  knight rebuilt as a clean outline of the black knight; white King/Queen
-  stroke weight rebalanced. 5,375 glyphs / 4,254 codepoints.
-
-18 Jul 2026 (Buena) Buena Mono Version 1.226
-- Legacy Computing block graphics: 60 sextants (U+1FB00-1FB3B) and 230 block
-  octants (U+1CD00-1CDE5), drawn on Buena's full-block cell so they tile with
-  the existing block/shade and Braille layers. 5,370 glyphs / 4,249 codepoints.
-
-16 Jul 2026 (Buena) Buena Mono Version 1.225
-- ExtraBold masters rebuilt from Bold (were mistakenly derived from Regular,
-  leaving wght=800 ~12u lighter than wght=700). The weight axis is now
-  monotonic across 100-800. Anchors re-normalized. 5,080 glyphs.
-
-8 Jul 2026 (Buena) Buena Mono Version 1.224
-- Mark-anchor normalization (zero collisions at all corners); overlay bars
-  on stroked letters restored at Bold/ExtraBold.
-
-8 Jul 2026 (Buena) Buena Mono Version 1.223
-- ss13 machine-readable mode (ligatures decompose); Tje/omega small caps.
-  5,080 glyphs.
-
-8 Jul 2026 (Buena) Buena Mono Version 1.222
-- 971 languages shaped (shaperglot); batch-2 small caps; new codepoints
-  incl. Cyrillic Tje and S with diagonal stroke; winding normalization.
-  5,078 glyphs.
-
-7 Jul 2026 (Buena) Buena Mono Version 1.221
-- IPA/African small caps; Turkish dotted-i locl fix; PS-hinted CFF2.
-  5,005 glyphs.
-
-5 Jul 2026 (Buena) Buena Mono Version 1.220
-- Lineage-gap set: CP437 remainder, keyboard/control pictures, multi-line
-  bracket pieces, ceiling/floor, prompt ornaments, music accidentals,
-  IPA dotted/left-stem tone bars. 4,966 glyphs.
-
-5 Jul 2026 (Buena) Buena Mono Version 1.219
-- Game-symbol set: 12 chess pieces, outlined card suits, dice, stars;
-  5 previously unexported dingbats now ship. 4,886 glyphs.
+28 Jul 2026 (Buena) Buena Mono Version 1.230
+- Chess pieces U+2654-265F redrawn in a flat/modern style (BUENA-347).
+- Board-game glyphs: go stones, draughts, go-board points, watch, hourglass
+  (U+26AA/26AB, U+26C0-26C3, U+2686-2689, U+231A/231B; BUENA-349).
+- Music: whole/half/quarter rests (U+1D13B-D) + dingbats cut-time, segno, coda,
+  fermata, repeat barlines (U+1D135, U+1D10B/C, U+1D110, U+1D106/7; BUENA-348).
+- 5,406 glyphs (+21). fontspector googlefonts: 0 FATAL / 0 FAIL.
 
 3 Jul 2026 (Buena) Buena Mono Version 1.218
 - Initial public release.
@@ -120,3 +47,12 @@ N: Buena
 E: buena@buenalabs.io
 W: https://buenalabs.io
 D: Design and development of Buena Mono
+
+N: Wei Huang
+W: https://github.com/weiweihuanghuang/fragment-mono
+D: Fragment Mono — the design foundation for Buena Mono (SIL OFL 1.1)
+
+N: Steinberg Media Technologies GmbH
+W: https://github.com/steinbergmedia/bravura
+D: Bravura (SMuFL reference font, SIL OFL 1.1) — source outlines for the treble and
+   bass clef glyphs (U+1D11E, U+1D122), adapted to the Buena Mono cell

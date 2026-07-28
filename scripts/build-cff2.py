@@ -258,26 +258,12 @@ def main():
             sys.exit(1)
 
     otf_path = os.path.join(output_dir, 'BuenaMono-VF.otf')
-    if not os.path.exists(otf_path):
+    if os.path.exists(otf_path):
+        size_kb = os.path.getsize(otf_path) / 1024
+        print(f'\nSuccess: {otf_path} ({size_kb:.0f} KB)')
+    else:
         print('\nError: OTF file was not created', file=sys.stderr)
         sys.exit(1)
-
-    if os.environ.get('SKIP_PS_HINTS'):
-        print('SKIP_PS_HINTS set — leaving OTF unhinted')
-    else:
-        # PostScript-hint the variable CFF2 (zones/stems come from the UFO
-        # fontinfo written by export-ufo.py), then re-subroutinize: otfautohint
-        # emits unsubroutinized charstrings (~2.2x size without this).
-        import subprocess
-        print('Hinting CFF2 with otfautohint...')
-        subprocess.run(['otfautohint', otf_path], check=True,
-                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        print('Re-subroutinizing with cffsubr...')
-        subprocess.run([sys.executable, '-m', 'cffsubr', '-i', otf_path],
-                       check=True)
-
-    size_kb = os.path.getsize(otf_path) / 1024
-    print(f'\nSuccess: {otf_path} ({size_kb:.0f} KB)')
 
 
 if __name__ == '__main__':

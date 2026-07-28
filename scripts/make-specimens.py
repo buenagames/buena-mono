@@ -5,10 +5,12 @@ Usage: python3 scripts/make-specimens.py <font.ttf> <out_docs_dir>
 
 Produces, in <out_docs_dir>:
   specimen.png                    hero (title, weight waterfall, ligatures, glyphs)
+  use-{regular,bold,italic}-{light,dark}.png   prose "in use" panels
   stylistic-sets.png              ss01-ss12 default -> alternate
   character-set.png               glyph-coverage overview
 
-Requires `hb-view` (harfbuzz) on PATH and Pillow.
+Requires `hb-view` (harfbuzz) on PATH and Pillow. Mixed-style prose is composited
+with a space-layer technique so weights/slants stay aligned on the monospace grid.
 """
 import os
 import subprocess
@@ -16,6 +18,9 @@ import sys
 import tempfile
 
 from PIL import Image
+
+ADVANCE = 618  # UPM 1000 -> monospace cell = size * 618/1000
+
 
 def hb(font, text, size, variations, fg, bg, out, features=None):
     cmd = ["hb-view", "--font-size", str(size), "--variations", variations,
@@ -28,9 +33,9 @@ def hb(font, text, size, variations, fg, bg, out, features=None):
 
 
 def hero(font, tmp, outpath):
-    FG, W, PAD = "EDEDED", 1680, 72
+    FG, W, PAD = "111111", 1680, 72
     lines = [
-        ("buena mono", 620, 132, 0),
+        ("Buena Mono", 620, 132, 0),
         ("Writer-first monospace · weight 100–800 · slant 0 to −10°", 400, 34, 34),
         ("Sphinx of black quartz, judge my vow", 100, 44, 42),
         ("Sphinx of black quartz, judge my vow", 300, 44, 10),
@@ -40,17 +45,61 @@ def hero(font, tmp, outpath):
         ("const inc = (x) => x >= 0 ? x + 1 : x;  a != b", 460, 44, 44),
         ("AÀÇ gβ Дж 0123 @#$€ →≠≈∑ ░▒▓█ (){}[]", 460, 46, 30),
     ]
-    imgs = [(hb(font, t, s, f"wght={w}", FG, "000000", f"{tmp}/hero_{i}.png"), g)
+    imgs = [(hb(font, t, s, f"wght={w}", FG, "ffffff", f"{tmp}/hero_{i}.png"), g)
             for i, (t, w, s, g) in enumerate(lines)]
     width = max(W, max(im.width for im, _ in imgs) + 2 * PAD)
     height = PAD * 2 + sum(im.height + g for im, g in imgs)
-    canvas = Image.new("RGB", (width, height), "#000000")
+    canvas = Image.new("RGB", (width, height), "#ffffff")
     y = PAD
     for im, g in imgs:
         y += g
         canvas.paste(im, (PAD, y), im)
         y += im.height
     canvas.save(outpath)
+
+
+ESSAY = [
+    "Buena Mono is a writer-first monospace. It keeps the",
+    "steady rhythm of a fixed grid — every glyph one width",
+    "— while softening its shapes enough to read easily",
+    "across long passages of prose. Weight ranges from a",
+    "hairline thin to a solid extrabold, and a ten-degree",
+    "slant gives the family a true, unhurried italic voice.",
+]
+EMPH = {
+    "regular": ([], None),
+    "bold": (["Buena Mono", "extrabold"], "bold"),
+    "italic": (["writer-first monospace.", "unhurried italic voice."], "italic"),
+}
+VAR = {"reg": "wght=400", "bold": "wght=700", "italic": "wght=400,slnt=-10"}
+BGS = {"light": ("ffffff", "111111"), "dark": ("14161a", "e8e8e8")}
+
+
+def essay_panel(font, tmp, combo, bg, outpath):
+    subs, est = EMPH[combo]
+    bgc, fg = BGS[bg]
+    size, pad = 38, 64
+    line_h = round(size * 1.72)
+    width = round(max(len(l) for l in ESSAY) * size * ADVANCE / 1000.0) + 2 * pad
+    height = pad * 2 + len(ESSAY) * line_h
+    canvas = Image.new("RGBA", (width, height), "#" + bgc + "ff")
+    for li, line in enumerate(ESSAY):
+        st = ["reg"] * len(line)
+        for sub in subs:
+            i = line.find(sub)
+            while i != -1:
+                for k in range(i, i + len(sub)):
+                    st[k] = est
+                i = line.find(sub, i + 1)
+        y = pad + li * line_h
+        for style in set(st):
+            layer = "".join(c if st[i] == style else " " for i, c in enumerate(line))
+            if not layer.strip():
+                continue
+            im = hb(font, layer, size, VAR[style], fg, "00000000",
+                    f"{tmp}/e_{combo}_{bg}_{li}_{style}.png")
+            canvas.paste(im, (pad, y), im)
+    canvas.convert("RGB").save(outpath)
 
 
 SS = [
@@ -60,21 +109,20 @@ SS = [
     ("ss07", "Serifed i", "i"), ("ss08", "Straight-tail y", "y"),
     ("ss09", "Curved-tail y", "y"), ("ss10", "Plain zero", "0"),
     ("ss11", "Dotted zero", "0"), ("ss12", "Alternate r", "r"),
-    ("ss13", "Machine-readable", "=>"),
 ]
 
 
 def stylistic_sets(font, tmp, outpath):
-    FG, PAD, gsize, lsize, rowH, labelW = "EDEDED", 64, 60, 30, 92, 460
+    FG, PAD, gsize, lsize, rowH, labelW = "111111", 64, 60, 30, 92, 460
     rows = []
     for tag, label, ch in SS:
         rows.append((
-            hb(font, f"{tag}   {label}", lsize, "wght=400", "A0A0A0", "000000", f"{tmp}/ss_{tag}_l.png"),
-            hb(font, ch, gsize, "wght=400", FG, "000000", f"{tmp}/ss_{tag}_d.png"),
-            hb(font, "→", round(gsize * 0.6), "wght=400", "6E6E6E", "000000", f"{tmp}/ss_{tag}_r.png"),
-            hb(font, ch, gsize, "wght=400", FG, "000000", f"{tmp}/ss_{tag}_a.png", features=tag),
+            hb(font, f"{tag}   {label}", lsize, "wght=400", "555555", "ffffff", f"{tmp}/ss_{tag}_l.png"),
+            hb(font, ch, gsize, "wght=400", FG, "ffffff", f"{tmp}/ss_{tag}_d.png"),
+            hb(font, "→", round(gsize * 0.6), "wght=400", "aaaaaa", "ffffff", f"{tmp}/ss_{tag}_r.png"),
+            hb(font, ch, gsize, "wght=400", FG, "ffffff", f"{tmp}/ss_{tag}_a.png", features=tag),
         ))
-    canvas = Image.new("RGB", (1120, PAD * 2 + len(rows) * rowH), "#000000")
+    canvas = Image.new("RGB", (1120, PAD * 2 + len(rows) * rowH), "#ffffff")
     y = PAD
     for lab, deflt, arr, alt in rows:
         cy = y + rowH // 2
@@ -88,7 +136,7 @@ def stylistic_sets(font, tmp, outpath):
 
 
 def charset(font, tmp, outpath):
-    FG, PAD, size = "EDEDED", 64, 34
+    FG, PAD, size = "111111", 64, 34
     NOLIG = "-calt,-liga,-dlig,-clig"  # show raw punctuation, not code ligatures
     lines = [
         ("ABCDEFGHIJKLMNOPQRSTUVWXYZ", None),
@@ -103,10 +151,10 @@ def charset(font, tmp, outpath):
         ("== === != >= <= => -> <- |> <| ++ -- .= ...", None),
     ]
     line_h = round(size * 1.7)
-    imgs = [hb(font, t, size, "wght=400", FG, "000000", f"{tmp}/cs_{i}.png", features=feat)
+    imgs = [hb(font, t, size, "wght=400", FG, "ffffff", f"{tmp}/cs_{i}.png", features=feat)
             for i, (t, feat) in enumerate(lines)]
     width = max(1200, max(im.width for im in imgs) + 2 * PAD)
-    canvas = Image.new("RGB", (width, PAD * 2 + len(imgs) * line_h), "#000000")
+    canvas = Image.new("RGB", (width, PAD * 2 + len(imgs) * line_h), "#ffffff")
     y = PAD
     for im in imgs:
         canvas.paste(im, (PAD, y), im)
@@ -119,8 +167,11 @@ def main():
     os.makedirs(docs, exist_ok=True)
     with tempfile.TemporaryDirectory() as tmp:
         hero(font, tmp, os.path.join(docs, "specimen.png"))
+        for combo in EMPH:
+            for bg in BGS:
+                essay_panel(font, tmp, combo, bg, os.path.join(docs, f"use-{combo}-{bg}.png"))
         stylistic_sets(font, tmp, os.path.join(docs, "stylistic-sets.png"))
-        # charset() superseded by docs/character-set-roman.py / -italic.py
+        charset(font, tmp, os.path.join(docs, "character-set.png"))
     print(f"specimens written to {docs}")
 
 

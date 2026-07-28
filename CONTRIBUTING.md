@@ -32,4 +32,6 @@ Makefile does not regenerate them.
 
 ## License
 
-Buena Mono is released under the [SIL Open Font License 1.1](OFL.txt).
+Buena Mono is released under the [SIL Open Font License 1.1](OFL.txt). Portions
+copyright the [Fragment Mono](https://github.com/weiweihuanghuang/fragment-mono)
+Project Authors.

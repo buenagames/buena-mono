@@ -2,145 +2,20 @@
 
 All notable changes to Buena Mono are documented here.
 
-## 1.228 — 2026-07-22
+## 1.230 — 2026-07-28
 
-Brace recentering, shade-cell alignment, and quick-win brackets + arrows.
+Game + music glyph work (BUENA-347/348/349); source re-cut, GF-clean
+(fontspector googlefonts **0 FATAL / 0 FAIL** on `BuenaMono[slnt,wght].ttf`).
 
-- **Braces recentered (BUENA-342).** `{` `}` sat ~39u low; shifted up +39 in all
-  masters so they co-center with `()[]` on the cap midpoint (~350).
-- **Shade blocks aligned (BUENA-343).** `░▒▓` (U+2591–2593) lived on a different
-  cell than `█`; affine-refit each master's stipple onto the full-block cell
-  (x 9–609, y −300..900) so they tile with the block/sextant/octant set.
-- **Corner half-brackets + double brackets + heavy arrows (BUENA-346).** Added
-  `⸢⸣⸤⸥` (U+2E22–2E25) and `⟦⟧` (U+27E6–27E7), derived per-master from the real
-  bracket geometry so they track weight, plus the black cardinal arrows
-  `➡⬅⬆⬇` (U+27A1, U+2B05–2B07) drawn on the cell.
-- 5,375 → 5,385 glyphs / 4,254 → 4,264 codepoints.
-
-## 1.227 — 2026-07-18
-
-Music glyphs, curated notation symbols, and chess refinements.
-
-- **Music BMP complete (7/7).** Added the quarter note `♩` (U+2669) and beamed
-  sixteenths `♬` (U+266C), derived from the existing `♪`/`♫`.
-- **Curated notation symbols.** Common time `𝄴` (U+1D134, from the `C`), plus
-  treble `𝄞` (U+1D11E) and bass `𝄢` (U+1D122) clefs adapted from Bravura
-  (Steinberg Media Technologies, OFL 1.1) — credited in FONTLOG and OFL.
-- **Chess quality pass.** Rebuilt the white knight `♘` as a clean outline of the
-  black knight `♞`, and rebalanced the white King/Queen stroke weight.
-- 5,370 → 5,375 glyphs.
-
-## 1.226 — 2026-07-18
-
-Legacy Computing block graphics.
-
-- **290 sextant + block-octant glyphs added.** The full Symbols for Legacy
-  Computing sextant range (`U+1FB00`–`1FB3B`, 60) and the Symbols for Legacy
-  Computing Supplement block octants (`U+1CD00`–`1CDE5`, 230). Each is drawn
-  as solid sub-cell rectangles on Buena's exact full-block cell (x 9–609,
-  split at 309; y −300..900), so they tile seamlessly with the existing
-  `█ ▌ ▐` block set and the Braille layer for high-resolution terminal
-  graphics. Geometry is identical across all 8 masters (block graphics are
-  weight-invariant) and every glyph sits on the 618 monospace cell.
-- **5,370 glyphs / 4,249 codepoints** (was 5,080 / 3,959). 971 languages
-  (unchanged — the additions are symbol graphics, not new orthographies).
-
-## 1.225 — 2026-07-16
-
-Weight-axis fix.
-
-- **ExtraBold rebuilt from Bold, not Regular.** The ExtraBold masters
-  (wght=800) had been derived from the Regular master by mistake, leaving
-  them ~12 units lighter than Bold — so text got *lighter* from wght 700 to
-  800, in every release since v1.218. The masters are now re-derived from
-  Bold with the same offset used for every other weight; stems run monotonic
-  across the whole 100–800 axis (H stem 118 → 144 at the top). Anchors
-  re-normalized to the new letter heights. 5,080 glyphs (unchanged).
-
-## 1.224 — 2026-07-08
-
-Mark positioning + overlay-bar repair.
-
-- **Zero mark collisions** at every designspace corner (was 18 stress-string
-  failures): anchor heights now track each master's measured flat letter
-  tops (heavy masters reach past the nominal metrics), anchors lift above
-  baked accents/descender tails for correct stacking, and combining marks
-  carry 20u built-in clearance. Soft-dotted ḭ decomposes before above-marks.
-- **Stroke-overlay bars restored at heavy weights**: the bars on
-  Ɇ ɇ Ɍ ɍ Ᵽ ᵽ Ⱡ ⱡ Ⱥ ⱥ Ꭓ ꭓ shrank as weight grew (a relic of the
-  pre-normalization winding: the weight offset contracted reversed
-  contours — down to 2u at ExtraBold). Rebuilt to the Ø-slash growth
-  convention; Thin keeps its authored bars.
-
-## 1.223 — 2026-07-08
-
-- **ss13 “Machine readable”**: decomposes all 164 ligatures back to their
-  components for OCR/verbatim contexts (`font-feature-settings: "ss13" 1`).
-- Small caps for ᲊ (Tje) and ꭥ — clears the remaining fontspector
-  small-cap FAILs (back to the single intentional filename check).
-- fontspector WARNs 1,072 → 347 after the winding normalization.
-- **5,080 glyphs / 51 OpenType features.**
-
-## 1.222 — 2026-07-08
-
-Language-coverage completion + source hygiene (BUENA-335 round 2).
-
-- **971 languages shaped correctly** (shaperglot; was 835 in 1.221, 480 in
-  1.220) — every nearly-supported language closed except Yi and Korean.
-- **61 new small caps** (accented ǹ ḿ ṍ ḍ … and all stragglers ẓ ʃ ƭ ⱳ ɐ ẋ
-  ȓ ƹ ƈ ƥ ẉ ḫ ɫ ɤ ɉ), caseless ƛ ʕ ʘ, ẖ composite.
-- **New codepoints**: Ᲊ ᲊ (U+1C89/1C8A, Khanty Tje), Ꟍ ꟍ (U+A7CC/A7CD,
-  Luiseño), ꜛ ꜜ tone letters, ꭥ, Ꟛ ꟛ (Latin lambda) — 19 Google Fonts
-  glyphsets now at 100%.
-- **Winding normalization**: 21,228 contours across 1,534 glyphs aligned to
-  a single convention; restores filled counters on Ꙭ Ꚙ Ꝏ and fixes overlay
-  artifacts. Interpolation start points aligned (problems 655 → 256).
-- **5,078 glyphs / 3,959 codepoints** (was 5,005 / 3,950).
-
-## 1.221 — 2026-07-07
-
-Small caps for IPA/African Latin; PostScript-hinted CFF2.
-
-- **835 languages shaped correctly** (was 480): 38 scaled small caps for
-  IPA/African letters (ɔ ɛ ɓ ɗ ɨ ɩ ɲ ʋ ʉ ꞌ ƴ ɣ ɖ ƙ ʊ ʒ …) with smcp/c2sc
-  rules; Turkish dotted-i locl fix (i no longer renders as dotless ı in
-  Turkish text; dotted small-cap İ under smcp; fi ligature suppressed).
-- Winding fixed on the 38 source capitals (Ⱥ Ɇ Ɍ Ᵽ Ⱡ Ꭓ … no longer render
-  with XOR artifacts).
-- The variable CFF2 OTF now ships **PostScript-hinted** (otfautohint +
-  cffsubr at build time; alignment zones + standard stems seeded per master).
-- **5,005 glyphs / 3,950 codepoints** (was 4,966 / 3,950).
-
-## 1.220 — 2026-07-05
-
-Lineage-gap expansion: 80 glyphs closing every consensus coverage gap vs the
-18 obtainable monospace families from the lineage analysis.
-
-- **CP437 / terminal completeness**: ☺ ☻ ☹ ♀ ♂ ♪ ♫ ⌐ ⌠ ⌡ — the full classic
-  terminal graphics set now renders.
-- **Keyboard & editor symbols**: ⏎ ␣ ⌫ ⌦ ⌧ ⌃ ⌄ ⎋ and control pictures
-  ␀ ␉ ␊ ␋ ␌ ␍ ␤ (drawn as scaled letter components — they track weight).
-- **Math**: ceiling/floor ⌈ ⌉ ⌊ ⌋, projective ⌅, APL ⍴, and all 19
-  multi-line bracket pieces U+239B–23AD (tall parens/brackets/braces
-  assemble seamlessly across lines, matched to the box-drawing line box).
-- **Prompt & misc**: ❮ ❯ ❰ ❱, ✕, music accidentals ♯ ♭ ♮, half-black
-  diamonds ⬖ ⬗ ⬘ ⬙, dotted square ⬚, inverted interrobang ⸘.
-- **IPA**: dotted and left-stem tone bars U+A708–A716 (15), completing the
-  tone-letter set.
-- U+FEFF zero-width no-break space.
-- **4,966 glyphs / 3,950 codepoints** (was 4,886 / 3,870).
-
-## 1.219 — 2026-07-05
-
-Game-symbol expansion.
-
-- **Chess pieces** (U+2654–265F): all 12, white outlined + black filled,
-  designed on the mono cell — FEN diagrams and text boards render natively.
-- **Outlined card suits** ♡♢♤♧ (U+2661/2662/2664/2667), derived from the
-  filled suits for an exact style match.
-- **Dice** ⚀–⚅ (U+2680–2685) and **stars** ★☆ (U+2605/2606).
-- Five previously unexported dingbats now ship: ✢ ✳ ✶ ✻ ✽.
-- **4,886 glyphs / 3,870 codepoints** (was 4,857 / 3,841).
+- **Chess** (BUENA-347) — the 12 pieces (U+2654–265F) redrawn in a flat/modern
+  style: bold silhouettes, flared bases, white pieces outlined / black filled.
+- **Board-game** (BUENA-349) — 12 glyphs: go stones ⚪⚫, draughts men/kings
+  ⛀⛁⛂⛃, go-board points ⚆⚇⚈⚉, watch ⌚, hourglass ⌛.
+- **Music** (BUENA-348) — 9 glyphs: whole/half/quarter rests (U+1D13B–D) and a
+  curated dingbat set — cut time 𝄵, segno 𝄋, coda 𝄌, fermata 𝄐, repeat barlines
+  𝄆𝄇 — matching the existing monolinear ♩♪♫♬ + clefs.
+- **5,406 glyphs** total (+21 this release). New symbol glyphs are
+  weight-invariant across masters, consistent with the existing dingbats/clefs.
 
 ## 1.218 — 2026-07-03
 
@@ -153,3 +28,5 @@ Initial public release.
 - **12 stylistic sets** (`ss01`–`ss12`).
 - OpenType features: `ccmp`, `mark`, `mkmk`, `aalt`, `calt`, `liga`, `smcp`,
   `ss01`–`ss12`.
+- Built on [Fragment Mono](https://github.com/weiweihuanghuang/fragment-mono)
+  (OFL 1.1) by Wei Huang.

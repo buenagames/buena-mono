@@ -49,5 +49,11 @@ Thumbs.db
 *（自动存储）.*
 *（已自動儲存）.*
 
+# Spec Kit installs regenerable skills here; may hold agent artifacts
+.claude/skills/
+build/
+
+# Local secrets — VLM OCR arm reads scripts/fontcompare/.env (.env.example is committed)
+.env
+
 .claude/
-*.bak

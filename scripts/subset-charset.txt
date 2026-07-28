@@ -5,7 +5,7 @@
 # Format: hex codepoints or RANGES (XXXX-YYYY), whitespace/comma separated; '#' = comment.
 # To add glyphs to the site's display font: add codepoints here, then `make build-subset`.
 #
-# 2251 codepoints in 25 ranges. Regenerate/extend, don't hand-sort.
+# ~2282 codepoints. Regenerate/extend, don't hand-sort.
 
 0020-007E
 00A0-024F
@@ -33,3 +33,18 @@
 2736  # spinner asterisk (Claude Code demo)
 273B  # spinner asterisk (Claude Code demo)
 273D  # spinner asterisk (Claude Code demo)
+
+# v1.230 board-game glyphs (BUENA-349)
+231A-231B  # watch ⌚ / hourglass ⌛
+26AA-26AB  # go stones ⚪⚫
+2686-2689  # go-board points ⚆⚇⚈⚉
+26C0-26C3  # draughts men/kings ⛀⛁⛂⛃
+
+# v1.230 SMP music — clefs/time + rests + dingbats (BUENA-348)
+1D106-1D107  # repeat barlines 𝄆𝄇
+1D10B-1D10C  # segno 𝄋 / coda 𝄌
+1D110        # fermata 𝄐
+1D11E        # treble clef 𝄞
+1D122        # bass clef 𝄢
+1D134-1D135  # common 𝄴 / cut 𝄵 time
+1D13B-1D13D  # whole/half/quarter rests 𝄻𝄼𝄽
