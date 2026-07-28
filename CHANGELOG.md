@@ -2,6 +2,15 @@
 
 All notable changes to Buena Mono are documented here.
 
+## 1.231 — 2026-07-28
+
+- **Chess** (BUENA-347) — the 12 pieces (U+2654–265F) retraced from the author's
+  own flat/modern reference silhouettes (`sources/references/chess/`), replacing
+  the v1.230 parametric redraw: cleaner shapes, uniform-scaled to the mono cell,
+  black filled (king's cross and knight's eye preserved as counters), white
+  outlined at the family weight. The reference art is original to the author and
+  licensed under the OFL with the font. 5,406 glyphs (in-place redraw).
+
 ## 1.230 — 2026-07-28
 
 Game + music glyph work (BUENA-347/348/349); source re-cut, GF-clean

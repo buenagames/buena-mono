@@ -22,6 +22,12 @@ and extended into a variable family.
 ChangeLog
 ---------
 
+28 Jul 2026 (Buena) Buena Mono Version 1.231
+- Chess pieces U+2654-265F retraced from the author's own reference silhouettes
+  (sources/references/chess/), replacing the v1.230 parametric redraw. The chess
+  art is original to the author and licensed under the OFL with the font — no
+  third-party outlines are bundled.
+
 28 Jul 2026 (Buena) Buena Mono Version 1.230
 - Chess pieces U+2654-265F redrawn in a flat/modern style (BUENA-347).
 - Board-game glyphs: go stones, draughts, go-board points, watch, hourglass
