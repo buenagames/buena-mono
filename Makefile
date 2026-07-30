@@ -109,10 +109,12 @@ sprite-specimen: venv  ## Regenerate the TUI specimen: text + real-font HTML vie
 	. venv/bin/activate; python3 -c "import drawbot_skia" 2>/dev/null || pip install drawbot-skia
 	. venv/bin/activate; python3 tests/sprite_render.py
 
-package: build.stamp  ## Assemble Google Fonts submission directory
+package: build.stamp  ## Assemble Google Fonts submission directory (wght-only Roman + Italic pair)
 	rm -rf out/googlefonts
 	mkdir -p out/googlefonts/ofl/buenamono/article
-	cp out/fonts/BuenaMono-VF.ttf "out/googlefonts/ofl/buenamono/BuenaMono[slnt,wght].ttf"
+	. venv/bin/activate; python3 scripts/build-gf-pair.py --input out/fonts/BuenaMono-VF.ttf --output-dir out/fonts
+	cp "out/fonts/BuenaMono[wght].ttf" "out/googlefonts/ofl/buenamono/BuenaMono[wght].ttf"
+	cp "out/fonts/BuenaMono-Italic[wght].ttf" "out/googlefonts/ofl/buenamono/BuenaMono-Italic[wght].ttf"
 	cp OFL.txt out/googlefonts/ofl/buenamono/OFL.txt
 	cp docs/metadata.pb out/googlefonts/ofl/buenamono/METADATA.pb
 	cp docs/ARTICLE.en_us.html out/googlefonts/ofl/buenamono/article/ARTICLE.en_us.html
@@ -121,7 +123,7 @@ package: build.stamp  ## Assemble Google Fonts submission directory
 	@ls -la out/googlefonts/ofl/buenamono/
 	@echo "\nVerifying submission with fontspector (from the family dir, as GF CI does)..."
 	. venv/bin/activate; command -v fontspector >/dev/null 2>&1 || bash scripts/install-fontspector.sh
-	. venv/bin/activate; cd out/googlefonts/ofl/buenamono && fontspector --profile googlefonts -l warn --succinct "BuenaMono[slnt,wght].ttf" || true
+	. venv/bin/activate; cd out/googlefonts/ofl/buenamono && fontspector --profile googlefonts -l warn --succinct "BuenaMono[wght].ttf" "BuenaMono-Italic[wght].ttf" || true
 
 release:  ## Ship a new font version → public repo + live landing page (build, publish, sync:fonts, deploy)
 	bash scripts/sync-release.sh

@@ -8,7 +8,7 @@ fonts {
   name: "Buena Mono"
   style: "normal"
   weight: 400
-  filename: "BuenaMono[slnt,wght].ttf"
+  filename: "BuenaMono[wght].ttf"
   post_script_name: "BuenaMono-Regular"
   full_name: "Buena Mono Regular"
   copyright: "Copyright 2026 The Buena Mono Project Authors (https://github.com/buenagames/buena-mono)."
@@ -18,7 +18,7 @@ fonts {
   name: "Buena Mono"
   style: "italic"
   weight: 400
-  filename: "BuenaMono[slnt,wght].ttf"
+  filename: "BuenaMono-Italic[wght].ttf"
   post_script_name: "BuenaMono-Italic"
   full_name: "Buena Mono Italic"
   copyright: "Copyright 2026 The Buena Mono Project Authors (https://github.com/buenagames/buena-mono)."
@@ -37,12 +37,6 @@ subsets: "symbols2"
 subsets: "vietnamese"
 
 axes {
-  tag: "slnt"
-  min_value: -10.0
-  max_value: 0.0
-}
-
-axes {
   tag: "wght"
   min_value: 100.0
   max_value: 800.0
@@ -52,8 +46,12 @@ source {
   repository_url: "https://github.com/buenagames/buena-mono"
   branch: "main"
   files {
-    source_file: "out/fonts/BuenaMono-VF.ttf"
-    dest_file: "BuenaMono[slnt,wght].ttf"
+    source_file: "out/fonts/BuenaMono[wght].ttf"
+    dest_file: "BuenaMono[wght].ttf"
+  }
+  files {
+    source_file: "out/fonts/BuenaMono-Italic[wght].ttf"
+    dest_file: "BuenaMono-Italic[wght].ttf"
   }
   files {
     source_file: "OFL.txt"
