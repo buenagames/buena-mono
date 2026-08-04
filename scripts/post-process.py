@@ -429,6 +429,7 @@ STYLISTIC_SET_NAMES = {
     "ss10": "Plain zero",
     "ss11": "Dotted zero",
     "ss12": "Alternate r",
+    "ss13": "Machine-readable mode",
 }
 
 
@@ -575,7 +576,7 @@ def process_font(font_path):
     if add_smart_dropout(font):
         modified = True
 
-    # Add UI names for stylistic sets (ss01-ss12)
+    # Add UI names for stylistic sets (ss01-ss13)
     if add_stylistic_set_names(font):
         modified = True
 

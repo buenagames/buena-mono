@@ -8,8 +8,11 @@ editors while keeping code perfectly legible. A two-axis variable font:
 
 **5,406 glyphs · 4,285 codepoints · 971 languages · 51 OpenType features**
 
-Released under the [SIL Open Font License 1.1](OFL.txt). See
-[Credits](#credits) for the families Buena Mono draws on.
+Buena Mono is a **derivative work, not an original design**. Its core Latin
+outlines come from [Fragment Mono](https://github.com/weiweihuanghuang/fragment-mono)
+by Wei Huang, itself derived from Nimbus Sans (URW Design Studio), and were
+then substantially transformed — see [Provenance](#provenance). Released under
+the [SIL Open Font License 1.1](OFL.txt).
 
 ## Install
 
@@ -165,27 +168,44 @@ See [CONTRIBUTING.md](CONTRIBUTING.md), the [CHANGELOG](CHANGELOG.md), and
 
 Made by [Buena](https://buenalabs.io).
 
-Buena Mono began from [Fragment Mono](https://github.com/weiweihuanghuang/fragment-mono)
-by Wei Huang (SIL OFL 1.1), itself based on Nimbus Sans, and was extended into a
-variable family. Glyphs in the extended ranges derive from other OFL families,
-each retained in the copyright notice on line 1 of [OFL.txt](OFL.txt):
+## Provenance
+
+Buena Mono is a derivative work. Its core Latin outlines were imported from
+[Fragment Mono](https://github.com/weiweihuanghuang/fragment-mono) (Wei Huang,
+OFL 1.1), which itself derives from Nimbus Sans (URW Design Studio). Those
+outlines were then substantially transformed for this project:
+
+- Respaced to a 618-unit cell — Fragment uses a narrower cell matched to
+  SF Mono for terminal compatibility.
+- Cap height set to 699; Fragment reduces its cap height below standard for
+  line-fitting, which costs markdown headings their prominence.
+- A weight axis (`wght` 100–800) derived across 8 masters — Fragment ships a
+  single weight.
+- A slant axis (`slnt` 0 to −10°) added.
+- Character set extended well beyond Fragment's Latin coverage, to 5,406
+  glyphs.
+
+Additional glyphs and reference outlines are drawn from the OFL families below.
+Every one is retained in the copyright notice on line 1 of [OFL.txt](OFL.txt),
+as the license requires:
 
 | Family | Contribution |
 |---|---|
-| [Fragment Mono](https://github.com/weiweihuanghuang/fragment-mono) | the original Latin core |
+| [Fragment Mono](https://github.com/weiweihuanghuang/fragment-mono) | core Latin outlines |
 | [IBM Plex Mono](https://github.com/IBM/plex) | Cyrillic, Latin Extended A/B, Pinyin |
-| [Noto Sans Mono](https://github.com/notofonts/latin-greek-cyrillic) | polytonic Greek, Cyrillic Extended, Latin Extended-B |
+| [Noto (Latin/Greek/Cyrillic)](https://github.com/notofonts/latin-greek-cyrillic) | polytonic Greek, Cyrillic Extended, Latin Extended-B |
 | [Cascadia Code](https://github.com/microsoft/cascadia-code) · [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) | Greek & Coptic |
 | [Bravura](https://github.com/steinbergmedia/bravura) | treble and bass clefs (U+1D11E, U+1D122) |
 
-[`FONTLOG.txt`](FONTLOG.txt) records the derivation in full. The chess pieces
-(U+2654–265F) are drawn from the author's own reference art and carry no
+The chess pieces (U+2654–265F) are original art by the author and carry no
 third-party outlines.
+
+The Reserved Font Names of the upstream projects are respected: this font is
+named Buena Mono and carries no upstream RFN. [`FONTLOG.txt`](FONTLOG.txt)
+records the derivation and the full copyright chain.
 
 ## License
 
 Buena Mono is licensed under the [SIL Open Font License, Version 1.1](OFL.txt).
-The notice on line 1 of `OFL.txt` retains the copyright of every family listed
-above, as the license requires.
 
 Copyright 2026 The Buena Mono Project Authors · [buenalabs.io](https://buenalabs.io)

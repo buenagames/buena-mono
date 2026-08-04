@@ -23,9 +23,20 @@ development milestones and the versions folded into other releases — see
 | 1.219 | Game-symbol set | ✅ |
 | 1.218 | Initial public release | ✅ |
 
-Releases 1.230 and 1.231 are published but have no bundle attached — they were
-created ahead of a CI run that could produce one. Attaching those two artifacts
-is the only outstanding gap in this table.
+`1.231`'s bundle was attached manually (built from the tag's own committed
+binaries) because CI could not produce one: every run fails at the "Set up test
+result site" step, which reads a `docs/proof.html` that `make proof` has never
+written — it writes `out/proof/`. Since the `release` job declares
+`needs: build`, that failure silently suppresses the bundle upload on every tag.
+**Still unfixed** in [`.github/workflows/build.yaml`](.github/workflows/build.yaml):
+until that step tolerates missing proof output, new tags will also ship without a
+bundle and must be attached by hand.
+
+`1.230` is marked **n/a** rather than missing: tags `1.230` and `1.231` point at
+the same commit, and no v1.230 binary exists in either repo (the committed
+variable font goes 1.229 → 1.231). 1.230 was superseded by 1.231 within the
+minute, so there is no genuine artifact to attach — publishing a 1.231-stamped
+font as `buena-mono-1.230.zip` would misrepresent it.
 
 Versions with no standalone release, all documented in
 [`CHANGELOG.md`](CHANGELOG.md):
