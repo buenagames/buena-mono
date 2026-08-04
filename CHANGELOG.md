@@ -26,12 +26,15 @@ Game + music glyph work (BUENA-347/348/349); source re-cut, GF-clean
 - **5,406 glyphs** total (+21 this release). New symbol glyphs are
   weight-invariant across masters, consistent with the existing dingbats/clefs.
 
-## 1.229 — 2026-07 (unreleased)
+## 1.229 — 2026-07-28
 
-Re-cut for the Google Fonts submission — `ss13` machine-readable zeroing and
-OpenType feature reordering; fontspector googlefonts **0 FATAL / 0 FAIL**.
-5,385 glyphs (unchanged from 1.228). Never published as a standalone GitHub
-release — superseded by the 1.230 re-cut.
+Re-cut for the Google Fonts submission — the submission-ready build baking in
+source fixes the shipped 1.228 binary lacked. `ss13` machine-zero (BUENA-351):
+`ss13` resolves `zero` → `zero.ss10`, default `0` unchanged. `smcp`/`c2sc`
+ordered before `liga`; `--flatten-components` for nested components.
+fontspector googlefonts on the wght-only GF pair: **0 FATAL / 0 FAIL / 0
+ERROR**. 5,385 glyphs. Not published as a standalone release on this
+repository — superseded by the 1.230 re-cut.
 
 ## 1.228 — 2026-07-22
 
@@ -190,6 +193,8 @@ Initial public release.
 - **12 stylistic sets** (`ss01`–`ss12`).
 - OpenType features: `ccmp`, `mark`, `mkmk`, `aalt`, `calt`, `liga`, `smcp`,
   `ss01`–`ss12`.
+- Built on [Fragment Mono](https://github.com/weiweihuanghuang/fragment-mono)
+  (OFL 1.1) by Wei Huang.
 
 ## Pre-release history (0.1.0 – 1.217)
 
