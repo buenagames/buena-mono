@@ -43,11 +43,6 @@ test: build.stamp
 proof: venv build.stamp
 	TOCHECK=$$(find out/fonts -type f 2>/dev/null); . venv/bin/activate; mkdir -p out/proof; diffenator2 proof $$TOCHECK -o out/proof
 
-marketing: venv  ## Generate marketing/brand assets (social, video, ASO, guidelines) into marketing/{png,svg}
-	. venv/bin/activate; python3 -c "import drawbot_skia" 2>/dev/null || pip install drawbot-skia
-	. venv/bin/activate; python3 marketing/marketing_svg.py
-	. venv/bin/activate; python3 marketing/marketing.py
-
 export-ufo: venv  ## Export UFO + designspace from .glyphs (GPOS from anchors)
 	. venv/bin/activate; python3 scripts/export-ufo.py
 	@echo "==> restoring GF-required feature order (glyphsLib export puts smcp after liga)"
