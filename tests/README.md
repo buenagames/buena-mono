@@ -31,8 +31,8 @@ Font-aware monospace + terminal-UI checks and specimens for Buena Mono.
   and reports *opportunities* (in-scope codepoints N+ peers ship that Buena
   lacks), a terminal-graphics matrix (box/blocks/Braille/sextants/octants), and
   Buena's *strengths*. Benchmark fonts aren't committed (licensing/size) — supply
-  your own dir. Found the Legacy-Computing sextant/octant gap (BUENA-345) and 9 quick-win
-glyphs (BUENA-346).
+  your own dir. Found the Legacy-Computing sextant/octant gap and 9 quick-win
+glyphs.
 
 ## Supersedes
 

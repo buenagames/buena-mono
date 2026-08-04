@@ -53,7 +53,7 @@ Paste-ready text for the two releases still to be created in the UI.
 ```markdown
 **Chess pieces retraced from original reference art.**
 
-- **Chess (BUENA-347).** The 12 pieces (U+2654–265F) retraced from the author's own flat/modern reference silhouettes (`sources/references/chess/`), replacing the v1.230 parametric redraw: cleaner shapes, uniform-scaled to the mono cell, black filled (king's cross and knight's eye preserved as counters), white outlined at the family weight. Original art by the author, licensed OFL with the font — no third-party outlines bundled.
+- **Chess.** The 12 pieces (U+2654–265F) retraced from the author's own flat/modern reference silhouettes (`sources/references/chess/`), replacing the v1.230 parametric redraw: cleaner shapes, uniform-scaled to the mono cell, black filled (king's cross and knight's eye preserved as counters), white outlined at the family weight. Original art by the author, licensed OFL with the font — no third-party outlines bundled.
 - **5,406 glyphs** (in-place redraw). fontspector googlefonts: 0 FATAL / 0 FAIL.
 ```
 
@@ -67,10 +67,10 @@ Paste-ready text for the two releases still to be created in the UI.
   "1.230 outlines" and "OFL-complete."
 
 ```markdown
-Game + music glyph work (BUENA-347/348/349); source re-cut, GF-clean (fontspector googlefonts **0 FATAL / 0 FAIL**).
+Game + music glyph work; source re-cut, GF-clean (fontspector googlefonts **0 FATAL / 0 FAIL**).
 
-- **Chess (BUENA-347).** The 12 pieces (U+2654–265F) redrawn in a flat/modern style: bold silhouettes, flared bases, white outlined / black filled.
-- **Board-game (BUENA-349).** 12 glyphs: go stones ⚪⚫, draughts men/kings ⛀⛁⛂⛃, go-board points ⚆⚇⚈⚉, watch ⌚, hourglass ⌛.
-- **Music (BUENA-348).** 9 glyphs: whole/half/quarter rests (U+1D13B–D) and dingbats — cut time 𝄵, segno 𝄋, coda 𝄌, fermata 𝄐, repeat barlines 𝄆𝄇.
+- **Chess.** The 12 pieces (U+2654–265F) redrawn in a flat/modern style: bold silhouettes, flared bases, white outlined / black filled.
+- **Board-game.** 12 glyphs: go stones ⚪⚫, draughts men/kings ⛀⛁⛂⛃, go-board points ⚆⚇⚈⚉, watch ⌚, hourglass ⌛.
+- **Music.** 9 glyphs: whole/half/quarter rests (U+1D13B–D) and dingbats — cut time 𝄵, segno 𝄋, coda 𝄌, fermata 𝄐, repeat barlines 𝄆𝄇.
 - **5,406 glyphs** (+21).
 ```

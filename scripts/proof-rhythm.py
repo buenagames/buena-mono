@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """proof-rhythm.py — monospace cell-rhythm proof + weight-axis gate.
 
-Two jobs (BUENA-338 finding 3):
+Two jobs:
 
 1. GATE (automated): the weight axis must be monotonic. Stem widths must not
    decrease as `wght` increases. This is machine-checkable and catches real
    bugs — it currently FAILS on the shipped font because the ExtraBold master
-   is ~12u lighter than Bold (see BUENA-341).
+   is ~12u lighter than Bold.
 
 2. PROOF (visual): render the classic rhythm strings — nnnn / oooo /
    hamburgefontsiv — at every named instance, for the "even gray colour /
@@ -179,7 +179,7 @@ def main():
 
     if rc:
         print("\nFAIL — the weight axis is not monotonic. Known: the ExtraBold")
-        print("master is ~12u lighter than Bold (BUENA-341). Text gets LIGHTER")
+        print("master is ~12u lighter than Bold. Text gets LIGHTER")
         print("from wght 700 to 800.")
     return rc
 

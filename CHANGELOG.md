@@ -4,7 +4,7 @@ All notable changes to Buena Mono are documented here.
 
 ## 1.231 — 2026-07-28
 
-- **Chess** (BUENA-347) — the 12 pieces (U+2654–265F) retraced from the author's
+- **Chess** — the 12 pieces (U+2654–265F) retraced from the author's
   own flat/modern reference silhouettes (`sources/references/chess/`), replacing
   the v1.230 parametric redraw: cleaner shapes, uniform-scaled to the mono cell,
   black filled (king's cross and knight's eye preserved as counters), white
@@ -13,14 +13,14 @@ All notable changes to Buena Mono are documented here.
 
 ## 1.230 — 2026-07-28
 
-Game + music glyph work (BUENA-347/348/349); source re-cut, GF-clean
+Game + music glyph work; source re-cut, GF-clean
 (fontspector googlefonts **0 FATAL / 0 FAIL** on `BuenaMono[slnt,wght].ttf`).
 
-- **Chess** (BUENA-347) — the 12 pieces (U+2654–265F) redrawn in a flat/modern
+- **Chess** — the 12 pieces (U+2654–265F) redrawn in a flat/modern
   style: bold silhouettes, flared bases, white pieces outlined / black filled.
-- **Board-game** (BUENA-349) — 12 glyphs: go stones ⚪⚫, draughts men/kings
+- **Board-game** — 12 glyphs: go stones ⚪⚫, draughts men/kings
   ⛀⛁⛂⛃, go-board points ⚆⚇⚈⚉, watch ⌚, hourglass ⌛.
-- **Music** (BUENA-348) — 9 glyphs: whole/half/quarter rests (U+1D13B–D) and a
+- **Music** — 9 glyphs: whole/half/quarter rests (U+1D13B–D) and a
   curated dingbat set — cut time 𝄵, segno 𝄋, coda 𝄌, fermata 𝄐, repeat barlines
   𝄆𝄇 — matching the existing monolinear ♩♪♫♬ + clefs.
 - **5,406 glyphs** total (+21 this release). New symbol glyphs are
@@ -29,7 +29,7 @@ Game + music glyph work (BUENA-347/348/349); source re-cut, GF-clean
 ## 1.229 — 2026-07-28
 
 Re-cut for the Google Fonts submission — the submission-ready build baking in
-source fixes the shipped 1.228 binary lacked. `ss13` machine-zero (BUENA-351):
+source fixes the shipped 1.228 binary lacked. `ss13` machine-zero:
 `ss13` resolves `zero` → `zero.ss10`, default `0` unchanged. `smcp`/`c2sc`
 ordered before `liga`; `--flatten-components` for nested components.
 fontspector googlefonts on the wght-only GF pair: **0 FATAL / 0 FAIL / 0
@@ -40,12 +40,12 @@ repository — superseded by the 1.230 re-cut.
 
 Brace recentering, shade-cell alignment, and quick-win brackets + arrows.
 
-- **Braces recentered (BUENA-342).** `{` `}` sat ~39u low; shifted up +39 in all
+- **Braces recentered.** `{` `}` sat ~39u low; shifted up +39 in all
   masters so they co-center with `()[]` on the cap midpoint (~350).
-- **Shade blocks aligned (BUENA-343).** `░▒▓` (U+2591–2593) lived on a different
+- **Shade blocks aligned.** `░▒▓` (U+2591–2593) lived on a different
   cell than `█`; affine-refit each master's stipple onto the full-block cell
   (x 9–609, y −300..900) so they tile with the block/sextant/octant set.
-- **Corner half-brackets + double brackets + heavy arrows (BUENA-346).** Added
+- **Corner half-brackets + double brackets + heavy arrows.** Added
   `⸢⸣⸤⸥` (U+2E22–2E25) and `⟦⟧` (U+27E6–27E7), derived per-master from the real
   bracket geometry so they track weight, plus the black cardinal arrows
   `➡⬅⬆⬇` (U+27A1, U+2B05–2B07) drawn on the cell.
@@ -121,7 +121,7 @@ _Published on GitHub as part of the [1.224 release](https://github.com/buenagame
 
 _Published on GitHub as part of the [1.224 release](https://github.com/buenagames/buena-mono/releases/tag/1.224) bundle (which rolls up 1.221–1.224)._
 
-Language-coverage completion + source hygiene (BUENA-335 round 2).
+Language-coverage completion + source hygiene (round 2).
 
 - **971 languages shaped correctly** (shaperglot; was 835 in 1.221, 480 in
   1.220) — every nearly-supported language closed except Yi and Korean.
