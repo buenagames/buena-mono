@@ -204,25 +204,25 @@ GitHub releases**; some axes explored here (slant, optical size, Black
 weight) were experimental and later removed or reworked. Recorded for
 lineage completeness.
 
-| Version | Date | Summary |
-|---------|------|---------|
-| 0.1.0 | Feb 2026 | Initial build — Fragment Mono foundation, `wght` 400–700. 191 glyphs. |
-| 0.1.5 | Feb 2026 | Box Drawing, Block Elements, Powerline, coding ligatures. 435 glyphs. |
-| 0.2.0 | Feb 2026 | Small caps (`smcp`, `c2sc`), discretionary ligatures (`dlig`); Bold master. 505 glyphs. |
-| 0.3.0 | Feb 2026 | Stylistic alternates (`zero`, `ss01`–`ss04`, `onum`); WOFF2 + OTF output. |
-| 0.4.0 | Feb 2026 | Slant axis exploration (experimental, later removed). |
-| 0.5.0 | Feb 2026 | Optical size axis exploration (experimental, later removed). |
-| 0.6.0 | Feb 2026 | Thin + ExtraBold weight masters — `wght` 100–800. |
-| 0.7.0 | Feb 2026 | Black weight masters (experimental, later removed). |
-| 0.8.0 | Feb 2026 | Extended symbols: arrows, math, icons, super/subscripts, fractions, circled numbers, currency; 13 new OT features. |
-| 0.9.0 | Feb 2026 | Cyrillic, Latin Extended-A/B and Pinyin — 326 glyphs from IBM Plex Mono. |
-| 1.0.0 | Feb 2026 | Greek & Coptic alphabet — 73 glyphs from Cascadia Code + JetBrains Mono. |
-| 1.1.0 | Feb 2026 | Polytonic Greek, Cyrillic Extended, Latin Extended-B — 592 glyphs from Noto Sans Mono. |
-| 1.1.2 | Feb 2026 | Lowercase alternates; `ss01`–`ss12` reorganization; 28 OT features. 1,698 glyphs. |
-| 1.214 | Feb 2026 | Google Fonts readiness — 2,485 glyphs, up to 50 OT features (`salt`, `lnum`, `nalt`, `dtls`, `sups`, `numr`, `dnom`, `sinf`, `tnum`, `cv01`–`cv13`). Internal 1.2.0 milestone. |
-| 1.215 | Feb 2026 | Source consolidation (`.glyphs` single source of truth) + coverage expansion. 2,501 glyphs (README records 3,199 — discrepancy). |
-| 1.216 | Feb 2026 | 7 new Unicode blocks (+608): Phonetic Ext, Combining Marks Supp, Cyrillic Ext-A/B, Latin Ext-C/D. 4,852 glyphs, 52 features. |
-| 1.217 | Feb 2026 | Italic masters (`slnt` 0 to −10°) — two-axis. `smcp`/`c2sc` identity subs (1,039 + 794). 4,857 glyphs, 8 masters, 16 instances. |
+| Version | Date | Glyphs | Codepoints | Features | Detail |
+|---------|------|--------|------------|----------|--------|
+| 0.1.0 | Feb 2026 | 191 | — | — | Initial build — Fragment Mono foundation, `wght` 400–700. |
+| 0.1.5 | Feb 2026 | 435 | — | — | Box Drawing, Block Elements, Powerline, coding ligatures. |
+| 0.2.0 | Feb 2026 | 505 | — | — | Small caps (`smcp`, `c2sc`), discretionary ligatures (`dlig`); Bold master. |
+| 0.3.0 | Feb 2026 | — | — | — | Stylistic alternates (`zero`, `ss01`–`ss04`, `onum`); WOFF2 + OTF output. |
+| 0.4.0 | Feb 2026 | — | — | — | Slant axis exploration (experimental, later removed). |
+| 0.5.0 | Feb 2026 | — | — | — | Optical size axis exploration (experimental, later removed). |
+| 0.6.0 | Feb 2026 | — | — | — | Thin + ExtraBold masters — weight axis extended to `wght` 100–800. |
+| 0.7.0 | Feb 2026 | — | — | — | Black weight masters (experimental, later removed). |
+| 0.8.0 | Feb 2026 | — | — | +13 | Extended symbols: arrows, math operators, icons, super/subscripts, fractions, circled numbers, currency. |
+| 0.9.0 | Feb 2026 | +326 | — | — | Cyrillic, Latin Extended-A/B and Pinyin — glyphs from IBM Plex Mono. |
+| 1.0.0 | Feb 2026 | +73 | — | — | Greek & Coptic alphabet — glyphs from Cascadia Code + JetBrains Mono. |
+| 1.1.0 | Feb 2026 | +592 | — | — | Polytonic Greek, Cyrillic Extended, Latin Extended-B — glyphs from Noto Sans Mono. |
+| 1.1.2 | Feb 2026 | 1,698 | — | 28 | Lowercase alternates; stylistic sets reorganized (`ss01`–`ss12`, `ss11`–`ss20` lowercase alternates). |
+| 1.214 | Feb 2026 | 2,485 | — | ≤50 | Google Fonts readiness (internal 1.2.0 milestone): added `salt`, `lnum`, `nalt`, `dtls`, `sups`, `numr`, `dnom`, `sinf`, `tnum`, `cv01`–`cv13`. fontspector 0 FAILs. |
+| 1.215 | Feb 2026 | 2,501 | — | 44 GSUB | `.glyphs` becomes the single source of truth (native GPOS anchors); 26 orphaned UFOs removed (186 MB); 100% coverage across Latin Ext. Additional, General Punctuation, Super/Subscripts, Currency, Geometric Shapes, Braille, Combining Marks. A pre-consolidation README recorded 3,199 glyphs / 2,183 codepoints — a historical counting discrepancy, superseded once counts were tracked from the single source. |
+| 1.216 | Feb 2026 | 4,852 | 3,836 | 52 | 7 new Unicode blocks (+608): Phonetic Ext (128/128), Phonetic Ext Supp (64/64), Combining Marks Supp (63/64), Cyrillic Ext-A (32/32), Cyrillic Ext-B (96/96), Latin Ext-C (32/32), Latin Ext-D (193/199). |
+| 1.217 | Feb 2026 | 4,857 | 3,841 | 50 | Italic masters (`slnt` 0 to −10°) — two-axis; `smcp`/`c2sc` identity subs (1,039 + 794); interpolation fixes across 477 glyphs; native `featureNames`. 8 masters / 16 instances; fontspector 0 FAILs / 187 WARNs. |
 
 Versioning note: the jump from the `0.x`/`1.1.x` scheme to `1.214`+ reflects
 a switch to `1.<versionMinor>` numbering (the `versionMinor` counter carried
