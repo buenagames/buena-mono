@@ -66,8 +66,7 @@ Game + music glyph work; source re-cut, GF-clean
 - Braces recentered +39 to co-center with `()[]`; shade blocks
   ░▒▓ (U+2591–2593) affine-refit onto the full-block cell.
 - Corner half-brackets ⸢⸣⸤⸥ (U+2E22–2E25), double square brackets ⟦⟧
-  (U+27E6–27E7), and black cardinal arrows ➡⬅⬆⬇ (U+27A1, U+2B05–2B07) added
- . 5,385 glyphs.
+  (U+27E6–27E7), and black cardinal arrows ➡⬅⬆⬇ (U+27A1, U+2B05–2B07) added. 5,385 glyphs.
 
 ## 1.227 — 2026-07
 
