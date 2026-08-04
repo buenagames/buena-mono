@@ -355,6 +355,34 @@ def reorder_smcp_before_liga(font):
     return True
 
 
+# Identity name records. These must agree with the two external authorities
+# that already describe this font: the Microsoft vendor registration for BUEN
+# (Foundry "Buena", FoundryURL below) and the Google Fonts designer profile in
+# catalog/designers/buena/info.pb (designer "Buena", link buenalabs.io).
+# Left unset, OS font panels show no manufacturer or vendor at all, and the
+# designer URL pointed at the source repository rather than the foundry.
+IDENTITY_NAMES = {
+    8: "Buena",                              # Manufacturer
+    11: "https://buena-mono.buenalabs.io/",  # Vendor URL — matches BUEN registration
+    12: "https://buenalabs.io",              # Designer URL — matches the GF designer profile
+}
+
+
+def add_identity_names(font):
+    """Set Manufacturer / Vendor URL / Designer URL so the binary agrees with
+    the vendor registration and the Google Fonts designer profile."""
+    name = font["name"]
+    changed = False
+    for nid, value in IDENTITY_NAMES.items():
+        current = name.getDebugName(nid)
+        if current == value:
+            continue
+        name.setName(value, nid, 3, 1, 0x409)  # Windows / English
+        print(f"    nameID {nid}: {current!r} -> {value!r}")
+        changed = True
+    return changed
+
+
 def remove_nameid17(font):
     """Remove NameID 17 if it was incorrectly set."""
     name_table = font["name"]
@@ -578,6 +606,10 @@ def process_font(font_path):
 
     # Add UI names for stylistic sets (ss01-ss13)
     if add_stylistic_set_names(font):
+        modified = True
+
+    # Manufacturer / vendor URL / designer URL
+    if add_identity_names(font):
         modified = True
 
     # Add PostScript names for fvar named instances
