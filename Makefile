@@ -130,6 +130,3 @@ package: build.stamp  ## Assemble Google Fonts submission directory (wght-only R
 	@echo "\nVerifying submission with fontspector (from the family dir, as GF CI does)..."
 	. venv/bin/activate; command -v fontspector >/dev/null 2>&1 || bash scripts/install-fontspector.sh
 	. venv/bin/activate; cd out/googlefonts/ofl/buenamono && fontspector --profile googlefonts -l warn --succinct "BuenaMono[wght].ttf" "BuenaMono-Italic[wght].ttf" || true
-
-release:  ## Ship a new font version → public repo + live landing page (build, publish, sync:fonts, deploy)
-	bash scripts/sync-release.sh
