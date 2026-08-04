@@ -2,51 +2,31 @@
 
 All notable changes to Buena Mono are documented here.
 
-## Releases & tags
+## Versions, tags and releases
 
-CHANGELOG.md is the **complete history** — every version, including the pre-repo
-milestones reconstructed from the source tables. Git tags mark real commits, and
-GitHub Releases are cut for shippable builds; both are necessarily subsets. This
-table is the authoritative index of which versions carry a tag and a release.
+This file is the **complete history** — every version, including the pre-1.218
+development milestones. Tags and GitHub Releases cover the public versions only,
+so both are necessarily subsets of what follows.
 
-**Release policy (a):** a GitHub Release is cut for every **public** version
-(≥ 1.218), each with its built font artifact. Pre-1.218 entries are development
-history and are not released. **Tag convention:** no `v` prefix (e.g. `1.231`),
-matching `buenagames/buena-mono`. Four legacy tags predate this convention
-(`v0.5.0`, `v1.1`, `v1.217`, `v1.229`) and are left in place to preserve their
-release links; their release titles are normalized without the prefix.
+Tags carry no `v` prefix (e.g. `1.231`). Every public version from 1.218 onward
+is tagged and released; see [`RELEASES.md`](RELEASES.md) for the release index
+and bundle layout.
 
-| Version | Tag | Release (current) | Policy (a) target |
-|---------|-----|-------------------|-------------------|
-| 1.231 | `1.231` | — | release + artifact |
-| 1.230 | — | — | tag + release + artifact |
-| 1.229 | `v1.229` | ✓ (no artifact) | attach artifact |
-| 1.228 | — | — | tag + release + artifact |
-| 1.227 | — | — | tag + release + artifact |
-| 1.226 | — | — | tag + release + artifact |
-| 1.225 | — | — | tag + release + artifact |
-| 1.224 | — | — | tag + release + artifact |
-| 1.223 | — | — | tag + release + artifact |
-| 1.222 | — | — | tag + release + artifact |
-| 1.221 | — | — | tag + release + artifact |
-| 1.220 | — | — | tag + release + artifact |
-| 1.219 | — | — | tag + release + artifact |
-| 1.218 | — | — | tag + release + artifact — **initial public release** |
-| 1.217 | `v1.217` | ✓ | keep — last pre-public tag |
-| 1.1.0 | `v1.1` | ✓ | keep — the `v1.1` tag == the 1.1.0 milestone |
-| 0.5.0 | `v0.5.0` | ✓ pre-release (no artifact) | **remove** — experimental axis, later dropped |
-| 0.1.0 – 1.216 (rest) | — | — | none — reconstructed dev history |
-
-**Open reconciliation actions** (need `gh` / push access — not doable from the
-web session's read-only release API):
-
-1. **Backfill releases** for 1.218 and 1.230–1.231, then 1.219–1.228, each with
-   its built `buena-mono-<ver>.zip`. Minimum coherent set: 1.218 (first public),
-   1.230, and 1.231 (newest).
-2. **Attach the missing artifact** to 1.229 — its release is source-only because
-   CI currently fails before the build step.
-3. **Remove the `v0.5.0` release** (the tag can stay) so an experimental, removed
-   axis no longer outranks the initial public release in the Releases list.
+| Version | Tagged | Released | Notes |
+|---------|--------|----------|-------|
+| 1.231 | ✅ | ✅ | bundle not yet attached |
+| 1.230 | ✅ | ✅ | bundle not yet attached |
+| 1.229 | — | — | Google Fonts re-cut, superseded by 1.230 before it shipped |
+| 1.228 | ✅ | ✅ | |
+| 1.227 | ✅ | ✅ | |
+| 1.226 | ✅ | ✅ | |
+| 1.225 | ✅ | ✅ | |
+| 1.224 | ✅ | ✅ | rolls up 1.221–1.223 |
+| 1.221 – 1.223 | — | — | folded into the 1.224 release |
+| 1.220 | ✅ | ✅ | |
+| 1.219 | ✅ | ✅ | |
+| 1.218 | ✅ | ✅ | **initial public release** |
+| 0.1.0 – 1.217 | — | — | pre-public development history |
 
 ## 1.231 — 2026-07-28
 
@@ -60,7 +40,7 @@ web session's read-only release API):
 ## 1.230 — 2026-07-28
 
 Game + music glyph work; source re-cut, GF-clean
-(fontspector googlefonts **0 FATAL / 0 FAIL** on `BuenaMono[slnt,wght].ttf`).
+(fontspector googlefonts **0 FATAL / 0 FAIL**).
 
 - **Chess** — the 12 pieces (U+2654–265F) redrawn in a flat/modern
   style: bold silhouettes, flared bases, white pieces outlined / black filled.
@@ -80,7 +60,6 @@ Game + music glyph work; source re-cut, GF-clean
   ordered before `liga`; `--flatten-components` for nested components.
 - fontspector googlefonts on the wght-only GF pair: **0 FATAL / 0 FAIL / 0
   ERROR**. 5,385 glyphs.
-  *(Not in the BUENA.md version table; sourced from commit history.)*
 
 ## 1.228 — 2026-07
 
@@ -153,10 +132,10 @@ Initial public release.
 - Built on [Fragment Mono](https://github.com/weiweihuanghuang/fragment-mono)
   (OFL 1.1) by Wei Huang.
 
-<!-- Pre-1.218 development history (reconstructed from README.md and BUENA.md
-     version tables; git tags/commit history for this era predate the current
-     repo). Dates are month-precision (Feb 2026); glyph counts are as recorded
-     at each release. -->
+<!-- Pre-1.218 development history. This era predates the current repository, so
+     entries are reconstructed from the project's own version tables rather than
+     from git history. Dates are month-precision; glyph counts are as recorded at
+     the time of each milestone. -->
 
 ## 1.217 — 2026-02
 
@@ -184,9 +163,11 @@ Initial public release.
 - Coverage expansion to 100% across Latin Extended Additional, General
   Punctuation, Superscripts/Subscripts, Currency, Geometric Shapes, Braille and
   Combining Marks.
-- Glyph count discrepancy across sources: README records 3,199 glyphs / 2,183
-  codepoints / 50 features; the source table records 2,501 glyphs — to
-  reconcile.
+- Contemporary records disagree on the glyph count at this milestone: 3,199
+  glyphs / 2,183 codepoints / 50 features in one, 2,501 glyphs in another. The
+  binaries from this era were not retained, so the figure cannot be settled;
+  both are recorded here rather than picking one. Counts from 1.218 onward are
+  read directly from the compiled font.
 
 ## 1.214 — 2026-02
 
