@@ -55,7 +55,6 @@ build/
 
 # Local secrets — VLM OCR arm reads scripts/fontcompare/.env (.env.example is committed)
 .env
-
 .claude/
 .hyperglot-cache
 .envrc

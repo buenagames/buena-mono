@@ -12,7 +12,9 @@ import os
 from drawbot_skia.drawbot import *
 from fontTools.ttLib import TTFont
 
-FONT = "fonts/variable/BuenaMono-VF.ttf"
+# Prefer the freshest build (out/) so marketing renders at the current version;
+# fall back to the committed variable font.
+FONT = "out/fonts/BuenaMono-VF.ttf" if os.path.exists("out/fonts/BuenaMono-VF.ttf") else "fonts/variable/BuenaMono-VF.ttf"
 _tt = TTFont(FONT)
 UPM = _tt["head"].unitsPerEm
 ADV = _tt["hmtx"]["A"][0]
@@ -88,7 +90,7 @@ def social_square(out):
     line("a writer-first monospace typeface", 30, 0, 470, H, MUTED, align="center", boxw=W)
     line("0O 1lI  => != >= ->  ß ə ħ", 44, 0, 600, H, FG, align="center", boxw=W)
     fill(*TERRA); rect(W / 2 - 60, H - 700, 120, 5)
-    line("5,080 glyphs · 971 languages", 26, 0, 900, H, MUTED, align="center", boxw=W)
+    line("5,406 glyphs · 971 languages", 26, 0, 900, H, MUTED, align="center", boxw=W)
     line("wght 100-800 · slnt 0 to -10° · OFL", 26, 0, 946, H, MUTED, align="center", boxw=W)
     saveImage(out)
 
@@ -101,7 +103,7 @@ def story(out):
     line("writer-first monospace", 32, 0, 640, H, MUTED, align="center", boxw=W)
     code_window(90, 820, 900, 470, H)
     line("free · open source", 34, 0, 1560, H, TERRA, align="center", boxw=W)
-    line("5,080 glyphs · 971 languages", 28, 0, 1660, H, MUTED, align="center", boxw=W)
+    line("5,406 glyphs · 971 languages", 28, 0, 1660, H, MUTED, align="center", boxw=W)
     line("buena-mono.buenalabs.io", 30, 0, 1780, H, FG, align="center", boxw=W)
     saveImage(out)
 
@@ -124,7 +126,7 @@ def x_card(out):
     line("buena mono", 120, 0, 320, H, FG, align="center", boxw=W)
     line("a writer-first monospace typeface", 34, 0, 430, H, MUTED, align="center", boxw=W)
     line("0O 1lI  => != >= ->  ∑ √ ≈  ß ə ħ", 46, 0, 580, H, FG, align="center", boxw=W)
-    line("5,080 glyphs · 971 languages · wght 100-800 · slnt 0 to -10°",
+    line("5,406 glyphs · 971 languages · wght 100-800 · slnt 0 to -10°",
          26, 0, 760, H, MUTED, align="center", boxw=W)
     saveImage(out)
 
@@ -136,7 +138,7 @@ def ig_portrait(out):
     line("writer-first monospace", 30, 0, 400, H, MUTED, align="center", boxw=W)
     code_window(90, 520, 900, 470, H)
     line("free · open source · OFL", 30, 0, 1150, H, TERRA, align="center", boxw=W)
-    line("5,080 glyphs · 971 languages", 26, 0, 1240, H, MUTED, align="center", boxw=W)
+    line("5,406 glyphs · 971 languages", 26, 0, 1240, H, MUTED, align="center", boxw=W)
     saveImage(out)
 
 
@@ -146,7 +148,7 @@ def linkedin(out):
     line("buena mono", 92, 0, 240, H, FG, align="center", boxw=W)
     line("a writer-first monospace typeface", 28, 0, 330, H, MUTED, align="center", boxw=W)
     fill(*TERRA); rect(W / 2 - 60, H - 400, 120, 5)
-    line("5,080 glyphs · 971 languages · wght 100-800 · OFL", 24, 0, 470, H, MUTED, align="center", boxw=W)
+    line("5,406 glyphs · 971 languages · wght 100-800 · OFL", 24, 0, 470, H, MUTED, align="center", boxw=W)
     saveImage(out)
 
 
@@ -186,7 +188,7 @@ def iphone_screenshot(out):
     line("for writers", 92, 100, 480, H, MUTED)
     line("who code.", 92, 100, 600, H, TERRA)
     code_window(95, 900, 1100, 1000, H, size=34)
-    line("5,080 glyphs · 971 languages", 32, 0, 2180, H, FG, align="center", boxw=W)
+    line("5,406 glyphs · 971 languages", 32, 0, 2180, H, FG, align="center", boxw=W)
     line("free · open source · OFL", 32, 0, 2280, H, TERRA, align="center", boxw=W)
     line("buena-mono.buenalabs.io", 34, 0, 2480, H, MUTED, align="center", boxw=W)
     saveImage(out)
@@ -198,7 +200,7 @@ def marketplace_feature(out):
     line("buena mono", 128, 0, 300, H, FG, align="center", boxw=W)
     line("AaBbCc 0123 => != >=", 72, 0, 470, H, FG, align="center", boxw=W)
     line("a writer-first monospace typeface", 32, 0, 620, H, MUTED, align="center", boxw=W)
-    line("5,080 glyphs · 971 languages · wght 100-800 · slnt 0 to -10°", 26, 0, 780, H, MUTED, align="center", boxw=W)
+    line("5,406 glyphs · 971 languages · wght 100-800 · slnt 0 to -10°", 26, 0, 780, H, MUTED, align="center", boxw=W)
     saveImage(out)
 
 

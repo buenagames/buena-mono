@@ -65,6 +65,14 @@ ChangeLog
   fermata, repeat barlines (U+1D135, U+1D10B/C, U+1D110, U+1D106/7).
 - 5,406 glyphs (+21). fontspector googlefonts: 0 FATAL / 0 FAIL.
 
+28 Jul 2026 (Buena) Buena Mono Version 1.229
+- Re-cut for the Google Fonts submission, baking in source fixes the shipped
+  1.228 binary lacked: ss13 machine-readable mode resolves zero -> zero.ss10
+  with the default 0 unchanged; smcp/c2sc ordered before liga;
+  --flatten-components for nested components.
+- 5,385 glyphs. fontspector googlefonts on the wght-only GF pair:
+  0 FATAL / 0 FAIL / 0 ERROR.
+
 22 Jul 2026 (Buena) Buena Mono Version 1.228
 - Braces recentered to match parens/brackets; U+2588 full block aligned with
   the U+2591–2593 shades; 9 quick-win glyphs added (corner brackets, heavy

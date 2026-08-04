@@ -33,6 +33,7 @@ build.stamp: venv sources/BuenaMono.designspace
 venv/touchfile: requirements.txt
 	test -d venv || python3 -m venv venv
 	. venv/bin/activate; pip install -Ur requirements.txt
+	bash scripts/install-fontspector.sh
 	touch venv/touchfile
 
 test: build.stamp

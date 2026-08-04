@@ -65,15 +65,9 @@ jobs:
       continue-on-error: true
     - name: Set up test result site
       run: |
-        mkdir -p out out/docs
-        if [ -f docs/proof.html ]; then
-          sed 's|\.\./out/fonts/|fonts/|g' docs/proof.html > out/index.html
-        elif ls out/proof/*.html >/dev/null 2>&1; then
-          cp "$(ls out/proof/*.html | head -n1)" out/index.html
-        else
-          echo '<!doctype html><meta charset=utf-8><title>Buena Mono</title><p>Build artifacts are in <code>/fonts</code>.' > out/index.html
-        fi
-        for f in docs/*.html; do [ -e "$f" ] && sed 's|\.\./out/fonts/|../fonts/|g' "$f" > "out/$f"; done
+        sed 's|\.\./out/fonts/|fonts/|g' docs/proof.html > out/index.html
+        mkdir -p out/docs
+        for f in docs/*.html; do sed 's|\.\./out/fonts/|../fonts/|g' "$f" > "out/$f"; done
     - name: Collect deployment assets
       if: ${{ github.ref == 'refs/heads/main' }}
       uses: actions/upload-pages-artifact@v4

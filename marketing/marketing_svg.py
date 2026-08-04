@@ -82,7 +82,7 @@ def social_square():
         t(W/2, 540, "a writer-first monospace typeface", 30, PAL["muted"], "middle"),
         t(W/2, 690, "0O 1lI  => != >= ->  ß ə ħ", 44, PAL["fg"], "middle"),
         rect(W/2-60, 745, 120, 5, PAL["terra"]),
-        t(W/2, 900, "5,080 glyphs · 971 languages", 26, PAL["muted"], "middle"),
+        t(W/2, 900, "5,406 glyphs · 971 languages", 26, PAL["muted"], "middle"),
         t(W/2, 946, "wght 100-800 · slnt 0 to -10° · OFL", 26, PAL["muted"], "middle"),
     ]
     return W, H, b
@@ -140,7 +140,7 @@ def cli():
     term = [
         [("$", K), (" npm run build", F)],
         [("> ", K), ("building buena-mono ...", PAL["muted"])],
-        [("+ ", ST), ("5,080 glyphs · 971 languages", F)],
+        [("+ ", ST), ("5,406 glyphs · 971 languages", F)],
         [("  wght 100-800 · slnt 0 to -10°", PAL["muted"])],
     ]
     ty = wy + 726
@@ -184,7 +184,7 @@ def social_preview():
         t(W/2, 250, "buena mono", 128, PAL["fg"], "middle"),
         t(W/2, 340, "a writer-first monospace typeface", 34, PAL["muted"], "middle"),
         t(W/2, 462, "0O 1lI  => != >= ->  ß ə ħ", 52, PAL["fg"], "middle"),
-        t(W/2, 572, "5,080 glyphs · 971 languages · wght 100-800 · slnt 0 to -10°", 28, PAL["muted"], "middle"),
+        t(W/2, 572, "5,406 glyphs · 971 languages · wght 100-800 · slnt 0 to -10°", 28, PAL["muted"], "middle"),
     ]
 
 
@@ -242,7 +242,7 @@ def ig_portrait():
                    t(W/2, 400, "writer-first monospace", 30, PAL["muted"], "middle")]
                   + code_window_svg(90, 520, 900, 470)
                   + [t(W/2, 1150, "free · open source · OFL", 30, PAL["terra"], "middle"),
-                     t(W/2, 1240, "5,080 glyphs · 971 languages", 26, PAL["muted"], "middle")])
+                     t(W/2, 1240, "5,406 glyphs · 971 languages", 26, PAL["muted"], "middle")])
 
 
 def story():
@@ -252,7 +252,7 @@ def story():
                    t(W/2, 620, "writer-first monospace", 32, PAL["muted"], "middle")]
                   + code_window_svg(90, 760, 900, 470)
                   + [t(W/2, 1560, "free · open source", 34, PAL["terra"], "middle"),
-                     t(W/2, 1660, "5,080 glyphs · 971 languages", 28, PAL["muted"], "middle"),
+                     t(W/2, 1660, "5,406 glyphs · 971 languages", 28, PAL["muted"], "middle"),
                      t(W/2, 1780, "buena-mono.buenalabs.io", 30, PAL["fg"], "middle")])
 
 
@@ -262,7 +262,7 @@ def x_card():
         t(W/2, 320, "buena mono", 120, PAL["fg"], "middle"),
         t(W/2, 430, "a writer-first monospace typeface", 34, PAL["muted"], "middle"),
         t(W/2, 580, "0O 1lI  => != >= ->  ∑ √ ≈  ß ə ħ", 46, PAL["fg"], "middle"),
-        t(W/2, 760, "5,080 glyphs · 971 languages · wght 100-800 · slnt 0 to -10°", 26, PAL["muted"], "middle"),
+        t(W/2, 760, "5,406 glyphs · 971 languages · wght 100-800 · slnt 0 to -10°", 26, PAL["muted"], "middle"),
     ]
 
 
@@ -272,7 +272,7 @@ def linkedin():
         t(W/2, 240, "buena mono", 92, PAL["fg"], "middle"),
         t(W/2, 330, "a writer-first monospace typeface", 28, PAL["muted"], "middle"),
         rect(W/2-60, 400, 120, 5, PAL["terra"]),
-        t(W/2, 470, "5,080 glyphs · 971 languages · wght 100-800 · OFL", 24, PAL["muted"], "middle"),
+        t(W/2, 470, "5,406 glyphs · 971 languages · wght 100-800 · OFL", 24, PAL["muted"], "middle"),
     ]
 
 
@@ -314,7 +314,7 @@ def iphone_screenshot():
                    t(100, 480, "for writers", 92, PAL["muted"]),
                    t(100, 600, "who code.", 92, PAL["terra"])]
                   + code_window_svg(95, 760, 1100, 700, size=34)
-                  + [t(W/2, 2180, "5,080 glyphs · 971 languages", 32, PAL["fg"], "middle"),
+                  + [t(W/2, 2180, "5,406 glyphs · 971 languages", 32, PAL["fg"], "middle"),
                      t(W/2, 2280, "free · open source · OFL", 32, PAL["terra"], "middle"),
                      t(W/2, 2480, "buena-mono.buenalabs.io", 34, PAL["muted"], "middle")])
 
@@ -325,7 +325,7 @@ def marketplace():
         t(W/2, 300, "buena mono", 128, PAL["fg"], "middle"),
         t(W/2, 470, "AaBbCc 0123 => != >=", 72, PAL["fg"], "middle"),
         t(W/2, 620, "a writer-first monospace typeface", 32, PAL["muted"], "middle"),
-        t(W/2, 780, "5,080 glyphs · 971 languages · wght 100-800 · slnt 0 to -10°", 26, PAL["muted"], "middle"),
+        t(W/2, 780, "5,406 glyphs · 971 languages · wght 100-800 · slnt 0 to -10°", 26, PAL["muted"], "middle"),
     ]
 
 
@@ -370,7 +370,7 @@ def logo_exclusion_zone():
 def stats_board():
     W, H = 2000, 1200
     cards = [
-        ("Glyphs", "5,080", PAL["syn_adj"]),
+        ("Glyphs", "5,406", PAL["syn_adj"]),
         ("Languages", "971", PAL["syn_noun"]),
         ("Masters", "8", PAL["syn_adv"]),
         ("OpenType features", "51", PAL["syn_verb"]),
@@ -394,7 +394,7 @@ def stats_board():
 def type_system():
     W, H = 2000, 1400
     b = [t(100, 90, "buenalabs.io", 26, PAL["muted"]),
-         t(W - 100, 90, "buena mono · v1.225", 26, PAL["muted"], "end"),
+         t(W - 100, 90, "buena mono", 26, PAL["muted"], "end"),
          t(100, 390, "type", 200, PAL["fg"]),
          t(100, 570, "system", 200, PAL["fg"]),
          t(100, 668, "start small", 34, PAL["muted"]),

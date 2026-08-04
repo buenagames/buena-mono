@@ -2,3 +2,10 @@ fontmake>=3.9.0
 gftools>=0.9.54
 bumpfontversion>=0.4.1
 munkres  # required for fontTools.varLib.interpolatable full checker (else it silently under-reports ~100x)
+afdko>=4.0.0  # provides the otfautohint CLI used by `make build-otf` to PS-hint the CFF2
+diffenator3>=1.1.0  # regression diffs in scripts/make-reports.py (--old-font)
+
+# fontspector — the primary GF QA tool — is NOT on PyPI (Rust binary published as
+# GitHub release archives), so it cannot be pinned here. It is installed into
+# venv/bin by scripts/install-fontspector.sh, which `make venv` runs automatically
+# (and `make test` / `make package` re-check as a fallback). Bump the version there.
