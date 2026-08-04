@@ -18,7 +18,17 @@ venv: venv/touchfile
 customize: venv
 	. venv/bin/activate; python3 scripts/customize.py
 
-build.stamp: venv sources/BuenaMono.designspace
+# Everything the built binaries actually depend on. Without the script list a
+# change to post-processing leaves a stale font in out/fonts and `make build`
+# reports "Nothing to be done", so the fix silently never ships. UFO contents
+# are covered by check-manifest.py below, which fails the build on source drift.
+BUILD_SCRIPTS = scripts/check-manifest.py scripts/build-cff2.py \
+                scripts/inject-stat.py scripts/add-gasp-table.py \
+                scripts/post-process.py
+BUILD_SOURCES = sources/BuenaMono.designspace sources/BuenaMono.glyphs \
+                sources/config.yaml
+
+build.stamp: venv $(BUILD_SOURCES) $(BUILD_SCRIPTS)
 	. venv/bin/activate; python3 scripts/check-manifest.py
 	rm -rf out/fonts
 	mkdir -p out/fonts
