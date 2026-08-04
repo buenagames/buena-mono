@@ -12,8 +12,7 @@ development milestones and the versions folded into other releases — see
 
 | Tag | Title | Bundle |
 |-----|-------|--------|
-| 1.231 | Chess pieces retraced from original art | — |
-| 1.230 | Game + music glyph work | — |
+| 1.231 | Chess pieces retraced from original art | ✅ |
 | 1.228 | Brace recentering, shade alignment, brackets + arrows | ✅ |
 | 1.227 | Music BMP, notation symbols, chess quality pass | ✅ |
 | 1.226 | Legacy Computing sextants + octants | ✅ |
@@ -32,18 +31,21 @@ written — it writes `out/proof/`. Since the `release` job declares
 until that step tolerates missing proof output, new tags will also ship without a
 bundle and must be attached by hand.
 
-`1.230` is marked **n/a** rather than missing: tags `1.230` and `1.231` point at
-the same commit, and no v1.230 binary exists in either repo (the committed
-variable font goes 1.229 → 1.231). 1.230 was superseded by 1.231 within the
-minute, so there is no genuine artifact to attach — publishing a 1.231-stamped
-font as `buena-mono-1.230.zip` would misrepresent it.
+The `1.230` release and tag were **deleted** (2026-08-04). They duplicated
+`1.231`: both tags resolved to the same object, and no v1.230 binary exists in
+either repo — the committed variable font goes 1.229 → 1.231. 1.230 was
+superseded by 1.231 within the minute, so there was no genuine artifact to
+attach, and publishing a 1.231-stamped font as `buena-mono-1.230.zip` would have
+misrepresented it. The glyph work itself shipped in 1.231 and stays documented
+in [`CHANGELOG.md`](CHANGELOG.md).
 
 Versions with no standalone release, all documented in
 [`CHANGELOG.md`](CHANGELOG.md):
 
 - **1.221 – 1.223** — folded into the 1.224 release.
-- **1.229** — a Google Fonts submission re-cut, superseded by 1.230 before it
-  shipped.
+- **1.229** — a Google Fonts submission re-cut, superseded before it shipped.
+- **1.230** — game + music glyph work; superseded by 1.231 the same day. Its
+  release and tag were deleted as duplicates (see above); the work ships in 1.231.
 - **0.1.0 – 1.217** — pre-public development milestones.
 
 ## Bundle layout
