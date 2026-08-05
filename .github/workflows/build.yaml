@@ -6,8 +6,33 @@ on:
   push:
     branches:
       - main
+    # A full font build -- fontmake across 8 masters, fontspector, proofs --
+    # costs the same minutes whether a glyph changed or a typo did. Skip the
+    # paths that cannot affect the built font or the packaged output.
+    # Path filters are NOT evaluated for tag pushes, so release builds still
+    # run on every tag regardless of what changed.
+    paths-ignore:
+      - '**.md'
+      - '.github/ISSUE_TEMPLATE/**'
+      - '.gitignore'
+      - 'marketing/**'
+      # GF submission metadata — no Makefile target reads either.
+      - 'catalog/**'
+      - 'upstream.yaml'
+      # Publish- and release-time tooling. These are invoked by the `publish`
+      # and `release` targets only; the build/test/proof chain never runs them.
+      - 'scripts/publish-public.sh'
+      - 'scripts/scrub-public.py'
+      - 'scripts/sync-release.sh'
+      - 'scripts/stage-gf-pr.sh'
     tags:
       - '*'
+
+# One run per ref: a newer push supersedes an in-flight one. Tag builds are
+# never cancelled -- a cancelled release run produces no bundle.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ !startsWith(github.ref, 'refs/tags/') }}
 
 permissions: write-all
 
