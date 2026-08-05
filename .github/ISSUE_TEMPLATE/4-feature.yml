@@ -1,0 +1,64 @@
+name: Feature request
+description: Suggest a ligature, stylistic set, character or OpenType feature.
+title: "[request] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For things the font doesn't do yet. If something is *broken* rather than
+        missing, one of the other forms will fit better — and if a **language**
+        doesn't shape correctly, use **Language or character coverage**, since
+        that's a gap rather than a request.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of addition?
+      options:
+        - A code ligature
+        - A stylistic set or alternate letterform
+        - A character or symbol
+        - An OpenType feature
+        - A variable axis
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What would you like added?
+      description: Describe the shape or behaviour. A sketch or reference image helps.
+    validations:
+      required: true
+  - type: textarea
+    id: trigger
+    attributes:
+      label: What would you type to get it?
+      description: >
+        For a ligature, the exact character sequence. For an alternate, the
+        character it replaces. Pasteable text, not a screenshot.
+      render: text
+      placeholder: "<=>  or  |>"
+  - type: textarea
+    id: why
+    attributes:
+      label: Where would you use it?
+      description: >
+        The language, framework or context it comes up in. Buena Mono is a
+        writer-first font, so prose and markdown cases are as welcome as code.
+    validations:
+      required: true
+  - type: input
+    id: prior_art
+    attributes:
+      label: Does another font already do this well?
+      description: Naming one is the fastest way to show what you mean.
+      placeholder: "Iosevka's ss08, Fira Code's <=>"
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked the stylistic sets in the README — it may already exist under a different name.
+          required: true
+        - label: This is monospace-safe, or I've said how it fits the fixed 618-unit cell.
