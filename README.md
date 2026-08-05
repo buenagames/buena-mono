@@ -8,6 +8,8 @@ editors while keeping code perfectly legible. A two-axis variable font:
 
 **5,406 glyphs · 4,285 codepoints · 971 languages · 51 OpenType features**
 
+### [⬇ Download the latest release](https://github.com/buenagames/buena-mono/releases/latest) · [Try it in the browser →](https://buena-mono.buenalabs.io)
+
 Buena Mono is a **derivative work, not an original design**. Its core Latin
 outlines come from [Fragment Mono](https://github.com/weiweihuanghuang/fragment-mono)
 by Wei Huang, itself derived from Nimbus Sans (URW Design Studio), and were
@@ -16,13 +18,25 @@ the [SIL Open Font License 1.1](OFL.txt).
 
 ## Install
 
-Download from [`fonts/variable/`](fonts/variable) — `BuenaMono-VF.ttf`
-(variable TrueType), `.otf` (variable CFF2), `.woff2` (webfont). Each carries
-the full two-axis design space.
+**[Download the latest release](https://github.com/buenagames/buena-mono/releases/latest)**
+— a single zip with every format plus the licence. Unzip it and you'll find the
+fonts in `fonts/`:
+
+| File | Use |
+|---|---|
+| `BuenaMono-VF.ttf` | variable TrueType — install this one on your machine |
+| `BuenaMono-VF.otf` | variable CFF2 |
+| `BuenaMono-VF.woff2` | webfont |
+| `BuenaMono[wght].ttf` · `BuenaMono-Italic[wght].ttf` | the Google Fonts pair (see below) |
+
+Then:
 
 - **macOS** — open `BuenaMono-VF.ttf` and click *Install Font* (or drop it into Font Book).
 - **Windows** — right-click `BuenaMono-VF.ttf` → *Install*.
 - **Linux** — copy to `~/.local/share/fonts/` and run `fc-cache -f`.
+
+To browse the individual files instead of the zip, they're in
+[`fonts/variable/`](fonts/variable).
 
 **Web** — self-host the variable webfont:
 
@@ -163,6 +177,17 @@ source's anchors at build time rather than hand-maintained.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md), the [CHANGELOG](CHANGELOG.md), and
 [RELEASES.md](RELEASES.md).
+
+## Feedback
+
+Spotted a glyph that looks wrong, a ligature misbehaving in your editor, or a
+language that doesn't shape correctly?
+**[Open an issue](https://github.com/buenagames/buena-mono/issues/new/choose)** —
+there are short forms for each, and they ask for the details needed to
+reproduce it (codepoint, app and OS, sample text).
+
+You don't need to build the font to report something. Design feedback from
+writers and designers is as useful as bug reports from developers.
 
 ## Credits
 

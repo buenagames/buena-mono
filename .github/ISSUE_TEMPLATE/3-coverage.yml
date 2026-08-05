@@ -1,0 +1,50 @@
+name: Language or character coverage
+description: A language doesn't shape correctly, or a character you need is missing.
+title: "[coverage] "
+labels: ["coverage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Buena Mono covers 5,406 glyphs across 971 languages, verified with
+        shaperglot. If yours isn't among them, or shapes incorrectly, say so here.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What's the problem?
+      options:
+        - A language doesn't shape correctly (marks, accents, joining)
+        - A character is missing entirely (tofu / blank box)
+        - A character exists but is wrong for my language
+    validations:
+      required: true
+  - type: input
+    id: language
+    attributes:
+      label: Language or script
+      placeholder: "Vietnamese, Polish, Serbian Cyrillic"
+    validations:
+      required: true
+  - type: textarea
+    id: sample
+    attributes:
+      label: Sample text
+      description: Paste real text showing the problem, so it can be reproduced exactly.
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: codepoints
+    attributes:
+      label: Codepoints, if you know them
+      placeholder: "U+1EC7, U+0301"
+  - type: textarea
+    id: expected
+    attributes:
+      label: How it should look
+      description: A screenshot from a font that gets it right is ideal.
+  - type: input
+    id: version
+    attributes:
+      label: Font version
+      placeholder: "1.231"

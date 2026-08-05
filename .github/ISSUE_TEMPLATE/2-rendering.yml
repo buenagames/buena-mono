@@ -1,0 +1,54 @@
+name: Rendering bug
+description: Ligatures, alignment, spacing or features misbehave in a specific app.
+title: "[rendering] "
+labels: ["rendering"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For when the font is drawn correctly but *behaves* wrongly somewhere —
+        ligatures not firing, columns not aligning, a feature ignored.
+  - type: input
+    id: app
+    attributes:
+      label: App and version
+      placeholder: "VS Code 1.98, iTerm2 3.5, Firefox 130"
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "macOS 15.3, Windows 11, Ubuntu 24.04"
+    validations:
+      required: true
+  - type: textarea
+    id: sample
+    attributes:
+      label: Text that triggers it
+      description: Paste the exact characters — not a screenshot of them, so they can be copied.
+      render: text
+      placeholder: "!= => ->> <=>"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected, and what you got
+    validations:
+      required: true
+  - type: input
+    id: features
+    attributes:
+      label: OpenType features enabled
+      description: Any stylistic sets or ligature settings active.
+      placeholder: "ligatures on, ss01, ss10"
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+  - type: input
+    id: version
+    attributes:
+      label: Font version
+      placeholder: "1.231"

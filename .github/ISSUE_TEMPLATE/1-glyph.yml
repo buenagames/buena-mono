@@ -1,0 +1,52 @@
+name: Glyph or design feedback
+description: A character looks wrong, sits oddly, or could be drawn better.
+title: "[glyph] "
+labels: ["glyph"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For how a character is *drawn* or *spaced*. If it renders wrongly only
+        in one app, use **Rendering bug** instead.
+  - type: input
+    id: characters
+    attributes:
+      label: Which characters?
+      description: Paste them, and give the codepoint if you know it.
+      placeholder: "ß — U+00DF"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What looks wrong?
+      description: Shape, weight, spacing, alignment, how it reads next to its neighbours.
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where did you notice it?
+      options:
+        - Prose / long-form writing
+        - Code
+        - Terminal or TUI
+        - Specimen site
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: axis
+    attributes:
+      label: Weight and slant, if it only happens at some
+      placeholder: "wght 700, slnt -10 — fine at Regular"
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: Drag an image in. A picture settles most of these instantly.
+  - type: input
+    id: version
+    attributes:
+      label: Font version
+      description: Font Book / your OS font panel shows it, e.g. 1.231.
