@@ -8,15 +8,15 @@ This file is the **complete history** — every version, including the pre-1.218
 development milestones. Tags and GitHub Releases cover the public versions only,
 so both are necessarily subsets of what follows.
 
-Tags carry no `v` prefix (e.g. `1.231`). Every public version from 1.218 onward
-is tagged and released; see [`RELEASES.md`](RELEASES.md) for the release index
-and bundle layout.
+Tags carry no `v` prefix (e.g. `1.231`). Public versions are tagged and released
+with their bundle, except where a version was superseded before it shipped; see
+[`RELEASES.md`](RELEASES.md) for the release index and bundle layout.
 
 | Version | Tagged | Released | Notes |
 |---------|--------|----------|-------|
-| 1.231 | ✅ | ✅ | bundle not yet attached |
-| 1.230 | ✅ | ✅ | bundle not yet attached |
-| 1.229 | — | — | Google Fonts re-cut, superseded by 1.230 before it shipped |
+| 1.231 | ✅ | ✅ | |
+| 1.230 | — | — | superseded by 1.231 the same day; release and tag deleted as duplicates |
+| 1.229 | — | — | Google Fonts re-cut, superseded before it shipped |
 | 1.228 | ✅ | ✅ | |
 | 1.227 | ✅ | ✅ | |
 | 1.226 | ✅ | ✅ | |
