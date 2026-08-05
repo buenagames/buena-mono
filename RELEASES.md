@@ -22,14 +22,14 @@ development milestones and the versions folded into other releases — see
 | 1.219 | Game-symbol set | ✅ |
 | 1.218 | Initial public release | ✅ |
 
-`1.231`'s bundle was attached manually (built from the tag's own committed
-binaries) because CI could not produce one: every run fails at the "Set up test
-result site" step, which reads a `docs/proof.html` that `make proof` has never
-written — it writes `out/proof/`. Since the `release` job declares
-`needs: build`, that failure silently suppresses the bundle upload on every tag.
-**Still unfixed** in [`.github/workflows/build.yaml`](.github/workflows/build.yaml):
-until that step tolerates missing proof output, new tags will also ship without a
-bundle and must be attached by hand.
+`1.231`'s bundle was attached manually, built from the tag's own committed
+binaries, because the tag's CI run did not execute — the jobs were never
+started, so the `release` job never reached its upload step.
+
+The workflow itself is sound: a clean checkout of the tagged tree builds and
+packages correctly with no local state. Once runs execute again, tagging
+produces the bundle without intervention; until then, new tags ship without one
+and it has to be attached by hand.
 
 The `1.230` release and tag were **deleted** (2026-08-04). They duplicated
 `1.231`: both tags resolved to the same object, and no v1.230 binary exists in
