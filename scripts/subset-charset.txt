@@ -3,9 +3,11 @@
 # The specimen site renders text via a trimmed copy of the full variable font.
 # This file lists exactly which Unicode codepoints that display subset covers.
 # Format: hex codepoints or RANGES (XXXX-YYYY), whitespace/comma separated; '#' = comment.
-# To add glyphs to the site's display font: add codepoints here, then `make build-subset`.
+# To add glyphs to the site's display font: add codepoints here, then re-cut
+# the subset — `python3 scripts/build-subset.py --full fonts/variable/BuenaMono-VF.ttf
+# --output <site>/public/fonts/BuenaMono-VF.subset.woff2` (there is no make target).
 #
-# ~2282 codepoints. Regenerate/extend, don't hand-sort.
+# ~2538 codepoints. Regenerate/extend, don't hand-sort.
 
 0020-007E
 00A0-024F
@@ -24,6 +26,7 @@
 2100-214F
 2190-22FF
 2500-25FF
+2800-28FF  # braille patterns — the specimen's TUI graphs, sparklines and monitor
 2654-2667  # chess pieces (Chess / More Games)
 2669-266F  # music symbols — notes ♩♪♫♬ + accidentals ♭♮♯
 2713
