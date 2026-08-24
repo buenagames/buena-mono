@@ -1,4 +1,4 @@
-# Buena Mono
+# buena mono
 
 Writer-first monospace typeface — tuned for extended prose in markdown and code
 editors while keeping code perfectly legible. A two-axis variable font:
@@ -10,7 +10,7 @@ editors while keeping code perfectly legible. A two-axis variable font:
 
 ### [⬇ Download the latest release](https://github.com/buenagames/buena-mono/releases/latest) · [Try it in the browser →](https://buena-mono.buenalabs.io)
 
-Buena Mono is a **derivative work, not an original design**. Its core Latin
+buena mono is a **derivative work, not an original design**. Its core Latin
 outlines come from [Fragment Mono](https://github.com/weiweihuanghuang/fragment-mono)
 by Wei Huang, itself derived from Nimbus Sans (URW Design Studio), and were
 then substantially transformed — see [Provenance](#provenance). Released under
@@ -150,7 +150,7 @@ editor's OpenType settings.
 
 ## Enabling ligatures in your editor
 
-Buena Mono's code ligatures use `calt`/`liga`, which are on by default in most
+buena mono's code ligatures use `calt`/`liga`, which are on by default in most
 engines. Where they aren't:
 
 - **VS Code** — `"editor.fontFamily": "Buena Mono"`, `"editor.fontLigatures": true`
@@ -195,7 +195,7 @@ Made by [Buena](https://buenalabs.io).
 
 ## Provenance
 
-Buena Mono is a derivative work. Its core Latin outlines were imported from
+buena mono is a derivative work. Its core Latin outlines were imported from
 [Fragment Mono](https://github.com/weiweihuanghuang/fragment-mono) (Wei Huang,
 OFL 1.1), which itself derives from Nimbus Sans (URW Design Studio). Those
 outlines were then substantially transformed for this project:
@@ -223,11 +223,11 @@ as the license requires:
 | [Bravura](https://github.com/steinbergmedia/bravura) | treble and bass clefs (U+1D11E, U+1D122) |
 
 The Reserved Font Names of the upstream projects are respected: this font is
-named Buena Mono and carries no upstream RFN. [`FONTLOG.txt`](FONTLOG.txt)
+named **buena mono** and carries no upstream RFN. [`FONTLOG.txt`](FONTLOG.txt)
 records the derivation and the full copyright chain.
 
 ## License
 
-Buena Mono is licensed under the [SIL Open Font License, Version 1.1](OFL.txt).
+**buena mono** is licensed under the [SIL Open Font License, Version 1.1](OFL.txt).
 
-Copyright 2026 The Buena Mono Project Authors · [buenalabs.io](https://buenalabs.io)
+Copyright 2026 The buena mono Project Authors · [buenalabs.io](https://buenalabs.io)
