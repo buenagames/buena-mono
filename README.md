@@ -128,6 +128,10 @@ leaving the default `0` untouched.
 Enable a set with `font-feature-settings: "ss01" 1;` in CSS, or through your
 editor's OpenType settings.
 
+## In Writing App Editor
+
+![Buena Mono in Writing App Editor](docs/editor.png)
+
 ## In use
 
 <table>
