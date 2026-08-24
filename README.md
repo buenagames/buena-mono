@@ -222,9 +222,6 @@ as the license requires:
 | [Cascadia Code](https://github.com/microsoft/cascadia-code) · [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) | Greek & Coptic |
 | [Bravura](https://github.com/steinbergmedia/bravura) | treble and bass clefs (U+1D11E, U+1D122) |
 
-The chess pieces (U+2654–265F) are original art by the author and carry no
-third-party outlines.
-
 The Reserved Font Names of the upstream projects are respected: this font is
 named Buena Mono and carries no upstream RFN. [`FONTLOG.txt`](FONTLOG.txt)
 records the derivation and the full copyright chain.
