@@ -5,8 +5,7 @@ editors while keeping code perfectly legible. A two-axis variable font:
 **weight 100–800** and **slant 0 to −10°**, from 8 masters.
 
 ![Buena Mono specimen](docs/specimen.png)
-![Buena Mono Variants](docs/variants.png)
-![Buena Mono Character Set](docs/character-set.png)
+![Buena Mono Variants](docs/variants-color.png)
 ![Buena Mono Character Set](docs/editor-notes-light.png)
 
 **5,406 glyphs · 4,285 codepoints · 971 languages · 51 OpenType features**
@@ -87,7 +86,8 @@ column alignment.
 
 ## Character set
 
-![Buena Mono character set](docs/character-set.png)
+![Buena Mono Character set](docs/character-set.png)
+![Buena Mono Numbers Set](docs/numbers.png)
 
 Latin (including Extended A–D), Greek, Cyrillic, IPA, math operators, arrows,
 box drawing, block and shade elements, Braille, Legacy Computing block graphics,
