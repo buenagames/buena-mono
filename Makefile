@@ -129,6 +129,7 @@ package: build.stamp  ## Assemble Google Fonts submission directory (wght-only R
 	cp "out/fonts/BuenaMono-Italic[wght].ttf" "out/googlefonts/ofl/buenamono/BuenaMono-Italic[wght].ttf"
 	cp OFL.txt out/googlefonts/ofl/buenamono/OFL.txt
 	cp docs/metadata.pb out/googlefonts/ofl/buenamono/METADATA.pb
+	cp docs/DESCRIPTION.en_us.html out/googlefonts/ofl/buenamono/DESCRIPTION.en_us.html
 	cp docs/ARTICLE.en_us.html out/googlefonts/ofl/buenamono/article/ARTICLE.en_us.html
 	cp docs/specimen.png out/googlefonts/ofl/buenamono/article/specimen.png
 	@echo "\nGoogle Fonts package ready at out/googlefonts/ofl/buenamono/"
