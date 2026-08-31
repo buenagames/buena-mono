@@ -14,6 +14,7 @@ with their bundle, except where a version was superseded before it shipped; see
 
 | Version | Tagged | Released | Notes |
 |---------|--------|----------|-------|
+| 1.232 | — | — | built and QA-clean; not yet tagged or released |
 | 1.231 | ✅ | ✅ | |
 | 1.230 | — | — | superseded by 1.231 the same day; release and tag deleted as duplicates |
 | 1.229 | — | — | Google Fonts re-cut, superseded before it shipped |
@@ -27,6 +28,33 @@ with their bundle, except where a version was superseded before it shipped; see
 | 1.219 | ✅ | ✅ | |
 | 1.218 | ✅ | ✅ | **initial public release** |
 | 0.1.0 – 1.217 | — | — | pre-public development history |
+
+## 1.232 — 2026-08-31
+
+Block Elements redrawn onto one cell; embedded copyright completed; the kerning
+plan retired.
+
+- **Block Elements** (U+2580–259F) — all 32 glyphs redrawn identically in all
+  eight masters, on the cell the vertical metrics already define: x `0–618`,
+  y `−250–950`. The range had been through weight derivation and the italic
+  shear, which is wrong for glyphs whose job is to tile: the blocks changed size
+  with `wght` (`█` gapped 50 units at Thin and overlapped 46 at ExtraBold), `▀`
+  and `▄` missed each other by 50 units at the midline, `▐` was drawn in the
+  *left* half at every weight but Regular, and the italic masters sheared the
+  solid blocks into parallelograms. Filed as an 18-unit seam on `U+2588`; the
+  seam was the visible corner of it. Shades keep their hatch, moved onto the new
+  cell. Now exact at every point in the design space, and guarded by a new
+  `Block cell` check in `make qa` (105 → 110 checks).
+- **Copyright** — `name` ID 0 and `metadata.pb` now carry the portions clause,
+  naming all six donors with their years and both Reserved Font Names, and
+  pointing at `OFL.txt` for the full notices. They previously stopped at the
+  Buena line while `OFL.txt` carried the full clause, so the two disagreed in
+  the same repository. Condensed to 416 characters: Google Fonts caps `name`
+  ID 0 at 500 and the verbatim `OFL.txt` line is 714.
+- **Kerning** — confirmed deliberately out of scope. `GPOS` carries `mark` and
+  `mkmk` only, as it always has; `BUENA.md` described a `kern` implementation
+  that was never built, and that plan has been removed rather than kept.
+- No glyph added or removed: **5,406 glyphs**.
 
 ## 1.231 — 2026-07-28
 

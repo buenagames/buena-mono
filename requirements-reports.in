@@ -1,0 +1,58 @@
+# The toolchain scripts/make-reports.py needs, beyond requirements.in.
+#
+# It is separate from requirements.in because none of it is needed to build the
+# font -- and separate from requirements-test.in because that file declares
+# fontbakery and gftools[qa], whose dependency closure drags in pycairo and
+# fails to build without the cairo system library. What follows is the subset
+# the report generators actually import or shell out to.
+#
+# Why this file exists: none of these were ever installed, there was no target
+# that would have installed them, and nothing said which reports they belonged
+# to. The suite fell three releases behind and each missing tool had to be
+# rediscovered from a traceback. See docs/REGENERATING-REPORTS.md.
+
+hyperglot>=0.8.1        # hyperglot.html -- note 0.8 moved yaml output from -o to -y
+shaperglot>=1.2.1       # shaperglot.html
+collidoscope>=0.6.5     # collidoscope.html (imported, no CLI)
+fontaine>=1.4.0         # provides the pyfontaine CLI -> pyfontaine.html
+Markdown>=3.10          # bibliography.html
+diffenator2>=0.0.7      # gftools-proof/
+
+# diffenator2 still imports pkg_resources, which setuptools removed in 81.
+setuptools<81
+
+# PyICU is pyfontaine's hard dependency and builds against a system ICU. On
+# macOS that is the brewed icu4c, which is keg-only -- `make reports-venv`
+# exports PKG_CONFIG_PATH and PATH for it. Without those the wheel build fails
+# on missing headers, and the failure names pycairo-style metadata errors that
+# do not mention ICU.
+PyICU
+
+# Not on PyPI under any name; designspace-problems.html needs it.
+designspaceProblems @ git+https://github.com/LettError/DesignspaceProblems
+
+# NOT PIP-INSTALLABLE. Neither is a Python package, so neither can be pinned
+# above; both are recorded here because this is where someone will look.
+#
+#   fontquant -- fontquant.html. Rewritten in Rust upstream, not on PyPI and
+#                with no published release, so build the CLI once:
+#
+#                    brew install rust
+#                    cargo install --git https://github.com/googlefonts/fontquant fontquant
+#
+#                It lands in ~/.cargo/bin, which `make reports` puts on PATH;
+#                make-reports.py also resolves it via shutil.which and honours
+#                $FONTQUANT. Verified 2026-08-31 against v0.1.3: the rewrite
+#                kept the -l/--location flag and the "  key: Type(value)"
+#                output the report parses, so no parser change was needed.
+#
+#   fontcompare -- machine-readability-fonts.html. This one is deliberately NOT
+#                regenerated on a version bump. It is a cross-font OCR/VLM
+#                benchmark scoring Buena against five other monospaces, needing
+#                ollama and a local vision model, and its scores are not
+#                reproducible run to run -- re-running it introduces noise that
+#                reads like a regression. A v1.228 result remains a true
+#                statement about how Buena compares. Refresh it deliberately:
+#
+#                    bash scripts/fontcompare/fetch_fonts.sh
+#                    python -m scripts.fontcompare.run

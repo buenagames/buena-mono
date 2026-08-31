@@ -11,7 +11,7 @@ fonts {
   filename: "BuenaMono[wght].ttf"
   post_script_name: "BuenaMono-Regular"
   full_name: "Buena Mono Regular"
-  copyright: "Copyright 2026 The Buena Mono Project Authors (https://github.com/buenagames/buena-mono)."
+  copyright: "Copyright 2026 The Buena Mono Project Authors (https://github.com/buenagames/buena-mono). Portions copyright 2024 The Fragment-Mono Project Authors; 2017 IBM Corp. with Reserved Font Name \"Plex\"; 2022 The Noto Project Authors; 2019-Present Microsoft Corporation with Reserved Font Name Cascadia Code; 2020 The JetBrains Mono Project Authors; 2012 Steinberg Media Technologies GmbH (Bravura). Full notices in OFL.txt."
 }
 
 fonts {
@@ -21,7 +21,7 @@ fonts {
   filename: "BuenaMono-Italic[wght].ttf"
   post_script_name: "BuenaMono-Italic"
   full_name: "Buena Mono Italic"
-  copyright: "Copyright 2026 The Buena Mono Project Authors (https://github.com/buenagames/buena-mono)."
+  copyright: "Copyright 2026 The Buena Mono Project Authors (https://github.com/buenagames/buena-mono). Portions copyright 2024 The Fragment-Mono Project Authors; 2017 IBM Corp. with Reserved Font Name \"Plex\"; 2022 The Noto Project Authors; 2019-Present Microsoft Corporation with Reserved Font Name Cascadia Code; 2020 The JetBrains Mono Project Authors; 2012 Steinberg Media Technologies GmbH (Bravura). Full notices in OFL.txt."
 }
 
 subsets: "cyrillic"

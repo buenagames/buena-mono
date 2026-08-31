@@ -58,6 +58,7 @@ build/
 
 # Bravura is fetched on demand by add-music-clefs.py (pinned, OFL-1.1) — not vendored
 sources/references/bravura/
-.claude/
+venv-reports
 .hyperglot-cache
+.claude/
 .envrc

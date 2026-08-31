@@ -229,6 +229,90 @@ def validate_advance_widths(font, label, results):
             results.fail(cat, f"  {name}: width={w}")
 
 
+def validate_block_cell(font, label, results):
+    """Block Elements must tile: one cell, identical in every master.
+
+    U+2580-259F are geometric fill primitives, so their outlines must not be
+    weight-derived or italic-sheared -- if they are, adjacent cells seam or
+    overlap and the amount changes with `wght`. found exactly that:
+    the range had been through `offset_paths()` and the shear, so the blocks
+    grew and shrank per master, the upper and lower half-blocks missed each
+    other by 50 units, and RIGHT HALF BLOCK sat in the left half at every
+    weight but Regular. The expected cell comes from the normalizer that draws
+    them, so the two cannot drift apart.
+    """
+    cat = f"Block cell [{label}]"
+
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    try:
+        import importlib
+        blocks = importlib.import_module("normalize-block-elements")
+    except Exception as e:                                  # pragma: no cover
+        results.fail(cat, f"cannot load the block-element geometry: {e}")
+        return
+
+    from fontTools.pens.boundsPen import BoundsPen
+
+    cmap = font.getBestCmap()
+    glyphset = font.getGlyphSet()
+    codepoints = sorted(set(blocks.RECTS) | set(blocks.SHADES))
+
+    bad = []
+    for cp in codepoints:
+        name = cmap.get(cp)
+        if name is None:
+            bad.append(f"U+{cp:04X}: not in cmap")
+            continue
+        pen = BoundsPen(glyphset)
+        glyphset[name].draw(pen)
+        if pen.bounds is None:
+            bad.append(f"U+{cp:04X}: empty outline")
+            continue
+        x0, y0, x1, y1 = (round(v) for v in pen.bounds)
+        if cp in blocks.SHADES:
+            expected = (blocks.L, blocks.B, blocks.R, blocks.T)
+        else:
+            rects = blocks.RECTS[cp]
+            expected = (
+                min(r[0] for r in rects), min(r[1] for r in rects),
+                max(r[2] for r in rects), max(r[3] for r in rects),
+            )
+        if (x0, y0, x1, y1) != expected:
+            bad.append(f"U+{cp:04X} ({name}): {(x0, y0, x1, y1)} != {expected}")
+
+    if bad:
+        results.fail(cat, f"{len(bad)} of {len(codepoints)} block glyphs are off the cell")
+        for line in bad[:10]:
+            results.fail(cat, f"  {line}")
+        if len(bad) > 10:
+            results.fail(cat, f"  ... and {len(bad) - 10} more")
+    else:
+        results.ok(
+            cat,
+            f"All {len(codepoints)} block elements sit on the "
+            f"x {blocks.L}-{blocks.R}, y {blocks.B}-{blocks.T} cell",
+        )
+
+    # And they must be flat across the design space: any gvar delta here means
+    # weight derivation or the italic shear has got at them again.
+    if "gvar" in font:
+        varying = sorted(
+            cmap[cp] for cp in codepoints
+            if cmap.get(cp) and any(
+                any(d is not None and d != (0, 0) for d in v.coordinates)
+                for v in font["gvar"].variations.get(cmap[cp], [])
+            )
+        )
+        if varying:
+            results.fail(
+                cat,
+                f"{len(varying)} block glyphs vary across the axes "
+                f"(must be identical in all masters): {', '.join(varying[:8])}",
+            )
+        else:
+            results.ok(cat, "No block element varies across wght or slnt")
+
+
 def validate_axes(font, label, results):
     """Validate fvar axis ranges and defaults."""
     cat = f"Axes [{label}]"
@@ -912,6 +996,7 @@ def main():
         for label, font in fonts.items():
             validate_metrics(font, label, results)
             validate_advance_widths(font, label, results)
+            validate_block_cell(font, label, results)
             validate_axes(font, label, results)
             validate_stat(font, label, results)
             validate_coverage(font, label, results)

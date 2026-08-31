@@ -51,6 +51,18 @@ upstream RFN.
 ChangeLog
 ---------
 
+31 Aug 2026 (Buena) Buena Mono Version 1.232
+- Block Elements U+2580-259F redrawn onto one cell (x 0-618, y -250-950),
+  identical in all eight masters, so the range tiles at every weight and slant. They had been weight-derived and italic-sheared: block size
+  tracked wght, the upper and lower half-blocks missed each other by 50 units,
+  and RIGHT HALF BLOCK sat in the left half at every weight but Regular.
+- name ID 0 and metadata.pb now carry the portions clause naming all six
+  donors, condensed to 416 chars to stay inside the Google Fonts 500 cap;
+  OFL.txt continues to carry the full notices.
+- Kerning confirmed out of scope for the face; the unbuilt plan documented in
+  BUENA.md was removed. GPOS carries mark and mkmk only, unchanged.
+- 5,406 glyphs. fontspector googlefonts (GF pair): 0 FATAL / 0 FAIL.
+
 28 Jul 2026 (Buena) Buena Mono Version 1.231
 - Chess pieces U+2654-265F retraced from the author's own reference silhouettes
   (sources/references/chess/), replacing the v1.230 parametric redraw. The chess

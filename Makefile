@@ -65,6 +65,42 @@ clean:
 update-project-template:
 	npx update-template https://github.com/googlefonts/googlefonts-project-template/
 
+reports-venv: venv-reports/touchfile  ## Install the toolchain scripts/make-reports.py needs
+
+# A SEPARATE venv, deliberately. Installed into venv/ this pulls fontParts and
+# designspaceProblems, whose pins drag fontTools backwards -- 4.63 to 4.60.1 on
+# 2026-08-31 -- and the font is built with fontTools. A report toolchain must
+# never be able to change the binary that ships.
+#
+# PyICU compiles against a system ICU: on macOS that is the keg-only brewed
+# icu4c, so its pkgconfig and bin must be on the path or the wheel build fails
+# with an error that never mentions ICU.
+venv-reports/touchfile: requirements-reports.in requirements-reports.txt
+	test -d venv-reports || python3 -m venv venv-reports
+	. venv-reports/bin/activate; \
+	  ICU="$$(brew --prefix icu4c 2>/dev/null || brew --prefix icu4c@78 2>/dev/null)"; \
+	  PKG_CONFIG_PATH="$$ICU/lib/pkgconfig:$$PKG_CONFIG_PATH" \
+	  PATH="$$ICU/bin:$$PATH" \
+	  pip install -q -Ur requirements-reports.txt
+	touch venv-reports/touchfile
+
+reports: reports-venv build.stamp  ## Regenerate the technical reports into the site repo
+	@# OLD_FONT is the previous *released* font, for diffenator3's regression
+	@# diff -- take the last release before this one. Without it that single
+	@# report is skipped and every other generator still runs.
+	@#   make reports OLD_FONT=/path/to/1.228/BuenaMono-VF.ttf
+	@#   make reports ONLY=hyperglot,index
+	@# fontspector lives in venv/, the report tools in venv-reports/, so both
+	@# are on PATH for the run.
+	@# venv/bin goes at the END of PATH, not the front: fontspector and
+	@# diffenator3 live there and must be findable, but python3 must be the
+	@# reports interpreter. Prepending venv/bin resolved python3 to the build
+	@# venv, which has no hyperglot, and yaml.unsafe_load then failed to
+	@# construct the objects hyperglot writes into its own output.
+	ICU="$$(brew --prefix icu4c 2>/dev/null || brew --prefix icu4c@78 2>/dev/null)"; \
+	  PATH="$$ICU/bin:$(CURDIR)/venv-reports/bin:$$HOME/.cargo/bin:$$PATH:$(CURDIR)/venv/bin" \
+	  $(CURDIR)/venv-reports/bin/python3 scripts/make-reports.py $(if $(OLD_FONT),--old-font "$(OLD_FONT)",) $(if $(ONLY),--only "$(ONLY)",)
+
 update: venv
 	venv/bin/pip install --upgrade pip-tools
 	# See https://pip-tools.readthedocs.io/en/latest/#a-note-on-resolvers for

@@ -12,6 +12,7 @@ development milestones and the versions folded into other releases — see
 
 | Tag | Title | Bundle |
 |-----|-------|--------|
+| 1.232 | Block Elements redrawn onto one cell | — |
 | 1.231 | Chess pieces retraced from original art | ✅ |
 | 1.228 | Brace recentering, shade alignment, brackets + arrows | ✅ |
 | 1.227 | Music BMP, notation symbols, chess quality pass | ✅ |
