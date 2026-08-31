@@ -313,6 +313,112 @@ def validate_block_cell(font, label, results):
             results.ok(cat, "No block element varies across wght or slnt")
 
 
+def validate_box_cell(font, label, results):
+    """Box Drawing must tile: one cell, arms on the cell edge, slant-invariant.
+
+    U+2500-257F are grid primitives like the Block Elements, but unlike them
+    their stroke weight legitimately varies, so this cannot assert "no
+    variation" outright. found three faults stacked: every
+    non-Regular master had glyphs displaced inside the cell by up to 134 units
+    (at Thin the stem of U+2524 sat at x 418..468 instead of straddling 309);
+    the weight offset changed arm length so arms missed the cell edge; and
+    Regular itself was drawn on five inconsistent grids.
+
+    So the assertions are: geometry matches what normalize-box-drawing.py
+    defines, at the default instance and at both ends of the weight axis; and
+    nothing varies along slnt, since the range is slant-invariant by decision.
+    """
+    cat = f"Box cell [{label}]"
+
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    try:
+        import importlib
+        box = importlib.import_module("normalize-box-drawing")
+    except Exception as e:                                  # pragma: no cover
+        results.fail(cat, f"cannot load the box-drawing geometry: {e}")
+        return
+
+    from fontTools.pens.boundsPen import BoundsPen
+
+    ref = {cp: box.read_contours("Regular", cp) for cp in box.DOUBLE_RANGE}
+
+    def expected(master, cp):
+        pts = [p for c in box.build(master, cp, ref) for p, _ in c]
+        return tuple(round(v) for v in (
+            min(q[0] for q in pts), min(q[1] for q in pts),
+            max(q[0] for q in pts), max(q[1] for q in pts)))
+
+    def actual(f, cp):
+        name = f.getBestCmap().get(cp)
+        if name is None:
+            return None
+        pen = BoundsPen(f.getGlyphSet())
+        f.getGlyphSet()[name].draw(pen)
+        return None if pen.bounds is None else tuple(round(v) for v in pen.bounds)
+
+    cps = list(range(0x2500, 0x2580))
+
+    bad = []
+    for cp in cps:
+        a, e = actual(font, cp), expected("Regular", cp)
+        if a != e:
+            bad.append(f"U+{cp:04X}: {a} != {e}")
+    if bad:
+        results.fail(cat, f"{len(bad)} of {len(cps)} box glyphs are off the cell "
+                          f"at the default instance")
+        for line in bad[:8]:
+            results.fail(cat, f"  {line}")
+        if len(bad) > 8:
+            results.fail(cat, f"  ... and {len(bad) - 8} more")
+    else:
+        results.ok(cat, f"All {len(cps)} box-drawing glyphs match the generated "
+                        f"geometry at the default instance")
+
+    if "gvar" not in font:
+        return
+
+    # Slant invariance: any tuple whose slnt peak is non-zero must carry no
+    # deltas. This is the fault that sheared the range in the first place.
+    axes = [a.axisTag for a in font["fvar"].axes]
+    if "slnt" in axes:
+        cmap = font.getBestCmap()
+        sheared = []
+        for cp in cps:
+            name = cmap.get(cp)
+            for var in font["gvar"].variations.get(name, []):
+                peak = var.axes.get("slnt", (0, 0, 0))[1]
+                if peak and any(d is not None and d != (0, 0)
+                                for d in var.coordinates):
+                    sheared.append(name)
+                    break
+        if sheared:
+            results.fail(cat, f"{len(sheared)} box glyphs vary along slnt "
+                              f"(the range is slant-invariant): "
+                              f"{', '.join(sorted(sheared)[:8])}")
+        else:
+            results.ok(cat, "No box-drawing glyph varies along slnt")
+
+    # And the weight extremes, where the displacement actually showed.
+    if "glyf" not in font or "wght" not in axes:
+        return
+    from fontTools.varLib.instancer import instantiateVariableFont
+    for master, wght in (("Thin", 100), ("ExtraBold", 800)):
+        try:
+            inst = instantiateVariableFont(font, {"wght": wght, "slnt": 0},
+                                           inplace=False, updateFontNames=False)
+        except Exception as e:                              # pragma: no cover
+            results.warn(cat, f"could not instance wght={wght}: {e}")
+            continue
+        off = [f"U+{cp:04X}: {actual(inst, cp)} != {expected(master, cp)}"
+               for cp in cps if actual(inst, cp) != expected(master, cp)]
+        if off:
+            results.fail(cat, f"{len(off)} box glyphs are off the cell at {master}")
+            for line in off[:6]:
+                results.fail(cat, f"  {line}")
+        else:
+            results.ok(cat, f"All {len(cps)} box-drawing glyphs match at {master}")
+
+
 def validate_axes(font, label, results):
     """Validate fvar axis ranges and defaults."""
     cat = f"Axes [{label}]"
@@ -997,6 +1103,7 @@ def main():
             validate_metrics(font, label, results)
             validate_advance_widths(font, label, results)
             validate_block_cell(font, label, results)
+            validate_box_cell(font, label, results)
             validate_axes(font, label, results)
             validate_stat(font, label, results)
             validate_coverage(font, label, results)

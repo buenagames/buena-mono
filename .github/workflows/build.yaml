@@ -86,6 +86,15 @@ jobs:
 
     - name: Build font
       run: make build
+    # The release bundle is documented in RELEASES.md as carrying the two
+    # Google Fonts pair files alongside the variable fonts, and `make build`
+    # does not produce them -- only `make package` runs build-gf-pair.py. Every
+    # bundle CI has ever attached was therefore missing them, which is why
+    # 1.231's was assembled and attached by hand. Tag builds only: the pair
+    # costs a second build of both faces and nothing on main reads it.
+    - name: Build the Google Fonts pair for the release bundle
+      if: contains(github.ref, 'refs/tags/')
+      run: make package
     - name: Check with fontspector
       run: make test
       continue-on-error: true

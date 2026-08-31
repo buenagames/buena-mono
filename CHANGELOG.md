@@ -14,7 +14,8 @@ with their bundle, except where a version was superseded before it shipped; see
 
 | Version | Tagged | Released | Notes |
 |---------|--------|----------|-------|
-| 1.232 | — | — | built and QA-clean; not yet tagged or released |
+| 1.233 | — | — | built and QA-clean; not yet tagged or released |
+| 1.232 | ✅ | ✅ | |
 | 1.231 | ✅ | ✅ | |
 | 1.230 | — | — | superseded by 1.231 the same day; release and tag deleted as duplicates |
 | 1.229 | — | — | Google Fonts re-cut, superseded before it shipped |
@@ -28,6 +29,50 @@ with their bundle, except where a version was superseded before it shipped; see
 | 1.219 | ✅ | ✅ | |
 | 1.218 | ✅ | ✅ | **initial public release** |
 | 0.1.0 – 1.217 | — | — | pre-public development history |
+
+## 1.233 — 2026-08-31
+
+Box Drawing redrawn onto one cell. The companion to 1.232's Block
+Elements fix, and the same underlying fault — geometric primitives that tile on
+a grid had been weight-derived and italic-sheared.
+
+- **Box Drawing** (U+2500–257F) — all 128 glyphs redrawn on the cell the
+  vertical metrics define, x `0–618` by y `−250–950`, light and heavy bands
+  centred on x=309 / y=350, with only stroke weight varying between masters.
+  Slant-invariant: a slanted `┼` does not meet its neighbours in a grid, so
+  each italic master takes its upright counterpart's outlines.
+
+  Three faults were stacked here. Every non-Regular master had glyphs
+  **displaced inside the cell by up to 134 units** — at Thin all 128 were
+  re-centred, so `┤`'s stem sat at x 418..468 instead of straddling 309 and its
+  left arm started at 150 rather than 0. The weight offset separately changed
+  arm length, so arms fell short at Thin and overhung at ExtraBold. And Regular
+  itself — the only master anyone renders — was drawn on **five inconsistent
+  grids**: dashes 68/136 against the solid lines' 82/164 and centred 50 units
+  low; the double set's arms stopping at x 4..614 so no two ever joined;
+  `╸╹╺╻╼╽╾╿` 240 wide on the double grid instead of heavy's 164; and the arcs
+  and diagonals still on the `−300..900` block cell that 1.232 retired.
+
+  Two of those shipped visibly at the default weight: `══════` and `╔══╗` seam
+  by 8 units at Regular. Rendered at 200px, every one of those runs is now
+  continuous, at Thin, Regular and ExtraBold alike.
+
+  The double set keeps its drawn design — its junction topology is carried over
+  by coordinate substitution rather than re-derived, so only the arms and the
+  per-master rail weight change.
+- **`scripts/normalize-box-drawing.py`** parses the arm table out of the Unicode
+  character names rather than transcribing it, so the character database is the
+  specification. As a check on the construction rule, 72 of the 80 line-set
+  glyphs regenerate byte-identical to Regular; the 8 that do not are exactly
+  the stubs that were wrong.
+- **New `Box cell` QA check** — geometry against the generator at the default
+  instance and both ends of the weight axis, plus no variation along `slnt`.
+  `make qa` 110 → 119 checks.
+- Fixed in `normalize-block-elements.py` en route: `.glyphs` layer order is not
+  constant between glyphs, and that script assumed it was. It was harmless
+  there only because all eight of its layers were identical.
+- No glyph added or removed: **5,406 glyphs**. fontspector's finding set is
+  unchanged from 1.232.
 
 ## 1.232 — 2026-08-31
 

@@ -51,6 +51,15 @@ upstream RFN.
 ChangeLog
 ---------
 
+31 Aug 2026 (Buena) Buena Mono Version 1.233
+- Box Drawing U+2500-257F redrawn onto one cell (x 0-618, y -250-950), light
+  and heavy bands centred on x=309 / y=350, only stroke weight varying between
+  masters, slant-invariant. Every non-Regular master had glyphs
+  displaced inside the cell by up to 134 units; Regular itself was drawn on
+  five inconsistent grids, and its double-line set seamed by 8 units.
+- New Box cell QA check; make qa 110 -> 119 checks.
+- 5,406 glyphs. fontspector googlefonts (GF pair): 0 FATAL / 0 FAIL.
+
 31 Aug 2026 (Buena) Buena Mono Version 1.232
 - Block Elements U+2580-259F redrawn onto one cell (x 0-618, y -250-950),
   identical in all eight masters, so the range tiles at every weight and slant. They had been weight-derived and italic-sheared: block size
