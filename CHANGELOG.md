@@ -14,7 +14,7 @@ with their bundle, except where a version was superseded before it shipped; see
 
 | Version | Tagged | Released | Notes |
 |---------|--------|----------|-------|
-| 1.233 | — | — | built and QA-clean; not yet tagged or released |
+| 1.233 | ✅ | ✅ | |
 | 1.232 | ✅ | ✅ | |
 | 1.231 | ✅ | ✅ | |
 | 1.230 | — | — | superseded by 1.231 the same day; release and tag deleted as duplicates |

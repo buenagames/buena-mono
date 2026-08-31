@@ -133,8 +133,12 @@ jobs:
         continue-on-error: true
       - name: Copy OFL.txt to release directory
         run: cp OFL.txt ${{ env.ZIP_NAME }}/OFL.txt
+      # `googlefonts/` is the staged submission tree that `make package`
+      # writes beside the fonts. It duplicates the pair and carries
+      # METADATA.pb and DESCRIPTION, none of which belong in a download
+      # bundle -- it rode along the first time the pair was built here.
       - name: Remove proof/test outputs from release
-        run: rm -rf ${{ env.ZIP_NAME }}/proof ${{ env.ZIP_NAME }}/fontspector ${{ env.ZIP_NAME }}/badges ${{ env.ZIP_NAME }}/index.html
+        run: rm -rf ${{ env.ZIP_NAME }}/proof ${{ env.ZIP_NAME }}/fontspector ${{ env.ZIP_NAME }}/badges ${{ env.ZIP_NAME }}/index.html ${{ env.ZIP_NAME }}/googlefonts
       - name: Set release file name
         shell: bash
         run: echo "RELEASE_ZIP_NAME=$(echo '${{ github.repository }}' | awk -F '/' '{print $2}')-${{github.ref_name}}" >> $GITHUB_ENV

@@ -31,6 +31,28 @@ PyICU
 # Not on PyPI under any name; designspace-problems.html needs it.
 designspaceProblems @ git+https://github.com/LettError/DesignspaceProblems
 
+# designspaceProblems imports ufoProcessor at module scope but declares no
+# dependency on it, so installing it alone leaves designspace-problems.html
+# failing on ModuleNotFoundError.
+ufoProcessor
+
+# fontTools' interpolatability check refuses to run without an assignment
+# solver: "Install Python module 'munkres' or 'scipy >= 0.17.0'". scipy is the
+# one fontTools prefers; munkres is the fallback and is kept because it is tiny.
+scipy
+munkres
+
+# interpolatable.html needs >= 4.63 specifically. 4.60.1 crashes on this font
+# with "expected a nonnegative input, got -7.1e-15": a degenerate contour makes
+# the minor eigenvalue come out as a floating-point epsilon below zero, and
+# 4.63 added the `if lambda2 < 0: lambda2 = 0` clamp before the sqrt.
+#
+# Nothing here caps fontTools -- every dependency asks for a lower bound only
+# -- so pip resolving to 4.60.1 was incidental rather than a real pin, and this
+# line makes it stick. Note this is venv-reports, which is deliberately NOT the
+# venv the font is built with; see the comment on `reports-venv` in the Makefile.
+fontTools>=4.63
+
 # NOT PIP-INSTALLABLE. Neither is a Python package, so neither can be pinned
 # above; both are recorded here because this is where someone will look.
 #
