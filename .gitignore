@@ -55,6 +55,9 @@ build/
 
 # Local secrets — VLM OCR arm reads scripts/fontcompare/.env (.env.example is committed)
 .env
+
+# Bravura is fetched on demand by add-music-clefs.py (pinned, OFL-1.1) — not vendored
+sources/references/bravura/
 .claude/
 .hyperglot-cache
 .envrc

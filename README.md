@@ -1,18 +1,16 @@
-# buena mono
+# Buena Mono
 
 Writer-first monospace typeface — tuned for extended prose in markdown and code
 editors while keeping code perfectly legible. A two-axis variable font:
 **weight 100–800** and **slant 0 to −10°**, from 8 masters.
 
 ![Buena Mono specimen](docs/specimen.png)
-![Buena Mono Variants](docs/variants-color.png)
-![Buena Mono Character Set](docs/editor-notes-light.png)
 
 **5,406 glyphs · 4,285 codepoints · 971 languages · 51 OpenType features**
 
 ### [⬇ Download the latest release](https://github.com/buenagames/buena-mono/releases/latest) · [Try it in the browser →](https://buena-mono.buenalabs.io)
 
-buena mono is a **derivative work, not an original design**. Its core Latin
+Buena Mono is a **derivative work, not an original design**. Its core Latin
 outlines come from [Fragment Mono](https://github.com/weiweihuanghuang/fragment-mono)
 by Wei Huang, itself derived from Nimbus Sans (URW Design Studio), and were
 then substantially transformed — see [Provenance](#provenance). Released under
@@ -86,8 +84,7 @@ column alignment.
 
 ## Character set
 
-![Buena Mono Character set](docs/character-set.png)
-![Buena Mono Numbers Set](docs/numbers.png)
+![Buena Mono character set](docs/character-set.png)
 
 Latin (including Extended A–D), Greek, Cyrillic, IPA, math operators, arrows,
 box drawing, block and shade elements, Braille, Legacy Computing block graphics,
@@ -131,10 +128,6 @@ leaving the default `0` untouched.
 Enable a set with `font-feature-settings: "ss01" 1;` in CSS, or through your
 editor's OpenType settings.
 
-## In Writing App Editor
-
-![Buena Mono in Writing App Editor](docs/editor.png)
-
 ## In use
 
 <table>
@@ -157,7 +150,7 @@ editor's OpenType settings.
 
 ## Enabling ligatures in your editor
 
-buena mono's code ligatures use `calt`/`liga`, which are on by default in most
+Buena Mono's code ligatures use `calt`/`liga`, which are on by default in most
 engines. Where they aren't:
 
 - **VS Code** — `"editor.fontFamily": "Buena Mono"`, `"editor.fontLigatures": true`
@@ -202,7 +195,7 @@ Made by [Buena](https://buenalabs.io).
 
 ## Provenance
 
-buena mono is a derivative work. Its core Latin outlines were imported from
+Buena Mono is a derivative work. Its core Latin outlines were imported from
 [Fragment Mono](https://github.com/weiweihuanghuang/fragment-mono) (Wei Huang,
 OFL 1.1), which itself derives from Nimbus Sans (URW Design Studio). Those
 outlines were then substantially transformed for this project:
@@ -229,12 +222,15 @@ as the license requires:
 | [Cascadia Code](https://github.com/microsoft/cascadia-code) · [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) | Greek & Coptic |
 | [Bravura](https://github.com/steinbergmedia/bravura) | treble and bass clefs (U+1D11E, U+1D122) |
 
+The chess pieces (U+2654–265F) are original art by the author and carry no
+third-party outlines.
+
 The Reserved Font Names of the upstream projects are respected: this font is
-named **buena mono** and carries no upstream RFN. [`FONTLOG.txt`](FONTLOG.txt)
+named Buena Mono and carries no upstream RFN. [`FONTLOG.txt`](FONTLOG.txt)
 records the derivation and the full copyright chain.
 
 ## License
 
-**buena mono** is licensed under the [SIL Open Font License, Version 1.1](OFL.txt).
+Buena Mono is licensed under the [SIL Open Font License, Version 1.1](OFL.txt).
 
-Copyright 2026 The buena mono Project Authors · [buenalabs.io](https://buenalabs.io)
+Copyright 2026 The Buena Mono Project Authors · [buenalabs.io](https://buenalabs.io)

@@ -99,6 +99,12 @@ qa: venv build.stamp  ## Run QA validation suite against built fonts
 	. venv/bin/activate; python3 scripts/qa-validate.py --font-dir out/fonts
 	. venv/bin/activate; python3 tests/sprite_coverage.py $$(test -f out/fonts/BuenaMono-VF.ttf && echo out/fonts/BuenaMono-VF.ttf || echo fonts/variable/BuenaMono-VF.ttf)
 
+check-fonts: venv  ## Verify fonts/variable/ matches the current build (release gate)
+	. venv/bin/activate; python3 scripts/check-committed-fonts.py
+
+promote-fonts: venv build.stamp  ## Copy the current build over fonts/variable/
+	. venv/bin/activate; python3 scripts/check-committed-fonts.py --promote
+
 qa-source: venv  ## Validate .glyphs source (winding, topology, degenerate points)
 	. venv/bin/activate; python3 scripts/qa-validate.py --source sources/BuenaMono.glyphs
 
