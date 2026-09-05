@@ -1,0 +1,30 @@
+{
+  "name": "buena-mono",
+  "version": "1.233.0",
+  "description": "Buena Mono, a monospaced variable font: wght 100-800, slnt 0 to -10 (italic), 5406 glyphs, 51 OpenType features.",
+  "license": "OFL-1.1",
+  "homepage": "https://buena-mono.buenalabs.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buenagames/buena-mono.git"
+  },
+  "main": "index.css",
+  "style": "index.css",
+  "sideEffects": [
+    "*.css"
+  ],
+  "keywords": [
+    "buena-mono",
+    "font",
+    "monospace",
+    "typeface",
+    "variable-font",
+    "woff2"
+  ],
+  "files": [
+    "index.css",
+    "fonts/variable/",
+    "OFL.txt",
+    "FONTLOG.txt"
+  ]
+}
