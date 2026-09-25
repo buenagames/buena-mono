@@ -14,6 +14,7 @@ with their bundle, except where a version was superseded before it shipped; see
 
 | Version | Tagged | Released | Notes |
 |---------|--------|----------|-------|
+| 1.234 | — | — | built and QA-clean; not yet tagged or released |
 | 1.233 | ✅ | ✅ | |
 | 1.232 | ✅ | ✅ | |
 | 1.231 | ✅ | ✅ | |
@@ -29,6 +30,38 @@ with their bundle, except where a version was superseded before it shipped; see
 | 1.219 | ✅ | ✅ | |
 | 1.218 | ✅ | ✅ | **initial public release** |
 | 0.1.0 – 1.217 | — | — | pre-public development history |
+
+## 1.234 — 2026-09-25
+
+Fixes the ss04 round-dot alternates (BUENALB-27, reported in
+[buenagames/buena-mono#1](https://github.com/buenagames/buena-mono/issues/1))
+and the missing STAT value for the italic slant.
+
+- **`j.ss04` / `i.ss04`**: ss04 should change the shape of the dot on
+  `i` and `j` and nothing else. Both alternates had drifted from that in every
+  master. `j.ss04`'s dot sat **116 units left of the stem**, centred over the
+  top bar. `i.ss04`'s was 10 units left. At Bold and ExtraBold both still
+  carried the **Regular body**, so with ss04 on, `i` and `j` were visibly
+  lighter than the text around them. The italic `j.ss04` body was also 20 units
+  right of `j`'s, and neither alternate had anchors.
+  `scripts/fix-ss04-dots.py` now rebuilds each alternate from its base glyph
+  in every master (body, anchors and width) and centres the existing round dot
+  where the square dot is.
+- **STAT**: adds a slnt −10 value named "Oblique". All eight italic named
+  instances declared slnt −10 in fvar with no matching STAT value, so a picker
+  reading STAT could not name them (fontbakery
+  `inconsistencies_between_fvar_STAT`). It is not called "Italic" because the
+  universal `STAT_strings` check reserves that word for the `ital` axis. The
+  Google Fonts pair is unaffected, since it gets its own `wght` + `ital` STAT.
+- **QA**: a new ss04 check tests body identity and dot centring at the default
+  and at the four wght/slnt corners. The STAT check now fails on any fvar
+  instance coordinate that has no STAT value. `make qa` goes from 119 to 125
+  checks.
+- **npm**: `package.json` and `index.css`, first published to npm as 1.233.0
+  from the public repo, now live in the canonical repo. The version follows the
+  font: 1.234.0.
+
+5,406 glyphs, unchanged.
 
 ## 1.233 — 2026-08-31
 

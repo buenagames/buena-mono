@@ -1,6 +1,6 @@
 {
   "name": "buena-mono",
-  "version": "1.233.0",
+  "version": "1.234.0",
   "description": "Buena Mono, a monospaced variable font: wght 100-800, slnt 0 to -10 (italic), 5406 glyphs, 51 OpenType features.",
   "license": "OFL-1.1",
   "homepage": "https://buena-mono.buenalabs.io",
@@ -26,5 +26,9 @@
     "fonts/variable/",
     "OFL.txt",
     "FONTLOG.txt"
-  ]
+  ],
+  "dependencies": {
+    "@buenalabs/buena-graphs": "^0.1.0",
+    "buena-mono": "^1.233.0"
+  }
 }

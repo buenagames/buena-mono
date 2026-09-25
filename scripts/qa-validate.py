@@ -419,6 +419,66 @@ def validate_box_cell(font, label, results):
             results.ok(cat, f"All {len(cps)} box-drawing glyphs match at {master}")
 
 
+def validate_ss04_dots(font, label, results):
+    """ss04 swaps the tittle on i and j for a round one, and nothing else.
+
+    buenagames/buena-mono#1: j.ss04's dot sat 116 units left of the stem, and
+    at Bold/ExtraBold both alternates still carried the Regular body. So at the
+    default instance and both weight extremes, upright and italic, each
+    alternate must have its base glyph's body exactly and a dot centred on the
+    base glyph's dot. See scripts/fix-ss04-dots.py.
+    """
+    cat = f"ss04 dots [{label}]"
+    from fontTools.pens.recordingPen import DecomposingRecordingPen
+
+    def contours(f, name):
+        pen = DecomposingRecordingPen(f.getGlyphSet())
+        f.getGlyphSet()[name].draw(pen)
+        out, cur = [], []
+        for op, args in pen.value:
+            cur.extend(args)
+            if op in ("closePath", "endPath"):
+                out.append(cur)
+                cur = []
+        return out
+
+    def split(cs):
+        k = max(range(len(cs)), key=lambda i: min(p[1] for p in cs[i]))
+        dot = cs[k]
+        body = sorted(tuple((round(x), round(y)) for x, y in c)
+                      for i, c in enumerate(cs) if i != k)
+        cx = (min(p[0] for p in dot) + max(p[0] for p in dot)) / 2
+        return body, cx
+
+    locations = [("default", None)]
+    if "fvar" in font and "glyf" in font:
+        locations += [(f"wght={w},slnt={s}", {"wght": w, "slnt": s})
+                      for w in (100, 800) for s in (0, -10)]
+    from fontTools.varLib.instancer import instantiateVariableFont
+
+    bad = []
+    for where, loc in locations:
+        f = font if loc is None else instantiateVariableFont(
+            font, loc, inplace=False, updateFontNames=False)
+        for base in ("i", "j"):
+            alt = f"{base}.ss04"
+            if alt not in f.getGlyphOrder():
+                bad.append(f"{alt} missing")
+                continue
+            bbody, bx = split(contours(f, base))
+            abody, ax = split(contours(f, alt))
+            if abody != bbody:
+                bad.append(f"{alt} body differs from {base} at {where}")
+            if abs(ax - bx) > 2:
+                bad.append(f"{alt} dot centre {ax:.0f} != {base} {bx:.0f} at {where}")
+    if bad:
+        for line in bad[:8]:
+            results.fail(cat, line)
+    else:
+        results.ok(cat, f"i.ss04/j.ss04 match i/j apart from the dot at "
+                        f"{len(locations)} locations")
+
+
 def validate_axes(font, label, results):
     """Validate fvar axis ranges and defaults."""
     cat = f"Axes [{label}]"
@@ -480,11 +540,34 @@ def validate_stat(font, label, results):
         results.fail(cat, "STAT has no axis value entries (run inject-stat.py)")
     else:
         count = len(stat.AxisValueArray.AxisValue)
-        expected_count = 9  # 8 wght + 1 slnt
+        expected_count = 10  # 8 wght + 2 slnt
         if count == expected_count:
             results.ok(cat, f"STAT has {count} axis value entries")
         else:
             results.warn(cat, f"STAT has {count} axis value entries, expected {expected_count}")
+
+        # Every coordinate a named instance uses must have a STAT value on that
+        # axis.: the eight italics declared slnt=-10 in fvar with no
+        # matching value, so pickers reading STAT could not name them
+        # (fontbakery inconsistencies_between_fvar_STAT).
+        if "fvar" in font:
+            tags = [a.AxisTag for a in stat.DesignAxisRecord.Axis]
+            have = set()
+            for v in stat.AxisValueArray.AxisValue:
+                if v.Format == 4:
+                    for r in v.AxisValueRecord:
+                        have.add((tags[r.AxisIndex], r.Value))
+                else:
+                    have.add((tags[v.AxisIndex], v.Value))
+            missing = sorted({(tag, val)
+                              for inst in font["fvar"].instances
+                              for tag, val in inst.coordinates.items()
+                              if (tag, val) not in have})
+            if missing:
+                results.fail(cat, "fvar instance coordinates with no STAT value: "
+                                  + ", ".join(f"{t}={v:g}" for t, v in missing))
+            else:
+                results.ok(cat, "Every fvar instance coordinate has a STAT value")
 
         # Check that Regular has elidable flag (flags=2)
         name_table = font["name"]
@@ -1104,6 +1187,7 @@ def main():
             validate_advance_widths(font, label, results)
             validate_block_cell(font, label, results)
             validate_box_cell(font, label, results)
+            validate_ss04_dots(font, label, results)
             validate_axes(font, label, results)
             validate_stat(font, label, results)
             validate_coverage(font, label, results)

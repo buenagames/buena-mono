@@ -44,3 +44,10 @@ stat:
     - name: Default
       value: 0
       flags: 2
+    # Needed so the eight italic fvar instances have a STAT value on slnt
+    # (fontbakery inconsistencies_between_fvar_STAT,). Not "Italic":
+    # STAT_strings reserves that word for the ital axis. The GF axis registry
+    # still wants only "Default" on slnt, but the GF submission is the
+    # wght-only pair, which build-gf-pair.py gives its own STAT.
+    - name: Oblique
+      value: -10

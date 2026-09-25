@@ -1,6 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="i.ss04" format="2">
   <advance width="618"/>
+  <anchor x="265.834" y="16" name="bottom"/>
+  <anchor x="383.166" y="683" name="top"/>
+  <anchor x="614" y="524" name="topright"/>
   <outline>
     <contour>
       <point x="426" y="508" type="line"/>
@@ -15,18 +18,18 @@
       <point x="346" y="52" type="line"/>
     </contour>
     <contour>
-      <point x="396" y="621"/>
-      <point x="411" y="621" type="curve"/>
-      <point x="426" y="621"/>
-      <point x="442" y="634"/>
-      <point x="444" y="649" type="curve"/>
-      <point x="447" y="664"/>
-      <point x="436" y="677"/>
-      <point x="421" y="677" type="curve"/>
-      <point x="406" y="677"/>
-      <point x="391" y="664"/>
-      <point x="388" y="649" type="curve"/>
-      <point x="386" y="634"/>
+      <point x="406" y="621"/>
+      <point x="421" y="621" type="curve"/>
+      <point x="436" y="621"/>
+      <point x="452" y="634"/>
+      <point x="454" y="649" type="curve"/>
+      <point x="457" y="664"/>
+      <point x="446" y="677"/>
+      <point x="431" y="677" type="curve"/>
+      <point x="416" y="677"/>
+      <point x="401" y="664"/>
+      <point x="398" y="649" type="curve"/>
+      <point x="396" y="634"/>
     </contour>
   </outline>
 </glyph>

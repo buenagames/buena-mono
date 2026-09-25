@@ -51,6 +51,18 @@ upstream RFN.
 ChangeLog
 ---------
 
+25 Sep 2026 (Buena) Buena Mono Version 1.234
+- ss04 (round dots): j.ss04's dot moved onto the stem; it sat 116 units left,
+  over the top bar (buenagames/buena-mono#1). i.ss04's was 10 units left.
+  At Bold and ExtraBold both alternates still carried the Regular body, so
+  they were lighter than the surrounding text; both are now rebuilt from i
+  and j in every master, with anchors, and differ only in the dot.
+- STAT: slnt -10 "Oblique" axis value added, so the eight italic named
+  instances have a STAT value for the slnt coordinate they declare in fvar.
+- New ss04 QA check, and the STAT check now covers every fvar instance
+  coordinate; make qa 119 -> 125 checks.
+- 5,406 glyphs. fontspector googlefonts (GF pair): 0 FATAL / 0 FAIL.
+
 31 Aug 2026 (Buena) Buena Mono Version 1.233
 - Box Drawing U+2500-257F redrawn onto one cell (x 0-618, y -250-950), light
   and heavy bands centred on x=309 / y=350, only stroke weight varying between
