@@ -1,32 +1,32 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="period_equal.liga" format="2">
-  <advance width="618"/>
+  <advance width="1236"/>
   <outline>
     <contour>
-      <point x="-68" y="195" type="curve"/>
-      <point x="12" y="195"/>
-      <point x="77" y="250"/>
-      <point x="91" y="330" type="curve"/>
-      <point x="105" y="410"/>
-      <point x="60" y="465"/>
-      <point x="-20" y="465" type="curve"/>
-      <point x="-100" y="465"/>
-      <point x="-165" y="410"/>
-      <point x="-179" y="330" type="curve"/>
-      <point x="-193" y="250"/>
-      <point x="-148" y="195"/>
+      <point x="241" y="195" type="curve"/>
+      <point x="321" y="195"/>
+      <point x="386" y="250"/>
+      <point x="400" y="330" type="curve"/>
+      <point x="414" y="410"/>
+      <point x="369" y="465"/>
+      <point x="289" y="465" type="curve"/>
+      <point x="209" y="465"/>
+      <point x="144" y="410"/>
+      <point x="130" y="330" type="curve"/>
+      <point x="116" y="250"/>
+      <point x="161" y="195"/>
     </contour>
     <contour>
-      <point x="346" y="385" type="line"/>
-      <point x="786" y="385" type="line"/>
-      <point x="810" y="525" type="line"/>
-      <point x="370" y="525" type="line"/>
+      <point x="655" y="385" type="line"/>
+      <point x="1095" y="385" type="line"/>
+      <point x="1119" y="525" type="line"/>
+      <point x="679" y="525" type="line"/>
     </contour>
     <contour>
-      <point x="302" y="135" type="line"/>
-      <point x="742" y="135" type="line"/>
-      <point x="766" y="275" type="line"/>
-      <point x="326" y="275" type="line"/>
+      <point x="611" y="135" type="line"/>
+      <point x="1051" y="135" type="line"/>
+      <point x="1075" y="275" type="line"/>
+      <point x="635" y="275" type="line"/>
     </contour>
   </outline>
 </glyph>

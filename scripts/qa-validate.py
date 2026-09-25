@@ -479,6 +479,133 @@ def validate_ss04_dots(font, label, results):
                         f"{len(locations)} locations")
 
 
+# Ligatures whose ink overruns their advance for a reason a shift does not fix:
+# drawn wrong rather than placed wrong. Each needs a redraw; remove
+# the entry when it lands, and the check below starts holding it.
+LIGATURE_OVERRUN_KNOWN = {
+    "less_bar_bar_bar.liga",   # <|||  ink to x=2871 of 2472, garbled
+    "asciitilde_equal.liga",   # ~=    ink to x=1429 of 1236
+}
+
+
+def validate_lowercase_cell(font, label, results):
+    """Upright lowercase a-z keeps its ink inside the 618 cell at every weight.
+
+    BUENALB-26: w's sidebearings ran 42/22/-1/-17 from Thin to ExtraBold, so at
+    Bold its ink met both cell edges and at ExtraBold it ran into its
+    neighbours -- `wr` closed up. Italic is not held to this: overhang from the
+    shear is how every italic glyph sits in its cell.
+    """
+    cat = f"Lowercase cell [{label}]"
+    if "fvar" not in font or "glyf" not in font:
+        return
+    from fontTools.pens.boundsPen import BoundsPen
+    from fontTools.varLib.instancer import instantiateVariableFont
+
+    cmap = font.getBestCmap()
+    bad = []
+    for w in (100, 400, 700, 800):
+        inst = instantiateVariableFont(font, {"wght": w, "slnt": 0},
+                                       inplace=False, updateFontNames=False)
+        gs = inst.getGlyphSet()
+        for ch in "abcdefghijklmnopqrstuvwxyz":
+            name = cmap[ord(ch)]
+            pen = BoundsPen(gs)
+            gs[name].draw(pen)
+            x0, _, x1, _ = pen.bounds
+            adv = inst["hmtx"][name][0]
+            if x0 < 0 or x1 > adv:
+                bad.append(f"{ch} at wght={w}: ink {x0:.0f}..{x1:.0f} of 0..{adv}")
+    if bad:
+        for line in bad[:8]:
+            results.fail(cat, line)
+    else:
+        results.ok(cat, "a-z stay inside the cell at wght 100/400/700/800")
+
+
+def validate_advance_invariance(font, label, results):
+    """No glyph's advance varies anywhere in the design space.
+
+    A monospace font's advances are fixed. The italic masters gave all 164
+    ligatures a one-cell advance, and gave the zero-width format characters
+    (ZWSP, ZWJ, the bidi controls) a full cell, so in italic `a...b` took
+    three cells instead of five and a ZWJ became a space. The
+    default instance was right, so the advance-width check above never saw it.
+    """
+    cat = f"Advance invariance [{label}]"
+    if "fvar" not in font or "glyf" not in font:
+        return
+    from fontTools.varLib.instancer import instantiateVariableFont
+
+    base = {g: aw for g, (aw, _) in font["hmtx"].metrics.items()}
+    bad = []
+    corners = [{"wght": w, "slnt": s} for w in (100, 400, 700, 800)
+               for s in (0, -10)]
+    for loc in corners:
+        inst = instantiateVariableFont(font, loc, inplace=False,
+                                       updateFontNames=False)
+        diff = sorted(g for g, (aw, _) in inst["hmtx"].metrics.items()
+                      if aw != base[g])
+        if diff:
+            bad.append(f"wght={loc['wght']},slnt={loc['slnt']}: {len(diff)} "
+                       f"glyphs, e.g. {', '.join(diff[:4])}")
+    if bad:
+        for line in bad:
+            results.fail(cat, f"advance differs from the default at {line}")
+    else:
+        results.ok(cat, f"All advances identical at {len(corners)} "
+                        f"master locations")
+
+
+def validate_ligature_ink(font, label, results):
+    """A ligature's ink stays inside its own n cells.
+
+   : fix-ligature-widths.py widened the ligatures to n x 618 without
+    moving their outlines, so the ink stayed centred on the first cell; in
+    Regular 134 of them drew into the character before -- `...` started 253 units before
+    its own origin. Checked at the default and both weight extremes, upright
+    and italic. Up to 30 units of overshoot is allowed: `&&` at ExtraBold
+    reaches 27 past its advance, which is ordinary overshoot, not the bug.
+    """
+    cat = f"Ligature ink [{label}]"
+    from fontTools.pens.boundsPen import BoundsPen
+
+    slack = 30
+    locations = [("default", None)]
+    if "fvar" in font and "glyf" in font:
+        locations += [(f"wght={w},slnt={s}", {"wght": w, "slnt": s})
+                      for w in (100, 800) for s in (0, -10)]
+    from fontTools.varLib.instancer import instantiateVariableFont
+
+    names = [g for g in font.getGlyphOrder() if g.endswith(".liga")]
+    bad = []
+    for where, loc in locations:
+        f = font if loc is None else instantiateVariableFont(
+            font, loc, inplace=False, updateFontNames=False)
+        gs = f.getGlyphSet()
+        for name in names:
+            if name in LIGATURE_OVERRUN_KNOWN:
+                continue
+            pen = BoundsPen(gs)
+            gs[name].draw(pen)
+            if pen.bounds is None:
+                continue
+            x0, _, x1, _ = pen.bounds
+            adv = f["hmtx"][name][0]
+            if x0 < -slack or x1 > adv + slack:
+                bad.append(f"{name} ink {x0:.0f}..{x1:.0f} outside 0..{adv} "
+                           f"at {where}")
+    if bad:
+        results.fail(cat, f"{len(bad)} ligature/location pairs draw outside "
+                          f"their advance")
+        for line in bad[:8]:
+            results.fail(cat, f"  {line}")
+    else:
+        results.ok(cat, f"{len(names) - len(LIGATURE_OVERRUN_KNOWN)} ligatures "
+                        f"keep their ink inside their cells at "
+                        f"{len(locations)} locations")
+
+
 def validate_axes(font, label, results):
     """Validate fvar axis ranges and defaults."""
     cat = f"Axes [{label}]"
@@ -1188,6 +1315,9 @@ def main():
             validate_block_cell(font, label, results)
             validate_box_cell(font, label, results)
             validate_ss04_dots(font, label, results)
+            validate_ligature_ink(font, label, results)
+            validate_advance_invariance(font, label, results)
+            validate_lowercase_cell(font, label, results)
             validate_axes(font, label, results)
             validate_stat(font, label, results)
             validate_coverage(font, label, results)

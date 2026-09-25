@@ -14,7 +14,8 @@ with their bundle, except where a version was superseded before it shipped; see
 
 | Version | Tagged | Released | Notes |
 |---------|--------|----------|-------|
-| 1.234 | — | — | built and QA-clean; not yet tagged or released |
+| 1.235 | — | — | built and QA-clean; not yet tagged or released |
+| 1.234 | ✅ | ✅ | |
 | 1.233 | ✅ | ✅ | |
 | 1.232 | ✅ | ✅ | |
 | 1.231 | ✅ | ✅ | |
@@ -30,6 +31,45 @@ with their bundle, except where a version was superseded before it shipped; see
 | 1.219 | ✅ | ✅ | |
 | 1.218 | ✅ | ✅ | **initial public release** |
 | 0.1.0 – 1.217 | — | — | pre-public development history |
+
+## 1.235 — 2026-09-25
+
+Every glyph keeps its advance in every master, and the ligatures draw on
+their own cells. Fixes both halves of
+[buenagames/buena-mono#3](https://github.com/buenagames/buena-mono/issues/3)
+(BUENALB-26).
+
+- **Advances**: a monospace glyph's advance must not change along
+  either axis. The four italic masters gave **all 164 ligatures a one-cell
+  advance**, and Bold did the same to 54 of them. In italic, `a...b` took
+  three cells instead of five, and every ligature, down to prose `ffi`,
+  pulled the rest of the line left off the grid. At Bold 700 `f_f`
+  advanced 618 instead of 1236, so "cliffhanger" drew over itself (#3). The
+  italic masters also gave the **25 zero-width format characters** (ZWSP,
+  ZWJ, ZWNJ, the bidi controls, the word joiner) a full cell, so they
+  rendered as spaces. `scripts/fix-ligature-centring.py` now gives every
+  glyph the Regular master's advance in all eight masters.
+- **Ligature ink**: where ligatures did have their n x 618 advance,
+  `fix-ligature-widths.py` had widened them without moving the outlines.
+  Those were drawn centred on a single cell, so the ink stayed on the first
+  of n cells: 300 units left for two cells, 600 for three, 900 for four. In
+  Regular **134 ligatures drew into the character before them**. `...`, the
+  case that was reported, started 253 units (3.54pt at 14pt) before its own
+  origin. Each such ligature now moves right by (n − 1) × 309, in each master
+  where it needs it; Thin was already drawn this way. `~=` and `<|||` are
+  drawn wrong rather than placed wrong, and are left for.
+- **`w`**: drawn wider than its peers at every weight (sidebearings
+  42/22/−1/−17 from Thin to ExtraBold, against `m`'s 55/39/20/7). At Bold its
+  ink met both cell edges and at ExtraBold it ran 17 units into each
+  neighbour, so `wr` closed up (#3). It is now condensed about its centre at
+  Bold and ExtraBold, and their italics, to sidebearings of 12 and 6, with
+  `ŵ` alongside. Thin and Regular are unchanged.
+- **QA**: three new checks, all failing on 1.234. **Ligature ink** tests the
+  default and the four wght/slnt corners, **Advance invariance** the eight
+  master locations, and **Lowercase cell** upright a–z at four weights.
+  `make qa` goes from 125 to 132 checks.
+
+5,406 glyphs, unchanged.
 
 ## 1.234 — 2026-09-25
 

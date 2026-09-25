@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="hyphen_bar.liga" format="2">
-  <advance width="618"/>
+  <advance width="1236"/>
   <outline>
     <contour>
-      <point x="708" y="302" type="line"/>
-      <point x="708" y="418" type="line"/>
-      <point x="-129" y="418" type="line"/>
-      <point x="-129" y="302" type="line"/>
+      <point x="1017" y="302" type="line"/>
+      <point x="1017" y="418" type="line"/>
+      <point x="180" y="418" type="line"/>
+      <point x="180" y="302" type="line"/>
     </contour>
     <contour>
-      <point x="627" y="-99" type="line"/>
-      <point x="747" y="-99" type="line"/>
-      <point x="747" y="798" type="line"/>
-      <point x="627" y="798" type="line"/>
+      <point x="936" y="-99" type="line"/>
+      <point x="1056" y="-99" type="line"/>
+      <point x="1056" y="798" type="line"/>
+      <point x="936" y="798" type="line"/>
     </contour>
   </outline>
 </glyph>

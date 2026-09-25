@@ -51,6 +51,22 @@ upstream RFN.
 ChangeLog
 ---------
 
+25 Sep 2026 (Buena) Buena Mono Version 1.235
+- Advances: every glyph now has the Regular master's advance in all eight
+  masters. The italic masters gave all 164 ligatures a one-cell advance and
+  the 25 zero-width format characters a full cell; Bold gave 54 ligatures
+  one cell. In italic, text after any ligature slid off the monospace grid,
+  and ZWJ/ZWSP rendered as spaces (, buenagames/buena-mono#3).
+- Ligatures: ink moved onto the n cells each one occupies. They had been
+  widened to n x 618 without moving the outlines, so the ink sat on the
+  first cell; in Regular 134 drew into the previous character, "..." 253
+  units before its origin.
+- w condensed at Bold and ExtraBold to sidebearings of 12 and 6; it ran
+  17 units into its neighbours at ExtraBold (buenagames/buena-mono#3).
+- New QA checks: Ligature ink, Advance invariance, Lowercase cell;
+  make qa 125 -> 132 checks.
+- 5,406 glyphs. fontspector googlefonts (GF pair): 0 FATAL / 0 FAIL.
+
 25 Sep 2026 (Buena) Buena Mono Version 1.234
 - ss04 (round dots): j.ss04's dot moved onto the stem; it sat 116 units left,
   over the top bar (buenagames/buena-mono#1). i.ss04's was 10 units left.
