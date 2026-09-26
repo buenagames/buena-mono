@@ -14,7 +14,8 @@ with their bundle, except where a version was superseded before it shipped; see
 
 | Version | Tagged | Released | Notes |
 |---------|--------|----------|-------|
-| 1.236 | — | — | built and QA-clean; not yet tagged or released |
+| 1.237 | — | — | built and QA-clean; not yet tagged or released |
+| 1.236 | ✅ | ✅ | |
 | 1.235 | ✅ | ✅ | |
 | 1.234 | ✅ | ✅ | |
 | 1.233 | ✅ | ✅ | |
@@ -32,6 +33,43 @@ with their bundle, except where a version was superseded before it shipped; see
 | 1.219 | ✅ | ✅ | |
 | 1.218 | ✅ | ✅ | **initial public release** |
 | 0.1.0 – 1.217 | — | — | pre-public development history |
+
+## 1.237 — 2026-09-26
+
+The design pass on what 1.236's weight fix could only partly correct, plus a
+set of heavy-weight glyph defects.
+
+- **Weight progression, completed**: the contours could only
+  mirror at 75/50/25% now get their full offset, clamped point by point to
+  the room around them, and glyphs whose weights were never offsets at all
+  are re-derived from Regular (or from Thin, where Regular had lost the
+  design). `∘` went from 20,478 / 55,263 / 142,488 / 159,898 units² at
+  Thin / Regular / Bold / ExtraBold to 34,432 / 55,263 / 79,884 / 94,682.
+  QA exemptions go from 14 to 3 (◍, U+033A, U+0346, each with a reason).
+- **Rebuilt**: `⇖ ⇗ ⇘ ⇙` from each master's own `⇐`/`⇒` turned 45°. They
+  had almost no ink, upright as well as italic. The circled and framed
+  operators `⊕`–`⊡`, `⊲`–`⊵` and `▭ ▯ ◽ ▱` are redrawn from Thin, since
+  Bold and ExtraBold had filled their counters into discs. `⓫`–`⓳` had
+  rendered as solid black discs because their digits were wound the same
+  way as the disc; the digits are knocked out again.
+- **Circled glyphs**: the Regular master of 48 of them (`①`–`⑩`, `Ⓐ`–`Ⓩ`,
+  `⓪`, `⓿`, `❶`–`❿`) was drawn 308 units left of the other masters, so at
+  Regular they sat on the previous character. The same applied to marks
+  U+0483–0489 and U+0337. All are back on the cell.
+- **Dieresis**: at ExtraBold the dots merged into a bar, so `ü` read as `ū`.
+  Both the square dots of `äëïöüÿ ÄËÏÖÜŸ ϊ ϋ Ϊ Ϋ` and the round U+0308 dots
+  used by 36 more glyphs now keep Regular's gap at Bold and ExtraBold.
+- **Letters**: the Bold and ExtraBold `a` had kinked and reversed curve
+  handles; they are rebuilt from Regular's, along with the accented `a`s.
+  The e-half of `æ` and `œ` no longer closes up at Bold and above. `.notdef`
+  follows the font's own weight offsets.
+
+Still open for a redraw or a design decision: `⇧ ⇯` and a few
+crude arrows, `ΐ ΰ`, `ǣ ǽ`, some accented `a`s built on a different
+outline, and a set of glyphs whose offset stops short because their
+outlines overlap.
+
+5,406 glyphs, unchanged.
 
 ## 1.236 — 2026-09-26
 

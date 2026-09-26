@@ -492,26 +492,14 @@ LIGATURE_OVERRUN_KNOWN = set()
 # awaiting a design decision -- fixed the systematic inversion and
 # listed these for review instead of guessing their heavy forms.
 WEIGHT_PROGRESSION_KNOWN = {
-    # Drawn too small for their frame: at Regular the white rectangle's
-    # counter is a 6-unit sliver (a 170-tall box with an 82 frame), and at
-    # Bold the counter comes out inside-out, so Bold renders lighter than
-    # Regular (62,320 -> 54,200). Needs a redraw at a size the weights fit.
-    "uni25AD", "uni25AF", "uni25FD",
-    # Contours cross each other in Regular itself -- the bars of circled
-    # equals are wound as counters and cut through the ring, the stripes of
-    # the circle with vertical fill overlap it, the triangle's inner triangle
-    # turns inside-out at Bold -- so Regular is no reference for the others.
-    "uni229C", "uni25CD", "uni22B3",
+    # Circle with vertical fill: its stripes are separate rectangles laid
+    # over the disc and its counter, crossing both in every master, so no
+    # master is a sound outline to derive the others from. Needs a redraw.
+    "uni25CD",
     # Overlapping contours of opposite winding: the ink is what remains
-    # between them, not a stroke, and does not follow the weight.
+    # between them, not a stroke, and does not follow the weight. Needs a
+    # redraw as a single bracket outline.
     "uni033A", "uni0346",
-    # The frame of the square/parallelogram is drawn 1.4-1.5% lighter at Bold
-    # than at Regular (ink 48,544 -> 47,880 and 106,808 -> 105,182).
-    "uni22A0", "uni25B1",
-    # The italic masters of the four diagonal double arrows render almost no
-    # ink at Thin, Regular and Bold (95 / 68 / 132 units): their contours
-    # cancel. A separate defect from the weight axis.
-    "uni21D6", "uni21D7", "uni21D8", "uni21D9",
 }
 
 

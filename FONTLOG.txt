@@ -51,6 +51,27 @@ upstream RFN.
 ChangeLog
 ---------
 
+26 Sep 2026 (Buena) Buena Mono Version 1.237
+- Weight progression, completed: contours could only
+  partly mirror get their full offset, clamped point by point to the room
+  around them; glyphs whose weights were never offsets are re-derived from
+  Regular, or from Thin where Regular had lost the design. QA exemptions
+  14 -> 3.
+- Rebuilt: the diagonal double arrows U+21D6-21D9 from each master's own
+  double arrows (nearly no ink before); the circled and framed operators
+  U+2295-22A1 and U+22B2-22B5 and U+25AD/25AF/25B1/25FD from Thin (Bold and
+  ExtraBold had filled their counters); U+24EB-24F3 digits knocked out
+  again (they rendered as solid discs).
+- Regular master of 48 circled glyphs (U+2460-2469, 24B6-24CF, 24EA, 24FF,
+  2776-277F) and of marks U+0483-0489 and U+0337 moved onto the cell.
+- Dieresis: square dots of the Latin-1 and Greek dieresis letters, and the
+  round U+0308 dots (with the spacing dieresis and 36 glyphs using them),
+  keep Regular's gap at Bold and ExtraBold instead of merging.
+- a: Bold and ExtraBold handles rebuilt from Regular's (kinked, reversed
+  handles), with the accented a's. ae/oe: e-half aperture opened at Bold
+  and up. .notdef: sized by the font's own weight offsets.
+- 5,406 glyphs. fontspector googlefonts (GF pair): 0 FATAL / 0 FAIL.
+
 26 Sep 2026 (Buena) Buena Mono Version 1.236
 - Weight progression: 1,126 glyphs were heavier at Thin than at Bold --
   punctuation, quotes, dashes, arrows, currency, small caps, 27 ligatures
