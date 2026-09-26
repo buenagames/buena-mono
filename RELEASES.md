@@ -12,7 +12,7 @@ development milestones and the versions folded into other releases — see
 
 | Tag | Title | Bundle |
 |-----|-------|--------|
-| 1.237 | Symbols, circled glyphs and dieresis at heavy weights | — |
+| 1.237 | Symbols, circled glyphs and dieresis at heavy weights | ✅ |
 | 1.236 | Punctuation and accents gain weight with the weight axis | ✅ |
 | 1.235 | Ligatures keep the grid in every master | ✅ |
 | 1.234 | ss04 round dots centred and weight-matched | ✅ |
@@ -78,7 +78,13 @@ the Google Fonts submission form, produced by `scripts/build-gf-pair.py` with
    the Google Fonts payload and run fontspector over both faces of the pair.
 2. Tag the release commit (no `v` prefix, e.g. `1.232`) and push the tag.
    Pushing a tag triggers [`.github/workflows/build.yaml`](.github/workflows/build.yaml),
-   which builds from the tagged commit and uploads `buena-mono-<tag>.zip`.
+   which builds from the tagged commit and uploads `buena-mono-<tag>.zip`, and
+   [`.github/workflows/npm.yaml`](.github/workflows/npm.yaml), which publishes
+   `buena-mono@<tag>.<patch>` to npm through npm Trusted Publishing — no token
+   and no one-time password. `package.json`'s version must belong to the tag
+   (`1.237` → `1.237.0`); the job refuses otherwise, and skips a version that is
+   already on npm. For a tag that is already out, run the workflow by hand:
+   `gh workflow run npm.yaml -R buenagames/buena-mono -f tag=<tag>`.
 3. Publish the release with notes describing what changed in the font — glyph
    coverage, features, metrics, and any provenance for imported outlines.
 

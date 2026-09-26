@@ -1,0 +1,95 @@
+name: Publish to npm
+
+# `npm i buena-mono` ships the committed binaries in fonts/variable/ plus
+# index.css, OFL.txt and FONTLOG.txt (package.json "files"). Nothing is built,
+# so this is its own workflow rather than a job in build.yaml: a release tag
+# publishes in about a minute instead of waiting on the font build, and the
+# workflow can be run by hand for a tag that is already out.
+#
+# **Trusted Publishing, not a token.** npm accepts a short-lived OIDC token
+# from this workflow, in this repository, in place of a stored NPM_TOKEN or a
+# one-time password -- which is what kept every release from 1.235 on waiting
+# for someone to type a 2FA code in a terminal. It is configured on npmjs.com,
+# once: buena-mono -> Settings -> Trusted Publisher -> GitHub Actions,
+# organization `buenagames`, repository `buena-mono`, workflow `npm.yaml`.
+# Renaming this file breaks publishing until that setting is changed to match.
+# The package gets a provenance attestation tying it to the tagged commit.
+
+on:
+  push:
+    tags:
+      - '*'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag to publish (e.g. 1.237)
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  npm:
+    name: Publish buena-mono to npm
+    # This file is authored in the private buena-mono-typeface repo and
+    # published into buenagames/buena-mono; only the public repo is the
+    # trusted publisher, so the job never runs in the canonical one.
+    if: github.repository == 'buenagames/buena-mono'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write   # the OIDC token npm's Trusted Publishing exchanges
+    env:
+      TAG: ${{ inputs.tag || github.ref_name }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: refs/tags/${{ env.TAG }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          registry-url: 'https://registry.npmjs.org'
+      # Trusted Publishing needs npm 11.5.1 or later; the npm bundled with a
+      # given Node release may be older.
+      - name: Update npm
+        run: npm install -g npm@latest && npm --version
+
+      # The package version is the font version plus a patch number (1.237.0,
+      # or 1.235.1 for a package-only fix): scripts/publish-public.sh refuses
+      # to publish a tree where it is not. Re-checked here against the tag, so
+      # a tag pushed by hand onto the wrong commit cannot ship a mislabelled
+      # package.
+      - name: Check package.json matches the tag
+        run: |
+          VERSION="$(node -p "require('./package.json').version")"
+          case "$VERSION" in
+            "$TAG".[0-9]*) echo "package $VERSION for tag $TAG" ;;
+            *) echo "::error::package.json is $VERSION, which does not belong to tag $TAG"; exit 1 ;;
+          esac
+          echo "VERSION=$VERSION" >> "$GITHUB_ENV"
+
+      # Idempotent: re-running for a tag whose version is already on npm (a
+      # retried run, or one published by hand from a terminal) is a no-op, not
+      # a failure. npm never allows a version to be published twice anyway.
+      - name: Skip if this version is already on npm
+        id: exists
+        run: |
+          if npm view "buena-mono@$VERSION" version >/dev/null 2>&1; then
+            echo "::notice::buena-mono@$VERSION is already on npm; nothing to publish"
+            echo "published=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Publish
+        if: steps.exists.outputs.published != 'true'
+        run: npm publish --access public
+
+      - name: Confirm it is on the registry
+        if: steps.exists.outputs.published != 'true'
+        run: |
+          for i in $(seq 1 20); do
+            if npm view "buena-mono@$VERSION" version >/dev/null 2>&1; then
+              echo "buena-mono@$VERSION is on npm"; exit 0
+            fi
+            sleep 15
+          done
+          echo "::warning::published, but buena-mono@$VERSION was not visible after 5 minutes"
