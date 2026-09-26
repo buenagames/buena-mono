@@ -482,10 +482,115 @@ def validate_ss04_dots(font, label, results):
 # Ligatures whose ink overruns their advance for a reason a shift does not fix:
 # drawn wrong rather than placed wrong. Each needs a redraw; remove
 # the entry when it lands, and the check below starts holding it.
-LIGATURE_OVERRUN_KNOWN = {
-    "less_bar_bar_bar.liga",   # <|||  ink to x=2871 of 2472, garbled
-    "asciitilde_equal.liga",   # ~=    ink to x=1429 of 1236
+# Empty since fix-liga-redraw.py redrew <||| and ~=.
+LIGATURE_OVERRUN_KNOWN = set()
+
+# Glyphs allowed to lose ink as the weight rises, each for a stated reason.
+# Weight-invariant glyphs (Block Elements, Legacy Computing, dice, ...) need no
+# entry: equal ink passes. White-on-black glyphs are exempt by Unicode name
+# (see validate_weight_progression). Everything else here is a known defect
+# awaiting a design decision -- fixed the systematic inversion and
+# listed these for review instead of guessing their heavy forms.
+WEIGHT_PROGRESSION_KNOWN = {
+    # Drawn too small for their frame: at Regular the white rectangle's
+    # counter is a 6-unit sliver (a 170-tall box with an 82 frame), and at
+    # Bold the counter comes out inside-out, so Bold renders lighter than
+    # Regular (62,320 -> 54,200). Needs a redraw at a size the weights fit.
+    "uni25AD", "uni25AF", "uni25FD",
+    # Contours cross each other in Regular itself -- the bars of circled
+    # equals are wound as counters and cut through the ring, the stripes of
+    # the circle with vertical fill overlap it, the triangle's inner triangle
+    # turns inside-out at Bold -- so Regular is no reference for the others.
+    "uni229C", "uni25CD", "uni22B3",
+    # Overlapping contours of opposite winding: the ink is what remains
+    # between them, not a stroke, and does not follow the weight.
+    "uni033A", "uni0346",
+    # The frame of the square/parallelogram is drawn 1.4-1.5% lighter at Bold
+    # than at Regular (ink 48,544 -> 47,880 and 106,808 -> 105,182).
+    "uni22A0", "uni25B1",
+    # The italic masters of the four diagonal double arrows render almost no
+    # ink at Thin, Regular and Bold (95 / 68 / 132 units): their contours
+    # cancel. A separate defect from the weight axis.
+    "uni21D6", "uni21D7", "uni21D8", "uni21D9",
 }
+
+
+def _ink_by_weight(font, slnt, weights=(100, 400, 700, 800)):
+    """{glyph: [ink area at each weight]} at one slant, from the variable
+    font instanced at each weight. Ink is the area a renderer fills: the
+    outline's non-zero union, so overlapping contours count once and
+    opposite-wound ones cancel, as they do on screen."""
+    import pathops
+    from fontTools.pens.areaPen import AreaPen
+    from fontTools.varLib.instancer import instantiateVariableFont
+
+    out = {}
+    for w in weights:
+        inst = instantiateVariableFont(font, {"wght": w, "slnt": slnt},
+                                       inplace=False, updateFontNames=False)
+        gs = inst.getGlyphSet()
+        for name in inst.getGlyphOrder():
+            path = pathops.Path()
+            gs[name].draw(path.getPen(glyphSet=gs))
+            try:
+                ink = abs(pathops.simplify(path).area)
+            except pathops.PathOpsError:
+                pen = AreaPen(gs)
+                gs[name].draw(pen)
+                ink = abs(pen.value)
+            out.setdefault(name, []).append(ink)
+    return out
+
+
+def _negative_glyphs(font):
+    """White-on-black glyphs (NEGATIVE CIRCLED DIGIT ONE, INVERSE BULLET):
+    their white strokes gain weight with the font, so their ink can fall."""
+    import unicodedata
+    return {name for cp, name in font.getBestCmap().items()
+            if any(w in unicodedata.name(chr(cp), "")
+                   for w in ("NEGATIVE", "INVERSE"))}
+
+
+def validate_weight_progression(font, label, results):
+    """Every glyph gets heavier (or stays the same) from Thin to ExtraBold.
+
+   : 1,128 glyphs ran backwards -- `| ~ !:;`, quotes, dashes,
+    arrows, 367 small caps, 27 ligatures and nearly every combining mark were
+    heavier at Thin than at Bold (`|` ink 94,860 at Thin, 27,520 at Bold).
+    Thin and Bold had been derived with `offset_paths()` from contours wound
+    the other way, so each offset ran in reverse. The letters were right, so
+    the rhythm gate never saw it.
+
+    Measured on instances at wght 100/400/700/800, upright and italic. A step
+    may lose up to 1% (rounding). Glyphs of equal ink everywhere pass, so the weight-invariant
+    ranges need no exemption; the exemptions are WEIGHT_PROGRESSION_KNOWN and
+    white-on-black glyphs.
+    """
+    cat = f"Weight progression [{label}]"
+    if "fvar" not in font or "glyf" not in font:
+        return
+    tol = 0.01
+    exempt = WEIGHT_PROGRESSION_KNOWN | _negative_glyphs(font)
+    bad = []
+    for slnt in (0, -10):
+        for name, ink in _ink_by_weight(font, slnt).items():
+            if name in exempt or max(ink) < 1:
+                continue
+            if any(b < a * (1 - tol) for a, b in zip(ink, ink[1:])):
+                bad.append((name, slnt, ink))
+    if bad:
+        names = sorted({n for n, _, _ in bad})
+        results.fail(cat, f"{len(names)} glyphs lose ink as the weight rises "
+                          f"(Thin/Regular/Bold/ExtraBold)")
+        for name, slnt, ink in bad[:8]:
+            results.fail(cat, f"  {name} slnt={slnt}: "
+                              f"{' / '.join(f'{v:,.0f}' for v in ink)}")
+        if len(bad) > 8:
+            results.fail(cat, f"  ... {', '.join(names[8:20])}"
+                              f"{' ...' if len(names) > 20 else ''}")
+    else:
+        results.ok(cat, f"Ink rises from wght 100 to 800 for every glyph, "
+                        f"upright and italic ({len(exempt)} exempt)")
 
 
 def validate_lowercase_cell(font, label, results):
@@ -1317,6 +1422,7 @@ def main():
             validate_ss04_dots(font, label, results)
             validate_ligature_ink(font, label, results)
             validate_advance_invariance(font, label, results)
+            validate_weight_progression(font, label, results)
             validate_lowercase_cell(font, label, results)
             validate_axes(font, label, results)
             validate_stat(font, label, results)

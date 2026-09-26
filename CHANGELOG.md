@@ -14,6 +14,7 @@ with their bundle, except where a version was superseded before it shipped; see
 
 | Version | Tagged | Released | Notes |
 |---------|--------|----------|-------|
+| 1.236 | — | — | built and QA-clean; not yet tagged or released |
 | 1.235 | ✅ | ✅ | |
 | 1.234 | ✅ | ✅ | |
 | 1.233 | ✅ | ✅ | |
@@ -31,6 +32,49 @@ with their bundle, except where a version was superseded before it shipped; see
 | 1.219 | ✅ | ✅ | |
 | 1.218 | ✅ | ✅ | **initial public release** |
 | 0.1.0 – 1.217 | — | — | pre-public development history |
+
+## 1.236 — 2026-09-26
+
+Punctuation, accents and symbols gain weight along the weight axis, the way
+the letters always did. Plus the heavy-weight redraws of.
+
+- **Weight progression**: **1,126 glyphs were heavier at Thin than at
+  Bold**, among them `| ~ ! : ; ? \ { }`, quotes, dashes, arrows, currency,
+  367 small caps, 27 ligatures (`<|`, `~~`, `~>`, …) and nearly all combining
+  marks, so the accents on accented letters too. In 1.235 `|` measured
+  94,860 / 62,860 / 27,520 / 51,388 units² of ink at Thin / Regular / Bold /
+  ExtraBold: every colon, pipe and exclamation mark in bold text was drawn at
+  about Thin weight. Thin and Bold are derived from Regular by offsetting its
+  outline (−16 and +19 units), which depends on the direction the contours
+  run. A source rewrite (319a6f9c2) had reversed these glyphs' contours, so
+  both offsets ran backwards; the later winding normalisation hid the cause
+  and kept the geometry, and ExtraBold, rebuilt as Bold + 13,
+  inherited it. `scripts/fix-weight-inversion.py` mirrors each affected
+  contour's Thin and Bold offsets through Regular and moves ExtraBold with
+  Bold, checking every result for overlaps, escaped counters and ligature ink
+  leaving its cells. Regular is unchanged. `|` is now 32,908 / 62,860 /
+  101,088 / 128,908.
+- **Box Drawing**: `normalize-box-drawing.py` mistook the single line in
+  the 18 mixed single/double glyphs (`╒ ╓ ╕ …`) for a double rail; the single
+  stroke now uses the light line's edges at every weight.
+- **Heavy-weight redraws**: `<|||` is the mirror of `|||>` and
+  `~=` is `~` and `=` in their cells. Both had drawn outside their advance.
+  `ẁ ẃ ẅ` are `w` plus the mark, like `ẇ ẉ ẘ`, instead of narrower separate
+  outlines. `ⱳ` is condensed at Bold/ExtraBold into its cell (−18/−33 → 2).
+  The `e` aperture, which closed to an 11-unit slit at ExtraBold, is opened
+  to Regular's proportion (gap 37→68 at Bold, 11→63 at ExtraBold), along with
+  the accented `e`s.
+- **QA**: new **Weight progression** check. Every glyph with ink must not
+  get lighter from Thin to ExtraBold, upright and italic, with a documented
+  list of exemptions. It fails on 1.235 with 1,186 glyphs. `make qa` goes
+  from 132 to 134 checks.
+
+184 glyphs could only be partly corrected without their outlines colliding;
+they now progress the right way but not as far as the letters. They, the 55
+whose contours don't move as one offset, and the exemptions are listed for a
+design pass.
+
+5,406 glyphs, unchanged.
 
 ## 1.235 — 2026-09-25
 

@@ -7,24 +7,24 @@
   <anchor x="568" y="524" name="topright"/>
   <outline>
     <contour>
-      <point x="204" y="-188" type="curve"/>
-      <point x="282" y="-188"/>
-      <point x="313" y="-148"/>
-      <point x="313" y="-64" type="curve"/>
-      <point x="313" y="70" type="line"/>
-      <point x="238" y="70" type="line"/>
-      <point x="238" y="6" type="line"/>
-      <point x="247" y="6" type="line"/>
-      <point x="247" y="-68" type="line"/>
-      <point x="247" y="-104"/>
-      <point x="224" y="-125"/>
-      <point x="194" y="-125" type="curve"/>
-      <point x="174" y="-125"/>
-      <point x="144" y="-144"/>
-      <point x="152" y="-147" type="curve"/>
-      <point x="152" y="-178" type="line"/>
-      <point x="160" y="-181"/>
-      <point x="180" y="-188"/>
+      <point x="204" y="-226" type="curve"/>
+      <point x="282" y="-226"/>
+      <point x="351" y="-148"/>
+      <point x="351" y="-64" type="curve"/>
+      <point x="351" y="108" type="line"/>
+      <point x="200" y="108" type="line"/>
+      <point x="200" y="-32" type="line"/>
+      <point x="209" y="-32" type="line"/>
+      <point x="209" y="-68" type="line"/>
+      <point x="209" y="-104"/>
+      <point x="224" y="-87"/>
+      <point x="194" y="-87" type="curve"/>
+      <point x="174" y="-87"/>
+      <point x="158" y="-108"/>
+      <point x="114" y="-91" type="curve"/>
+      <point x="114" y="-204" type="line"/>
+      <point x="146" y="-217"/>
+      <point x="180" y="-226"/>
     </contour>
     <contour>
       <point x="103" y="-32" type="line"/>
@@ -35,10 +35,10 @@
       <point x="103" y="556" type="line"/>
     </contour>
     <contour>
-      <point x="61" y="234" type="line"/>
-      <point x="395" y="234" type="line"/>
-      <point x="395" y="288" type="line"/>
-      <point x="61" y="288" type="line"/>
+      <point x="23" y="196" type="line"/>
+      <point x="433" y="196" type="line"/>
+      <point x="433" y="326" type="line"/>
+      <point x="23" y="326" type="line"/>
     </contour>
   </outline>
   <lib>

@@ -51,6 +51,21 @@ upstream RFN.
 ChangeLog
 ---------
 
+26 Sep 2026 (Buena) Buena Mono Version 1.236
+- Weight progression: 1,126 glyphs were heavier at Thin than at Bold --
+  punctuation, quotes, dashes, arrows, currency, small caps, 27 ligatures
+  and nearly all combining marks. A source rewrite (319a6f9c2)
+  had reversed their contours, so the offset that derives Thin (-16) and
+  Bold (+19) from Regular ran backwards. Their Thin and Bold offsets are
+  mirrored through Regular; ExtraBold follows Bold. Regular is unchanged.
+- Box Drawing: the 18 mixed single/double glyphs use the light line's
+  edges for their single strokes at every weight.
+- <||| and ~= redrawn inside their cells; w-grave, w-acute, w-dieresis
+  built from w and a mark; w with hook condensed at Bold/ExtraBold; the e
+  aperture (and its accented forms) opened at Bold/ExtraBold.
+- New QA check, Weight progression; make qa 132 -> 134 checks.
+- 5,406 glyphs. fontspector googlefonts (GF pair): 0 FATAL / 0 FAIL.
+
 25 Sep 2026 (Buena) Buena Mono Version 1.235
 - Advances: every glyph now has the Regular master's advance in all eight
   masters. The italic masters gave all 164 ligatures a one-cell advance and
