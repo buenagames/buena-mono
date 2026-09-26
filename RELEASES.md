@@ -12,7 +12,7 @@ development milestones and the versions folded into other releases — see
 
 | Tag | Title | Bundle |
 |-----|-------|--------|
-| 1.235 | Ligatures keep the grid in every master | — |
+| 1.235 | Ligatures keep the grid in every master | ✅ |
 | 1.234 | ss04 round dots centred and weight-matched | ✅ |
 | 1.233 | Box Drawing redrawn onto one cell | ✅ |
 | 1.232 | Block Elements redrawn onto one cell | ✅ |

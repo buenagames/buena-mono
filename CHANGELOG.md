@@ -14,7 +14,7 @@ with their bundle, except where a version was superseded before it shipped; see
 
 | Version | Tagged | Released | Notes |
 |---------|--------|----------|-------|
-| 1.235 | — | — | built and QA-clean; not yet tagged or released |
+| 1.235 | ✅ | ✅ | |
 | 1.234 | ✅ | ✅ | |
 | 1.233 | ✅ | ✅ | |
 | 1.232 | ✅ | ✅ | |
