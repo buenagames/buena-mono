@@ -3,32 +3,33 @@
   <advance width="618"/>
   <unicode hex="01E9"/>
   <anchor x="309" y="16" name="bottom"/>
-  <anchor x="309" y="927" name="top"/>
+  <anchor x="135" y="999" name="top"/>
   <anchor x="568" y="524" name="topright"/>
   <outline>
-    <contour>
-      <point x="141" y="16" type="line"/>
-      <point x="193" y="16" type="line"/>
-      <point x="193" y="144" type="line"/>
-      <point x="315" y="273" type="line"/>
-      <point x="495" y="16" type="line"/>
-      <point x="558" y="16" type="line"/>
-      <point x="349" y="306" type="line"/>
-      <point x="542" y="514" type="line"/>
-      <point x="474" y="514" type="line"/>
-      <point x="193" y="203" type="line"/>
-      <point x="193" y="694" type="line"/>
-      <point x="141" y="694" type="line"/>
-    </contour>
-    <contour>
-      <point x="59" y="895" type="line"/>
-      <point x="129" y="794" type="line"/>
-      <point x="207" y="794" type="line"/>
-      <point x="277" y="895" type="line"/>
-      <point x="246" y="895" type="line"/>
-      <point x="193" y="827" type="line"/>
-      <point x="143" y="827" type="line"/>
-      <point x="90" y="895" type="line"/>
-    </contour>
+    <component base="k"/>
+    <component base="uni030C" xOffset="-174" yOffset="205"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>k</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>uni030C</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

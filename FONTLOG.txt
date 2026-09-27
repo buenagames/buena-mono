@@ -51,6 +51,26 @@ upstream RFN.
 ChangeLog
 ---------
 
+26 Sep 2026 (Buena) Buena Mono Version 1.238
+- Curve handles: the weight derivation offset on-curve points but not their
+  handles, leaving handles reversed, crossed or overrunning their segment in
+  2,626 glyph-masters (hooks where the n d q g bowls meet the stem, kinked
+  bowls). Each flagged segment's handles are rebuilt from Regular's, keeping
+  every on-curve point.
+- Redrawn: U+21E7 U+21EF U+21B4 U+21B5 U+21B9 U+21F9 U+21FC U+21FF from the
+  right arrow's strokes; U+25CD as the white circle with stripes clipped
+  inside; U+24DC like U+24DD; .notdef as a hollow box at stem weight.
+- 48 circled glyphs (U+2460-2469, 24B6-24CF, 24EA, 24FF, 2776-277F) fitted
+  inside the 618 cell to match U+24D0-24E9 and U+246A-2473; they had spanned
+  about -131..748 at Regular.
+- Rebuilt from base and mark: U+01E7 U+01E9 U+01F0 U+021F, U+01E2 U+01E3
+  U+01FC U+01FD, 18 accented a's (U+01DF 01E1 01FB 0201 0203 0227 1EA1 1EA3
+  1EA5 1EA7 1EA9 1EAB 1EAD 1EAF 1EB1 1EB3 1EB5 1EB7), U+0390 U+03B0; marks
+  U+033A U+0346 redrawn as single outlines.
+- QA: weight progression now has no exemptions; qa-source fails on reversed
+  curve handles.
+- 5,406 glyphs. fontspector googlefonts (GF pair): 0 FATAL / 0 FAIL.
+
 26 Sep 2026 (Buena) Buena Mono Version 1.237
 - Weight progression, completed: contours could only
   partly mirror get their full offset, clamped point by point to the room

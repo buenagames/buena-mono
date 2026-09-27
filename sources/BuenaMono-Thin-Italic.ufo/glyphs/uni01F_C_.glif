@@ -2,39 +2,34 @@
 <glyph name="uni01FC" format="2">
   <advance width="618"/>
   <unicode hex="01FC"/>
-  <anchor x="263.885" y="5" name="bottom"/>
-  <anchor x="432.766" y="963" name="top"/>
+  <anchor x="265.834" y="16" name="bottom"/>
+  <anchor x="626" y="1012" name="top"/>
   <anchor x="645" y="699" name="topright"/>
   <outline>
-    <contour>
-      <point x="331" y="222" type="line"/>
-      <point x="296" y="21" type="line"/>
-      <point x="502" y="21" type="line"/>
-      <point x="506" y="48" type="line"/>
-      <point x="338" y="48" type="line"/>
-      <point x="390" y="340" type="line"/>
-      <point x="546" y="340" type="line"/>
-      <point x="550" y="367" type="line"/>
-      <point x="394" y="367" type="line"/>
-      <point x="445" y="650" type="line"/>
-      <point x="613" y="650" type="line"/>
-      <point x="617" y="677" type="line"/>
-      <point x="320" y="677" type="line"/>
-      <point x="11" y="21" type="line"/>
-      <point x="51" y="21" type="line"/>
-      <point x="142" y="222" type="line"/>
-    </contour>
-    <contour>
-      <point x="338" y="659" type="line"/>
-      <point x="406" y="659" type="line"/>
-      <point x="335" y="249" type="line"/>
-      <point x="152" y="249" type="line"/>
-    </contour>
-    <contour>
-      <point x="489" y="781" type="line"/>
-      <point x="594" y="906" type="line"/>
-      <point x="563" y="921" type="line"/>
-      <point x="476" y="789" type="line"/>
-    </contour>
+    <component base="AE"/>
+    <component base="uni0301" xOffset="222" yOffset="212"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>AE</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>uni0301</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

@@ -2,25 +2,17 @@
 <glyph name="uni0346" format="2">
   <unicode hex="0346"/>
   <anchor x="309" y="570" name="_top"/>
-  <anchor x="309" y="640" name="top"/>
+  <anchor x="309" y="658" name="top"/>
   <outline>
     <contour>
-      <point x="207" y="590" type="line"/>
-      <point x="207" y="640" type="line"/>
-      <point x="286" y="640" type="line"/>
-      <point x="286" y="590" type="line"/>
-    </contour>
-    <contour>
-      <point x="354" y="590" type="line"/>
-      <point x="354" y="640" type="line"/>
-      <point x="389" y="640" type="line"/>
-      <point x="389" y="590" type="line"/>
-    </contour>
-    <contour>
-      <point x="229" y="625" type="line"/>
+      <point x="229" y="658" type="line"/>
       <point x="229" y="590" type="line"/>
+      <point x="264" y="590" type="line"/>
+      <point x="264" y="623" type="line"/>
+      <point x="354" y="623" type="line"/>
+      <point x="354" y="590" type="line"/>
       <point x="389" y="590" type="line"/>
-      <point x="389" y="625" type="line"/>
+      <point x="389" y="658" type="line"/>
     </contour>
   </outline>
   <lib>

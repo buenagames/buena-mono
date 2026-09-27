@@ -12,6 +12,7 @@ development milestones and the versions folded into other releases — see
 
 | Tag | Title | Bundle |
 |-----|-------|--------|
+| 1.238 | Clean curves at heavy weights, symbols redrawn | — |
 | 1.237 | Symbols, circled glyphs and dieresis at heavy weights | ✅ |
 | 1.236 | Punctuation and accents gain weight with the weight axis | ✅ |
 | 1.235 | Ligatures keep the grid in every master | ✅ |
@@ -73,6 +74,10 @@ the Google Fonts submission form, produced by `scripts/build-gf-pair.py` with
 `slnt` pinned to 0 and −10 respectively.
 
 ## Cutting a release
+
+`make release-prepare VERSION=<ver>`, then write `release-notes/<ver>.md`, then
+`make release VERSION=<ver>` — `scripts/release.sh` runs the steps below in
+order and stops at the first that fails. By hand:
 
 1. Build and verify: `make build && make qa`, then `make package` to assemble
    the Google Fonts payload and run fontspector over both faces of the pair.

@@ -3,42 +3,33 @@
   <advance width="618"/>
   <unicode hex="01E2"/>
   <anchor x="259.634" y="-19" name="bottom"/>
-  <anchor x="408.32" y="825" name="top"/>
+  <anchor x="513" y="869" name="top"/>
   <anchor x="645" y="699" name="topright"/>
   <outline>
-    <contour>
-      <point x="-40" y="-24" type="line"/>
-      <point x="94" y="-24" type="line"/>
-      <point x="335" y="597" type="line"/>
-      <point x="327" y="597" type="line"/>
-      <point x="217" y="-24" type="line"/>
-      <point x="526" y="-24" type="line"/>
-      <point x="548" y="102" type="line"/>
-      <point x="371" y="102" type="line"/>
-      <point x="406" y="303" type="line"/>
-      <point x="564" y="303" type="line"/>
-      <point x="586" y="428" type="line"/>
-      <point x="428" y="428" type="line"/>
-      <point x="458" y="597" type="line"/>
-      <point x="635" y="597" type="line"/>
-      <point x="657" y="723" type="line"/>
-      <point x="258" y="723" type="line"/>
-    </contour>
-    <contour>
-      <point x="167" y="238" type="line"/>
-      <point x="286" y="238" type="line"/>
-      <point x="291" y="266" type="line"/>
-      <point x="180" y="266" type="line"/>
-    </contour>
-    <contour>
-      <point x="267" y="765" type="line"/>
-      <point x="586" y="765" type="line"/>
-      <point x="604" y="863" type="line"/>
-      <point x="285" y="863" type="line"/>
-    </contour>
+    <component base="AE"/>
+    <component base="uni0304" xOffset="125" yOffset="164"/>
   </outline>
   <lib>
     <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>AE</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>uni0304</string>
+        </dict>
+      </array>
       <key>com.schriftgestaltung.Glyphs.category</key>
       <string>Letter</string>
     </dict>

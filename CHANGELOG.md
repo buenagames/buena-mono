@@ -14,6 +14,7 @@ with their bundle, except where a version was superseded before it shipped; see
 
 | Version | Tagged | Released | Notes |
 |---------|--------|----------|-------|
+| 1.238 | — | — | built and QA-clean; not yet tagged or released |
 | 1.237 | ✅ | ✅ | |
 | 1.236 | ✅ | ✅ | |
 | 1.235 | ✅ | ✅ | |
@@ -33,6 +34,21 @@ with their bundle, except where a version was superseded before it shipped; see
 | 1.219 | ✅ | ✅ | |
 | 1.218 | ✅ | ✅ | **initial public release** |
 | 0.1.0 – 1.217 | — | — | pre-public development history |
+
+## 1.238 — 2026-09-26
+
+The rest of the design pass, and a font-wide repair of the curves in the heavier masters.
+
+- **Curve handles**: Thin, Bold and ExtraBold are derived from Regular by offsetting its outline, which moved each curve's on-curve points but left the handles at Regular's length and direction. Where points moved closer together the handles overran them: they pointed backwards, crossed, or overshot their segment, which shows as hooks where the bowls of `n d q g` meet the stem and as kinks in bowls at Bold and ExtraBold. `scripts/fix-curve-handles.py` audits every cubic segment in the six derived masters against Regular's and rebuilds the flagged ones from Regular's handle directions, scaled to the segment, keeping every on-curve point and rejecting any rebuild that bulges further than Regular or adds a fault. 2,626 glyph-masters changed; the defects in the heavy masters fell by 80–95%. A new source check, `validate_source_handles`, fails on reversed handles and would have caught 1,415 of them in 1.237.
+- **Symbols**: `⇧ ⇯ ↴ ↵ ↹ ⇹ ⇼ ⇿` are rebuilt from `→`'s own strokes, with shafts and heads at `→`'s weight in every master. `◍` is `○`'s ring with its stripes clipped to the inside. `ⓜ` is built like `ⓝ`. `.notdef` is a hollow box, framed at the stem weight of `l`.
+- **Circled glyphs fit their cell**: `①`–`⑩`, `Ⓐ`–`Ⓩ`, `⓪`, `⓿` and `❶`–`❿` spanned about −131..748 units in a 618-unit cell at Regular, covering the characters beside them. Their rings now match `ⓐ`–`ⓩ` and `⑪`–`⑳` exactly, with the digits and capitals scaled to fit inside.
+- **Letters rebuilt from their parts**: `ǧ ǩ ǰ ȟ` are the letter plus the caron; `ǣ ǽ Ǣ Ǽ` are `æ`/`Æ` plus the mark, so they share `æ`'s aperture fix; 18 accented `a`s that were drawn on an older `a` (`ǟ ǡ ǻ ȁ ȃ ȧ ạ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ặ`) are `a` plus their marks, so they share its smoothed ExtraBold curves; `ΐ ΰ` are `ϊ ϋ` plus the tonos, which no longer fuses with the dots at heavy weights.
+- **Marks**: U+033A and U+0346 are redrawn as single outlines; they had been opposite-wound overlaps.
+- **QA**: the Weight progression check has no exemptions left; every glyph must gain ink from Thin to ExtraBold.
+
+Found and filed for a later pass: italic composites placing their mark about 85 units left (`ẁ ẃ ẅ ẇ ḧ`), marks touching letters at ExtraBold, letters on older base outlines (`Ǟ Ǡ Ȁ Ȃ Ȧ`, the Vietnamese `e`s), a set of glyphs needing redraws, arrow defects, and 535 glyphs still wider than their cell.
+
+5,406 glyphs, unchanged.
 
 ## 1.237 — 2026-09-26
 

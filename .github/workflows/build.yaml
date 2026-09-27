@@ -23,7 +23,9 @@ on:
       # and `release` targets only; the build/test/proof chain never runs them.
       - 'scripts/publish-public.sh'
       - 'scripts/scrub-public.py'
-      - 'scripts/sync-release.sh'
+      - 'scripts/release.sh'
+      - 'scripts/release-docs.py'
+      - 'release-notes/**'
       - 'scripts/stage-gf-pr.sh'
     tags:
       - '*'

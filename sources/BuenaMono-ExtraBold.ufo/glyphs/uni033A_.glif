@@ -1,26 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="uni033A" format="2">
   <unicode hex="033A"/>
-  <anchor x="309" y="-8" name="_bottom"/>
-  <anchor x="309" y="-130" name="bottom"/>
+  <anchor x="309" y="-10" name="_bottom"/>
+  <anchor x="309" y="-135" name="bottom"/>
   <outline>
     <contour>
-      <point x="267" y="-130" type="line"/>
-      <point x="267" y="-80" type="line"/>
-      <point x="278" y="-80" type="line"/>
-      <point x="278" y="-130" type="line"/>
-    </contour>
-    <contour>
-      <point x="318" y="-117" type="line"/>
-      <point x="318" y="-93" type="line"/>
-      <point x="376" y="-93" type="line"/>
-      <point x="376" y="-117" type="line"/>
-    </contour>
-    <contour>
-      <point x="216" y="-33" type="line"/>
-      <point x="216" y="-143" type="line"/>
-      <point x="402" y="-143" type="line"/>
-      <point x="402" y="-33" type="line"/>
+      <point x="207" y="-30" type="line"/>
+      <point x="207" y="-135" type="line"/>
+      <point x="411" y="-135" type="line"/>
+      <point x="411" y="-30" type="line"/>
+      <point x="322" y="-30" type="line"/>
+      <point x="322" y="-46" type="line"/>
+      <point x="296" y="-46" type="line"/>
+      <point x="296" y="-30" type="line"/>
     </contour>
   </outline>
   <lib>

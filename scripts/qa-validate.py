@@ -491,16 +491,10 @@ LIGATURE_OVERRUN_KNOWN = set()
 # (see validate_weight_progression). Everything else here is a known defect
 # awaiting a design decision -- fixed the systematic inversion and
 # listed these for review instead of guessing their heavy forms.
-WEIGHT_PROGRESSION_KNOWN = {
-    # Circle with vertical fill: its stripes are separate rectangles laid
-    # over the disc and its counter, crossing both in every master, so no
-    # master is a sound outline to derive the others from. Needs a redraw.
-    "uni25CD",
-    # Overlapping contours of opposite winding: the ink is what remains
-    # between them, not a stroke, and does not follow the weight. Needs a
-    # redraw as a single bracket outline.
-    "uni033A", "uni0346",
-}
+# Empty since redrew the last three (◍, U+033A, U+0346). Add a
+# glyph here only with a comment saying why it cannot follow the weight.
+# set(), not {}: an empty {} is a dict, and `KNOWN | set` then fails.
+WEIGHT_PROGRESSION_KNOWN: set[str] = set()
 
 
 def _ink_by_weight(font, slnt, weights=(100, 400, 700, 800)):
@@ -1322,6 +1316,76 @@ def validate_source_collapsed(font, results):
     return len(bad)
 
 
+def validate_source_handles(font, results):
+    """Fail on curve handles that point back along their segment.
+
+   : the weights were derived by offsetting on-curve points while
+    the handles kept Regular's lengths, so where a segment's ends moved
+    together a handle ran past them and the curve doubled back (the
+    ExtraBold n at (192,518), a's bowl). fix-curve-handles.py rebuilt them;
+    this keeps them from coming back. Each master's cubic segments are
+    compared with Regular's (Regular-Italic for the italics): a handle whose
+    projection on the chord is below -REV units where Regular's is above
+    +REV is reversed. The definition is fix-curve-handles.py's, and so is
+    the list of known exceptions (REVERSED_KNOWN: outlines that collapse or
+    cross at the weight and need redrawing); an exception that no longer
+    needs exempting is a warning, so the list can only shrink.
+    """
+    cat = "Source Handles"
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    try:
+        import importlib
+        handles = importlib.import_module("fix-curve-handles")
+    except Exception as e:                                  # pragma: no cover
+        results.fail(cat, f"cannot load the handle audit: {e}")
+        return 1
+
+    names = {m.id: m.name.replace(" ", "-") for m in font.masters}
+    if sorted(names.values()) != sorted(handles.MASTERS):
+        results.fail(cat, f"masters {sorted(names.values())} are not "
+                          f"{sorted(handles.MASTERS)}")
+        return 1
+    known = {(g, m) for g, ms in handles.REVERSED_KNOWN.items() for m in ms}
+    bad, seen = [], set()
+    for glyph in font.glyphs:
+        layers = {names[l.layerId]: l for l in glyph.layers
+                  if l.layerId in names}
+        if len(layers) != len(names):
+            continue
+        cs = {m: [[((n.position.x, n.position.y),
+                    None if n.type == "offcurve" else n.type)
+                   for n in p.nodes] for p in l.paths if p.closed]
+              for m, l in layers.items()}
+        for m in handles.DERIVED:
+            found = handles.audit_glyph(cs[m], cs[handles.REF[m]]) or {}
+            rev = [(ci, where, size) for ci, defects in found.items()
+                   for kind, _, size, where in defects if kind == "reversed"]
+            if not rev:
+                continue
+            if (glyph.name, m) in known:
+                seen.add((glyph.name, m))
+                continue
+            bad += [(glyph.name, m, ci, where, size) for ci, where, size in rev]
+
+    if not bad:
+        results.ok(cat, f"No reversed curve handles in the derived masters "
+                        f"({len(seen)} known exceptions)")
+    else:
+        glyphs = len({(g, m) for g, m, *_ in bad})
+        results.fail(cat, f"{len(bad)} reversed curve handles in {glyphs} "
+                          f"glyph-masters (scripts/fix-curve-handles.py)")
+        bad.sort(key=lambda b: -b[4])
+        for name, m, ci, (x, y), size in bad[:10]:
+            results.fail(cat, f"  {name} {m} path {ci}: handle at "
+                              f"({x:g},{y:g}) runs back {size:.0f} units")
+        if len(bad) > 10:
+            results.fail(cat, f"  ... and {len(bad) - 10} more")
+    for name, m in sorted(known - seen):
+        results.warn(cat, f"  {name} {m}: in REVERSED_KNOWN but no longer "
+                          f"reversed; drop it from the list")
+    return len(bad)
+
+
 def validate_source(source_path, results, fix=False):
     """Run all source-level validations on a .glyphs file."""
     import glyphsLib
@@ -1339,6 +1403,7 @@ def validate_source(source_path, results, fix=False):
     degenerate_issues = validate_source_degenerate(font, results, fix=fix)
     topology_issues = validate_source_topology(font, results)
     collapsed_issues = validate_source_collapsed(font, results)
+    handle_issues = validate_source_handles(font, results)
 
     # If --fix was used and issues were fixed, save the file
     if fix and (winding_issues > 0 or degenerate_issues > 0):
@@ -1346,8 +1411,8 @@ def validate_source(source_path, results, fix=False):
             glyphsLib.dump(font, f)
         results.ok("Source Fix", f"Saved fixes to {source_path.name}")
 
-    # Topology issues are blockers (not auto-fixable)
-    return topology_issues == 0
+    # Topology and handle issues are blockers (not auto-fixable)
+    return topology_issues == 0 and handle_issues == 0
 
 
 # ---------------------------------------------------------------------------
