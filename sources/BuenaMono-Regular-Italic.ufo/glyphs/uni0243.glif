@@ -2,9 +2,9 @@
 <glyph name="uni0243" format="2">
   <advance width="618"/>
   <unicode hex="0243"/>
-  <anchor x="263" y="0" name="bottom"/>
-  <anchor x="387.063" y="705" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="247" y="0" name="bottom"/>
+  <anchor x="371" y="705" name="top"/>
+  <anchor x="629" y="699" name="topright"/>
   <outline>
     <contour>
       <point x="101" y="385" type="line"/>
@@ -12,10 +12,21 @@
       <point x="516" y="315" type="line"/>
       <point x="529" y="385" type="line"/>
     </contour>
-    <component base="B"/>
+    <component base="B" xOffset="-8"/>
   </outline>
   <lib>
     <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>B</string>
+        </dict>
+      </array>
       <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
       <string>PC</string>
     </dict>

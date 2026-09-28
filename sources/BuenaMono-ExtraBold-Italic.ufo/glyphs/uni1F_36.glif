@@ -2,68 +2,64 @@
 <glyph name="uni1F36" format="2">
   <advance width="618"/>
   <unicode hex="1F36"/>
-  <anchor x="260.52" y="-14" name="bottom"/>
-  <anchor x="432.057" y="959" name="top"/>
+  <anchor x="257" y="-32" name="bottom"/>
+  <anchor x="444" y="1030" name="top"/>
   <anchor x="614" y="524" name="topright"/>
   <outline>
+    <component base="uni03B9"/>
     <contour>
-      <point x="187" y="397" type="line"/>
-      <point x="145" y="161" type="line"/>
-      <point x="126" y="54"/>
-      <point x="198" y="-30"/>
-      <point x="313" y="-30" type="curve"/>
-      <point x="381" y="-30"/>
-      <point x="440" y="-13"/>
-      <point x="488" y="11" type="curve"/>
-      <point x="463" y="141" type="line"/>
-      <point x="425" y="126"/>
-      <point x="403" y="121"/>
-      <point x="375" y="121" type="curve"/>
-      <point x="334" y="121"/>
-      <point x="323" y="122"/>
-      <point x="330" y="163" type="curve"/>
-      <point x="395" y="538" type="line"/>
-      <point x="62" y="538" type="line"/>
-      <point x="21" y="397" type="line"/>
+      <point x="308" y="606" type="line"/>
+      <point x="407" y="606" type="line"/>
+      <point x="445" y="654" type="line"/>
+      <point x="472" y="693"/>
+      <point x="486" y="718"/>
+      <point x="491" y="744" type="curve"/>
+      <point x="498" y="788"/>
+      <point x="459" y="837"/>
+      <point x="413" y="837" type="curve"/>
+      <point x="367" y="837"/>
+      <point x="314" y="791"/>
+      <point x="307" y="748" type="curve"/>
+      <point x="301" y="719"/>
+      <point x="318" y="685"/>
+      <point x="336" y="675" type="curve"/>
     </contour>
     <contour>
-      <point x="264" y="562" type="line"/>
-      <point x="363" y="562" type="line"/>
-      <point x="401" y="610" type="line"/>
-      <point x="428" y="649"/>
-      <point x="442" y="674"/>
-      <point x="447" y="700" type="curve"/>
-      <point x="454" y="744"/>
-      <point x="415" y="793"/>
-      <point x="369" y="793" type="curve"/>
-      <point x="323" y="793"/>
-      <point x="270" y="747"/>
-      <point x="263" y="704" type="curve"/>
-      <point x="257" y="675"/>
-      <point x="274" y="641"/>
-      <point x="292" y="631" type="curve"/>
-    </contour>
-    <contour>
-      <point x="427" y="773" type="curve"/>
-      <point x="486" y="773"/>
-      <point x="552" y="831"/>
-      <point x="597" y="909" type="curve"/>
-      <point x="502" y="959" type="line"/>
-      <point x="474" y="922"/>
-      <point x="468" y="913"/>
-      <point x="446" y="913" type="curve"/>
-      <point x="412" y="913"/>
-      <point x="399" y="957"/>
-      <point x="338" y="957" type="curve"/>
-      <point x="278" y="957"/>
-      <point x="214" y="897"/>
-      <point x="169" y="821" type="curve"/>
-      <point x="265" y="771" type="line"/>
-      <point x="292" y="808"/>
-      <point x="297" y="819"/>
-      <point x="322" y="819" type="curve"/>
-      <point x="355" y="819"/>
-      <point x="369" y="773"/>
+      <point x="475" y="843" type="curve"/>
+      <point x="534" y="843"/>
+      <point x="600" y="901"/>
+      <point x="645" y="979" type="curve"/>
+      <point x="550" y="1029" type="line"/>
+      <point x="522" y="992"/>
+      <point x="516" y="983"/>
+      <point x="494" y="983" type="curve"/>
+      <point x="460" y="983"/>
+      <point x="447" y="1027"/>
+      <point x="386" y="1027" type="curve"/>
+      <point x="326" y="1027"/>
+      <point x="262" y="967"/>
+      <point x="217" y="891" type="curve"/>
+      <point x="313" y="841" type="line"/>
+      <point x="340" y="878"/>
+      <point x="345" y="889"/>
+      <point x="370" y="889" type="curve"/>
+      <point x="403" y="889"/>
+      <point x="417" y="843"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>uni03B9</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

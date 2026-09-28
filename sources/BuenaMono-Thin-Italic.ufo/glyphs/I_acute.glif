@@ -2,29 +2,31 @@
 <glyph name="Iacute" format="2">
   <advance width="618"/>
   <unicode hex="00CD"/>
-  <anchor x="265.834" y="16" name="bottom"/>
-  <anchor x="422.314" y="904" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="252" y="16" name="bottom"/>
+  <anchor x="408" y="904" name="top"/>
+  <anchor x="631" y="699" name="topright"/>
   <outline>
+    <component base="I"/>
     <contour>
-      <point x="65" y="11" type="line"/>
-      <point x="434" y="11" type="line"/>
-      <point x="444" y="67" type="line"/>
-      <point x="295" y="67" type="line"/>
-      <point x="394" y="632" type="line"/>
-      <point x="543" y="632" type="line"/>
-      <point x="553" y="688" type="line"/>
-      <point x="184" y="688" type="line"/>
-      <point x="174" y="632" type="line"/>
-      <point x="322" y="632" type="line"/>
-      <point x="223" y="67" type="line"/>
-      <point x="75" y="67" type="line"/>
-    </contour>
-    <contour>
-      <point x="355" y="778" type="line"/>
-      <point x="390" y="778" type="line"/>
-      <point x="539" y="904" type="line"/>
-      <point x="459" y="904" type="line"/>
+      <point x="357" y="779" type="line"/>
+      <point x="392" y="779" type="line"/>
+      <point x="541" y="905" type="line"/>
+      <point x="461" y="905" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>I</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

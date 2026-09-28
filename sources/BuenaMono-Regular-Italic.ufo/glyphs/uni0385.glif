@@ -4,14 +4,6 @@
   <unicode hex="0385"/>
   <outline>
     <contour>
-      <point x="303" y="859" type="line"/>
-      <point x="287" y="768" type="line"/>
-      <point x="295" y="664" type="line"/>
-      <point x="325" y="664" type="line"/>
-      <point x="369" y="768" type="line"/>
-      <point x="385" y="859" type="line"/>
-    </contour>
-    <contour>
       <point x="451" y="708" type="line"/>
       <point x="360" y="708" type="line"/>
       <point x="341" y="605" type="line"/>
@@ -23,5 +15,21 @@
       <point x="166" y="605" type="line"/>
       <point x="258" y="605" type="line"/>
     </contour>
+    <component base="uni0384" xOffset="35" yOffset="124"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>uni0384</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

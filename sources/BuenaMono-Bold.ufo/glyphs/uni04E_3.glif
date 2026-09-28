@@ -3,30 +3,30 @@
   <advance width="618"/>
   <unicode hex="04E3"/>
   <anchor x="309" y="-19" name="bottom"/>
-  <anchor x="309" y="686" name="top"/>
+  <anchor x="309" y="762" name="top"/>
   <anchor x="568" y="524" name="topright"/>
   <outline>
+    <component base="uni0438"/>
     <contour>
-      <point x="85" y="535" type="line"/>
-      <point x="85" y="-19" type="line"/>
-      <point x="189" y="-19" type="line"/>
-      <point x="448" y="376" type="line"/>
-      <point x="422" y="376" type="line"/>
-      <point x="415" y="264" type="line"/>
-      <point x="415" y="-19" type="line"/>
-      <point x="533" y="-19" type="line"/>
-      <point x="533" y="535" type="line"/>
-      <point x="429" y="535" type="line"/>
-      <point x="170" y="140" type="line"/>
-      <point x="196" y="140" type="line"/>
-      <point x="203" y="252" type="line"/>
-      <point x="203" y="535" type="line"/>
-    </contour>
-    <contour>
-      <point x="147" y="724" type="line"/>
-      <point x="147" y="618" type="line"/>
-      <point x="465" y="618" type="line"/>
-      <point x="465" y="724" type="line"/>
+      <point x="147" y="762" type="line"/>
+      <point x="147" y="656" type="line"/>
+      <point x="465" y="656" type="line"/>
+      <point x="465" y="762" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>uni0438</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

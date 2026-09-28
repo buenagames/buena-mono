@@ -3,22 +3,30 @@
   <advance width="618"/>
   <unicode hex="0453"/>
   <anchor x="309" y="-19" name="bottom"/>
-  <anchor x="309" y="754" name="top"/>
+  <anchor x="309" y="847" name="top"/>
   <anchor x="568" y="524" name="topright"/>
   <outline>
+    <component base="uni0433"/>
     <contour>
-      <point x="105" y="535" type="line"/>
-      <point x="105" y="-19" type="line"/>
-      <point x="223" y="-19" type="line"/>
-      <point x="223" y="429" type="line"/>
-      <point x="513" y="429" type="line"/>
-      <point x="513" y="535" type="line"/>
-    </contour>
-    <contour>
-      <point x="323" y="561" type="line"/>
-      <point x="450" y="752" type="line"/>
-      <point x="340" y="804" type="line"/>
-      <point x="238" y="600" type="line"/>
+      <point x="323" y="604" type="line"/>
+      <point x="450" y="795" type="line"/>
+      <point x="340" y="847" type="line"/>
+      <point x="238" y="643" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>uni0433</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

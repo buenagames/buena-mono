@@ -6,28 +6,30 @@
   <anchor x="309" y="905" name="top"/>
   <anchor x="568" y="699" name="topright"/>
   <outline>
+    <component base="I"/>
     <contour>
-      <point x="125" y="11" type="line"/>
-      <point x="494" y="11" type="line"/>
-      <point x="494" y="67" type="line"/>
-      <point x="345" y="67" type="line"/>
-      <point x="345" y="632" type="line"/>
-      <point x="494" y="632" type="line"/>
-      <point x="494" y="688" type="line"/>
-      <point x="125" y="688" type="line"/>
-      <point x="125" y="632" type="line"/>
-      <point x="273" y="632" type="line"/>
-      <point x="273" y="67" type="line"/>
-      <point x="125" y="67" type="line"/>
-    </contour>
-    <contour>
-      <point x="185" y="777" type="line"/>
-      <point x="223" y="777" type="line"/>
-      <point x="308" y="879" type="line"/>
-      <point x="394" y="777" type="line"/>
-      <point x="432" y="777" type="line"/>
-      <point x="349" y="905" type="line"/>
-      <point x="267" y="905" type="line"/>
+      <point x="185" y="778" type="line"/>
+      <point x="223" y="778" type="line"/>
+      <point x="308" y="880" type="line"/>
+      <point x="394" y="778" type="line"/>
+      <point x="432" y="778" type="line"/>
+      <point x="349" y="906" type="line"/>
+      <point x="267" y="906" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>I</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

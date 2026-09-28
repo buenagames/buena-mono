@@ -2,34 +2,34 @@
 <glyph name="uni01CD" format="2">
   <advance width="618"/>
   <unicode hex="01CD"/>
-  <anchor x="265.834" y="16" name="bottom"/>
-  <anchor x="422.491" y="905" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="310" y="16" name="bottom"/>
+  <anchor x="467" y="905" name="top"/>
+  <anchor x="689" y="699" name="topright"/>
   <outline>
+    <component base="A"/>
     <contour>
-      <point x="417" y="620" type="line"/>
-      <point x="491" y="11" type="line"/>
-      <point x="565" y="11" type="line"/>
-      <point x="471" y="688" type="line"/>
-      <point x="370" y="688" type="line"/>
-      <point x="37" y="11" type="line"/>
-      <point x="110" y="11" type="line"/>
-      <point x="398" y="621" type="line"/>
-    </contour>
-    <contour>
-      <point x="512" y="188" type="line"/>
-      <point x="492" y="308" type="line"/>
-      <point x="197" y="308" type="line"/>
-      <point x="141" y="188" type="line"/>
-    </contour>
-    <contour>
-      <point x="580" y="905" type="line"/>
-      <point x="542" y="905" type="line"/>
-      <point x="439" y="803" type="line"/>
-      <point x="371" y="905" type="line"/>
-      <point x="333" y="905" type="line"/>
-      <point x="394" y="777" type="line"/>
-      <point x="476" y="777" type="line"/>
+      <point x="589" y="906" type="line"/>
+      <point x="551" y="906" type="line"/>
+      <point x="448" y="804" type="line"/>
+      <point x="380" y="906" type="line"/>
+      <point x="342" y="906" type="line"/>
+      <point x="403" y="778" type="line"/>
+      <point x="485" y="778" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>A</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

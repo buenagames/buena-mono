@@ -2,40 +2,40 @@
 <glyph name="uni1EA4" format="2">
   <advance width="618"/>
   <unicode hex="1EA4"/>
-  <anchor x="263" y="0" name="bottom"/>
-  <anchor x="451.366" y="1068" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="310" y="0" name="bottom"/>
+  <anchor x="498" y="1068" name="top"/>
+  <anchor x="692" y="699" name="topright"/>
   <outline>
+    <component base="A"/>
     <contour>
-      <point x="407" y="5" type="line"/>
-      <point x="485" y="5" type="line"/>
-      <point x="395" y="693" type="line"/>
-      <point x="292" y="693" type="line"/>
-      <point x="-40" y="5" type="line"/>
-      <point x="36" y="5" type="line"/>
-      <point x="130" y="204" type="line"/>
-      <point x="383" y="204" type="line"/>
+      <point x="620" y="900" type="line"/>
+      <point x="748" y="1051" type="line"/>
+      <point x="692" y="1080" type="line"/>
+      <point x="584" y="919" type="line"/>
     </contour>
     <contour>
-      <point x="337" y="614" type="line"/>
-      <point x="377" y="267" type="line"/>
-      <point x="158" y="267" type="line"/>
-      <point x="320" y="614" type="line"/>
-    </contour>
-    <contour>
-      <point x="529" y="888" type="line"/>
-      <point x="657" y="1039" type="line"/>
-      <point x="601" y="1068" type="line"/>
-      <point x="493" y="907" type="line"/>
-    </contour>
-    <contour>
-      <point x="431" y="920" type="line"/>
-      <point x="335" y="920" type="line"/>
-      <point x="206" y="782" type="line"/>
-      <point x="235" y="758" type="line"/>
-      <point x="374" y="877" type="line"/>
-      <point x="471" y="757" type="line"/>
-      <point x="512" y="782" type="line"/>
+      <point x="522" y="932" type="line"/>
+      <point x="426" y="932" type="line"/>
+      <point x="297" y="794" type="line"/>
+      <point x="326" y="770" type="line"/>
+      <point x="465" y="889" type="line"/>
+      <point x="562" y="769" type="line"/>
+      <point x="603" y="794" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>A</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

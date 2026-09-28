@@ -12,7 +12,8 @@ development milestones and the versions folded into other releases — see
 
 | Tag | Title | Bundle |
 |-----|-------|--------|
-| 1.238 | Clean curves at heavy weights, symbols redrawn | — |
+| 1.239 | Accents placed right in italic, arrows and symbols fit the cell | — |
+| 1.238 | Clean curves at heavy weights, symbols redrawn | ✅ |
 | 1.237 | Symbols, circled glyphs and dieresis at heavy weights | ✅ |
 | 1.236 | Punctuation and accents gain weight with the weight axis | ✅ |
 | 1.235 | Ligatures keep the grid in every master | ✅ |

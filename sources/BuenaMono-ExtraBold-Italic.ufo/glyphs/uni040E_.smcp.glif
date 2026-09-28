@@ -1,10 +1,25 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="uni040E.smcp" format="2">
   <advance width="618"/>
-  <anchor x="260.697" y="-13.0" name="bottom"/>
-  <anchor x="424.44" y="916.0" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="202" y="-32" name="bottom"/>
+  <anchor x="393" y="1051" name="top"/>
+  <anchor x="589" y="699" name="topright"/>
   <outline>
     <component base="uni040E"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>uni040E</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

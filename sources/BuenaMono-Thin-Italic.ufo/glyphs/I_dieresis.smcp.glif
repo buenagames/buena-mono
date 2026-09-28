@@ -1,9 +1,32 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Idieresis.smcp" format="2">
   <advance width="618"/>
-  <anchor x="393" y="740" name="top"/>
+  <anchor x="390" y="708" name="top"/>
   <outline>
     <component base="I.smcp"/>
-    <component base="uni0308"/>
+    <component base="uni0308" xOffset="74"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>I.smcp</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>uni0308</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

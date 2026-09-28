@@ -2,26 +2,31 @@
 <glyph name="uni1FE9" format="2">
   <advance width="618"/>
   <unicode hex="1FE9"/>
-  <anchor x="260.697" y="-13" name="bottom"/>
-  <anchor x="422.314" y="904" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="180" y="-32" name="bottom"/>
+  <anchor x="361" y="996" name="top"/>
+  <anchor x="567" y="699" name="topright"/>
   <outline>
+    <component base="uni03A5"/>
     <contour>
-      <point x="331" y="252" type="line"/>
-      <point x="650" y="705" type="line"/>
-      <point x="434" y="705" type="line"/>
-      <point x="266" y="436" type="line"/>
-      <point x="193" y="705" type="line"/>
-      <point x="-25" y="705" type="line"/>
-      <point x="132" y="254" type="line"/>
-      <point x="83" y="-18" type="line"/>
-      <point x="284" y="-18" type="line"/>
-    </contour>
-    <contour>
-      <point x="492" y="758" type="line"/>
-      <point x="517" y="904" type="line"/>
-      <point x="175" y="904" type="line"/>
-      <point x="150" y="758" type="line"/>
+      <point x="511" y="882" type="line"/>
+      <point x="536" y="1028" type="line"/>
+      <point x="194" y="1028" type="line"/>
+      <point x="169" y="882" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>uni03A5</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

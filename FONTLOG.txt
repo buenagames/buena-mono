@@ -51,6 +51,30 @@ upstream RFN.
 ChangeLog
 ---------
 
+28 Sep 2026 (Buena) Buena Mono Version 1.239
+- Italic mark placement: the italic masters re-centred every glyph after the
+  slant, so marks built into a letter, and GPOS mark anchors, sat up to 157
+  units left in italic. Every italic component offset and anchor is now
+  derived from the sheared upright.
+- Mark clearance: marks keep Regular's distance from the letter at every
+  weight; mark anchors sit on the x-height or baseline and move with the ink
+  per master. 89 letters with marks at offset 0,0 (Ḃ Ḣ Ṁ Ẇ Ḱ, Ӛ Ӫ Ӭ ...) re-
+  attached.
+- 518 accented letters rebuilt as their base glyph plus their own accent, so
+  they follow fixes to the base. Cedilla U+0327 redrawn at Bold/ExtraBold;
+  comma-below letters use U+0326; U+032A, U+0363, U+036B redrawn.
+- Arrows: 69 arrows rebuilt from the right arrow's strokes on one axis (y
+  349), inside the cell at every weight; => ==> =>> |=> <=> |-> rebuilt
+  without self-overlap.
+- Cell: parenthesized and full-stop numbers condensed; U+2103 U+2109 U+2152
+  U+2189 U+FFFD, the suits, U+22D8 U+22D9 and other wide symbols fitted to
+  the 618 cell. New QA check Cell overrun, with a documented exemption list
+  that may only shrink.
+- Redrawn from the font's own parts: U+A7D2 U+A7D3 U+1EFE U+1EFF U+A681
+  U+A72E U+2111 U+00AA U+00B5 & U+203D U+A732 U+0152, U+2DE4 U+2DFC, U+2209
+  U+223E U+2240 U+224E U+224F U+2252 U+2253 U+22CE U+22CF U+2298 U+E0A2.
+- 5,406 glyphs. fontspector googlefonts (GF pair): 0 FATAL / 0 FAIL.
+
 26 Sep 2026 (Buena) Buena Mono Version 1.238
 - Curve handles: the weight derivation offset on-curve points but not their
   handles, leaving handles reversed, crossed or overrunning their segment in

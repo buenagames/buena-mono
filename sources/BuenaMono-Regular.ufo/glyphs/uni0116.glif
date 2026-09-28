@@ -6,25 +6,27 @@
   <anchor x="309" y="896" name="top"/>
   <anchor x="568" y="699" name="topright"/>
   <outline>
+    <component base="E"/>
     <contour>
-      <point x="494" y="312" type="line"/>
-      <point x="494" y="404" type="line"/>
-      <point x="194" y="404" type="line"/>
-      <point x="194" y="612" type="line"/>
-      <point x="509" y="612" type="line"/>
-      <point x="509" y="704" type="line"/>
-      <point x="91" y="704" type="line"/>
-      <point x="91" y="-5" type="line"/>
-      <point x="527" y="-5" type="line"/>
-      <point x="527" y="87" type="line"/>
-      <point x="194" y="87" type="line"/>
-      <point x="194" y="312" type="line"/>
-    </contour>
-    <contour>
-      <point x="243" y="896" type="line"/>
-      <point x="243" y="782" type="line"/>
-      <point x="357" y="782" type="line"/>
-      <point x="357" y="896" type="line"/>
+      <point x="241" y="897" type="line"/>
+      <point x="241" y="783" type="line"/>
+      <point x="355" y="783" type="line"/>
+      <point x="355" y="897" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>E</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

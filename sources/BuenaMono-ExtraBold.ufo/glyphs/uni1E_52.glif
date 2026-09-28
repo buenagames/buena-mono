@@ -2,12 +2,12 @@
 <glyph name="uni1E52" format="2">
   <advance width="618"/>
   <unicode hex="1E52"/>
-  <anchor x="309" y="-20" name="bottom"/>
-  <anchor x="309" y="762" name="top"/>
+  <anchor x="309" y="-39" name="bottom"/>
+  <anchor x="309" y="958" name="top"/>
   <anchor x="568" y="699" name="topright"/>
   <outline>
     <component base="uni014C"/>
-    <component base="uni0301"/>
+    <component base="uni0301" yOffset="494"/>
   </outline>
   <lib>
     <dict>

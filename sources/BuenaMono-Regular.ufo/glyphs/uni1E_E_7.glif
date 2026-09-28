@@ -6,42 +6,35 @@
   <anchor x="309" y="765" name="top"/>
   <anchor x="568" y="524" name="topright"/>
   <outline>
+    <component base="u"/>
     <contour>
-      <point x="431" y="84" type="line"/>
-      <point x="431" y="0" type="line"/>
-      <point x="511" y="0" type="line"/>
-      <point x="511" y="516" type="line"/>
-      <point x="431" y="516" type="line"/>
-      <point x="431" y="158" type="line"/>
-      <point x="431" y="89"/>
-      <point x="367" y="59"/>
-      <point x="303" y="59" type="curve"/>
-      <point x="223" y="59"/>
-      <point x="181" y="104"/>
-      <point x="181" y="199" type="curve"/>
-      <point x="181" y="516" type="line"/>
-      <point x="101" y="516" type="line"/>
-      <point x="101" y="185" type="line"/>
-      <point x="101" y="60"/>
-      <point x="172" y="-12"/>
-      <point x="280" y="-12" type="curve"/>
-      <point x="365" y="-12"/>
-      <point x="406" y="33"/>
-      <point x="427" y="84" type="curve"/>
-    </contour>
-    <contour>
-      <point x="222" y="765" type="line"/>
-      <point x="222" y="704" type="line"/>
-      <point x="340" y="704" type="line"/>
-      <point x="282" y="600" type="line"/>
-      <point x="328" y="577" type="line"/>
-      <point x="352" y="607" type="line"/>
-      <point x="383" y="646"/>
-      <point x="401" y="681"/>
-      <point x="401" y="710" type="curve"/>
-      <point x="401" y="741"/>
-      <point x="382" y="765"/>
-      <point x="331" y="765" type="curve"/>
+      <point x="225" y="773" type="line"/>
+      <point x="225" y="712" type="line"/>
+      <point x="343" y="712" type="line"/>
+      <point x="285" y="608" type="line"/>
+      <point x="331" y="585" type="line"/>
+      <point x="355" y="615" type="line"/>
+      <point x="386" y="654"/>
+      <point x="404" y="689"/>
+      <point x="404" y="718" type="curve"/>
+      <point x="404" y="749"/>
+      <point x="385" y="773"/>
+      <point x="334" y="773" type="curve"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>u</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

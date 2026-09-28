@@ -2,43 +2,31 @@
 <glyph name="uni010A" format="2">
   <advance width="618"/>
   <unicode hex="010A"/>
-  <anchor x="264.594" y="9" name="bottom"/>
-  <anchor x="418.063" y="880" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="250" y="9" name="bottom"/>
+  <anchor x="404" y="880" name="top"/>
+  <anchor x="631" y="699" name="topright"/>
   <outline>
+    <component base="C"/>
     <contour>
-      <point x="593" y="515" type="line"/>
-      <point x="592" y="622"/>
-      <point x="540" y="704"/>
-      <point x="401" y="704" type="curve"/>
-      <point x="194" y="704"/>
-      <point x="101" y="548"/>
-      <point x="66" y="347" type="curve"/>
-      <point x="26" y="123"/>
-      <point x="90" y="-7"/>
-      <point x="272" y="-7" type="curve"/>
-      <point x="409" y="-7"/>
-      <point x="504" y="69"/>
-      <point x="550" y="226" type="curve"/>
-      <point x="476" y="226" type="line"/>
-      <point x="439" y="122"/>
-      <point x="376" y="53"/>
-      <point x="283" y="53" type="curve"/>
-      <point x="164" y="53"/>
-      <point x="108" y="159"/>
-      <point x="141" y="348" type="curve"/>
-      <point x="171" y="516"/>
-      <point x="254" y="644"/>
-      <point x="387" y="644" type="curve"/>
-      <point x="476" y="644"/>
-      <point x="513" y="583"/>
-      <point x="519" y="515" type="curve"/>
-    </contour>
-    <contour>
-      <point x="392" y="880" type="line"/>
-      <point x="378" y="798" type="line"/>
-      <point x="460" y="798" type="line"/>
-      <point x="474" y="880" type="line"/>
+      <point x="381" y="873" type="line"/>
+      <point x="367" y="791" type="line"/>
+      <point x="449" y="791" type="line"/>
+      <point x="463" y="873" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>C</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

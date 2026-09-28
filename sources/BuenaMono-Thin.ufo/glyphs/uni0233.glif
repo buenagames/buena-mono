@@ -2,40 +2,31 @@
 <glyph name="uni0233" format="2">
   <advance width="618"/>
   <unicode hex="0233"/>
-  <anchor x="309" y="-252" name="bottom"/>
-  <anchor x="309" y="717" name="top"/>
+  <anchor x="309" y="-218" name="bottom"/>
+  <anchor x="309" y="685" name="top"/>
   <anchor x="568" y="524" name="topright"/>
   <outline>
+    <component base="y"/>
     <contour>
-      <point x="76" y="-216" type="line"/>
-      <point x="148" y="-209" type="line"/>
-      <point x="193" y="-203"/>
-      <point x="226" y="-193"/>
-      <point x="259" y="-174" type="curve"/>
-      <point x="327" y="-137"/>
-      <point x="365" y="-73"/>
-      <point x="404" y="51" type="curve"/>
-      <point x="546" y="502" type="line"/>
-      <point x="473" y="502" type="line"/>
-      <point x="347" y="65" type="line"/>
-      <point x="308" y="-70"/>
-      <point x="241" y="-135"/>
-      <point x="139" y="-148" type="curve"/>
-      <point x="73" y="-156" type="line"/>
-    </contour>
-    <contour>
-      <point x="268" y="16" type="line"/>
-      <point x="327" y="16" type="line"/>
-      <point x="327" y="62" type="line"/>
-      <point x="316" y="62" type="line"/>
-      <point x="147" y="502" type="line"/>
-      <point x="75" y="502" type="line"/>
-    </contour>
-    <contour>
-      <point x="130" y="625" type="line"/>
-      <point x="518" y="625" type="line"/>
-      <point x="518" y="685" type="line"/>
-      <point x="130" y="685" type="line"/>
+      <point x="123" y="631" type="line"/>
+      <point x="511" y="631" type="line"/>
+      <point x="511" y="691" type="line"/>
+      <point x="123" y="691" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>y</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

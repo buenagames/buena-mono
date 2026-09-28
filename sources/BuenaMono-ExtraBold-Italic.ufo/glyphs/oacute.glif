@@ -2,43 +2,31 @@
 <glyph name="oacute" format="2">
   <advance width="618"/>
   <unicode hex="00F3"/>
-  <anchor x="260.343" y="-15" name="bottom"/>
-  <anchor x="395.566" y="753" name="top"/>
+  <anchor x="257" y="-34" name="bottom"/>
+  <anchor x="410" y="836" name="top"/>
   <anchor x="614" y="524" name="topright"/>
   <outline>
+    <component base="o"/>
     <contour>
-      <point x="356" y="572" type="curve"/>
-      <point x="195" y="572"/>
-      <point x="63" y="422"/>
-      <point x="35" y="263" type="curve"/>
-      <point x="7" y="104"/>
-      <point x="90" y="-50"/>
-      <point x="251" y="-50" type="curve"/>
-      <point x="412" y="-50"/>
-      <point x="545" y="100"/>
-      <point x="573" y="259" type="curve"/>
-      <point x="601" y="418"/>
-      <point x="517" y="572"/>
-    </contour>
-    <contour>
-      <point x="336" y="431" type="curve"/>
-      <point x="442" y="431"/>
-      <point x="441" y="370"/>
-      <point x="422" y="263" type="curve"/>
-      <point x="403" y="156"/>
-      <point x="378" y="91"/>
-      <point x="272" y="91" type="curve"/>
-      <point x="166" y="91"/>
-      <point x="167" y="152"/>
-      <point x="186" y="259" type="curve"/>
-      <point x="205" y="366"/>
-      <point x="230" y="431"/>
-    </contour>
-    <contour>
-      <point x="247" y="560" type="line"/>
-      <point x="383" y="560" type="line"/>
-      <point x="634" y="772" type="line"/>
-      <point x="423" y="772" type="line"/>
+      <point x="263" y="624" type="line"/>
+      <point x="399" y="624" type="line"/>
+      <point x="650" y="836" type="line"/>
+      <point x="439" y="836" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>o</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

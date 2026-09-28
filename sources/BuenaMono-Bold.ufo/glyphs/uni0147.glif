@@ -3,31 +3,33 @@
   <advance width="618"/>
   <unicode hex="0147"/>
   <anchor x="309" y="-19" name="bottom"/>
-  <anchor x="309" y="940" name="top"/>
+  <anchor x="309" y="1005" name="top"/>
   <anchor x="568" y="699" name="topright"/>
   <outline>
+    <component base="N"/>
     <contour>
-      <point x="432" y="723" type="line"/>
-      <point x="432" y="149" type="line"/>
-      <point x="475" y="149" type="line"/>
-      <point x="192" y="723" type="line"/>
-      <point x="52" y="723" type="line"/>
-      <point x="52" y="-24" type="line"/>
-      <point x="186" y="-24" type="line"/>
-      <point x="186" y="545" type="line"/>
-      <point x="143" y="545" type="line"/>
-      <point x="423" y="-24" type="line"/>
-      <point x="566" y="-24" type="line"/>
-      <point x="566" y="723" type="line"/>
-    </contour>
-    <contour>
-      <point x="496" y="940" type="line"/>
-      <point x="377" y="940" type="line"/>
-      <point x="309" y="858" type="line"/>
-      <point x="239" y="940" type="line"/>
-      <point x="121" y="940" type="line"/>
-      <point x="249" y="742" type="line"/>
-      <point x="369" y="742" type="line"/>
+      <point x="499" y="1006" type="line"/>
+      <point x="380" y="1006" type="line"/>
+      <point x="312" y="924" type="line"/>
+      <point x="242" y="1006" type="line"/>
+      <point x="124" y="1006" type="line"/>
+      <point x="252" y="808" type="line"/>
+      <point x="372" y="808" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>N</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

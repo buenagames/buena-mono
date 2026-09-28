@@ -2,18 +2,11 @@
 <glyph name="uni0403" format="2">
   <advance width="618"/>
   <unicode hex="0403"/>
-  <anchor x="263.885" y="5" name="bottom"/>
-  <anchor x="432.766" y="963" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="251" y="16" name="bottom"/>
+  <anchor x="410" y="921" name="top"/>
+  <anchor x="630" y="699" name="topright"/>
   <outline>
-    <contour>
-      <point x="192" y="677" type="line"/>
-      <point x="77" y="21" type="line"/>
-      <point x="119" y="21" type="line"/>
-      <point x="229" y="646" type="line"/>
-      <point x="536" y="646" type="line"/>
-      <point x="541" y="677" type="line"/>
-    </contour>
+    <component base="uni0413"/>
     <contour>
       <point x="384" y="781" type="line"/>
       <point x="489" y="906" type="line"/>
@@ -21,4 +14,19 @@
       <point x="371" y="789" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>uni0413</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

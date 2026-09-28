@@ -2,50 +2,27 @@
 <glyph name="uni1E06.smcp" format="2">
   <advance width="618"/>
   <outline>
+    <component base="B.smcp"/>
     <contour>
-      <point x="115" y="556" type="line"/>
-      <point x="115" y="-31" type="line"/>
-      <point x="286" y="-31" type="line"/>
-      <point x="406" y="-31"/>
-      <point x="503" y="47"/>
-      <point x="503" y="148" type="curve"/>
-      <point x="503" y="206"/>
-      <point x="515" y="257"/>
-      <point x="479" y="268" type="curve"/>
-      <point x="513" y="280"/>
-      <point x="501" y="352"/>
-      <point x="501" y="388" type="curve"/>
-      <point x="501" y="474"/>
-      <point x="410" y="556"/>
-      <point x="304" y="556" type="curve"/>
-    </contour>
-    <contour>
-      <point x="228" y="449" type="line"/>
-      <point x="300" y="449" type="line"/>
-      <point x="386" y="449"/>
-      <point x="386" y="443"/>
-      <point x="386" y="388" type="curve"/>
-      <point x="386" y="330"/>
-      <point x="386" y="320"/>
-      <point x="292" y="320" type="curve"/>
-      <point x="228" y="320" type="line"/>
-    </contour>
-    <contour>
-      <point x="274" y="77" type="curve"/>
-      <point x="228" y="77" type="line"/>
-      <point x="228" y="213" type="line"/>
-      <point x="285" y="213" type="line"/>
-      <point x="377" y="213"/>
-      <point x="388" y="217"/>
-      <point x="388" y="148" type="curve"/>
-      <point x="388" y="79"/>
-      <point x="375" y="77"/>
-    </contour>
-    <contour>
-      <point x="176.7" y="-7.3" type="line"/>
-      <point x="176.7" y="-112.8" type="line"/>
-      <point x="441.3" y="-112.8" type="line"/>
-      <point x="441.3" y="-7.3" type="line"/>
+      <point x="175.7" y="-62.3" type="line"/>
+      <point x="175.7" y="-167.8" type="line"/>
+      <point x="440.3" y="-167.8" type="line"/>
+      <point x="440.3" y="-62.3" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>B.smcp</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

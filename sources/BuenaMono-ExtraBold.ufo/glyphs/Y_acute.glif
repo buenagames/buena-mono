@@ -2,27 +2,31 @@
 <glyph name="Yacute" format="2">
   <advance width="618"/>
   <unicode hex="00DD"/>
-  <anchor x="309" y="-13" name="bottom"/>
-  <anchor x="309" y="933" name="top"/>
+  <anchor x="309" y="-32" name="bottom"/>
+  <anchor x="309" y="1087" name="top"/>
   <anchor x="568" y="699" name="topright"/>
   <outline>
+    <component base="Y"/>
     <contour>
-      <point x="660" y="736" type="line"/>
-      <point x="471" y="736" type="line"/>
-      <point x="232" y="287" type="line"/>
-      <point x="399" y="287" type="line"/>
-      <point x="149" y="736" type="line"/>
-      <point x="-44" y="736" type="line"/>
-      <point x="229" y="265" type="line"/>
-      <point x="229" y="-37" type="line"/>
-      <point x="396" y="-37" type="line"/>
-      <point x="396" y="265" type="line"/>
-    </contour>
-    <contour>
-      <point x="192" y="730" type="line"/>
-      <point x="335" y="730" type="line"/>
-      <point x="558" y="952" type="line"/>
-      <point x="336" y="952" type="line"/>
+      <point x="193" y="866" type="line"/>
+      <point x="336" y="866" type="line"/>
+      <point x="559" y="1088" type="line"/>
+      <point x="337" y="1088" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>Y</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

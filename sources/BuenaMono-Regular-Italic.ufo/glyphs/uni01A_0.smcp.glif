@@ -3,6 +3,29 @@
   <advance width="618"/>
   <outline>
     <component base="O.smcp"/>
-    <component base="uni031B"/>
+    <component base="uni031B" xOffset="50"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>O.smcp</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>uni031B</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

@@ -3,75 +3,36 @@
   <advance width="618"/>
   <unicode hex="01F5"/>
   <anchor x="309" y="-224" name="bottom"/>
-  <anchor x="309" y="765" name="top"/>
+  <anchor x="309" y="728" name="top"/>
   <anchor x="568" y="729" name="topright"/>
   <outline>
+    <component base="g"/>
     <contour>
-      <point x="298" y="-224" type="line"/>
-      <point x="455" y="-224" type="line"/>
-      <point x="520" y="-156" type="line"/>
-      <point x="520" y="-14" type="line"/>
-      <point x="520" y="508" type="line"/>
-      <point x="479" y="508" type="line"/>
-      <point x="467" y="443" type="line"/>
-      <point x="441" y="443" type="line"/>
-      <point x="400" y="500" type="line"/>
-      <point x="362" y="518" type="line"/>
-      <point x="296" y="518" type="line"/>
-      <point x="171" y="518" type="line"/>
-      <point x="98" y="425" type="line"/>
-      <point x="98" y="259" type="line"/>
-      <point x="98" y="96" type="line"/>
-      <point x="171" y="6" type="line"/>
-      <point x="301" y="6" type="line"/>
-      <point x="367" y="6" type="line"/>
-      <point x="407" y="20" type="line"/>
-      <point x="444" y="77" type="line"/>
-      <point x="475" y="77" type="line"/>
-      <point x="470" y="29" type="line"/>
-      <point x="470" y="21" type="line"/>
-      <point x="470" y="5" type="line"/>
-      <point x="470" y="-14" type="line"/>
-      <point x="470" y="-115" type="line"/>
-      <point x="421" y="-185" type="line"/>
-      <point x="295" y="-185" type="line"/>
-      <point x="234" y="-185" type="line"/>
-      <point x="155" y="-169" type="line"/>
-      <point x="125" y="-152" type="line"/>
-      <point x="125" y="-191" type="line"/>
-      <point x="168" y="-210" type="line"/>
-      <point x="228" y="-224" type="line"/>
-    </contour>
-    <contour>
-      <point x="317" y="46" type="line"/>
-      <point x="210" y="46" type="line"/>
-      <point x="156" y="127" type="line"/>
-      <point x="156" y="262" type="line"/>
-      <point x="156" y="395" type="line"/>
-      <point x="207" y="478" type="line"/>
-      <point x="314" y="478" type="line"/>
-      <point x="409" y="478" type="line"/>
-      <point x="473" y="410" type="line"/>
-      <point x="473" y="261" type="line"/>
-      <point x="473" y="240" type="line"/>
-      <point x="473" y="108" type="line"/>
-      <point x="410" y="46" type="line"/>
-    </contour>
-    <contour>
-      <point x="297" y="598" type="curve"/>
-      <point x="297" y="608" type="line"/>
-      <point x="333" y="608" type="line"/>
-      <point x="375" y="641"/>
-      <point x="441" y="713"/>
-      <point x="462" y="744" type="curve"/>
-      <point x="462" y="733" type="line"/>
-      <point x="384" y="733" type="line"/>
-      <point x="367" y="699"/>
-      <point x="323" y="631"/>
+      <point x="299" y="604" type="curve"/>
+      <point x="299" y="614" type="line"/>
+      <point x="335" y="614" type="line"/>
+      <point x="377" y="647"/>
+      <point x="443" y="719"/>
+      <point x="464" y="750" type="curve"/>
+      <point x="464" y="739" type="line"/>
+      <point x="386" y="739" type="line"/>
+      <point x="369" y="705"/>
+      <point x="325" y="637"/>
     </contour>
   </outline>
   <lib>
     <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>g</string>
+        </dict>
+      </array>
       <key>com.schriftgestaltung.Glyphs.category</key>
       <string>Letter</string>
     </dict>

@@ -14,7 +14,8 @@ with their bundle, except where a version was superseded before it shipped; see
 
 | Version | Tagged | Released | Notes |
 |---------|--------|----------|-------|
-| 1.238 | — | — | built and QA-clean; not yet tagged or released |
+| 1.239 | — | — | built and QA-clean; not yet tagged or released |
+| 1.238 | ✅ | ✅ | |
 | 1.237 | ✅ | ✅ | |
 | 1.236 | ✅ | ✅ | |
 | 1.235 | ✅ | ✅ | |
@@ -34,6 +35,21 @@ with their bundle, except where a version was superseded before it shipped; see
 | 1.219 | ✅ | ✅ | |
 | 1.218 | ✅ | ✅ | **initial public release** |
 | 0.1.0 – 1.217 | — | — | pre-public development history |
+
+## 1.239 — 2026-09-28
+
+: the mark, arrow and cell-width problems found while finishing, fixed in three parallel parts.
+
+- **Italic accents**: `scripts/add-italic-masters.py` sheared every glyph by tan 10° and then re-centred each one in its cell on its own. A mark drawn high should move right with the slant, but its own re-centring pulled it back, while letters built from components kept their upright offsets and the italic anchors were sheared but never re-centred. In 1.238, 426 of 433 letters built from parts set their mark more than 10 units off in italic (median 69, up to 157: `ẁ ẃ ẅ ẇ ḧ` among them), and GPOS put the acute on `a` + U+0301 125 units left. Every italic offset and anchor (2,849 glyphs) is now derived from the upright, sheared, plus each glyph's own re-centring (`scripts/fix-accented-letters.py`).
+- **Clearance**: every above-mark's `_top` anchor sat 41–46 units above the x-height, and the marks grew with the weight while keeping their place, so all 225 measured mark tiers lost their clearance at Bold and ExtraBold: `á` went 53 → 0 units of white from Regular to ExtraBold. Marks now keep Regular's clearance at every weight, and anchors sit on the x-height or baseline and move with the ink. GPOS gaps for `a` + U+0301 are 47/48/49/47 at Thin/Regular/Bold/ExtraBold. 89 letters from Latin Extended Additional had marks at offset 0,0, sitting inside capitals and ascenders; they are re-attached.
+- **Letters on stale bases**: of 661 precomposed letters drawn as full outlines, 253 were on a different base drawing, 144 on an out-of-date version of their base, and 40 shifted 2–19 units. 518 are rebuilt as the base glyph plus their own accent contours. The cedilla U+0327 had collapsed into a blob at Bold/ExtraBold and is redrawn; `Ç ç Ş ş` use it, and the comma-below letters `Ģ Ķ Ļ Ņ Ŗ Ș Ț` use U+0326. U+032A is redrawn like U+033A/U+0346 (whose ⊓ orientation was checked against Helvetica and Noto Serif), and `ͣ ͫ` are rebuilt from `a`/`m`.
+- **Arrows**: `scripts/fix-arrow-family.py` rebuilds 69 arrows from `→`'s own strokes, on one axis: `↔ ⇐ ⇒ ⇔` had sat on y 166 and `⇑ ⇓ ↕` on 266, against `→`'s 349. `⇦ ⇩` no longer overrun the cell (−31..649, −94..750 at Regular), `⇤ ⇥` no longer come apart from Bold, and the crude `⇷ ⇸ ⇺ ⇻ ⇽ ⇾ ⇪–⇮ ⇳` are redrawn. The long arrows `⟵–⟾` fit one cell. The ligatures `=> ==> =>> |=> <=> |->` are rebuilt from `=` and `->` without the self-overlapping joins (107–173 units) they had at heavy weights.
+- **Cell overrun**: a new QA check fails any encoded glyph whose ink leaves the cell by more than 20 units at Regular or 52 at ExtraBold. It failed 1.238 on 150 glyph/weight pairs. `⑽–⒇` and `⒑–⒛` keep full-size parentheses with condensed digits (Regular 29..589, was −84..702); `℃ ℉ ℔ ⅏ ⅒ ↉ U+FFFC U+FFFD ☼ ∬ ∭ ∯ ∰ ₠ ₢` are fitted, the suits centred, `⋘ ⋙` redrawn as three chevrons, and 20 symbols whose parts had drifted apart (`∴ ∵ ∷ ≔ ≕ ⋯ ‑ ― ‗`, the bars of `₤ ₧ ₭ ₳` …) re-derived. The remaining offenders (217 codepoints: the Greek capitals, script capitals, Powerline separators, solid triangles …) are exempt in commented groups, and the list may only shrink. Rebuilt letters keep their marks inside the cell (`ĥ`'s circumflex, `Ą`'s ogonek at heavy weights).
+- **Redrawn**: `꟒ ꟓ` (double thorn) had self-crossing counters that rendered filled and now have open bowls; `Ỿ ỿ` have a real loop; `ꚁ Ꜯ` no longer cross their counters; `ℑ` follows the weight; `ª µ & ‽ Ꜳ Œ` no longer carry reversed handles; `ⷤ ⷼ` are rebuilt from `ж ꙗ` like their siblings; the maths `∉ ∾ ≀ ≎ ≏ ≒ ≓ ⋎ ⋏` take their proper forms (`≒ ≓` are `=` with two dots, `⋎ ⋏` two flaring arms); `⊘` is `⊗`'s ring and one bar, and the two weight scripts that rewrote it on every run leave it alone.
+
+Still open: the design calls in (circled-ring weight, the Ỿ loop form, `Ꜳ` at heavy weights, the interrobang, `∼`, the parenthesis weight of `⑴–⒇`) and the 130 accented letters left for a design pass (Greek capitals with side marks, the horn letters, `Ţ ţ`).
+
+5,406 glyphs, unchanged.
 
 ## 1.238 — 2026-09-26
 

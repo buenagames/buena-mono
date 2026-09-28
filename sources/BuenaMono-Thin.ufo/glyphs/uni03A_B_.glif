@@ -2,21 +2,11 @@
 <glyph name="uni03AB" format="2">
   <advance width="618"/>
   <unicode hex="03AB"/>
-  <anchor x="309" y="5" name="bottom"/>
-  <anchor x="309" y="925" name="top"/>
+  <anchor x="309" y="16" name="bottom"/>
+  <anchor x="309" y="893" name="top"/>
   <anchor x="568" y="699" name="topright"/>
   <outline>
-    <contour>
-      <point x="337" y="292" type="line"/>
-      <point x="594" y="708" type="line"/>
-      <point x="533" y="708" type="line"/>
-      <point x="314" y="333" type="line"/>
-      <point x="87" y="708" type="line"/>
-      <point x="23" y="708" type="line"/>
-      <point x="286" y="292" type="line"/>
-      <point x="286" y="21" type="line"/>
-      <point x="337" y="21" type="line"/>
-    </contour>
+    <component base="uni03A5"/>
     <contour>
       <point x="255" y="893" type="line"/>
       <point x="193" y="893" type="line"/>
@@ -30,4 +20,19 @@
       <point x="417" y="832" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>uni03A5</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

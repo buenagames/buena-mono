@@ -2,25 +2,27 @@
 <glyph name="uni1E34.smcp" format="2">
   <advance width="618"/>
   <outline>
+    <component base="K.smcp"/>
     <contour>
-      <point x="169.2" y="542.7" type="line"/>
-      <point x="71" y="-18" type="line"/>
-      <point x="159.4" y="-18" type="line"/>
-      <point x="188.7" y="151.4" type="line"/>
-      <point x="274.9" y="247.4" type="line"/>
-      <point x="362.6" y="-18" type="line"/>
-      <point x="464.6" y="-18" type="line"/>
-      <point x="348.4" y="322.3" type="line"/>
-      <point x="547" y="542.7" type="line"/>
-      <point x="439.8" y="542.7" type="line"/>
-      <point x="213.4" y="288.6" type="line"/>
-      <point x="257.6" y="542.7" type="line"/>
-    </contour>
-    <contour>
-      <point x="196" y="-20" type="line"/>
-      <point x="182" y="-100" type="line"/>
-      <point x="420" y="-100" type="line"/>
-      <point x="435" y="-20" type="line"/>
+      <point x="143" y="-50" type="line"/>
+      <point x="129" y="-130" type="line"/>
+      <point x="367" y="-130" type="line"/>
+      <point x="382" y="-50" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>K.smcp</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

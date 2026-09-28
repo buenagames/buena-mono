@@ -610,6 +610,119 @@ def validate_lowercase_cell(font, label, results):
         results.ok(cat, "a-z stay inside the cell at wght 100/400/700/800")
 
 
+# Encoded glyphs whose ink leaves their cell, by codepoint. This
+# list may only shrink: fix a glyph and take it out; never add one. A new
+# glyph that overruns is a defect to fix, not an exemption to record.
+CELL_OVERRUN_KNOWN: set[int] = (
+    # Tiling glyphs, by design. The box-drawing diagonals run corner to
+    # corner of the cell so that a run of them joins (normalize-box-drawing.py).
+    {0x2571, 0x2572, 0x2573}
+    # Powerline Extra separators (U+E0A4-E0AF, E0B5-E0D4) meet the cell's
+    # edges so that they join their neighbours; the weight offset pushes them
+    # past from Bold up. They would need to be weight-invariant, as the box
+    # drawing is (a design decision, not made here).
+    | set(range(0xE0A4, 0xE0B0)) | {0xE0B5} | set(range(0xE0B7, 0xE0D5))
+    # Solid triangles: their sharp corners' mitres carry ExtraBold 53-89
+    # units out (◄ -89..604). Cutting the corners square, as ⇧'s head is
+    # cut (fix-arrow-redraws.py), would bring them in.
+    | {0x25B2, 0x25B3, 0x25B6, 0x25B7, 0x25BC, 0x25BD, 0x25C0, 0x25C1, 0x25C4}
+    # ⊪: three 82-unit bars 66 apart meet at ExtraBold however the masters
+    # are derived; needs a lighter redraw (⊩ has the same bars).
+    | {0x22AA}
+    # Script and black-letter capitals of Letterlike Symbols (ℋ -229..847,
+    # ℳ -264..881 at Regular). fit-symbols-to-cell.py fits them once it
+    # carries their mark anchors along.
+    | {0x210A, 0x210B, 0x2110, 0x2112, 0x2118, 0x211B, 0x211C, 0x212C,
+       0x2131, 0x2133, 0x213A}
+    # Letters ( part A: accented and digraph letters; the Latin
+    # ligature letters Ꜳ Ꜵ Ꜷ Ꜹ Ꜻ Ꜽ Ꝏ are digraphs too). Latin:
+    | {0x010F, 0x0180, 0x0192, 0x01A2, 0x01C4, 0x01C5, 0x01C6, 0x01C7,
+       0x01C8, 0x01C9, 0x01CA, 0x01CB, 0x01CC, 0x01E9, 0x01F1, 0x01F2,
+       0x01F3, 0x021F, 0x024F, 0x02A5, 0x02A8, 0x1D7A, 0xA728, 0xA729,
+       0xA732, 0xA734, 0xA736, 0xA738, 0xA73A, 0xA73C, 0xA74C, 0xA74E,
+       0xA74F, 0xA758, 0xA759, 0xA773, 0xA7FF}
+    # Greek: the tonos capitals, the wide capitals Δ Θ Κ Μ Ο Υ Χ Ψ Ϋ
+    # themselves (-38..656 at Regular), and the polytonic capitals.
+    | {0x0389, 0x038C, 0x038E, 0x038F, 0x0394, 0x0398, 0x039A, 0x039C,
+       0x039F, 0x03A5, 0x03A7, 0x03A8, 0x03AB}
+    # Ῠ Ῡ are built on Υ since (fix-accented-letters.py), so they
+    # are exactly as wide as Υ; they leave this list when Υ is fitted.
+    | {0x1FE8, 0x1FE9}
+    | {0x1F0A, 0x1F0B, 0x1F0C, 0x1F0D, 0x1F0E, 0x1F0F, 0x1F1A, 0x1F1B,
+       0x1F1C, 0x1F1D, 0x1F28, 0x1F29, 0x1F2A, 0x1F2B, 0x1F2C, 0x1F2D,
+       0x1F2E, 0x1F2F, 0x1F3A, 0x1F3B, 0x1F3C, 0x1F3D, 0x1F3E, 0x1F3F,
+       0x1F49, 0x1F4A, 0x1F4B, 0x1F4C, 0x1F4D, 0x1F59, 0x1F5B, 0x1F5D,
+       0x1F5F, 0x1F69, 0x1F6A, 0x1F6B, 0x1F6C, 0x1F6D, 0x1F6E, 0x1F6F,
+       0x1F8A, 0x1F8B, 0x1F8C, 0x1F8D, 0x1F8E, 0x1F8F, 0x1F98, 0x1F99,
+       0x1F9A, 0x1F9B, 0x1F9C, 0x1F9D, 0x1F9E, 0x1F9F, 0x1FA8, 0x1FA9,
+       0x1FAA, 0x1FAB, 0x1FAC, 0x1FAD, 0x1FAE, 0x1FAF, 0x1FBA, 0x1FC8,
+       0x1FCA, 0x1FCB, 0x1FEA, 0x1FEB, 0x1FEC, 0x1FF8, 0x1FF9, 0x1FFA,
+       0x1FFB}
+    # Cyrillic, historic and extended letters:
+    | {0x0462, 0x0468, 0x046C, 0x046D, 0x0474, 0x0476, 0x0478, 0x0479,
+       0x0496, 0x0518, 0x0520, 0x0521, 0x0522, 0x0523, 0x052A, 0x052B,
+       0xA656, 0xA657, 0xA65C, 0xA65D, 0xA666, 0xA667, 0xA66C, 0xA66D,
+       0xA684, 0xA698, 0xA699}
+)
+
+CELL_OVERRUN_SLACK = 20
+
+
+def validate_cell_overrun(font, label, results):
+    """No encoded glyph inks outside its cell, upright at Regular and ExtraBold.
+
+   : ⑽-⒇ drew -84..702 at Regular, ℃ -137..755, the replacement
+    character -140..758, ⇦ -31..649; from Bold up the first-draft arrows blew
+    out to -210..828 (⇪) and ⋙ to -324..863, every one running into both
+    neighbours. The lowercase check only looks at a-z.
+
+    Ink may pass the cell's edge by CELL_OVERRUN_SLACK (20) units at Regular:
+    round overshoot and the mitred point of an arrow (→ reaches 16 past its
+    Regular tip at ExtraBold) are not the defect, which starts at 23 and runs
+    to 250. At ExtraBold the slack is 20 + 32, the per-side weight offset the
+    whole font is built with (symbol_outlines.py): a glyph whose Regular ink
+    touches the edge legitimately reaches 32 past it there, as `A` (-16..634)
+    and `_` (-32..650) do.
+    Italic is not held to this (the shear overhangs every cell), nor are
+    zero-width glyphs. The exemptions are CELL_OVERRUN_KNOWN.
+    """
+    cat = f"Cell overrun [{label}]"
+    if "fvar" not in font or "glyf" not in font:
+        return
+    from fontTools.pens.boundsPen import BoundsPen
+    from fontTools.varLib.instancer import instantiateVariableFont
+
+    cmap = font.getBestCmap()
+    bad = []
+    for w, slack in ((400, CELL_OVERRUN_SLACK), (800, CELL_OVERRUN_SLACK + 32)):
+        inst = instantiateVariableFont(font, {"wght": w, "slnt": 0},
+                                       inplace=False, updateFontNames=False)
+        gs = inst.getGlyphSet()
+        for cp, name in sorted(cmap.items()):
+            if cp in CELL_OVERRUN_KNOWN:
+                continue
+            adv = inst["hmtx"][name][0]
+            if adv == 0:
+                continue
+            pen = BoundsPen(gs)
+            gs[name].draw(pen)
+            if pen.bounds is None:
+                continue
+            x0, _, x1, _ = pen.bounds
+            if x0 < -slack or x1 > adv + slack:
+                bad.append(f"U+{cp:04X} {chr(cp)} {name} at wght={w}: ink "
+                           f"{x0:.0f}..{x1:.0f} of 0..{adv}")
+    if bad:
+        results.fail(cat, f"{len(bad)} glyph/weight pairs ink outside their "
+                          f"cell (Regular +-{CELL_OVERRUN_SLACK}, ExtraBold "
+                          f"+-{CELL_OVERRUN_SLACK + 32})")
+        for line in bad[:12]:
+            results.fail(cat, f"  {line}")
+    else:
+        results.ok(cat, f"Every encoded glyph inks inside its cell at wght "
+                        f"400 and 800 ({len(CELL_OVERRUN_KNOWN)} exempt)")
+
+
 def validate_advance_invariance(font, label, results):
     """No glyph's advance varies anywhere in the design space.
 
@@ -1477,6 +1590,7 @@ def main():
             validate_advance_invariance(font, label, results)
             validate_weight_progression(font, label, results)
             validate_lowercase_cell(font, label, results)
+            validate_cell_overrun(font, label, results)
             validate_axes(font, label, results)
             validate_stat(font, label, results)
             validate_coverage(font, label, results)

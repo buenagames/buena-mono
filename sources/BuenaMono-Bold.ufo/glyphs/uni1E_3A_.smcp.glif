@@ -2,19 +2,27 @@
 <glyph name="uni1E3A.smcp" format="2">
   <advance width="618"/>
   <outline>
+    <component base="L.smcp"/>
     <contour>
-      <point x="127.2" y="542.7" type="line"/>
-      <point x="127.2" y="-18" type="line"/>
-      <point x="490.8" y="-18" type="line"/>
-      <point x="490.8" y="66" type="line"/>
-      <point x="215.7" y="66" type="line"/>
-      <point x="215.7" y="542.7" type="line"/>
-    </contour>
-    <contour>
-      <point x="189" y="-20" type="line"/>
-      <point x="189" y="-100" type="line"/>
-      <point x="428" y="-100" type="line"/>
-      <point x="428" y="-20" type="line"/>
+      <point x="189" y="-49" type="line"/>
+      <point x="189" y="-129" type="line"/>
+      <point x="428" y="-129" type="line"/>
+      <point x="428" y="-49" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>L.smcp</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

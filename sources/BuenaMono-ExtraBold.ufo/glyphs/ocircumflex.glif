@@ -2,46 +2,34 @@
 <glyph name="ocircumflex" format="2">
   <advance width="618"/>
   <unicode hex="00F4"/>
-  <anchor x="309" y="-15" name="bottom"/>
-  <anchor x="309" y="754" name="top"/>
+  <anchor x="309" y="-34" name="bottom"/>
+  <anchor x="309" y="839" name="top"/>
   <anchor x="568" y="524" name="topright"/>
   <outline>
+    <component base="o"/>
     <contour>
-      <point x="309" y="572" type="curve"/>
-      <point x="148" y="572"/>
-      <point x="40" y="420"/>
-      <point x="40" y="261" type="curve"/>
-      <point x="40" y="102"/>
-      <point x="148" y="-50"/>
-      <point x="309" y="-50" type="curve"/>
-      <point x="470" y="-50"/>
-      <point x="578" y="102"/>
-      <point x="578" y="261" type="curve"/>
-      <point x="578" y="420"/>
-      <point x="470" y="572"/>
-    </contour>
-    <contour>
-      <point x="309" y="431" type="curve"/>
-      <point x="415" y="431"/>
-      <point x="427" y="368"/>
-      <point x="427" y="261" type="curve"/>
-      <point x="427" y="154"/>
-      <point x="415" y="91"/>
-      <point x="309" y="91" type="curve"/>
-      <point x="203" y="91"/>
-      <point x="191" y="154"/>
-      <point x="191" y="261" type="curve"/>
-      <point x="191" y="368"/>
-      <point x="203" y="431"/>
-    </contour>
-    <contour>
-      <point x="106" y="559" type="line"/>
-      <point x="244" y="559" type="line"/>
-      <point x="308" y="637" type="line"/>
-      <point x="374" y="559" type="line"/>
-      <point x="511" y="559" type="line"/>
-      <point x="372" y="773" type="line"/>
-      <point x="244" y="773" type="line"/>
+      <point x="106" y="625" type="line"/>
+      <point x="244" y="625" type="line"/>
+      <point x="308" y="703" type="line"/>
+      <point x="374" y="625" type="line"/>
+      <point x="511" y="625" type="line"/>
+      <point x="372" y="839" type="line"/>
+      <point x="244" y="839" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>o</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

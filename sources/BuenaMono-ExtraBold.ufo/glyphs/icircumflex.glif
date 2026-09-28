@@ -2,30 +2,34 @@
 <glyph name="icircumflex" format="2">
   <advance width="618"/>
   <unicode hex="00EE"/>
-  <anchor x="309" y="-13" name="bottom"/>
-  <anchor x="309" y="754" name="top"/>
+  <anchor x="309" y="-32" name="bottom"/>
+  <anchor x="309" y="837" name="top"/>
   <anchor x="568" y="524" name="topright"/>
   <outline>
+    <component base="uni0131"/>
     <contour>
-      <point x="391" y="556" type="line"/>
-      <point x="65" y="556" type="line"/>
-      <point x="65" y="424" type="line"/>
-      <point x="245" y="424" type="line"/>
-      <point x="245" y="100" type="line"/>
-      <point x="65" y="100" type="line"/>
-      <point x="65" y="-32" type="line"/>
-      <point x="552" y="-32" type="line"/>
-      <point x="552" y="100" type="line"/>
-      <point x="391" y="100" type="line"/>
-    </contour>
-    <contour>
-      <point x="106" y="559" type="line"/>
-      <point x="244" y="559" type="line"/>
-      <point x="308" y="637" type="line"/>
-      <point x="374" y="559" type="line"/>
-      <point x="511" y="559" type="line"/>
-      <point x="372" y="773" type="line"/>
-      <point x="244" y="773" type="line"/>
+      <point x="106" y="623" type="line"/>
+      <point x="244" y="623" type="line"/>
+      <point x="308" y="701" type="line"/>
+      <point x="374" y="623" type="line"/>
+      <point x="511" y="623" type="line"/>
+      <point x="372" y="837" type="line"/>
+      <point x="244" y="837" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>uni0131</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

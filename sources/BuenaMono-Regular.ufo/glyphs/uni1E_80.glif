@@ -6,31 +6,27 @@
   <anchor x="309" y="942" name="top"/>
   <anchor x="568" y="699" name="topright"/>
   <outline>
+    <component base="W"/>
     <contour>
-      <point x="104" y="5" type="line"/>
-      <point x="216" y="5" type="line"/>
-      <point x="301" y="422" type="line"/>
-      <point x="317" y="422" type="line"/>
-      <point x="402" y="5" type="line"/>
-      <point x="514" y="5" type="line"/>
-      <point x="569" y="693" type="line"/>
-      <point x="506" y="693" type="line"/>
-      <point x="477" y="298" type="line"/>
-      <point x="462" y="82" type="line"/>
-      <point x="445" y="82" type="line"/>
-      <point x="353" y="511" type="line"/>
-      <point x="267" y="511" type="line"/>
-      <point x="175" y="82" type="line"/>
-      <point x="158" y="82" type="line"/>
-      <point x="143" y="298" type="line"/>
-      <point x="114" y="693" type="line"/>
-      <point x="49" y="693" type="line"/>
-    </contour>
-    <contour>
-      <point x="203" y="912" type="line"/>
-      <point x="304" y="761" type="line"/>
-      <point x="347" y="781" type="line"/>
-      <point x="267" y="942" type="line"/>
+      <point x="202" y="924" type="line"/>
+      <point x="303" y="773" type="line"/>
+      <point x="346" y="793" type="line"/>
+      <point x="266" y="954" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>W</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

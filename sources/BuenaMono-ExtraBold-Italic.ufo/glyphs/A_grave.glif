@@ -2,31 +2,31 @@
 <glyph name="Agrave" format="2">
   <advance width="618"/>
   <unicode hex="00C0"/>
-  <anchor x="260.697" y="-13" name="bottom"/>
-  <anchor x="427.451" y="933" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="308" y="-32" name="bottom"/>
+  <anchor x="492" y="1016" name="top"/>
+  <anchor x="696" y="699" name="topright"/>
   <outline>
+    <component base="A"/>
     <contour>
-      <point x="374" y="683" type="line"/>
-      <point x="461" y="-37" type="line"/>
-      <point x="636" y="-37" type="line"/>
-      <point x="528" y="736" type="line"/>
-      <point x="356" y="736" type="line"/>
-      <point x="-24" y="-37" type="line"/>
-      <point x="152" y="-37" type="line"/>
-      <point x="489" y="675" type="line"/>
-    </contour>
-    <contour>
-      <point x="473" y="236" type="line"/>
-      <point x="466" y="260" type="line"/>
-      <point x="242" y="260" type="line"/>
-      <point x="233" y="236" type="line"/>
-    </contour>
-    <contour>
-      <point x="557" y="730" type="line"/>
-      <point x="451" y="952" type="line"/>
-      <point x="231" y="952" type="line"/>
-      <point x="416" y="730" type="line"/>
+      <point x="570" y="795" type="line"/>
+      <point x="464" y="1017" type="line"/>
+      <point x="244" y="1017" type="line"/>
+      <point x="429" y="795" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>A</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

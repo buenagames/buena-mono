@@ -1,10 +1,25 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="uni1FC7.smcp" format="2">
   <advance width="618"/>
-  <anchor x="225.977" y="-209.0" name="bottom"/>
-  <anchor x="397.869" y="766.0" name="top"/>
-  <anchor x="614" y="524" name="topright"/>
+  <anchor x="234" y="-209" name="bottom"/>
+  <anchor x="406" y="766" name="top"/>
+  <anchor x="622" y="524" name="topright"/>
   <outline>
     <component base="uni1FC7"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>uni1FC7</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

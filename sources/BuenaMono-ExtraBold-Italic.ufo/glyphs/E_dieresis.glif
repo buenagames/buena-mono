@@ -2,35 +2,37 @@
 <glyph name="Edieresis" format="2">
   <advance width="618"/>
   <unicode hex="00CB"/>
-  <anchor x="260.697" y="-13" name="bottom"/>
-  <anchor x="423.023" y="908" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="245" y="-32" name="bottom"/>
+  <anchor x="426" y="991" name="top"/>
+  <anchor x="633" y="699" name="topright"/>
   <outline>
+    <component base="E"/>
     <contour>
-      <point x="523" y="280" type="line"/>
-      <point x="551" y="436" type="line"/>
-      <point x="250" y="436" type="line"/>
-      <point x="276" y="580" type="line"/>
-      <point x="591" y="580" type="line"/>
-      <point x="619" y="736" type="line"/>
-      <point x="136" y="736" type="line"/>
-      <point x="1" y="-37" type="line"/>
-      <point x="501" y="-37" type="line"/>
-      <point x="527" y="119" type="line"/>
-      <point x="194" y="119" type="line"/>
-      <point x="223" y="280" type="line"/>
+      <point x="213" y="992" type="line"/>
+      <point x="181" y="815" type="line"/>
+      <point x="360" y="815" type="line"/>
+      <point x="392" y="992" type="line"/>
     </contour>
     <contour>
-      <point x="209" y="927" type="line"/>
-      <point x="177" y="750" type="line"/>
-      <point x="356" y="750" type="line"/>
-      <point x="388" y="927" type="line"/>
-    </contour>
-    <contour>
-      <point x="435" y="927" type="line"/>
-      <point x="403" y="750" type="line"/>
-      <point x="582" y="750" type="line"/>
-      <point x="614" y="927" type="line"/>
+      <point x="439" y="992" type="line"/>
+      <point x="407" y="815" type="line"/>
+      <point x="586" y="815" type="line"/>
+      <point x="618" y="992" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>E</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

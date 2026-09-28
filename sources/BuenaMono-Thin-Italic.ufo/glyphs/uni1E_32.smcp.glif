@@ -2,35 +2,37 @@
 <glyph name="uni1E32.smcp" format="2">
   <advance width="618"/>
   <outline>
+    <component base="K.smcp"/>
     <contour>
-      <point x="203.3" y="516.5" type="line"/>
-      <point x="114.1" y="8.2" type="line"/>
-      <point x="150.1" y="8.2" type="line"/>
-      <point x="176.3" y="159.7" type="line"/>
-      <point x="300" y="298.4" type="line"/>
-      <point x="396" y="8.2" type="line"/>
-      <point x="438.7" y="8.2" type="line"/>
-      <point x="330" y="324.6" type="line"/>
-      <point x="503.9" y="516.5" type="line"/>
-      <point x="461.2" y="516.5" type="line"/>
-      <point x="184.6" y="206.9" type="line"/>
-      <point x="239.3" y="516.5" type="line"/>
-    </contour>
-    <contour>
-      <point x="304" y="-117" type="curve"/>
-      <point x="335" y="-117"/>
-      <point x="336" y="-115"/>
-      <point x="340" y="-94" type="curve"/>
-      <point x="341" y="-84" type="line"/>
-      <point x="345" y="-64"/>
-      <point x="345" y="-62"/>
-      <point x="314" y="-62" type="curve"/>
-      <point x="283" y="-62"/>
-      <point x="283" y="-64"/>
-      <point x="280" y="-84" type="curve"/>
-      <point x="278" y="-94" type="line"/>
-      <point x="274" y="-115"/>
-      <point x="273" y="-117"/>
+      <point x="255" y="-113" type="curve"/>
+      <point x="286" y="-113"/>
+      <point x="287" y="-111"/>
+      <point x="291" y="-90" type="curve"/>
+      <point x="292" y="-80" type="line"/>
+      <point x="296" y="-60"/>
+      <point x="296" y="-58"/>
+      <point x="265" y="-58" type="curve"/>
+      <point x="234" y="-58"/>
+      <point x="234" y="-60"/>
+      <point x="231" y="-80" type="curve"/>
+      <point x="229" y="-90" type="line"/>
+      <point x="225" y="-111"/>
+      <point x="224" y="-113"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>K.smcp</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

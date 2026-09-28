@@ -2,46 +2,34 @@
 <glyph name="uni010D" format="2">
   <advance width="618"/>
   <unicode hex="010D"/>
-  <anchor x="309" y="-15" name="bottom"/>
-  <anchor x="309" y="754" name="top"/>
+  <anchor x="309" y="-34" name="bottom"/>
+  <anchor x="309" y="837" name="top"/>
   <anchor x="568" y="524" name="topright"/>
   <outline>
+    <component base="c"/>
     <contour>
-      <point x="562" y="319" type="line"/>
-      <point x="558" y="463"/>
-      <point x="446" y="572"/>
-      <point x="318" y="572" type="curve"/>
-      <point x="162" y="572"/>
-      <point x="48" y="413"/>
-      <point x="48" y="256" type="curve"/>
-      <point x="48" y="102"/>
-      <point x="164" y="-50"/>
-      <point x="317" y="-50" type="curve"/>
-      <point x="446" y="-50"/>
-      <point x="556" y="54"/>
-      <point x="570" y="215" type="curve"/>
-      <point x="424" y="215" type="line"/>
-      <point x="405" y="105"/>
-      <point x="392" y="91"/>
-      <point x="319" y="91" type="curve"/>
-      <point x="214" y="91"/>
-      <point x="199" y="152"/>
-      <point x="199" y="256" type="curve"/>
-      <point x="199" y="360"/>
-      <point x="209" y="431"/>
-      <point x="317" y="431" type="curve"/>
-      <point x="390" y="431"/>
-      <point x="404" y="416"/>
-      <point x="417" y="319" type="curve"/>
-    </contour>
-    <contour>
-      <point x="519" y="773" type="line"/>
-      <point x="381" y="773" type="line"/>
-      <point x="317" y="695" type="line"/>
-      <point x="251" y="773" type="line"/>
-      <point x="114" y="773" type="line"/>
-      <point x="253" y="559" type="line"/>
-      <point x="381" y="559" type="line"/>
+      <point x="519" y="837" type="line"/>
+      <point x="381" y="837" type="line"/>
+      <point x="317" y="759" type="line"/>
+      <point x="251" y="837" type="line"/>
+      <point x="114" y="837" type="line"/>
+      <point x="253" y="623" type="line"/>
+      <point x="381" y="623" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>c</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

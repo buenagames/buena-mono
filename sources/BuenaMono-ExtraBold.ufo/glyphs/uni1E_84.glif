@@ -2,61 +2,57 @@
 <glyph name="uni1E84" format="2">
   <advance width="618"/>
   <unicode hex="1E84"/>
-  <anchor x="309" y="-13" name="bottom"/>
-  <anchor x="309" y="876" name="top"/>
+  <anchor x="309" y="-32" name="bottom"/>
+  <anchor x="309" y="1001" name="top"/>
   <anchor x="568" y="699" name="topright"/>
   <outline>
+    <component base="W"/>
     <contour>
-      <point x="74" y="-27" type="line"/>
-      <point x="243" y="-27" type="line"/>
-      <point x="328" y="390" type="line"/>
-      <point x="290" y="390" type="line"/>
-      <point x="375" y="-27" type="line"/>
-      <point x="544" y="-27" type="line"/>
-      <point x="604" y="725" type="line"/>
-      <point x="476" y="725" type="line"/>
-      <point x="445" y="300" type="line"/>
-      <point x="432" y="114" type="line"/>
-      <point x="471" y="114" type="line"/>
-      <point x="379" y="543" type="line"/>
-      <point x="241" y="543" type="line"/>
-      <point x="149" y="114" type="line"/>
-      <point x="188" y="114" type="line"/>
-      <point x="175" y="300" type="line"/>
-      <point x="144" y="725" type="line"/>
-      <point x="14" y="725" type="line"/>
+      <point x="183" y="853" type="curve"/>
+      <point x="224" y="853"/>
+      <point x="267" y="899"/>
+      <point x="267" y="926" type="curve"/>
+      <point x="267" y="940" type="line"/>
+      <point x="267" y="967"/>
+      <point x="224" y="1013"/>
+      <point x="183" y="1013" type="curve"/>
+      <point x="142" y="1013"/>
+      <point x="99" y="967"/>
+      <point x="99" y="940" type="curve"/>
+      <point x="99" y="926" type="line"/>
+      <point x="99" y="899"/>
+      <point x="142" y="853"/>
     </contour>
     <contour>
-      <point x="184" y="761" type="curve"/>
-      <point x="225" y="761"/>
-      <point x="268" y="807"/>
-      <point x="268" y="834" type="curve"/>
-      <point x="268" y="848" type="line"/>
-      <point x="268" y="875"/>
-      <point x="225" y="921"/>
-      <point x="184" y="921" type="curve"/>
-      <point x="143" y="921"/>
-      <point x="100" y="875"/>
-      <point x="100" y="848" type="curve"/>
-      <point x="100" y="834" type="line"/>
-      <point x="100" y="807"/>
-      <point x="143" y="761"/>
-    </contour>
-    <contour>
-      <point x="434" y="761" type="curve"/>
-      <point x="475" y="761"/>
-      <point x="518" y="807"/>
-      <point x="518" y="834" type="curve"/>
-      <point x="518" y="848" type="line"/>
-      <point x="518" y="875"/>
-      <point x="475" y="921"/>
-      <point x="434" y="921" type="curve"/>
-      <point x="393" y="921"/>
-      <point x="350" y="875"/>
-      <point x="350" y="848" type="curve"/>
-      <point x="350" y="834" type="line"/>
-      <point x="350" y="807"/>
-      <point x="393" y="761"/>
+      <point x="433" y="853" type="curve"/>
+      <point x="474" y="853"/>
+      <point x="517" y="899"/>
+      <point x="517" y="926" type="curve"/>
+      <point x="517" y="940" type="line"/>
+      <point x="517" y="967"/>
+      <point x="474" y="1013"/>
+      <point x="433" y="1013" type="curve"/>
+      <point x="392" y="1013"/>
+      <point x="349" y="967"/>
+      <point x="349" y="940" type="curve"/>
+      <point x="349" y="926" type="line"/>
+      <point x="349" y="899"/>
+      <point x="392" y="853"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>W</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="uni0390.smcp" format="2">
   <advance width="618"/>
-  <anchor x="260.697" y="-13.0" name="bottom"/>
-  <anchor x="397" y="762" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="239" y="-32" name="bottom"/>
+  <anchor x="413" y="953" name="top"/>
+  <anchor x="627" y="699" name="topright"/>
   <outline>
     <component base="uni03AA"/>
-    <component base="uni0301"/>
+    <component base="uni0301" xOffset="147" yOffset="517"/>
   </outline>
   <lib>
     <dict>

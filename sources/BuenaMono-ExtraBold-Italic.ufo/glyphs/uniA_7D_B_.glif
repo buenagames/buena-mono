@@ -2,10 +2,25 @@
 <glyph name="uniA7DB" format="2">
   <advance width="618"/>
   <unicode hex="A7DB"/>
-  <anchor x="260.697" y="-13.0" name="bottom"/>
-  <anchor x="389.011" y="716.0" name="top"/>
-  <anchor x="614" y="524" name="topright"/>
+  <anchor x="300" y="-32" name="bottom"/>
+  <anchor x="440" y="761" name="top"/>
+  <anchor x="657" y="524" name="topright"/>
   <outline>
     <component base="uni03BB"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>uni03BB</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

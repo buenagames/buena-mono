@@ -2,31 +2,37 @@
 <glyph name="uni1E6C.smcp" format="2">
   <advance width="618"/>
   <outline>
+    <component base="T.smcp"/>
     <contour>
-      <point x="242" y="448" type="line"/>
-      <point x="158" y="-31" type="line"/>
-      <point x="273" y="-31" type="line"/>
-      <point x="357" y="448" type="line"/>
-      <point x="511" y="448" type="line"/>
-      <point x="529" y="556" type="line"/>
-      <point x="107" y="556" type="line"/>
-      <point x="89" y="448" type="line"/>
-    </contour>
-    <contour>
-      <point x="298.1" y="-156.3" type="curve"/>
-      <point x="329.4" y="-156.3"/>
-      <point x="373.6" y="-117.3"/>
-      <point x="377.9" y="-96.5" type="curve"/>
-      <point x="378.4" y="-86" type="line"/>
-      <point x="382.6" y="-66.3"/>
-      <point x="348.4" y="-22.3"/>
-      <point x="318.1" y="-22.3" type="curve"/>
-      <point x="286.9" y="-22.3"/>
-      <point x="243.6" y="-61.3"/>
-      <point x="239.4" y="-82" type="curve"/>
-      <point x="237.9" y="-91.5" type="line"/>
-      <point x="234.6" y="-112.3"/>
-      <point x="267.9" y="-156.3"/>
+      <point x="185.1" y="-211.3" type="curve"/>
+      <point x="216.4" y="-211.3"/>
+      <point x="260.6" y="-172.3"/>
+      <point x="264.9" y="-151.5" type="curve"/>
+      <point x="265.4" y="-141" type="line"/>
+      <point x="269.6" y="-121.3"/>
+      <point x="235.4" y="-77.3"/>
+      <point x="205.1" y="-77.3" type="curve"/>
+      <point x="173.9" y="-77.3"/>
+      <point x="130.6" y="-116.3"/>
+      <point x="126.4" y="-137" type="curve"/>
+      <point x="124.9" y="-146.5" type="line"/>
+      <point x="121.6" y="-167.3"/>
+      <point x="154.9" y="-211.3"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>T.smcp</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

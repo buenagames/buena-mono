@@ -3,8 +3,71 @@
   <advance width="618"/>
   <unicode hex="2049"/>
   <outline>
-    <component base="exclam" xScale="0.7" yScale="0.7" xOffset="129"/>
-    <component base="question" xScale="0.7" yScale="0.7" xOffset="299"/>
+    <contour>
+      <point x="142" y="150" type="line"/>
+      <point x="188" y="150" type="line"/>
+      <point x="244" y="346" type="line"/>
+      <point x="272" y="502" type="line"/>
+      <point x="183" y="502" type="line"/>
+      <point x="156" y="346" type="line"/>
+    </contour>
+    <contour>
+      <point x="135" y="-20" type="curve"/>
+      <point x="174" y="-20"/>
+      <point x="206" y="11"/>
+      <point x="210" y="36" type="curve"/>
+      <point x="213" y="48" type="line"/>
+      <point x="217" y="73"/>
+      <point x="196" y="104"/>
+      <point x="157" y="104" type="curve"/>
+      <point x="119" y="104"/>
+      <point x="87" y="73"/>
+      <point x="82" y="48" type="curve"/>
+      <point x="80" y="36" type="line"/>
+      <point x="76" y="11"/>
+      <point x="97" y="-20"/>
+    </contour>
+    <contour>
+      <point x="280" y="137" type="line"/>
+      <point x="362" y="137" type="line"/>
+      <point x="375" y="210" type="line"/>
+      <point x="430" y="219"/>
+      <point x="521" y="277"/>
+      <point x="536" y="365" type="curve"/>
+      <point x="551" y="445"/>
+      <point x="492" y="510"/>
+      <point x="402" y="510" type="curve"/>
+      <point x="313" y="510"/>
+      <point x="241" y="449"/>
+      <point x="206" y="375" type="curve"/>
+      <point x="278" y="346" type="line"/>
+      <point x="306" y="408"/>
+      <point x="331" y="433"/>
+      <point x="387" y="433" type="curve"/>
+      <point x="441" y="433"/>
+      <point x="459" y="420"/>
+      <point x="449" y="368" type="curve"/>
+      <point x="448" y="358" type="line"/>
+      <point x="436" y="294"/>
+      <point x="398" y="277"/>
+      <point x="304" y="273" type="curve"/>
+    </contour>
+    <contour>
+      <point x="296" y="-20" type="curve"/>
+      <point x="334" y="-20"/>
+      <point x="366" y="11"/>
+      <point x="371" y="36" type="curve"/>
+      <point x="373" y="48" type="line"/>
+      <point x="377" y="73"/>
+      <point x="356" y="104"/>
+      <point x="317" y="104" type="curve"/>
+      <point x="279" y="104"/>
+      <point x="247" y="73"/>
+      <point x="243" y="48" type="curve"/>
+      <point x="240" y="36" type="line"/>
+      <point x="236" y="11"/>
+      <point x="257" y="-20"/>
+    </contour>
   </outline>
   <lib>
     <dict>

@@ -6,14 +6,7 @@
   <anchor x="309" y="779" name="top"/>
   <anchor x="568" y="524" name="topright"/>
   <outline>
-    <contour>
-      <point x="144" y="516" type="line"/>
-      <point x="144" y="0" type="line"/>
-      <point x="224" y="0" type="line"/>
-      <point x="224" y="448" type="line"/>
-      <point x="514" y="448" type="line"/>
-      <point x="514" y="516" type="line"/>
-    </contour>
+    <component base="uni0433"/>
     <contour>
       <point x="336" y="585" type="line"/>
       <point x="442" y="744" type="line"/>
@@ -21,4 +14,19 @@
       <point x="284" y="609" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>uni0433</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

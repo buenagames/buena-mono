@@ -3,37 +3,33 @@
   <advance width="618"/>
   <unicode hex="0134"/>
   <anchor x="309" y="-19" name="bottom"/>
-  <anchor x="309" y="912" name="top"/>
+  <anchor x="309" y="993" name="top"/>
   <anchor x="568" y="699" name="topright"/>
   <outline>
+    <component base="J"/>
     <contour>
-      <point x="524" y="712" type="line"/>
-      <point x="160" y="712" type="line"/>
-      <point x="160" y="611" type="line"/>
-      <point x="412" y="611" type="line"/>
-      <point x="412" y="196" type="line"/>
-      <point x="412" y="104"/>
-      <point x="382" y="76"/>
-      <point x="306" y="76" type="curve"/>
-      <point x="229" y="76"/>
-      <point x="211" y="110"/>
-      <point x="194" y="179" type="curve"/>
-      <point x="88" y="157" type="line"/>
-      <point x="111" y="43"/>
-      <point x="197" y="-26"/>
-      <point x="304" y="-26" type="curve"/>
-      <point x="424" y="-26"/>
-      <point x="524" y="64"/>
-      <point x="524" y="181" type="curve"/>
-    </contour>
-    <contour>
-      <point x="400" y="949" type="line"/>
-      <point x="286" y="949" type="line"/>
-      <point x="162" y="789" type="line"/>
-      <point x="226" y="743" type="line"/>
-      <point x="342" y="858" type="line"/>
-      <point x="458" y="742" type="line"/>
-      <point x="524" y="789" type="line"/>
+      <point x="433" y="1005" type="line"/>
+      <point x="319" y="1005" type="line"/>
+      <point x="195" y="845" type="line"/>
+      <point x="259" y="799" type="line"/>
+      <point x="375" y="914" type="line"/>
+      <point x="491" y="798" type="line"/>
+      <point x="557" y="845" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>J</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

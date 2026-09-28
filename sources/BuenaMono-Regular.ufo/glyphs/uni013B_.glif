@@ -6,29 +6,30 @@
   <anchor x="309" y="705" name="top"/>
   <anchor x="568" y="699" name="topright"/>
   <outline>
-    <contour>
-      <point x="91" y="704" type="line"/>
-      <point x="91" y="-5" type="line"/>
-      <point x="527" y="-5" type="line"/>
-      <point x="527" y="87" type="line"/>
-      <point x="194" y="87" type="line"/>
-      <point x="194" y="704" type="line"/>
-    </contour>
-    <contour>
-      <point x="264" y="-176" type="line"/>
-      <point x="323" y="-176" type="line"/>
-      <point x="323" y="-182" type="line"/>
-      <point x="323" y="-209"/>
-      <point x="309" y="-221"/>
-      <point x="280" y="-221" type="curve"/>
-      <point x="264" y="-221" type="line"/>
-      <point x="264" y="-270" type="line"/>
-      <point x="278" y="-270" type="line"/>
-      <point x="328" y="-270"/>
-      <point x="373" y="-232"/>
-      <point x="373" y="-180" type="curve"/>
-      <point x="373" y="-70" type="line"/>
-      <point x="264" y="-70" type="line"/>
-    </contour>
+    <component base="L"/>
+    <component base="uni0326" xOffset="16" yOffset="-8"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>L</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>uni0326</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

@@ -6,20 +6,7 @@
   <anchor x="309" y="724" name="top"/>
   <anchor x="568" y="699" name="topright"/>
   <outline>
-    <contour>
-      <point x="90" y="-24" type="line"/>
-      <point x="529" y="-24" type="line"/>
-      <point x="529" y="102" type="line"/>
-      <point x="380" y="102" type="line"/>
-      <point x="380" y="597" type="line"/>
-      <point x="529" y="597" type="line"/>
-      <point x="529" y="723" type="line"/>
-      <point x="90" y="723" type="line"/>
-      <point x="90" y="597" type="line"/>
-      <point x="238" y="597" type="line"/>
-      <point x="238" y="102" type="line"/>
-      <point x="90" y="102" type="line"/>
-    </contour>
+    <component base="I"/>
     <contour>
       <point x="348" y="45" type="line"/>
       <point x="240" y="16"/>
@@ -43,4 +30,19 @@
       <point x="444" y="-5" type="curve"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>I</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

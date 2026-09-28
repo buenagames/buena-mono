@@ -2,43 +2,35 @@
 <glyph name="uni0226.smcp" format="2">
   <advance width="618"/>
   <outline>
+    <component base="A.smcp"/>
     <contour>
-      <point x="78.9" y="-18" type="line"/>
-      <point x="183.8" y="-18" type="line"/>
-      <point x="372" y="369.6" type="line"/>
-      <point x="381" y="386.8" type="line"/>
-      <point x="399.7" y="438.5" type="line"/>
-      <point x="384.7" y="413.8" type="line"/>
-      <point x="379.5" y="428.8" type="line"/>
-      <point x="375" y="431.8" type="line"/>
-      <point x="375" y="422" type="line"/>
-      <point x="377.2" y="400.3" type="line"/>
-      <point x="380.2" y="383.1" type="line"/>
-      <point x="381" y="371.1" type="line"/>
-      <point x="433.4" y="-18" type="line"/>
-      <point x="539.1" y="-18" type="line"/>
-      <point x="455.9" y="544.2" type="line"/>
-      <point x="359.2" y="544.2" type="line"/>
-    </contour>
-    <contour>
-      <point x="261.8" y="178.4" type="line"/>
-      <point x="419.2" y="178.4" type="line"/>
-      <point x="414.7" y="201.7" type="line"/>
-      <point x="273.8" y="201.7" type="line"/>
-    </contour>
-    <contour>
-      <point x="414" y="585" type="curve"/>
-      <point x="440" y="585"/>
-      <point x="475" y="612"/>
-      <point x="480" y="642" type="curve"/>
-      <point x="485" y="674"/>
-      <point x="460" y="699"/>
-      <point x="434" y="699" type="curve"/>
-      <point x="408" y="699"/>
-      <point x="372" y="674"/>
-      <point x="367" y="642" type="curve"/>
-      <point x="362" y="612"/>
-      <point x="388" y="585"/>
+      <point x="420" y="613" type="curve"/>
+      <point x="446" y="613"/>
+      <point x="481" y="640"/>
+      <point x="486" y="670" type="curve"/>
+      <point x="491" y="702"/>
+      <point x="466" y="727"/>
+      <point x="440" y="727" type="curve"/>
+      <point x="414" y="727"/>
+      <point x="378" y="702"/>
+      <point x="373" y="670" type="curve"/>
+      <point x="368" y="640"/>
+      <point x="394" y="613"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>A.smcp</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

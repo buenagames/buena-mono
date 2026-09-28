@@ -6,37 +6,37 @@
   <anchor x="309" y="896" name="top"/>
   <anchor x="568" y="699" name="topright"/>
   <outline>
+    <component base="A"/>
     <contour>
-      <point x="318" y="620" type="line"/>
-      <point x="499" y="11" type="line"/>
-      <point x="573" y="11" type="line"/>
-      <point x="360" y="688" type="line"/>
-      <point x="259" y="688" type="line"/>
-      <point x="45" y="11" type="line"/>
-      <point x="118" y="11" type="line"/>
-      <point x="299" y="621" type="line"/>
-    </contour>
-    <contour>
-      <point x="491" y="188" type="line"/>
-      <point x="450" y="308" type="line"/>
-      <point x="155" y="308" type="line"/>
-      <point x="120" y="188" type="line"/>
-    </contour>
-    <contour>
-      <point x="170" y="896" type="line"/>
-      <point x="175" y="815"/>
-      <point x="222" y="783"/>
-      <point x="308" y="783" type="curve"/>
-      <point x="394" y="783"/>
-      <point x="441" y="815"/>
-      <point x="446" y="896" type="curve"/>
-      <point x="409" y="896" type="line"/>
-      <point x="405" y="864"/>
-      <point x="362" y="830"/>
-      <point x="308" y="830" type="curve"/>
-      <point x="254" y="830"/>
-      <point x="211" y="864"/>
-      <point x="207" y="896" type="curve"/>
+      <point x="170" y="897" type="line"/>
+      <point x="175" y="816"/>
+      <point x="222" y="784"/>
+      <point x="308" y="784" type="curve"/>
+      <point x="394" y="784"/>
+      <point x="441" y="816"/>
+      <point x="446" y="897" type="curve"/>
+      <point x="409" y="897" type="line"/>
+      <point x="405" y="865"/>
+      <point x="362" y="831"/>
+      <point x="308" y="831" type="curve"/>
+      <point x="254" y="831"/>
+      <point x="211" y="865"/>
+      <point x="207" y="897" type="curve"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>A</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

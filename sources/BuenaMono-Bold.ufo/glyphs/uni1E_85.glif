@@ -3,11 +3,11 @@
   <advance width="618"/>
   <unicode hex="1E85"/>
   <anchor x="309" y="-19" name="bottom"/>
-  <anchor x="310" y="724" name="top"/>
+  <anchor x="310" y="778" name="top"/>
   <anchor x="568" y="524" name="topright"/>
   <outline>
     <component base="w"/>
-    <component base="uni0308"/>
+    <component base="uni0308" yOffset="35"/>
   </outline>
   <lib>
     <dict>

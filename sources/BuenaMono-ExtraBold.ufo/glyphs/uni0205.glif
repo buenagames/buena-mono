@@ -2,75 +2,55 @@
 <glyph name="uni0205" format="2">
   <advance width="618"/>
   <unicode hex="0205"/>
-  <anchor x="309" y="-26" name="bottom"/>
-  <anchor x="309" y="791" name="top"/>
+  <anchor x="309" y="-32" name="bottom"/>
+  <anchor x="309" y="813" name="top"/>
   <anchor x="568" y="729" name="topright"/>
   <outline>
+    <component base="e"/>
     <contour>
-      <point x="345" y="-42" type="line"/>
-      <point x="402" y="-42" type="line"/>
-      <point x="471" y="-30" type="line"/>
-      <point x="552" y="7" type="line"/>
-      <point x="552" y="157" type="line"/>
-      <point x="453" y="109" type="line"/>
-      <point x="404" y="95" type="line"/>
-      <point x="351" y="95" type="line"/>
-      <point x="251" y="95" type="line"/>
-      <point x="200" y="127" type="line"/>
-      <point x="197" y="213" type="line"/>
-      <point x="576" y="213" type="line"/>
-      <point x="576" y="285" type="line"/>
-      <point x="576" y="452" type="line"/>
-      <point x="475" y="566" type="line"/>
-      <point x="323" y="566" type="line"/>
-      <point x="161" y="566" type="line"/>
-      <point x="43" y="445" type="line"/>
-      <point x="43" y="260" type="line"/>
-      <point x="43" y="72" type="line"/>
-      <point x="164" y="-42" type="line"/>
+      <point x="480" y="627" type="line"/>
+      <point x="401" y="630" type="line"/>
+      <point x="372" y="653"/>
+      <point x="345" y="682"/>
+      <point x="315" y="706" type="curve"/>
+      <point x="293" y="737"/>
+      <point x="271" y="768"/>
+      <point x="256" y="791" type="curve"/>
+      <point x="255" y="830" type="line"/>
+      <point x="390" y="834" type="line"/>
+      <point x="418" y="776"/>
+      <point x="451" y="715"/>
+      <point x="487" y="672" type="curve"/>
     </contour>
     <contour>
-      <point x="422" y="348" type="line"/>
-      <point x="203" y="348" type="line"/>
-      <point x="210" y="391" type="line"/>
-      <point x="249" y="430" type="line"/>
-      <point x="323" y="430" type="line"/>
-      <point x="392" y="430" type="line"/>
-      <point x="420" y="396" type="line"/>
-    </contour>
-    <contour>
-      <point x="480" y="567" type="line"/>
-      <point x="401" y="570" type="line"/>
-      <point x="372" y="593"/>
-      <point x="345" y="622"/>
-      <point x="315" y="646" type="curve"/>
-      <point x="293" y="677"/>
-      <point x="271" y="708"/>
-      <point x="256" y="731" type="curve"/>
-      <point x="255" y="770" type="line"/>
-      <point x="390" y="774" type="line"/>
-      <point x="418" y="716"/>
-      <point x="451" y="655"/>
-      <point x="487" y="612" type="curve"/>
-    </contour>
-    <contour>
-      <point x="308" y="571" type="line"/>
-      <point x="232" y="571" type="line"/>
-      <point x="203" y="594"/>
-      <point x="176" y="623"/>
-      <point x="142" y="644" type="curve"/>
-      <point x="118" y="672"/>
-      <point x="94" y="704"/>
-      <point x="78" y="729" type="curve"/>
-      <point x="86" y="771" type="line"/>
-      <point x="221" y="775" type="line"/>
-      <point x="245" y="715"/>
-      <point x="277" y="653"/>
-      <point x="316" y="613" type="curve"/>
+      <point x="308" y="631" type="line"/>
+      <point x="232" y="631" type="line"/>
+      <point x="203" y="654"/>
+      <point x="176" y="683"/>
+      <point x="142" y="704" type="curve"/>
+      <point x="118" y="732"/>
+      <point x="94" y="764"/>
+      <point x="78" y="789" type="curve"/>
+      <point x="86" y="831" type="line"/>
+      <point x="221" y="835" type="line"/>
+      <point x="245" y="775"/>
+      <point x="277" y="713"/>
+      <point x="316" y="673" type="curve"/>
     </contour>
   </outline>
   <lib>
     <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>e</string>
+        </dict>
+      </array>
       <key>com.schriftgestaltung.Glyphs.category</key>
       <string>Letter</string>
     </dict>

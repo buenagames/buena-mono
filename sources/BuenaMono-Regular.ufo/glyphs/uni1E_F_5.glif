@@ -6,39 +6,37 @@
   <anchor x="309" y="524" name="top"/>
   <anchor x="568" y="524" name="topright"/>
   <outline>
+    <component base="y"/>
     <contour>
-      <point x="476" y="516" type="line"/>
-      <point x="389" y="300" type="line"/>
-      <point x="312" y="104" type="line"/>
-      <point x="308" y="104" type="line"/>
-      <point x="231" y="300" type="line"/>
-      <point x="144" y="516" type="line"/>
-      <point x="62" y="516" type="line"/>
-      <point x="270" y="10" type="line"/>
-      <point x="212" y="-132" type="line"/>
-      <point x="92" y="-132" type="line"/>
-      <point x="92" y="-200" type="line"/>
-      <point x="168" y="-200" type="line"/>
-      <point x="245" y="-200"/>
-      <point x="276" y="-172"/>
-      <point x="300" y="-113" type="curve"/>
-      <point x="556" y="516" type="line"/>
-    </contour>
-    <contour>
-      <point x="469" y="-172" type="curve"/>
-      <point x="510" y="-172"/>
-      <point x="526" y="-153"/>
-      <point x="526" y="-126" type="curve"/>
-      <point x="526" y="-112" type="line"/>
-      <point x="526" y="-85"/>
-      <point x="510" y="-66"/>
-      <point x="469" y="-66" type="curve"/>
-      <point x="428" y="-66"/>
-      <point x="412" y="-85"/>
-      <point x="412" y="-112" type="curve"/>
-      <point x="412" y="-126" type="line"/>
-      <point x="412" y="-153"/>
-      <point x="428" y="-172"/>
+      <point x="471" y="-190" type="curve"/>
+      <point x="512" y="-190"/>
+      <point x="528" y="-171"/>
+      <point x="528" y="-144" type="curve"/>
+      <point x="528" y="-130" type="line"/>
+      <point x="528" y="-103"/>
+      <point x="512" y="-84"/>
+      <point x="471" y="-84" type="curve"/>
+      <point x="430" y="-84"/>
+      <point x="414" y="-103"/>
+      <point x="414" y="-130" type="curve"/>
+      <point x="414" y="-144" type="line"/>
+      <point x="414" y="-171"/>
+      <point x="430" y="-190"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>y</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

@@ -6,39 +6,37 @@
   <anchor x="309" y="919" name="top"/>
   <anchor x="568" y="699" name="topright"/>
   <outline>
+    <component base="E"/>
     <contour>
-      <point x="98" y="-5" type="line"/>
-      <point x="519" y="-5" type="line"/>
-      <point x="519" y="83" type="line"/>
-      <point x="196" y="83" type="line"/>
-      <point x="196" y="321" type="line"/>
-      <point x="501" y="321" type="line"/>
-      <point x="501" y="409" type="line"/>
-      <point x="196" y="409" type="line"/>
-      <point x="196" y="616" type="line"/>
-      <point x="519" y="616" type="line"/>
-      <point x="519" y="704" type="line"/>
-      <point x="98" y="704" type="line"/>
-    </contour>
-    <contour>
-      <point x="306" y="919" type="curve"/>
-      <point x="213" y="919"/>
-      <point x="165" y="870"/>
-      <point x="162" y="798" type="curve"/>
-      <point x="210" y="798" type="line"/>
-      <point x="222" y="853"/>
-      <point x="271" y="867"/>
-      <point x="309" y="867" type="curve"/>
-      <point x="349" y="867"/>
-      <point x="397" y="852"/>
-      <point x="408" y="798" type="curve"/>
-      <point x="456" y="798" type="line"/>
-      <point x="455" y="870"/>
-      <point x="404" y="919"/>
+      <point x="297" y="920" type="curve"/>
+      <point x="204" y="920"/>
+      <point x="156" y="871"/>
+      <point x="153" y="799" type="curve"/>
+      <point x="201" y="799" type="line"/>
+      <point x="213" y="854"/>
+      <point x="262" y="868"/>
+      <point x="300" y="868" type="curve"/>
+      <point x="340" y="868"/>
+      <point x="388" y="853"/>
+      <point x="399" y="799" type="curve"/>
+      <point x="447" y="799" type="line"/>
+      <point x="446" y="871"/>
+      <point x="395" y="920"/>
     </contour>
   </outline>
   <lib>
     <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>E</string>
+        </dict>
+      </array>
       <key>com.schriftgestaltung.Glyphs.category</key>
       <string>Letter</string>
     </dict>

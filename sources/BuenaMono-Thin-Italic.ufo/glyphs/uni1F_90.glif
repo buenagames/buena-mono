@@ -2,71 +2,60 @@
 <glyph name="uni1F90" format="2">
   <advance width="618"/>
   <unicode hex="1F90"/>
-  <anchor x="229.166" y="-191" name="bottom"/>
-  <anchor x="400.349" y="780" name="top"/>
-  <anchor x="614" y="524" name="topright"/>
+  <anchor x="238" y="-193" name="bottom"/>
+  <anchor x="410" y="781" name="top"/>
+  <anchor x="623" y="524" name="topright"/>
   <outline>
+    <component base="uni03B7"/>
     <contour>
-      <point x="414" y="518" type="curve"/>
-      <point x="352" y="518"/>
-      <point x="287" y="493"/>
-      <point x="202" y="401" type="curve"/>
-      <point x="204" y="425"/>
-      <point x="205" y="510"/>
-      <point x="201" y="519" type="curve"/>
-      <point x="172" y="515" type="line"/>
-      <point x="173" y="486"/>
-      <point x="179" y="422"/>
-      <point x="166" y="346" type="curve"/>
-      <point x="108" y="16" type="line"/>
-      <point x="138" y="16" type="line"/>
-      <point x="204" y="393" type="line"/>
-      <point x="242" y="439"/>
-      <point x="327" y="499"/>
-      <point x="394" y="499" type="curve"/>
-      <point x="488" y="499"/>
-      <point x="501" y="434"/>
-      <point x="480" y="314" type="curve"/>
-      <point x="391" y="-191" type="line"/>
-      <point x="422" y="-186" type="line"/>
-      <point x="522" y="380" type="line"/>
-      <point x="539" y="476"/>
-      <point x="519" y="518"/>
+      <point x="447" y="784" type="curve"/>
+      <point x="421" y="784"/>
+      <point x="415" y="780"/>
+      <point x="410" y="753" type="curve"/>
+      <point x="407" y="738"/>
+      <point x="409" y="735"/>
+      <point x="425" y="720" type="curve"/>
+      <point x="379" y="612" type="line"/>
+      <point x="391" y="612" type="line"/>
+      <point x="454" y="713" type="line"/>
+      <point x="468" y="735"/>
+      <point x="469" y="738"/>
+      <point x="472" y="753" type="curve"/>
+      <point x="477" y="780"/>
+      <point x="473" y="784"/>
     </contour>
     <contour>
-      <point x="450" y="780" type="curve"/>
-      <point x="424" y="780"/>
-      <point x="418" y="776"/>
-      <point x="413" y="749" type="curve"/>
-      <point x="410" y="734"/>
-      <point x="412" y="731"/>
-      <point x="428" y="716" type="curve"/>
-      <point x="382" y="608" type="line"/>
-      <point x="394" y="608" type="line"/>
-      <point x="457" y="709" type="line"/>
-      <point x="471" y="731"/>
-      <point x="472" y="734"/>
-      <point x="475" y="749" type="curve"/>
-      <point x="480" y="776"/>
-      <point x="476" y="780"/>
-    </contour>
-    <contour>
-      <point x="161" y="-168" type="curve"/>
-      <point x="206" y="-168"/>
-      <point x="213" y="-162"/>
-      <point x="235" y="-147" type="curve"/>
-      <point x="226" y="-133" type="line"/>
-      <point x="206" y="-145"/>
-      <point x="195" y="-146"/>
-      <point x="169" y="-146" type="curve"/>
-      <point x="141" y="-146"/>
-      <point x="115" y="-116"/>
-      <point x="120" y="-88" type="curve"/>
-      <point x="126" y="-54" type="line"/>
-      <point x="95" y="-54" type="line"/>
-      <point x="89" y="-89" type="line"/>
-      <point x="79" y="-146"/>
-      <point x="97" y="-168"/>
+      <point x="155" y="-179" type="curve"/>
+      <point x="200" y="-179"/>
+      <point x="207" y="-173"/>
+      <point x="229" y="-158" type="curve"/>
+      <point x="220" y="-144" type="line"/>
+      <point x="200" y="-156"/>
+      <point x="189" y="-157"/>
+      <point x="163" y="-157" type="curve"/>
+      <point x="135" y="-157"/>
+      <point x="109" y="-127"/>
+      <point x="114" y="-99" type="curve"/>
+      <point x="120" y="-65" type="line"/>
+      <point x="89" y="-65" type="line"/>
+      <point x="83" y="-100" type="line"/>
+      <point x="73" y="-157"/>
+      <point x="91" y="-179"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>uni03B7</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

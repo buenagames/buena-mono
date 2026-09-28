@@ -2,33 +2,27 @@
 <glyph name="uni1E0E.smcp" format="2">
   <advance width="618"/>
   <outline>
+    <component base="D.smcp"/>
     <contour>
-      <point x="144.5" y="516.5" type="line"/>
-      <point x="144.5" y="8.2" type="line"/>
-      <point x="265.1" y="8.2" type="line"/>
-      <point x="407.6" y="8.2"/>
-      <point x="473.5" y="115.4"/>
-      <point x="473.5" y="264.6" type="curve"/>
-      <point x="473.5" y="413.8"/>
-      <point x="414.3" y="516.5"/>
-      <point x="256.9" y="516.5" type="curve"/>
-    </contour>
-    <contour>
-      <point x="262.1" y="38.2" type="curve"/>
-      <point x="180.4" y="38.2" type="line"/>
-      <point x="180.4" y="487.3" type="line"/>
-      <point x="247.2" y="487.3" type="line"/>
-      <point x="376.8" y="487.3"/>
-      <point x="436.1" y="395.8"/>
-      <point x="436.1" y="263.9" type="curve"/>
-      <point x="436.1" y="141.7"/>
-      <point x="376.8" y="38.2"/>
-    </contour>
-    <contour>
-      <point x="216" y="-46" type="line"/>
-      <point x="216" y="-74" type="line"/>
-      <point x="402" y="-74" type="line"/>
-      <point x="402" y="-46" type="line"/>
+      <point x="216" y="-42" type="line"/>
+      <point x="216" y="-70" type="line"/>
+      <point x="402" y="-70" type="line"/>
+      <point x="402" y="-42" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>D.smcp</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

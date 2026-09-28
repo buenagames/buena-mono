@@ -3,40 +3,33 @@
   <advance width="618"/>
   <unicode hex="01D4"/>
   <anchor x="309" y="-19" name="bottom"/>
-  <anchor x="309" y="748" name="top"/>
+  <anchor x="309" y="855" name="top"/>
   <anchor x="568" y="524" name="topright"/>
   <outline>
+    <component base="u"/>
     <contour>
-      <point x="415" y="65" type="line"/>
-      <point x="415" y="-19" type="line"/>
-      <point x="533" y="-19" type="line"/>
-      <point x="533" y="535" type="line"/>
-      <point x="415" y="535" type="line"/>
-      <point x="415" y="158" type="line"/>
-      <point x="415" y="89"/>
-      <point x="370" y="78"/>
-      <point x="306" y="78" type="curve"/>
-      <point x="226" y="78"/>
-      <point x="203" y="104"/>
-      <point x="203" y="199" type="curve"/>
-      <point x="203" y="535" type="line"/>
-      <point x="85" y="535" type="line"/>
-      <point x="85" y="185" type="line"/>
-      <point x="85" y="60"/>
-      <point x="175" y="-31"/>
-      <point x="283" y="-31" type="curve"/>
-      <point x="368" y="-31"/>
-      <point x="427" y="26"/>
-      <point x="443" y="65" type="curve"/>
-    </contour>
-    <contour>
-      <point x="251" y="580" type="line"/>
-      <point x="369" y="580" type="line"/>
-      <point x="498" y="746" type="line"/>
-      <point x="427" y="798" type="line"/>
-      <point x="312" y="683" type="line"/>
-      <point x="197" y="798" type="line"/>
-      <point x="122" y="746" type="line"/>
+      <point x="251" y="645" type="line"/>
+      <point x="369" y="645" type="line"/>
+      <point x="498" y="811" type="line"/>
+      <point x="427" y="863" type="line"/>
+      <point x="312" y="748" type="line"/>
+      <point x="197" y="863" type="line"/>
+      <point x="122" y="811" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>u</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

@@ -2,38 +2,34 @@
 <glyph name="uni0134" format="2">
   <advance width="618"/>
   <unicode hex="0134"/>
-  <anchor x="260.697" y="-13" name="bottom"/>
-  <anchor x="424.617" y="917" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="226" y="-32" name="bottom"/>
+  <anchor x="415" y="1036" name="top"/>
+  <anchor x="614" y="699" name="topright"/>
   <outline>
+    <component base="J"/>
     <contour>
-      <point x="591" y="725" type="line"/>
-      <point x="201" y="725" type="line"/>
-      <point x="179" y="598" type="line"/>
-      <point x="432" y="598" type="line"/>
-      <point x="360" y="198" type="line"/>
-      <point x="344" y="106"/>
-      <point x="322" y="89"/>
-      <point x="246" y="89" type="curve"/>
-      <point x="169" y="89"/>
-      <point x="169" y="110"/>
-      <point x="164" y="195" type="curve"/>
-      <point x="29" y="167" type="line"/>
-      <point x="32" y="42"/>
-      <point x="120" y="-39"/>
-      <point x="227" y="-39" type="curve"/>
-      <point x="347" y="-39"/>
-      <point x="475" y="62"/>
-      <point x="496" y="179" type="curve"/>
-    </contour>
-    <contour>
-      <point x="502" y="962" type="line"/>
-      <point x="375" y="962" type="line"/>
-      <point x="209" y="787" type="line"/>
-      <point x="284" y="727" type="line"/>
-      <point x="418" y="840" type="line"/>
-      <point x="513" y="725" type="line"/>
-      <point x="609" y="784" type="line"/>
+      <point x="546" y="1048" type="line"/>
+      <point x="419" y="1048" type="line"/>
+      <point x="253" y="873" type="line"/>
+      <point x="328" y="813" type="line"/>
+      <point x="462" y="926" type="line"/>
+      <point x="557" y="811" type="line"/>
+      <point x="653" y="870" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>J</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

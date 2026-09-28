@@ -2,45 +2,34 @@
 <glyph name="uni0157" format="2">
   <advance width="618"/>
   <unicode hex="0157"/>
-  <anchor x="309" y="-278" name="bottom"/>
-  <anchor x="309" y="537" name="top"/>
+  <anchor x="309" y="-361" name="bottom"/>
+  <anchor x="309" y="557" name="top"/>
   <anchor x="568" y="524" name="topright"/>
   <outline>
-    <contour>
-      <point x="52" y="-32" type="line"/>
-      <point x="200" y="-32" type="line"/>
-      <point x="200" y="254" type="line"/>
-      <point x="200" y="377"/>
-      <point x="236" y="434"/>
-      <point x="341" y="434" type="curve"/>
-      <point x="412" y="434"/>
-      <point x="414" y="426"/>
-      <point x="431" y="337" type="curve"/>
-      <point x="576" y="337" type="line"/>
-      <point x="563" y="476"/>
-      <point x="469" y="571"/>
-      <point x="349" y="571" type="curve"/>
-      <point x="298" y="571"/>
-      <point x="205" y="581"/>
-      <point x="184" y="537" type="curve"/>
-      <point x="194" y="556" type="line"/>
-      <point x="52" y="556" type="line"/>
-    </contour>
-    <contour>
-      <point x="44" y="-203" type="line"/>
-      <point x="129" y="-203" type="line"/>
-      <point x="129" y="-182" type="line"/>
-      <point x="103" y="-209"/>
-      <point x="116" y="-194"/>
-      <point x="87" y="-194" type="curve"/>
-      <point x="44" y="-194" type="line"/>
-      <point x="44" y="-297" type="line"/>
-      <point x="85" y="-297" type="line"/>
-      <point x="135" y="-297"/>
-      <point x="207" y="-232"/>
-      <point x="207" y="-180" type="curve"/>
-      <point x="207" y="-43" type="line"/>
-      <point x="44" y="-43" type="line"/>
-    </contour>
+    <component base="r"/>
+    <component base="uni0326" xOffset="-132" yOffset="-77"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>r</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>uni0326</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

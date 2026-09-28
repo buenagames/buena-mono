@@ -2,41 +2,34 @@
 <glyph name="uni0125" format="2">
   <advance width="618"/>
   <unicode hex="0125"/>
-  <anchor x="265.834" y="16" name="bottom"/>
-  <anchor x="432.766" y="963" name="top"/>
+  <anchor x="266" y="16" name="bottom"/>
+  <anchor x="427" y="931" name="top"/>
   <anchor x="614" y="524" name="topright"/>
   <outline>
+    <component base="h"/>
     <contour>
-      <point x="208" y="724" type="line"/>
-      <point x="84" y="16" type="line"/>
-      <point x="132" y="16" type="line"/>
-      <point x="192" y="358" type="line"/>
-      <point x="204" y="425"/>
-      <point x="291" y="473"/>
-      <point x="355" y="473" type="curve"/>
-      <point x="435" y="473"/>
-      <point x="483" y="412"/>
-      <point x="467" y="317" type="curve"/>
-      <point x="414" y="16" type="line"/>
-      <point x="462" y="16" type="line"/>
-      <point x="517" y="331" type="line"/>
-      <point x="539" y="456"/>
-      <point x="494" y="512"/>
-      <point x="386" y="512" type="curve"/>
-      <point x="301" y="512"/>
-      <point x="269" y="477"/>
-      <point x="233" y="416" type="curve"/>
-      <point x="202" y="416" type="line"/>
-      <point x="256" y="724" type="line"/>
-    </contour>
-    <contour>
-      <point x="312" y="931" type="line"/>
-      <point x="228" y="931" type="line"/>
-      <point x="111" y="807" type="line"/>
-      <point x="126" y="794" type="line"/>
-      <point x="266" y="913" type="line"/>
-      <point x="364" y="794" type="line"/>
-      <point x="387" y="808" type="line"/>
+      <point x="303" y="920" type="line"/>
+      <point x="219" y="920" type="line"/>
+      <point x="102" y="796" type="line"/>
+      <point x="117" y="783" type="line"/>
+      <point x="257" y="902" type="line"/>
+      <point x="355" y="783" type="line"/>
+      <point x="378" y="797" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>h</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

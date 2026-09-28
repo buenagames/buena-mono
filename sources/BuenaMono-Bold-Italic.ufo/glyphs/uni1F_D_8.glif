@@ -2,39 +2,41 @@
 <glyph name="uni1FD8" format="2">
   <advance width="618"/>
   <unicode hex="1FD8"/>
-  <anchor x="259.634" y="-19" name="bottom"/>
-  <anchor x="425.326" y="921" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="241" y="-19" name="bottom"/>
+  <anchor x="413" y="956" name="top"/>
+  <anchor x="627" y="699" name="topright"/>
   <outline>
+    <component base="uni0399"/>
     <contour>
-      <point x="601" y="692" type="line"/>
-      <point x="141" y="692" type="line"/>
-      <point x="118" y="562" type="line"/>
-      <point x="261" y="562" type="line"/>
-      <point x="184" y="125" type="line"/>
-      <point x="41" y="125" type="line"/>
-      <point x="18" y="-5" type="line"/>
-      <point x="478" y="-5" type="line"/>
-      <point x="501" y="125" type="line"/>
-      <point x="358" y="125" type="line"/>
-      <point x="435" y="562" type="line"/>
-      <point x="578" y="562" type="line"/>
-    </contour>
-    <contour>
-      <point x="379" y="740" type="curve"/>
-      <point x="489" y="740"/>
-      <point x="560" y="813"/>
-      <point x="587" y="904" type="curve"/>
-      <point x="493" y="921" type="line"/>
-      <point x="470" y="874"/>
-      <point x="446" y="860"/>
-      <point x="400" y="860" type="curve"/>
-      <point x="354" y="860"/>
-      <point x="336" y="874"/>
-      <point x="329" y="921" type="curve"/>
-      <point x="229" y="904" type="line"/>
-      <point x="224" y="813"/>
-      <point x="269" y="740"/>
+      <point x="387" y="807" type="curve"/>
+      <point x="497" y="807"/>
+      <point x="568" y="880"/>
+      <point x="595" y="971" type="curve"/>
+      <point x="501" y="988" type="line"/>
+      <point x="478" y="941"/>
+      <point x="454" y="927"/>
+      <point x="408" y="927" type="curve"/>
+      <point x="362" y="927"/>
+      <point x="344" y="941"/>
+      <point x="337" y="988" type="curve"/>
+      <point x="237" y="971" type="line"/>
+      <point x="232" y="880"/>
+      <point x="277" y="807"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>uni0399</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

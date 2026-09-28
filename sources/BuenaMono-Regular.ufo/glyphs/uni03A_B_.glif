@@ -6,17 +6,7 @@
   <anchor x="309" y="909" name="top"/>
   <anchor x="568" y="699" name="topright"/>
   <outline>
-    <contour>
-      <point x="353" y="287" type="line"/>
-      <point x="623" y="724" type="line"/>
-      <point x="524" y="724" type="line"/>
-      <point x="314" y="364" type="line"/>
-      <point x="96" y="724" type="line"/>
-      <point x="-6" y="724" type="line"/>
-      <point x="270" y="287" type="line"/>
-      <point x="270" y="5" type="line"/>
-      <point x="353" y="5" type="line"/>
-    </contour>
+    <component base="uni03A5"/>
     <contour>
       <point x="271" y="909" type="line"/>
       <point x="177" y="909" type="line"/>
@@ -30,4 +20,19 @@
       <point x="433" y="816" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>uni03A5</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

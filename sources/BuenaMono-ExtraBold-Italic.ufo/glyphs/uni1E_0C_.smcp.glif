@@ -2,43 +2,37 @@
 <glyph name="uni1E0C.smcp" format="2">
   <advance width="618"/>
   <outline>
+    <component base="D.smcp"/>
     <contour>
-      <point x="168" y="556" type="line"/>
-      <point x="65" y="-31" type="line"/>
-      <point x="227" y="-31" type="line"/>
-      <point x="370" y="-31"/>
-      <point x="498" y="113"/>
-      <point x="524" y="262" type="curve"/>
-      <point x="550" y="412"/>
-      <point x="475" y="556"/>
-      <point x="317" y="556" type="curve"/>
-    </contour>
-    <contour>
-      <point x="238" y="78" type="curve"/>
-      <point x="199" y="78" type="line"/>
-      <point x="264" y="448" type="line"/>
-      <point x="293" y="448" type="line"/>
-      <point x="423" y="448"/>
-      <point x="432" y="398"/>
-      <point x="409" y="266" type="curve"/>
-      <point x="387" y="144"/>
-      <point x="353" y="78"/>
-    </contour>
-    <contour>
-      <point x="298.5" y="-156.3" type="curve"/>
-      <point x="329.8" y="-156.3"/>
-      <point x="375" y="-117.3"/>
-      <point x="379.3" y="-96.5" type="curve"/>
-      <point x="380.8" y="-86" type="line"/>
-      <point x="384" y="-66.3"/>
-      <point x="349.8" y="-22.3"/>
-      <point x="319.5" y="-22.3" type="curve"/>
-      <point x="288.2" y="-22.3"/>
-      <point x="244" y="-61.3"/>
-      <point x="239.7" y="-82" type="curve"/>
-      <point x="239.2" y="-91.5" type="line"/>
-      <point x="235" y="-112.3"/>
-      <point x="268.2" y="-156.3"/>
+      <point x="238.5" y="-210.3" type="curve"/>
+      <point x="269.8" y="-210.3"/>
+      <point x="315" y="-171.3"/>
+      <point x="319.3" y="-150.5" type="curve"/>
+      <point x="320.8" y="-140" type="line"/>
+      <point x="324" y="-120.3"/>
+      <point x="289.8" y="-76.3"/>
+      <point x="259.5" y="-76.3" type="curve"/>
+      <point x="228.2" y="-76.3"/>
+      <point x="184" y="-115.3"/>
+      <point x="179.7" y="-136" type="curve"/>
+      <point x="179.2" y="-145.5" type="line"/>
+      <point x="175" y="-166.3"/>
+      <point x="208.2" y="-210.3"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>D.smcp</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

@@ -2,30 +2,37 @@
 <glyph name="uni1E7E.smcp" format="2">
   <advance width="618"/>
   <outline>
+    <component base="V.smcp"/>
     <contour>
-      <point x="241.9" y="-3.7" type="line"/>
-      <point x="518.5" y="528.5" type="line"/>
-      <point x="453.3" y="528.5" type="line"/>
-      <point x="232.9" y="95.2" type="line"/>
-      <point x="163.2" y="528.5" type="line"/>
-      <point x="99.5" y="528.5" type="line"/>
-      <point x="187.2" y="-3.7" type="line"/>
-    </contour>
-    <contour>
-      <point x="301.1" y="-128.9" type="curve"/>
-      <point x="331.9" y="-128.9"/>
-      <point x="346.9" y="-114.7"/>
-      <point x="350.6" y="-94.5" type="curve"/>
-      <point x="352.1" y="-84" type="line"/>
-      <point x="355.9" y="-63.7"/>
-      <point x="346.1" y="-49.5"/>
-      <point x="315.4" y="-49.5" type="curve"/>
-      <point x="284.6" y="-49.5"/>
-      <point x="270.4" y="-63.7"/>
-      <point x="266.6" y="-84" type="curve"/>
-      <point x="265.1" y="-94.5" type="line"/>
-      <point x="261.4" y="-114.7"/>
-      <point x="270.4" y="-128.9"/>
+      <point x="194.1" y="-124.9" type="curve"/>
+      <point x="224.9" y="-124.9"/>
+      <point x="239.9" y="-110.7"/>
+      <point x="243.6" y="-90.5" type="curve"/>
+      <point x="245.1" y="-80" type="line"/>
+      <point x="248.9" y="-59.7"/>
+      <point x="239.1" y="-45.5"/>
+      <point x="208.4" y="-45.5" type="curve"/>
+      <point x="177.6" y="-45.5"/>
+      <point x="163.4" y="-59.7"/>
+      <point x="159.6" y="-80" type="curve"/>
+      <point x="158.1" y="-90.5" type="line"/>
+      <point x="154.4" y="-110.7"/>
+      <point x="163.4" y="-124.9"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>V.smcp</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

@@ -2,37 +2,39 @@
 <glyph name="uni1EBA" format="2">
   <advance width="618"/>
   <unicode hex="1EBA"/>
-  <anchor x="259.634" y="-19" name="bottom"/>
-  <anchor x="423.554" y="911" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="247" y="-19" name="bottom"/>
+  <anchor x="426" y="992" name="top"/>
+  <anchor x="633" y="699" name="topright"/>
   <outline>
+    <component base="E"/>
     <contour>
-      <point x="16" y="-14" type="line"/>
-      <point x="474" y="-14" type="line"/>
-      <point x="492" y="87" type="line"/>
-      <point x="146" y="87" type="line"/>
-      <point x="184" y="303" type="line"/>
-      <point x="518" y="303" type="line"/>
-      <point x="536" y="404" type="line"/>
-      <point x="202" y="404" type="line"/>
-      <point x="238" y="611" type="line"/>
-      <point x="584" y="611" type="line"/>
-      <point x="601" y="712" type="line"/>
-      <point x="143" y="712" type="line"/>
-    </contour>
-    <contour>
-      <point x="315" y="949" type="line"/>
-      <point x="299" y="860" type="line"/>
-      <point x="408" y="860" type="line"/>
-      <point x="337" y="764" type="line"/>
-      <point x="400" y="729" type="line"/>
-      <point x="437" y="768" type="line"/>
-      <point x="475" y="807"/>
-      <point x="504" y="851"/>
-      <point x="509" y="880" type="curve"/>
-      <point x="514" y="911"/>
-      <point x="489" y="949"/>
-      <point x="438" y="949" type="curve"/>
+      <point x="320" y="1004" type="line"/>
+      <point x="304" y="915" type="line"/>
+      <point x="413" y="915" type="line"/>
+      <point x="342" y="819" type="line"/>
+      <point x="405" y="784" type="line"/>
+      <point x="442" y="823" type="line"/>
+      <point x="480" y="862"/>
+      <point x="509" y="906"/>
+      <point x="514" y="935" type="curve"/>
+      <point x="519" y="966"/>
+      <point x="494" y="1004"/>
+      <point x="443" y="1004" type="curve"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>E</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

@@ -2,37 +2,39 @@
 <glyph name="uni1EC8" format="2">
   <advance width="618"/>
   <unicode hex="1EC8"/>
-  <anchor x="259.634" y="-19" name="bottom"/>
-  <anchor x="423.554" y="911" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="245" y="-19" name="bottom"/>
+  <anchor x="424" y="992" name="top"/>
+  <anchor x="631" y="699" name="topright"/>
   <outline>
+    <component base="I"/>
     <contour>
-      <point x="15" y="-14" type="line"/>
-      <point x="475" y="-14" type="line"/>
-      <point x="492" y="81" type="line"/>
-      <point x="318" y="81" type="line"/>
-      <point x="412" y="617" type="line"/>
-      <point x="586" y="617" type="line"/>
-      <point x="602" y="712" type="line"/>
-      <point x="142" y="712" type="line"/>
-      <point x="126" y="617" type="line"/>
-      <point x="300" y="617" type="line"/>
-      <point x="206" y="81" type="line"/>
-      <point x="32" y="81" type="line"/>
-    </contour>
-    <contour>
-      <point x="315" y="949" type="line"/>
-      <point x="299" y="860" type="line"/>
-      <point x="408" y="860" type="line"/>
-      <point x="337" y="764" type="line"/>
-      <point x="400" y="729" type="line"/>
-      <point x="437" y="768" type="line"/>
-      <point x="475" y="807"/>
-      <point x="504" y="851"/>
-      <point x="509" y="880" type="curve"/>
-      <point x="514" y="911"/>
-      <point x="489" y="949"/>
-      <point x="438" y="949" type="curve"/>
+      <point x="328" y="1004" type="line"/>
+      <point x="312" y="915" type="line"/>
+      <point x="421" y="915" type="line"/>
+      <point x="350" y="819" type="line"/>
+      <point x="413" y="784" type="line"/>
+      <point x="450" y="823" type="line"/>
+      <point x="488" y="862"/>
+      <point x="517" y="906"/>
+      <point x="522" y="935" type="curve"/>
+      <point x="527" y="966"/>
+      <point x="502" y="1004"/>
+      <point x="451" y="1004" type="curve"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>I</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

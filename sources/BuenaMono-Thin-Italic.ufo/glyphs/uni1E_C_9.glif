@@ -2,35 +2,39 @@
 <glyph name="uni1EC9" format="2">
   <advance width="618"/>
   <unicode hex="1EC9"/>
-  <anchor x="265.834" y="16" name="bottom"/>
-  <anchor x="400.526" y="781" name="top"/>
-  <anchor x="614" y="524" name="topright"/>
+  <anchor x="306" y="16" name="bottom"/>
+  <anchor x="435" y="749" name="top"/>
+  <anchor x="654" y="524" name="topright"/>
   <outline>
+    <component base="uni0131"/>
     <contour>
-      <point x="108" y="52" type="line"/>
-      <point x="102" y="16" type="line"/>
-      <point x="510" y="16" type="line"/>
-      <point x="516" y="52" type="line"/>
-      <point x="342" y="52" type="line"/>
-      <point x="421" y="500" type="line"/>
-      <point x="187" y="500" type="line"/>
-      <point x="181" y="464" type="line"/>
-      <point x="367" y="464" type="line"/>
-      <point x="294" y="52" type="line"/>
-    </contour>
-    <contour>
-      <point x="373" y="749" type="line"/>
-      <point x="368" y="720" type="line"/>
-      <point x="497" y="720" type="line"/>
-      <point x="415" y="607" type="line"/>
-      <point x="433" y="597" type="line"/>
-      <point x="451" y="617" type="line"/>
-      <point x="489" y="656"/>
-      <point x="508" y="681"/>
-      <point x="513" y="710" type="curve"/>
-      <point x="518" y="741"/>
-      <point x="517" y="749"/>
-      <point x="466" y="749" type="curve"/>
+      <point x="378" y="757" type="line"/>
+      <point x="373" y="728" type="line"/>
+      <point x="502" y="728" type="line"/>
+      <point x="420" y="615" type="line"/>
+      <point x="438" y="605" type="line"/>
+      <point x="456" y="625" type="line"/>
+      <point x="494" y="664"/>
+      <point x="513" y="689"/>
+      <point x="518" y="718" type="curve"/>
+      <point x="523" y="749"/>
+      <point x="522" y="757"/>
+      <point x="471" y="757" type="curve"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>uni0131</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

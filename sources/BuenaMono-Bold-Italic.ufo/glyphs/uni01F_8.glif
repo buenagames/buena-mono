@@ -2,45 +2,37 @@
 <glyph name="uni01F8" format="2">
   <advance width="618"/>
   <unicode hex="01F8"/>
-  <anchor x="259.634" y="-19" name="bottom"/>
-  <anchor x="427.983" y="936" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="243" y="-19" name="bottom"/>
+  <anchor x="423" y="998" name="top"/>
+  <anchor x="629" y="699" name="topright"/>
   <outline>
+    <component base="N"/>
     <contour>
-      <point x="-6" y="-24" type="line"/>
-      <point x="127" y="-24" type="line"/>
-      <point x="200" y="390" type="line"/>
-      <point x="213" y="464" type="line"/>
-      <point x="218" y="538" type="line"/>
-      <point x="224" y="595" type="line"/>
-      <point x="183" y="595" type="line"/>
-      <point x="346" y="-24" type="line"/>
-      <point x="492" y="-24" type="line"/>
-      <point x="623" y="723" type="line"/>
-      <point x="490" y="723" type="line"/>
-      <point x="421" y="329" type="line"/>
-      <point x="407" y="251" type="line"/>
-      <point x="397" y="191" type="line"/>
-      <point x="394" y="130" type="line"/>
-      <point x="436" y="130" type="line"/>
-      <point x="280" y="723" type="line"/>
-      <point x="125" y="723" type="line"/>
-    </contour>
-    <contour>
-      <point x="390" y="754" type="curve"/>
-      <point x="457" y="754" type="line"/>
-      <point x="465" y="797" type="line"/>
-      <point x="447" y="825"/>
-      <point x="418" y="888"/>
-      <point x="401" y="938" type="curve"/>
-      <point x="285" y="938" type="line"/>
-      <point x="276" y="896" type="line"/>
-      <point x="288" y="870"/>
-      <point x="348" y="793"/>
+      <point x="400" y="815" type="curve"/>
+      <point x="467" y="815" type="line"/>
+      <point x="475" y="858" type="line"/>
+      <point x="457" y="886"/>
+      <point x="428" y="949"/>
+      <point x="411" y="999" type="curve"/>
+      <point x="295" y="999" type="line"/>
+      <point x="286" y="957" type="line"/>
+      <point x="298" y="931"/>
+      <point x="358" y="854"/>
     </contour>
   </outline>
   <lib>
     <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>N</string>
+        </dict>
+      </array>
       <key>com.schriftgestaltung.Glyphs.category</key>
       <string>Letter</string>
     </dict>

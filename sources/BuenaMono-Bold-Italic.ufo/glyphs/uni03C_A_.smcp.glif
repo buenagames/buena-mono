@@ -1,10 +1,25 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="uni03CA.smcp" format="2">
   <advance width="618"/>
-  <anchor x="259.634" y="-19.0" name="bottom"/>
-  <anchor x="419.834" y="890.0" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="241" y="-19" name="bottom"/>
+  <anchor x="415" y="966" name="top"/>
+  <anchor x="627" y="699" name="topright"/>
   <outline>
     <component base="uni03AA"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>uni03AA</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

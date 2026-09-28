@@ -3,9 +3,54 @@
   <advance width="618"/>
   <unicode hex="222D"/>
   <outline>
-    <component base="uni222B" xOffset="-154"/>
-    <component base="uni222B"/>
-    <component base="uni222B" xOffset="154"/>
+    <contour>
+      <point x="-60" y="-88" type="line"/>
+      <point x="-87" y="-244" type="line"/>
+      <point x="66" y="-244" type="line"/>
+      <point x="119" y="-244"/>
+      <point x="192" y="-151"/>
+      <point x="204" y="-82" type="curve"/>
+      <point x="329" y="627" type="line"/>
+      <point x="471" y="627" type="line"/>
+      <point x="499" y="784" type="line"/>
+      <point x="346" y="784" type="line"/>
+      <point x="293" y="784"/>
+      <point x="220" y="691"/>
+      <point x="208" y="622" type="curve"/>
+      <point x="82" y="-88" type="line"/>
+    </contour>
+    <contour>
+      <point x="44" y="-88" type="line"/>
+      <point x="16" y="-244" type="line"/>
+      <point x="169" y="-244" type="line"/>
+      <point x="222" y="-244"/>
+      <point x="295" y="-151"/>
+      <point x="307" y="-82" type="curve"/>
+      <point x="432" y="627" type="line"/>
+      <point x="574" y="627" type="line"/>
+      <point x="602" y="784" type="line"/>
+      <point x="449" y="784" type="line"/>
+      <point x="396" y="784"/>
+      <point x="323" y="691"/>
+      <point x="311" y="622" type="curve"/>
+      <point x="186" y="-88" type="line"/>
+    </contour>
+    <contour>
+      <point x="147" y="-88" type="line"/>
+      <point x="119" y="-244" type="line"/>
+      <point x="272" y="-244" type="line"/>
+      <point x="325" y="-244"/>
+      <point x="398" y="-151"/>
+      <point x="410" y="-82" type="curve"/>
+      <point x="535" y="627" type="line"/>
+      <point x="677" y="627" type="line"/>
+      <point x="705" y="784" type="line"/>
+      <point x="552" y="784" type="line"/>
+      <point x="499" y="784"/>
+      <point x="426" y="691"/>
+      <point x="414" y="622" type="curve"/>
+      <point x="289" y="-88" type="line"/>
+    </contour>
   </outline>
   <lib>
     <dict>

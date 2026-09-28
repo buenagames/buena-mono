@@ -2,37 +2,35 @@
 <glyph name="uni01E8" format="2">
   <advance width="618"/>
   <unicode hex="01E8"/>
-  <anchor x="260.697" y="-13" name="bottom"/>
-  <anchor x="420.366" y="893" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="254" y="-32" name="bottom"/>
+  <anchor x="440" y="1025" name="top"/>
+  <anchor x="641" y="699" name="topright"/>
   <outline>
+    <component base="K"/>
     <contour>
-      <point x="91" y="151" type="line"/>
-      <point x="695" y="737" type="line"/>
-      <point x="515" y="737" type="line"/>
-      <point x="127" y="353" type="line"/>
-    </contour>
-    <contour>
-      <point x="-15" y="-27" type="line"/>
-      <point x="125" y="-27" type="line"/>
-      <point x="258" y="737" type="line"/>
-      <point x="118" y="737" type="line"/>
-    </contour>
-    <contour>
-      <point x="393" y="-25" type="line"/>
-      <point x="561" y="-25" type="line"/>
-      <point x="305" y="466" type="line"/>
-      <point x="191" y="366" type="line"/>
-    </contour>
-    <contour>
-      <point x="219" y="945" type="line"/>
-      <point x="311" y="768" type="line"/>
-      <point x="428" y="768" type="line"/>
-      <point x="584" y="945" type="line"/>
-      <point x="457" y="945" type="line"/>
-      <point x="351" y="835" type="line"/>
-      <point x="406" y="835" type="line"/>
-      <point x="339" y="945" type="line"/>
+      <point x="228" y="1025" type="line"/>
+      <point x="320" y="848" type="line"/>
+      <point x="437" y="848" type="line"/>
+      <point x="593" y="1025" type="line"/>
+      <point x="466" y="1025" type="line"/>
+      <point x="360" y="915" type="line"/>
+      <point x="415" y="915" type="line"/>
+      <point x="348" y="1025" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>K</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

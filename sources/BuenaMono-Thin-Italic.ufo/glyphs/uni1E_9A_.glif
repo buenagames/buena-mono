@@ -2,9 +2,9 @@
 <glyph name="uni1E9A" format="2">
   <advance width="618"/>
   <unicode hex="1E9A"/>
-  <anchor x="265.834" y="16" name="bottom"/>
-  <anchor x="388.166" y="713" name="top"/>
-  <anchor x="650" y="729" name="topright"/>
+  <anchor x="70" y="16" name="bottom"/>
+  <anchor x="189" y="694" name="top"/>
+  <anchor x="454" y="729" name="topright"/>
   <outline>
     <contour>
       <point x="289" y="694" type="curve"/>
@@ -20,10 +20,21 @@
       <point x="354" y="663"/>
       <point x="328" y="694"/>
     </contour>
-    <component base="a"/>
+    <component base="a" xOffset="-229"/>
   </outline>
   <lib>
     <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>a</string>
+        </dict>
+      </array>
       <key>com.schriftgestaltung.Glyphs.category</key>
       <string>Letter</string>
       <key>com.schriftgestaltung.Glyphs.shapeOrder</key>

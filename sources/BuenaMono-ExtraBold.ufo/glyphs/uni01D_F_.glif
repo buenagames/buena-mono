@@ -2,13 +2,13 @@
 <glyph name="uni01DF" format="2">
   <advance width="618"/>
   <unicode hex="01DF"/>
-  <anchor x="309" y="-15" name="bottom"/>
-  <anchor x="295" y="861" name="top"/>
+  <anchor x="309" y="-34" name="bottom"/>
+  <anchor x="295" y="1012" name="top"/>
   <anchor x="568" y="524" name="topright"/>
   <outline>
     <component base="a"/>
-    <component base="uni0308" xOffset="-14" yOffset="-6"/>
-    <component base="uni0304" xOffset="-14" yOffset="169"/>
+    <component base="uni0308" xOffset="-14" yOffset="49"/>
+    <component base="uni0304" xOffset="-14" yOffset="275"/>
   </outline>
   <lib>
     <dict>

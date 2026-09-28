@@ -2,53 +2,30 @@
 <glyph name="uni01EE.smcp" format="2">
   <advance width="618"/>
   <outline>
-    <contour>
-      <point x="279" y="-25.5" type="line"/>
-      <point x="430.4" y="-25.5" type="line"/>
-      <point x="508.4" y="51" type="line"/>
-      <point x="508.4" y="149.9" type="line"/>
-      <point x="508.4" y="257.1" type="line"/>
-      <point x="418.4" y="312.6" type="line"/>
-      <point x="332.2" y="315.6" type="line"/>
-      <point x="485.9" y="464" type="line"/>
-      <point x="485.9" y="542" type="line"/>
-      <point x="124.6" y="542" type="line"/>
-      <point x="124.6" y="447.5" type="line"/>
-      <point x="340.5" y="447.5" type="line"/>
-      <point x="194.3" y="305.9" type="line"/>
-      <point x="194.3" y="227.1" type="line"/>
-      <point x="261" y="227.1" type="line"/>
-      <point x="360" y="227.1" type="line"/>
-      <point x="403.5" y="205.4" type="line"/>
-      <point x="403.5" y="150.7" type="line"/>
-      <point x="403.5" y="93" type="line"/>
-      <point x="368.2" y="65.2" type="line"/>
-      <point x="279.8" y="65.2" type="line"/>
-      <point x="232.5" y="65.2" type="line"/>
-      <point x="180.1" y="77.2" type="line"/>
-      <point x="109.6" y="110.2" type="line"/>
-      <point x="109.6" y="9.7" type="line"/>
-      <point x="166.6" y="-17.2" type="line"/>
-      <point x="221.3" y="-25.5" type="line"/>
-    </contour>
-    <contour>
-      <point x="277" y="566" type="curve"/>
-      <point x="357" y="566" type="line"/>
-      <point x="377" y="606"/>
-      <point x="421" y="649"/>
-      <point x="455" y="679" type="curve"/>
-      <point x="451" y="704" type="line"/>
-      <point x="391" y="709" type="line"/>
-      <point x="365" y="686"/>
-      <point x="336" y="660"/>
-      <point x="316" y="641" type="curve"/>
-      <point x="298" y="660"/>
-      <point x="268" y="686"/>
-      <point x="242" y="709" type="curve"/>
-      <point x="183" y="704" type="line"/>
-      <point x="179" y="679" type="line"/>
-      <point x="211" y="649"/>
-      <point x="254" y="606"/>
-    </contour>
+    <component base="uni01B7.smcp"/>
+    <component base="uni030C" xOffset="3" yOffset="24"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>uni01B7.smcp</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>uni030C</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

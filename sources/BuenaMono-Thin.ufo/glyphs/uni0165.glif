@@ -6,32 +6,7 @@
   <anchor x="309" y="713" name="top"/>
   <anchor x="568" y="524" name="topright"/>
   <outline>
-    <contour>
-      <point x="307" y="508" type="line"/>
-      <point x="307" y="652" type="line"/>
-      <point x="256" y="652" type="line"/>
-      <point x="256" y="508" type="line"/>
-      <point x="105" y="508" type="line"/>
-      <point x="105" y="472" type="line"/>
-      <point x="256" y="472" type="line"/>
-      <point x="256" y="149" type="line"/>
-      <point x="256" y="35"/>
-      <point x="308" y="2"/>
-      <point x="435" y="2" type="curve"/>
-      <point x="463" y="2"/>
-      <point x="491" y="3"/>
-      <point x="513" y="10" type="curve"/>
-      <point x="513" y="50" type="line"/>
-      <point x="488" y="45"/>
-      <point x="474" y="45"/>
-      <point x="440" y="45" type="curve"/>
-      <point x="364" y="45"/>
-      <point x="307" y="87"/>
-      <point x="307" y="164" type="curve"/>
-      <point x="307" y="472" type="line"/>
-      <point x="513" y="472" type="line"/>
-      <point x="513" y="508" type="line"/>
-    </contour>
+    <component base="t"/>
     <contour>
       <point x="443" y="654" type="line"/>
       <point x="502" y="654" type="line"/>
@@ -49,4 +24,19 @@
       <point x="443" y="713" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>t</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

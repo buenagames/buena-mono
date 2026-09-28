@@ -2,37 +2,37 @@
 <glyph name="Adieresis" format="2">
   <advance width="618"/>
   <unicode hex="00C4"/>
-  <anchor x="259.634" y="-19" name="bottom"/>
-  <anchor x="424.086" y="914" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="310" y="-19" name="bottom"/>
+  <anchor x="481" y="952" name="top"/>
+  <anchor x="695" y="699" name="topright"/>
   <outline>
+    <component base="A"/>
     <contour>
-      <point x="385" y="669" type="line"/>
-      <point x="469" y="-24" type="line"/>
-      <point x="617" y="-24" type="line"/>
-      <point x="513" y="723" type="line"/>
-      <point x="360" y="723" type="line"/>
-      <point x="-7" y="-24" type="line"/>
-      <point x="140" y="-24" type="line"/>
-      <point x="465" y="663" type="line"/>
+      <point x="304" y="953" type="line"/>
+      <point x="277" y="802" type="line"/>
+      <point x="429" y="802" type="line"/>
+      <point x="456" y="953" type="line"/>
     </contour>
     <contour>
-      <point x="484" y="223" type="line"/>
-      <point x="474" y="273" type="line"/>
-      <point x="230" y="273" type="line"/>
-      <point x="208" y="223" type="line"/>
-    </contour>
-    <contour>
-      <point x="293" y="914" type="line"/>
-      <point x="266" y="763" type="line"/>
-      <point x="418" y="763" type="line"/>
-      <point x="445" y="914" type="line"/>
-    </contour>
-    <contour>
-      <point x="493" y="914" type="line"/>
-      <point x="466" y="763" type="line"/>
-      <point x="618" y="763" type="line"/>
-      <point x="645" y="914" type="line"/>
+      <point x="504" y="953" type="line"/>
+      <point x="477" y="802" type="line"/>
+      <point x="629" y="802" type="line"/>
+      <point x="656" y="953" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>A</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

@@ -2,49 +2,37 @@
 <glyph name="Odieresis" format="2">
   <advance width="618"/>
   <unicode hex="00D6"/>
-  <anchor x="258.394" y="-26" name="bottom"/>
-  <anchor x="424.086" y="914" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="243" y="-26" name="bottom"/>
+  <anchor x="415" y="952" name="top"/>
+  <anchor x="630" y="699" name="topright"/>
   <outline>
+    <component base="O"/>
     <contour>
-      <point x="378" y="739" type="curve"/>
-      <point x="206" y="739"/>
-      <point x="54" y="580"/>
-      <point x="13" y="348" type="curve"/>
-      <point x="-28" y="116"/>
-      <point x="68" y="-42"/>
-      <point x="240" y="-42" type="curve"/>
-      <point x="412" y="-42"/>
-      <point x="564" y="116"/>
-      <point x="605" y="348" type="curve"/>
-      <point x="646" y="580"/>
-      <point x="550" y="739"/>
+      <point x="238" y="945" type="line"/>
+      <point x="211" y="794" type="line"/>
+      <point x="363" y="794" type="line"/>
+      <point x="390" y="945" type="line"/>
     </contour>
     <contour>
-      <point x="355" y="609" type="curve"/>
-      <point x="465" y="609"/>
-      <point x="492" y="527"/>
-      <point x="460" y="348" type="curve"/>
-      <point x="429" y="170"/>
-      <point x="373" y="88"/>
-      <point x="263" y="88" type="curve"/>
-      <point x="153" y="88"/>
-      <point x="127" y="170"/>
-      <point x="158" y="348" type="curve"/>
-      <point x="190" y="527"/>
-      <point x="245" y="609"/>
-    </contour>
-    <contour>
-      <point x="233" y="914" type="line"/>
-      <point x="206" y="763" type="line"/>
-      <point x="358" y="763" type="line"/>
-      <point x="385" y="914" type="line"/>
-    </contour>
-    <contour>
-      <point x="433" y="914" type="line"/>
-      <point x="406" y="763" type="line"/>
-      <point x="558" y="763" type="line"/>
-      <point x="585" y="914" type="line"/>
+      <point x="438" y="945" type="line"/>
+      <point x="411" y="794" type="line"/>
+      <point x="563" y="794" type="line"/>
+      <point x="590" y="945" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>O</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

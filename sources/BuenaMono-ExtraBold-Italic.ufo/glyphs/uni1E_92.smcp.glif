@@ -2,33 +2,37 @@
 <glyph name="uni1E92.smcp" format="2">
   <advance width="618"/>
   <outline>
+    <component base="Z.smcp"/>
     <contour>
-      <point x="60" y="54" type="line"/>
-      <point x="46" y="-31" type="line"/>
-      <point x="470" y="-31" type="line"/>
-      <point x="489" y="78" type="line"/>
-      <point x="217" y="78" type="line"/>
-      <point x="557" y="468" type="line"/>
-      <point x="573" y="556" type="line"/>
-      <point x="157" y="556" type="line"/>
-      <point x="138" y="449" type="line"/>
-      <point x="404" y="449" type="line"/>
-    </contour>
-    <contour>
-      <point x="297.5" y="-156.3" type="curve"/>
-      <point x="328.8" y="-156.3"/>
-      <point x="374" y="-117.3"/>
-      <point x="378.3" y="-96.5" type="curve"/>
-      <point x="379.8" y="-86" type="line"/>
-      <point x="383" y="-66.3"/>
-      <point x="348.8" y="-22.3"/>
-      <point x="318.5" y="-22.3" type="curve"/>
-      <point x="287.2" y="-22.3"/>
-      <point x="244" y="-61.3"/>
-      <point x="239.7" y="-82" type="curve"/>
-      <point x="238.2" y="-91.5" type="line"/>
-      <point x="235" y="-112.3"/>
-      <point x="268.2" y="-156.3"/>
+      <point x="225.5" y="-211.3" type="curve"/>
+      <point x="256.8" y="-211.3"/>
+      <point x="302" y="-172.3"/>
+      <point x="306.3" y="-151.5" type="curve"/>
+      <point x="307.8" y="-141" type="line"/>
+      <point x="311" y="-121.3"/>
+      <point x="276.8" y="-77.3"/>
+      <point x="246.5" y="-77.3" type="curve"/>
+      <point x="215.2" y="-77.3"/>
+      <point x="172" y="-116.3"/>
+      <point x="167.7" y="-137" type="curve"/>
+      <point x="166.2" y="-146.5" type="line"/>
+      <point x="163" y="-167.3"/>
+      <point x="196.2" y="-211.3"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>Z.smcp</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

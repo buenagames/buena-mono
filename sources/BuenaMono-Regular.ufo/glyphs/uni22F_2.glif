@@ -4,12 +4,46 @@
   <unicode hex="22F2"/>
   <outline>
     <contour>
-      <point x="309" y="391" type="line"/>
-      <point x="309" y="309" type="line"/>
-      <point x="635" y="309" type="line"/>
-      <point x="635" y="391" type="line"/>
+      <point x="279" y="391" type="line"/>
+      <point x="279" y="309" type="line"/>
+      <point x="605" y="309" type="line"/>
+      <point x="605" y="391" type="line"/>
     </contour>
-    <component base="uni2208"/>
+    <contour>
+      <point x="546" y="216" type="line"/>
+      <point x="546" y="277" type="line"/>
+      <point x="84" y="277" type="line"/>
+      <point x="90" y="383"/>
+      <point x="147" y="435"/>
+      <point x="256" y="433" type="curve"/>
+      <point x="546" y="433" type="line"/>
+      <point x="546" y="495" type="line"/>
+      <point x="266" y="495" type="line"/>
+      <point x="225" y="495"/>
+      <point x="193" y="492"/>
+      <point x="171" y="488" type="curve"/>
+      <point x="149" y="484"/>
+      <point x="129" y="475"/>
+      <point x="111" y="463" type="curve"/>
+      <point x="45" y="420"/>
+      <point x="12" y="349"/>
+      <point x="12" y="251" type="curve"/>
+      <point x="12" y="185"/>
+      <point x="24" y="133"/>
+      <point x="49" y="95" type="curve"/>
+      <point x="72" y="58"/>
+      <point x="101" y="33"/>
+      <point x="136" y="18" type="curve"/>
+      <point x="165" y="6"/>
+      <point x="208" y="0"/>
+      <point x="266" y="0" type="curve"/>
+      <point x="546" y="0" type="line"/>
+      <point x="546" y="62" type="line"/>
+      <point x="256" y="62" type="line"/>
+      <point x="147" y="59"/>
+      <point x="90" y="111"/>
+      <point x="84" y="216" type="curve"/>
+    </contour>
   </outline>
   <lib>
     <dict>

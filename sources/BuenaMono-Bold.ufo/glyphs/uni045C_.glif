@@ -3,41 +3,30 @@
   <advance width="618"/>
   <unicode hex="045C"/>
   <anchor x="309" y="-19" name="bottom"/>
-  <anchor x="309" y="754" name="top"/>
+  <anchor x="309" y="855" name="top"/>
   <anchor x="568" y="524" name="topright"/>
   <outline>
+    <component base="uni043A"/>
     <contour>
-      <point x="75" y="535" type="line"/>
-      <point x="75" y="-19" type="line"/>
-      <point x="193" y="-19" type="line"/>
-      <point x="193" y="213" type="line"/>
-      <point x="273" y="213" type="line"/>
-      <point x="367" y="50" type="line"/>
-      <point x="392" y="7"/>
-      <point x="431" y="-19"/>
-      <point x="466" y="-19" type="curve"/>
-      <point x="543" y="-19" type="line"/>
-      <point x="543" y="87" type="line"/>
-      <point x="477" y="87" type="line"/>
-      <point x="398" y="223" type="line"/>
-      <point x="378" y="258"/>
-      <point x="349" y="279"/>
-      <point x="338" y="280" type="curve"/>
-      <point x="338" y="254" type="line"/>
-      <point x="348" y="257"/>
-      <point x="373" y="275"/>
-      <point x="396" y="310" type="curve"/>
-      <point x="541" y="535" type="line"/>
-      <point x="413" y="535" type="line"/>
-      <point x="274" y="319" type="line"/>
-      <point x="193" y="319" type="line"/>
-      <point x="193" y="535" type="line"/>
-    </contour>
-    <contour>
-      <point x="298" y="561" type="line"/>
-      <point x="425" y="752" type="line"/>
-      <point x="315" y="804" type="line"/>
-      <point x="213" y="600" type="line"/>
+      <point x="298" y="612" type="line"/>
+      <point x="425" y="803" type="line"/>
+      <point x="315" y="855" type="line"/>
+      <point x="213" y="651" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>uni043A</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

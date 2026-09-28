@@ -3,48 +3,36 @@
   <advance width="618"/>
   <unicode hex="0151"/>
   <anchor x="309" y="-21" name="bottom"/>
-  <anchor x="309" y="761" name="top"/>
+  <anchor x="309" y="801" name="top"/>
   <anchor x="568" y="524" name="topright"/>
   <outline>
+    <component base="o"/>
     <contour>
-      <point x="287" y="559" type="curve"/>
-      <point x="126" y="559"/>
-      <point x="31" y="420"/>
-      <point x="31" y="261" type="curve"/>
-      <point x="31" y="102"/>
-      <point x="126" y="-37"/>
-      <point x="287" y="-37" type="curve"/>
-      <point x="448" y="-37"/>
-      <point x="543" y="102"/>
-      <point x="543" y="261" type="curve"/>
-      <point x="543" y="420"/>
-      <point x="448" y="559"/>
+      <point x="145" y="615" type="line"/>
+      <point x="248" y="615" type="line"/>
+      <point x="435" y="801" type="line"/>
+      <point x="266" y="801" type="line"/>
     </contour>
     <contour>
-      <point x="287" y="444" type="curve"/>
-      <point x="393" y="444"/>
-      <point x="418" y="368"/>
-      <point x="418" y="261" type="curve"/>
-      <point x="418" y="154"/>
-      <point x="393" y="78"/>
-      <point x="287" y="78" type="curve"/>
-      <point x="181" y="78"/>
-      <point x="156" y="154"/>
-      <point x="156" y="261" type="curve"/>
-      <point x="156" y="368"/>
-      <point x="181" y="444"/>
-    </contour>
-    <contour>
-      <point x="123" y="575" type="line"/>
-      <point x="226" y="575" type="line"/>
-      <point x="413" y="761" type="line"/>
-      <point x="244" y="761" type="line"/>
-    </contour>
-    <contour>
-      <point x="296" y="573" type="line"/>
-      <point x="399" y="573" type="line"/>
-      <point x="586" y="759" type="line"/>
-      <point x="417" y="759" type="line"/>
+      <point x="318" y="613" type="line"/>
+      <point x="421" y="613" type="line"/>
+      <point x="608" y="799" type="line"/>
+      <point x="439" y="799" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>o</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

@@ -6,34 +6,36 @@
   <anchor x="309" y="1068" name="top"/>
   <anchor x="568" y="699" name="topright"/>
   <outline>
+    <component base="E"/>
     <contour>
-      <point x="78" y="5" type="line"/>
-      <point x="498" y="5" type="line"/>
-      <point x="498" y="68" type="line"/>
-      <point x="152" y="68" type="line"/>
-      <point x="152" y="322" type="line"/>
-      <point x="486" y="322" type="line"/>
-      <point x="486" y="385" type="line"/>
-      <point x="152" y="385" type="line"/>
-      <point x="152" y="630" type="line"/>
-      <point x="498" y="630" type="line"/>
-      <point x="498" y="693" type="line"/>
-      <point x="78" y="693" type="line"/>
+      <point x="451" y="900" type="line"/>
+      <point x="552" y="1051" type="line"/>
+      <point x="491" y="1080" type="line"/>
+      <point x="411" y="919" type="line"/>
     </contour>
     <contour>
-      <point x="440" y="888" type="line"/>
-      <point x="541" y="1039" type="line"/>
-      <point x="480" y="1068" type="line"/>
-      <point x="400" y="907" type="line"/>
-    </contour>
-    <contour>
-      <point x="336" y="920" type="line"/>
-      <point x="240" y="920" type="line"/>
-      <point x="135" y="782" type="line"/>
-      <point x="169" y="758" type="line"/>
-      <point x="287" y="877" type="line"/>
-      <point x="405" y="757" type="line"/>
-      <point x="441" y="782" type="line"/>
+      <point x="347" y="932" type="line"/>
+      <point x="251" y="932" type="line"/>
+      <point x="146" y="794" type="line"/>
+      <point x="180" y="770" type="line"/>
+      <point x="298" y="889" type="line"/>
+      <point x="416" y="769" type="line"/>
+      <point x="452" y="794" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>E</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

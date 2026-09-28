@@ -1,10 +1,25 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="oslash.smcp" format="2">
   <advance width="618"/>
-  <anchor x="249.714" y="-75.0" name="bottom"/>
-  <anchor x="399.463" y="775.0" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="236" y="-59" name="bottom"/>
+  <anchor x="381" y="759" name="top"/>
+  <anchor x="629" y="699" name="topright"/>
   <outline>
     <component base="Oslash"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>Oslash</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

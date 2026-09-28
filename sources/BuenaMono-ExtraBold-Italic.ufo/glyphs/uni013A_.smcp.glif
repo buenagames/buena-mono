@@ -1,9 +1,32 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="uni013A.smcp" format="2">
   <advance width="618"/>
-  <anchor x="397" y="762" name="top"/>
+  <anchor x="468" y="923" name="top"/>
   <outline>
     <component base="L.smcp"/>
-    <component base="uni0301"/>
+    <component base="uni0301" xOffset="134" yOffset="102"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>L.smcp</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>uni0301</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

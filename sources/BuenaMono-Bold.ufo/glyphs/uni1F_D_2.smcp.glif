@@ -2,11 +2,11 @@
 <glyph name="uni1FD2.smcp" format="2">
   <advance width="618"/>
   <anchor x="309" y="-19" name="bottom"/>
-  <anchor x="276" y="779" name="top"/>
+  <anchor x="276" y="885" name="top"/>
   <anchor x="568" y="699" name="topright"/>
   <outline>
     <component base="uni03AA"/>
-    <component base="uni0300"/>
+    <component base="uni0300" xOffset="33" yOffset="466"/>
   </outline>
   <lib>
     <dict>

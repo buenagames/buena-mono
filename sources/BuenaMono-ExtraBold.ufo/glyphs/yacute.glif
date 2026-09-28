@@ -2,39 +2,31 @@
 <glyph name="yacute" format="2">
   <advance width="618"/>
   <unicode hex="00FD"/>
-  <anchor x="309" y="-231" name="bottom"/>
-  <anchor x="309" y="753" name="top"/>
+  <anchor x="309" y="-250" name="bottom"/>
+  <anchor x="309" y="889" name="top"/>
   <anchor x="568" y="524" name="topright"/>
   <outline>
+    <component base="y"/>
     <contour>
-      <point x="367" y="38" type="line"/>
-      <point x="180" y="556" type="line"/>
-      <point x="24" y="556" type="line"/>
-      <point x="294" y="-170" type="line"/>
-      <point x="315" y="165" type="line"/>
-      <point x="202" y="-73" type="line"/>
-      <point x="192" y="-95"/>
-      <point x="181" y="-104"/>
-      <point x="158" y="-104" type="curve"/>
-      <point x="141" y="-104"/>
-      <point x="130" y="-103"/>
-      <point x="69" y="-90" type="curve"/>
-      <point x="69" y="-231" type="line"/>
-      <point x="112" y="-245"/>
-      <point x="144" y="-250"/>
-      <point x="169" y="-250" type="curve"/>
-      <point x="234" y="-250"/>
-      <point x="315" y="-194"/>
-      <point x="342" y="-122" type="curve"/>
-      <point x="594" y="556" type="line"/>
-      <point x="440" y="556" type="line"/>
-      <point x="258" y="44" type="line"/>
-    </contour>
-    <contour>
-      <point x="200" y="560" type="line"/>
-      <point x="332" y="560" type="line"/>
-      <point x="546" y="772" type="line"/>
-      <point x="338" y="772" type="line"/>
+      <point x="200" y="677" type="line"/>
+      <point x="332" y="677" type="line"/>
+      <point x="546" y="889" type="line"/>
+      <point x="338" y="889" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>y</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

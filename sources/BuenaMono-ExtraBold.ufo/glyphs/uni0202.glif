@@ -2,53 +2,41 @@
 <glyph name="uni0202" format="2">
   <advance width="618"/>
   <unicode hex="0202"/>
-  <anchor x="309" y="-21" name="bottom"/>
-  <anchor x="309" y="899" name="top"/>
+  <anchor x="309" y="-32" name="bottom"/>
+  <anchor x="309" y="1033" name="top"/>
   <anchor x="568" y="699" name="topright"/>
   <outline>
+    <component base="A"/>
     <contour>
-      <point x="-16" y="-37" type="line"/>
-      <point x="152" y="-37" type="line"/>
-      <point x="314" y="489" type="line"/>
-      <point x="323" y="513" type="line"/>
-      <point x="338" y="635" type="line"/>
-      <point x="307" y="582" type="line"/>
-      <point x="308" y="581" type="line"/>
-      <point x="275" y="603" type="line"/>
-      <point x="281" y="560" type="line"/>
-      <point x="290" y="530" type="line"/>
-      <point x="298" y="507" type="line"/>
-      <point x="301" y="491" type="line"/>
-      <point x="465" y="-37" type="line"/>
-      <point x="634" y="-37" type="line"/>
-      <point x="382" y="739" type="line"/>
-      <point x="235" y="739" type="line"/>
-    </contour>
-    <contour>
-      <point x="182" y="225" type="line"/>
-      <point x="428" y="225" type="line"/>
-      <point x="408" y="282" type="line"/>
-      <point x="202" y="282" type="line"/>
-    </contour>
-    <contour>
-      <point x="305" y="951" type="curve"/>
-      <point x="212" y="951"/>
-      <point x="132" y="871"/>
-      <point x="127" y="766" type="curve"/>
-      <point x="235" y="766" type="line"/>
-      <point x="253" y="846"/>
-      <point x="271" y="835"/>
-      <point x="308" y="835" type="curve"/>
-      <point x="348" y="835"/>
-      <point x="364" y="846"/>
-      <point x="381" y="766" type="curve"/>
-      <point x="487" y="766" type="line"/>
-      <point x="486" y="870"/>
-      <point x="403" y="951"/>
+      <point x="305" y="1031" type="curve"/>
+      <point x="212" y="1031"/>
+      <point x="132" y="951"/>
+      <point x="127" y="846" type="curve"/>
+      <point x="235" y="846" type="line"/>
+      <point x="253" y="926"/>
+      <point x="271" y="915"/>
+      <point x="308" y="915" type="curve"/>
+      <point x="348" y="915"/>
+      <point x="364" y="926"/>
+      <point x="381" y="846" type="curve"/>
+      <point x="487" y="846" type="line"/>
+      <point x="486" y="950"/>
+      <point x="403" y="1031"/>
     </contour>
   </outline>
   <lib>
     <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>A</string>
+        </dict>
+      </array>
       <key>com.schriftgestaltung.Glyphs.category</key>
       <string>Letter</string>
     </dict>

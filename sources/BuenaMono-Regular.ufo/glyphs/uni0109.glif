@@ -6,43 +6,30 @@
   <anchor x="309" y="765" name="top"/>
   <anchor x="568" y="524" name="topright"/>
   <outline>
+    <component base="c"/>
     <contour>
-      <point x="327" y="-12" type="curve"/>
-      <point x="431" y="-12"/>
-      <point x="494" y="39"/>
-      <point x="525" y="108" type="curve"/>
-      <point x="468" y="147" type="line"/>
-      <point x="441" y="91"/>
-      <point x="397" y="57"/>
-      <point x="328" y="57" type="curve"/>
-      <point x="232" y="57"/>
-      <point x="179" y="123"/>
-      <point x="179" y="214" type="curve"/>
-      <point x="179" y="302" type="line"/>
-      <point x="179" y="393"/>
-      <point x="233" y="459"/>
-      <point x="326" y="459" type="curve"/>
-      <point x="390" y="459"/>
-      <point x="434" y="428"/>
-      <point x="453" y="375" type="curve"/>
-      <point x="517" y="409" type="line"/>
-      <point x="488" y="480"/>
-      <point x="426" y="528"/>
-      <point x="326" y="528" type="curve"/>
-      <point x="179" y="528"/>
-      <point x="93" y="421"/>
-      <point x="93" y="258" type="curve"/>
-      <point x="93" y="95"/>
-      <point x="178" y="-12"/>
-    </contour>
-    <contour>
-      <point x="372" y="765" type="line"/>
-      <point x="272" y="765" type="line"/>
-      <point x="161" y="622" type="line"/>
-      <point x="204" y="591" type="line"/>
-      <point x="321" y="708" type="line"/>
-      <point x="438" y="591" type="line"/>
-      <point x="483" y="622" type="line"/>
+      <point x="366" y="777" type="line"/>
+      <point x="266" y="777" type="line"/>
+      <point x="155" y="634" type="line"/>
+      <point x="198" y="603" type="line"/>
+      <point x="315" y="720" type="line"/>
+      <point x="432" y="603" type="line"/>
+      <point x="477" y="634" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>c</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

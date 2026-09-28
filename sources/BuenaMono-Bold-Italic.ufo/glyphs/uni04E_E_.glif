@@ -2,33 +2,31 @@
 <glyph name="uni04EE" format="2">
   <advance width="618"/>
   <unicode hex="04EE"/>
-  <anchor x="259.634" y="-19" name="bottom"/>
-  <anchor x="412.926" y="851" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="204" y="-19" name="bottom"/>
+  <anchor x="371" y="932" name="top"/>
+  <anchor x="589" y="699" name="topright"/>
   <outline>
+    <component base="uni0423"/>
     <contour>
-      <point x="44" y="87" type="line"/>
-      <point x="26" y="-14" type="line"/>
-      <point x="100" y="-14" type="line"/>
-      <point x="175" y="-14"/>
-      <point x="223" y="12"/>
-      <point x="266" y="91" type="curve"/>
-      <point x="611" y="712" type="line"/>
-      <point x="494" y="712" type="line"/>
-      <point x="311" y="373" type="line"/>
-      <point x="256" y="272" type="line"/>
-      <point x="274" y="272" type="line"/>
-      <point x="256" y="375" type="line"/>
-      <point x="172" y="712" type="line"/>
-      <point x="51" y="712" type="line"/>
-      <point x="194" y="163" type="line"/>
-      <point x="152" y="87" type="line"/>
-    </contour>
-    <contour>
-      <point x="205" y="889" type="line"/>
-      <point x="189" y="793" type="line"/>
-      <point x="497" y="793" type="line"/>
-      <point x="513" y="889" type="line"/>
+      <point x="213" y="932" type="line"/>
+      <point x="197" y="836" type="line"/>
+      <point x="505" y="836" type="line"/>
+      <point x="521" y="932" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>uni0423</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

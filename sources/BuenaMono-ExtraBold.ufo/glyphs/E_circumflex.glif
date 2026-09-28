@@ -2,32 +2,34 @@
 <glyph name="Ecircumflex" format="2">
   <advance width="618"/>
   <unicode hex="00CA"/>
-  <anchor x="309" y="-13" name="bottom"/>
-  <anchor x="309" y="934" name="top"/>
+  <anchor x="309" y="-32" name="bottom"/>
+  <anchor x="309" y="1017" name="top"/>
   <anchor x="568" y="699" name="topright"/>
   <outline>
+    <component base="E"/>
     <contour>
-      <point x="526" y="280" type="line"/>
-      <point x="526" y="436" type="line"/>
-      <point x="226" y="436" type="line"/>
-      <point x="226" y="580" type="line"/>
-      <point x="541" y="580" type="line"/>
-      <point x="541" y="736" type="line"/>
-      <point x="59" y="736" type="line"/>
-      <point x="59" y="-37" type="line"/>
-      <point x="559" y="-37" type="line"/>
-      <point x="559" y="119" type="line"/>
-      <point x="226" y="119" type="line"/>
-      <point x="226" y="280" type="line"/>
-    </contour>
-    <contour>
-      <point x="88" y="729" type="line"/>
-      <point x="237" y="729" type="line"/>
-      <point x="299" y="804" type="line"/>
-      <point x="363" y="729" type="line"/>
-      <point x="511" y="729" type="line"/>
-      <point x="366" y="953" type="line"/>
-      <point x="232" y="953" type="line"/>
+      <point x="86" y="794" type="line"/>
+      <point x="235" y="794" type="line"/>
+      <point x="297" y="869" type="line"/>
+      <point x="361" y="794" type="line"/>
+      <point x="509" y="794" type="line"/>
+      <point x="364" y="1018" type="line"/>
+      <point x="230" y="1018" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>E</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

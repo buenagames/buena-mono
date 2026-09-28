@@ -2,32 +2,34 @@
 <glyph name="Icircumflex" format="2">
   <advance width="618"/>
   <unicode hex="00CE"/>
-  <anchor x="260.697" y="-13" name="bottom"/>
-  <anchor x="427.629" y="934" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="243" y="-32" name="bottom"/>
+  <anchor x="428" y="1017" name="top"/>
+  <anchor x="631" y="699" name="topright"/>
   <outline>
+    <component base="I"/>
     <contour>
-      <point x="9" y="-37" type="line"/>
-      <point x="474" y="-37" type="line"/>
-      <point x="500" y="115" type="line"/>
-      <point x="351" y="115" type="line"/>
-      <point x="434" y="584" type="line"/>
-      <point x="583" y="584" type="line"/>
-      <point x="609" y="736" type="line"/>
-      <point x="144" y="736" type="line"/>
-      <point x="118" y="584" type="line"/>
-      <point x="266" y="584" type="line"/>
-      <point x="183" y="115" type="line"/>
-      <point x="35" y="115" type="line"/>
-    </contour>
-    <contour>
-      <point x="163" y="729" type="line"/>
-      <point x="314" y="729" type="line"/>
-      <point x="389" y="804" type="line"/>
-      <point x="440" y="729" type="line"/>
-      <point x="585" y="729" type="line"/>
-      <point x="480" y="953" type="line"/>
-      <point x="346" y="953" type="line"/>
+      <point x="177" y="794" type="line"/>
+      <point x="328" y="794" type="line"/>
+      <point x="403" y="869" type="line"/>
+      <point x="454" y="794" type="line"/>
+      <point x="599" y="794" type="line"/>
+      <point x="494" y="1018" type="line"/>
+      <point x="360" y="1018" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>I</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

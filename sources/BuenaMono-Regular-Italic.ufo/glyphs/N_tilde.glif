@@ -2,45 +2,47 @@
 <glyph name="Ntilde" format="2">
   <advance width="618"/>
   <unicode hex="00D1"/>
-  <anchor x="263" y="0" name="bottom"/>
-  <anchor x="421.074" y="897" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="247" y="0" name="bottom"/>
+  <anchor x="405" y="897" name="top"/>
+  <anchor x="629" y="699" name="topright"/>
   <outline>
+    <component base="N"/>
     <contour>
-      <point x="513" y="704" type="line"/>
-      <point x="413" y="140" type="line"/>
-      <point x="420" y="140" type="line"/>
-      <point x="242" y="704" type="line"/>
-      <point x="133" y="704" type="line"/>
-      <point x="8" y="-5" type="line"/>
-      <point x="104" y="-5" type="line"/>
-      <point x="202" y="554" type="line"/>
-      <point x="195" y="554" type="line"/>
-      <point x="372" y="-5" type="line"/>
-      <point x="484" y="-5" type="line"/>
-      <point x="609" y="704" type="line"/>
-    </contour>
-    <contour>
-      <point x="500" y="897" type="line"/>
-      <point x="487" y="866"/>
-      <point x="477" y="858"/>
-      <point x="460" y="858" type="curve"/>
-      <point x="425" y="858"/>
-      <point x="372" y="897"/>
-      <point x="334" y="897" type="curve"/>
-      <point x="290" y="897"/>
-      <point x="247" y="857"/>
-      <point x="222" y="784" type="curve"/>
-      <point x="290" y="784" type="line"/>
-      <point x="304" y="816"/>
-      <point x="311" y="824"/>
-      <point x="326" y="824" type="curve"/>
-      <point x="357" y="824"/>
-      <point x="418" y="783"/>
-      <point x="452" y="783" type="curve"/>
-      <point x="502" y="783"/>
-      <point x="544" y="822"/>
-      <point x="568" y="897" type="curve"/>
+      <point x="503" y="898" type="line"/>
+      <point x="490" y="867"/>
+      <point x="480" y="859"/>
+      <point x="463" y="859" type="curve"/>
+      <point x="428" y="859"/>
+      <point x="375" y="898"/>
+      <point x="337" y="898" type="curve"/>
+      <point x="293" y="898"/>
+      <point x="250" y="858"/>
+      <point x="225" y="785" type="curve"/>
+      <point x="293" y="785" type="line"/>
+      <point x="307" y="817"/>
+      <point x="314" y="825"/>
+      <point x="329" y="825" type="curve"/>
+      <point x="360" y="825"/>
+      <point x="421" y="784"/>
+      <point x="455" y="784" type="curve"/>
+      <point x="505" y="784"/>
+      <point x="547" y="823"/>
+      <point x="571" y="898" type="curve"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>N</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

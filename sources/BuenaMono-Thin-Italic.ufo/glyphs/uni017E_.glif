@@ -2,22 +2,11 @@
 <glyph name="uni017E" format="2">
   <advance width="618"/>
   <unicode hex="017E"/>
-  <anchor x="265.834" y="16" name="bottom"/>
-  <anchor x="390.606" y="725" name="top"/>
-  <anchor x="614" y="524" name="topright"/>
+  <anchor x="273" y="16" name="bottom"/>
+  <anchor x="398" y="725" name="top"/>
+  <anchor x="621" y="524" name="topright"/>
   <outline>
-    <contour>
-      <point x="183" y="508" type="line"/>
-      <point x="176" y="467" type="line"/>
-      <point x="486" y="467" type="line"/>
-      <point x="85" y="69" type="line"/>
-      <point x="76" y="16" type="line"/>
-      <point x="470" y="16" type="line"/>
-      <point x="477" y="57" type="line"/>
-      <point x="133" y="57" type="line"/>
-      <point x="533" y="456" type="line"/>
-      <point x="542" y="508" type="line"/>
-    </contour>
+    <component base="z"/>
     <contour>
       <point x="516" y="725" type="line"/>
       <point x="489" y="725" type="line"/>
@@ -28,4 +17,19 @@
       <point x="419" y="607" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>z</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

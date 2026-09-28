@@ -6,33 +6,33 @@
   <anchor x="309" y="879" name="top"/>
   <anchor x="568" y="699" name="topright"/>
   <outline>
+    <component base="A"/>
     <contour>
-      <point x="318" y="620" type="line"/>
-      <point x="499" y="11" type="line"/>
-      <point x="573" y="11" type="line"/>
-      <point x="360" y="688" type="line"/>
-      <point x="259" y="688" type="line"/>
-      <point x="45" y="11" type="line"/>
-      <point x="118" y="11" type="line"/>
-      <point x="299" y="621" type="line"/>
+      <point x="186" y="880" type="line"/>
+      <point x="186" y="799" type="line"/>
+      <point x="268" y="799" type="line"/>
+      <point x="268" y="880" type="line"/>
     </contour>
     <contour>
-      <point x="491" y="188" type="line"/>
-      <point x="450" y="308" type="line"/>
-      <point x="155" y="308" type="line"/>
-      <point x="120" y="188" type="line"/>
-    </contour>
-    <contour>
-      <point x="186" y="879" type="line"/>
-      <point x="186" y="798" type="line"/>
-      <point x="268" y="798" type="line"/>
-      <point x="268" y="879" type="line"/>
-    </contour>
-    <contour>
-      <point x="348" y="879" type="line"/>
-      <point x="348" y="798" type="line"/>
-      <point x="430" y="798" type="line"/>
-      <point x="430" y="879" type="line"/>
+      <point x="348" y="880" type="line"/>
+      <point x="348" y="799" type="line"/>
+      <point x="430" y="799" type="line"/>
+      <point x="430" y="880" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>A</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

@@ -2,22 +2,11 @@
 <glyph name="igrave" format="2">
   <advance width="618"/>
   <unicode hex="00EC"/>
-  <anchor x="263" y="0" name="bottom"/>
-  <anchor x="393.263" y="740" name="top"/>
-  <anchor x="614" y="524" name="topright"/>
+  <anchor x="283" y="0" name="bottom"/>
+  <anchor x="413" y="740" name="top"/>
+  <anchor x="634" y="524" name="topright"/>
   <outline>
-    <contour>
-      <point x="445" y="524" type="line"/>
-      <point x="183" y="524" type="line"/>
-      <point x="171" y="456" type="line"/>
-      <point x="351" y="456" type="line"/>
-      <point x="283" y="68" type="line"/>
-      <point x="103" y="68" type="line"/>
-      <point x="91" y="0" type="line"/>
-      <point x="514" y="0" type="line"/>
-      <point x="526" y="68" type="line"/>
-      <point x="365" y="68" type="line"/>
-    </contour>
+    <component base="uni0131"/>
     <contour>
       <point x="456" y="592" type="line"/>
       <point x="386" y="740" type="line"/>
@@ -25,4 +14,19 @@
       <point x="396" y="592" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>uni0131</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

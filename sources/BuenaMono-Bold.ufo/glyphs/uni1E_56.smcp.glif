@@ -2,45 +2,30 @@
 <glyph name="uni1E56.smcp" format="2">
   <advance width="618"/>
   <outline>
-    <contour>
-      <point x="120.5" y="542.7" type="line"/>
-      <point x="120.5" y="-18" type="line"/>
-      <point x="208.9" y="-18" type="line"/>
-      <point x="208.9" y="176.9" type="line"/>
-      <point x="298.1" y="176.9" type="line"/>
-      <point x="406.8" y="176.9"/>
-      <point x="497.5" y="258.6"/>
-      <point x="497.5" y="361.3" type="curve"/>
-      <point x="497.5" y="464"/>
-      <point x="406.8" y="542.7"/>
-      <point x="298.9" y="542.7" type="curve"/>
-    </contour>
-    <contour>
-      <point x="295.1" y="257.9" type="curve"/>
-      <point x="208.9" y="257.9" type="line"/>
-      <point x="208.9" y="461.8" type="line"/>
-      <point x="295.1" y="461.8" type="line"/>
-      <point x="380.6" y="461.8"/>
-      <point x="407.6" y="439.3"/>
-      <point x="407.6" y="362.1" type="curve"/>
-      <point x="407.6" y="281.9"/>
-      <point x="380.6" y="257.9"/>
-    </contour>
-    <contour>
-      <point x="309" y="445" type="curve"/>
-      <point x="344" y="445"/>
-      <point x="370" y="475"/>
-      <point x="370" y="497" type="curve"/>
-      <point x="370" y="509" type="line"/>
-      <point x="370" y="531"/>
-      <point x="344" y="561"/>
-      <point x="309" y="561" type="curve"/>
-      <point x="274" y="561"/>
-      <point x="247" y="531"/>
-      <point x="247" y="509" type="curve"/>
-      <point x="247" y="497" type="line"/>
-      <point x="247" y="475"/>
-      <point x="274" y="445"/>
-    </contour>
+    <component base="P.smcp"/>
+    <component base="uni0307" xOffset="-37" yOffset="38"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>P.smcp</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>uni0307</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

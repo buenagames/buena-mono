@@ -3,8 +3,38 @@
   <advance width="618"/>
   <unicode hex="222C"/>
   <outline>
-    <component base="uni222B" xOffset="-77"/>
-    <component base="uni222B" xOffset="77"/>
+    <contour>
+      <point x="30" y="-129" type="line"/>
+      <point x="30" y="-203" type="line"/>
+      <point x="182" y="-203" type="line"/>
+      <point x="249" y="-203"/>
+      <point x="281" y="-151"/>
+      <point x="281" y="-82" type="curve"/>
+      <point x="281" y="668" type="line"/>
+      <point x="459" y="668" type="line"/>
+      <point x="459" y="743" type="line"/>
+      <point x="306" y="743" type="line"/>
+      <point x="240" y="743"/>
+      <point x="208" y="691"/>
+      <point x="208" y="622" type="curve"/>
+      <point x="208" y="-129" type="line"/>
+    </contour>
+    <contour>
+      <point x="159" y="-129" type="line"/>
+      <point x="159" y="-203" type="line"/>
+      <point x="312" y="-203" type="line"/>
+      <point x="378" y="-203"/>
+      <point x="410" y="-151"/>
+      <point x="410" y="-82" type="curve"/>
+      <point x="410" y="668" type="line"/>
+      <point x="588" y="668" type="line"/>
+      <point x="588" y="743" type="line"/>
+      <point x="436" y="743" type="line"/>
+      <point x="369" y="743"/>
+      <point x="337" y="691"/>
+      <point x="337" y="622" type="curve"/>
+      <point x="337" y="-129" type="line"/>
+    </contour>
   </outline>
   <lib>
     <dict>

@@ -2,40 +2,42 @@
 <glyph name="uni1E2A.smcp" format="2">
   <advance width="618"/>
   <outline>
+    <component base="H.smcp"/>
     <contour>
-      <point x="166" y="556" type="line"/>
-      <point x="64" y="-31" type="line"/>
-      <point x="179" y="-31" type="line"/>
-      <point x="221" y="210" type="line"/>
-      <point x="379" y="210" type="line"/>
-      <point x="337" y="-31" type="line"/>
-      <point x="452" y="-31" type="line"/>
-      <point x="554" y="556" type="line"/>
-      <point x="439" y="556" type="line"/>
-      <point x="397" y="317" type="line"/>
-      <point x="239" y="317" type="line"/>
-      <point x="281" y="556" type="line"/>
-    </contour>
-    <contour>
-      <point x="288.4" y="-151.8" type="curve"/>
-      <point x="368.2" y="-151.8"/>
-      <point x="432.7" y="-67.5"/>
-      <point x="466.2" y="2.2" type="curve"/>
-      <point x="388.7" y="38.5" type="line"/>
-      <point x="355.4" y="-5.5" type="line"/>
-      <point x="339.4" y="-22.8"/>
-      <point x="332.9" y="-33.5"/>
-      <point x="321.1" y="-41.5" type="curve"/>
-      <point x="316" y="-46"/>
-      <point x="310" y="-49"/>
-      <point x="302.4" y="-49.3" type="curve"/>
-      <point x="268.1" y="-49.3"/>
-      <point x="283.6" y="-46"/>
-      <point x="266.8" y="-8.5" type="curve"/>
-      <point x="245.6" y="38.5" type="line"/>
-      <point x="159.1" y="4.2" type="line"/>
-      <point x="168.6" y="-63.5"/>
-      <point x="207.6" y="-151.8"/>
+      <point x="227.4" y="-222.8" type="curve"/>
+      <point x="307.2" y="-222.8"/>
+      <point x="371.7" y="-138.5"/>
+      <point x="405.2" y="-68.8" type="curve"/>
+      <point x="327.7" y="-32.5" type="line"/>
+      <point x="294.4" y="-76.5" type="line"/>
+      <point x="278.4" y="-93.8"/>
+      <point x="271.9" y="-104.5"/>
+      <point x="260.1" y="-112.5" type="curve"/>
+      <point x="255" y="-117"/>
+      <point x="249" y="-120"/>
+      <point x="241.4" y="-120.3" type="curve"/>
+      <point x="207.1" y="-120.3"/>
+      <point x="222.6" y="-117"/>
+      <point x="205.8" y="-79.5" type="curve"/>
+      <point x="184.6" y="-32.5" type="line"/>
+      <point x="98.1" y="-66.8" type="line"/>
+      <point x="107.6" y="-134.5"/>
+      <point x="146.6" y="-222.8"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>H.smcp</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

@@ -2,37 +2,35 @@
 <glyph name="uni01E8" format="2">
   <advance width="618"/>
   <unicode hex="01E8"/>
-  <anchor x="263.885" y="5" name="bottom"/>
-  <anchor x="425.503" y="922" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="266" y="16" name="bottom"/>
+  <anchor x="418" y="874" name="top"/>
+  <anchor x="646" y="699" name="topright"/>
   <outline>
+    <component base="K"/>
     <contour>
-      <point x="143" y="283" type="line"/>
-      <point x="562" y="689" type="line"/>
-      <point x="511" y="689" type="line"/>
-      <point x="153" y="334" type="line"/>
-    </contour>
-    <contour>
-      <point x="20" y="21" type="line"/>
-      <point x="64" y="21" type="line"/>
-      <point x="181" y="689" type="line"/>
-      <point x="137" y="689" type="line"/>
-    </contour>
-    <contour>
-      <point x="404" y="19" type="line"/>
-      <point x="458" y="19" type="line"/>
-      <point x="267" y="387" type="line"/>
-      <point x="231" y="355" type="line"/>
-    </contour>
-    <contour>
-      <point x="267" y="874" type="line"/>
-      <point x="313" y="783" type="line"/>
-      <point x="385" y="783" type="line"/>
-      <point x="465" y="874" type="line"/>
-      <point x="446" y="874" type="line"/>
-      <point x="390" y="816" type="line"/>
-      <point x="320" y="816" type="line"/>
-      <point x="286" y="874" type="line"/>
+      <point x="302" y="874" type="line"/>
+      <point x="348" y="783" type="line"/>
+      <point x="420" y="783" type="line"/>
+      <point x="500" y="874" type="line"/>
+      <point x="481" y="874" type="line"/>
+      <point x="425" y="816" type="line"/>
+      <point x="355" y="816" type="line"/>
+      <point x="321" y="874" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>K</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

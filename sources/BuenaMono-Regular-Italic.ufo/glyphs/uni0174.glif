@@ -2,36 +2,34 @@
 <glyph name="uni0174" format="2">
   <advance width="618"/>
   <unicode hex="0174"/>
-  <anchor x="263" y="0" name="bottom"/>
-  <anchor x="425.326" y="921" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="209" y="0" name="bottom"/>
+  <anchor x="371" y="921" name="top"/>
+  <anchor x="591" y="699" name="topright"/>
   <outline>
+    <component base="W"/>
     <contour>
-      <point x="613" y="704" type="line"/>
-      <point x="522" y="704" type="line"/>
-      <point x="350" y="138" type="line"/>
-      <point x="357" y="138" type="line"/>
-      <point x="385" y="704" type="line"/>
-      <point x="258" y="704" type="line"/>
-      <point x="88" y="147" type="line"/>
-      <point x="95" y="147" type="line"/>
-      <point x="125" y="704" type="line"/>
-      <point x="29" y="704" type="line"/>
-      <point x="5" y="-5" type="line"/>
-      <point x="114" y="-5" type="line"/>
-      <point x="308" y="615" type="line"/>
-      <point x="301" y="615" type="line"/>
-      <point x="278" y="-5" type="line"/>
-      <point x="387" y="-5" type="line"/>
-    </contour>
-    <contour>
-      <point x="178" y="761" type="line"/>
-      <point x="253" y="761" type="line"/>
-      <point x="346" y="854" type="line"/>
-      <point x="409" y="761" type="line"/>
-      <point x="483" y="761" type="line"/>
-      <point x="408" y="921" type="line"/>
-      <point x="308" y="921" type="line"/>
+      <point x="190" y="762" type="line"/>
+      <point x="265" y="762" type="line"/>
+      <point x="358" y="855" type="line"/>
+      <point x="421" y="762" type="line"/>
+      <point x="495" y="762" type="line"/>
+      <point x="420" y="922" type="line"/>
+      <point x="320" y="922" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>W</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

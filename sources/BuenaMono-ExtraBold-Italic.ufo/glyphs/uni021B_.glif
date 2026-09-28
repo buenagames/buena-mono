@@ -2,51 +2,34 @@
 <glyph name="uni021B" format="2">
   <advance width="618"/>
   <unicode hex="021B"/>
-  <anchor x="213.754" y="-278" name="bottom"/>
-  <anchor x="382.811" y="681" name="top"/>
-  <anchor x="614" y="524" name="topright"/>
+  <anchor x="159" y="-361" name="bottom"/>
+  <anchor x="346" y="700" name="top"/>
+  <anchor x="574" y="524" name="topright"/>
   <outline>
-    <contour>
-      <point x="367" y="556" type="line"/>
-      <point x="392" y="700" type="line"/>
-      <point x="245" y="700" type="line"/>
-      <point x="220" y="556" type="line"/>
-      <point x="69" y="556" type="line"/>
-      <point x="45" y="424" type="line"/>
-      <point x="196" y="424" type="line"/>
-      <point x="148" y="151" type="line"/>
-      <point x="128" y="37"/>
-      <point x="216" y="-46"/>
-      <point x="343" y="-46" type="curve"/>
-      <point x="371" y="-46"/>
-      <point x="415" y="-42"/>
-      <point x="470" y="-26" type="curve"/>
-      <point x="495" y="114" type="line"/>
-      <point x="424" y="95"/>
-      <point x="402" y="93"/>
-      <point x="368" y="93" type="curve"/>
-      <point x="292" y="93"/>
-      <point x="284" y="85"/>
-      <point x="298" y="162" type="curve"/>
-      <point x="344" y="424" type="line"/>
-      <point x="550" y="424" type="line"/>
-      <point x="574" y="556" type="line"/>
-    </contour>
-    <contour>
-      <point x="201" y="-203" type="line"/>
-      <point x="286" y="-203" type="line"/>
-      <point x="267" y="-233" type="line"/>
-      <point x="260" y="-207"/>
-      <point x="273" y="-194"/>
-      <point x="244" y="-194" type="curve"/>
-      <point x="203" y="-194" type="line"/>
-      <point x="186" y="-297" type="line"/>
-      <point x="229" y="-297" type="line"/>
-      <point x="279" y="-297"/>
-      <point x="360" y="-234"/>
-      <point x="369" y="-182" type="curve"/>
-      <point x="394" y="-43" type="line"/>
-      <point x="230" y="-43" type="line"/>
-    </contour>
+    <component base="t"/>
+    <component base="uni0326" xOffset="-30" yOffset="-77"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>t</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>uni0326</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

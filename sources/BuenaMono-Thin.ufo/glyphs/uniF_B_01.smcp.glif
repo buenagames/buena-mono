@@ -2,9 +2,24 @@
 <glyph name="uniFB01.smcp" format="2">
   <advance width="618"/>
   <anchor x="309" y="16" name="bottom"/>
-  <anchor x="309" y="764" name="top"/>
+  <anchor x="309" y="732" name="top"/>
   <anchor x="568" y="524" name="topright"/>
   <outline>
     <component base="uniFB01"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>uniFB01</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

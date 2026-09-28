@@ -2,27 +2,31 @@
 <glyph name="uni0179" format="2">
   <advance width="618"/>
   <unicode hex="0179"/>
-  <anchor x="265.834" y="16" name="bottom"/>
-  <anchor x="422.314" y="904" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="250" y="16" name="bottom"/>
+  <anchor x="406" y="904" name="top"/>
+  <anchor x="629" y="699" name="topright"/>
   <outline>
+    <component base="Z"/>
     <contour>
-      <point x="176" y="688" type="line"/>
-      <point x="166" y="628" type="line"/>
-      <point x="506" y="628" type="line"/>
-      <point x="41" y="79" type="line"/>
-      <point x="29" y="11" type="line"/>
-      <point x="472" y="11" type="line"/>
-      <point x="482" y="71" type="line"/>
-      <point x="116" y="71" type="line"/>
-      <point x="577" y="618" type="line"/>
-      <point x="589" y="688" type="line"/>
-    </contour>
-    <contour>
-      <point x="370" y="778" type="line"/>
-      <point x="405" y="778" type="line"/>
-      <point x="554" y="904" type="line"/>
-      <point x="474" y="904" type="line"/>
+      <point x="369" y="779" type="line"/>
+      <point x="404" y="779" type="line"/>
+      <point x="553" y="905" type="line"/>
+      <point x="473" y="905" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>Z</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

@@ -2,45 +2,31 @@
 <glyph name="uni0117" format="2">
   <advance width="618"/>
   <unicode hex="0117"/>
-  <anchor x="259.28" y="-21" name="bottom"/>
-  <anchor x="392.377" y="735" name="top"/>
+  <anchor x="259" y="-21" name="bottom"/>
+  <anchor x="399" y="773" name="top"/>
   <anchor x="614" y="524" name="topright"/>
   <outline>
+    <component base="e"/>
     <contour>
-      <point x="107" y="324" type="line"/>
-      <point x="88" y="218" type="line"/>
-      <point x="557" y="218" type="line"/>
-      <point x="593" y="419"/>
-      <point x="527" y="559"/>
-      <point x="365" y="559" type="curve"/>
-      <point x="220" y="559"/>
-      <point x="84" y="432"/>
-      <point x="53" y="257" type="curve"/>
-      <point x="25" y="97"/>
-      <point x="100" y="-37"/>
-      <point x="258" y="-37" type="curve"/>
-      <point x="371" y="-37"/>
-      <point x="479" y="36"/>
-      <point x="531" y="150" type="curve"/>
-      <point x="406" y="150" type="line"/>
-      <point x="372" y="93"/>
-      <point x="341" y="78"/>
-      <point x="282" y="78" type="curve"/>
-      <point x="170" y="78"/>
-      <point x="151" y="150"/>
-      <point x="182" y="272" type="curve"/>
-      <point x="197" y="376"/>
-      <point x="239" y="444"/>
-      <point x="344" y="444" type="curve"/>
-      <point x="434" y="444"/>
-      <point x="460" y="392"/>
-      <point x="448" y="324" type="curve"/>
-    </contour>
-    <contour>
-      <point x="323" y="735" type="line"/>
-      <point x="298" y="593" type="line"/>
-      <point x="440" y="593" type="line"/>
-      <point x="465" y="735" type="line"/>
+      <point x="330" y="773" type="line"/>
+      <point x="305" y="631" type="line"/>
+      <point x="447" y="631" type="line"/>
+      <point x="472" y="773" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>e</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>

@@ -2,37 +2,35 @@
 <glyph name="uni01E8" format="2">
   <advance width="618"/>
   <unicode hex="01E8"/>
-  <anchor x="263" y="0" name="bottom"/>
-  <anchor x="422.669" y="906" name="top"/>
-  <anchor x="645" y="699" name="topright"/>
+  <anchor x="261" y="0" name="bottom"/>
+  <anchor x="421" y="906" name="top"/>
+  <anchor x="643" y="699" name="topright"/>
   <outline>
+    <component base="K"/>
     <contour>
-      <point x="128" y="240" type="line"/>
-      <point x="608" y="705" type="line"/>
-      <point x="515" y="705" type="line"/>
-      <point x="146" y="340" type="line"/>
-    </contour>
-    <contour>
-      <point x="11" y="5" type="line"/>
-      <point x="87" y="5" type="line"/>
-      <point x="210" y="705" type="line"/>
-      <point x="134" y="705" type="line"/>
-    </contour>
-    <contour>
-      <point x="403" y="5" type="line"/>
-      <point x="496" y="5" type="line"/>
-      <point x="283" y="414" type="line"/>
-      <point x="220" y="359" type="line"/>
-    </contour>
-    <contour>
-      <point x="252" y="906" type="line"/>
-      <point x="316" y="783" type="line"/>
-      <point x="404" y="783" type="line"/>
-      <point x="512" y="906" type="line"/>
-      <point x="454" y="906" type="line"/>
-      <point x="368" y="816" type="line"/>
-      <point x="364" y="816" type="line"/>
-      <point x="310" y="906" type="line"/>
+      <point x="267" y="906" type="line"/>
+      <point x="331" y="783" type="line"/>
+      <point x="419" y="783" type="line"/>
+      <point x="527" y="906" type="line"/>
+      <point x="469" y="906" type="line"/>
+      <point x="383" y="816" type="line"/>
+      <point x="379" y="816" type="line"/>
+      <point x="325" y="906" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>K</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
 </glyph>
